@@ -1,0 +1,34 @@
+{
+  "projectName": "2022 RWS Website",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap5",
+  "frameworks": [
+    {
+      "name": "fontawesome_5",
+      "type": "cdn"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
+    }
+  ],
+  "projectType": "web",
+  "activeTarget": "new.ragingwolfsolutions.com",
+  "targets": [
+    {
+      "access": "ftp",
+      "remoteURL": "http://new.ragingwolfsolutions.com",
+      "ftpServer": "ftp.ragingwolfsolutions.com",
+      "ftpPort": 21,
+      "ftpUser": "kvpe7tyxlnhj",
+      "ftpPassword": "31d9aee6e496dae1718f",
+      "ftpRemoteFolder": "public_html/new.ragingwolfsolutions.com",
+      "name": "new.ragingwolfsolutions.com"
+    }
+  ]
+}
