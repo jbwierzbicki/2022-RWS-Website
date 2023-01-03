@@ -8,7 +8,7 @@
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
                         <div class="d-flex flex-wrap align-content-between h-100">
                             <div class="d-flex flex-column flex-wrap">
-                                <h4 class="text-light lh-sm mb-1 pe-3">Our 'PACK' is a team you can <b>trust</b>...</h4>
+                                <h4 class="text-light lh-sm mb-1 pe-3">Why the 'PACK' is a team you can <b>trust</b>...</h4>
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light mb-4">In today's world, trust is a huge factor in any freight handling decision. Our team of highly skilled logistics professionals work hard every day to make those decisions easier for you.<br><br>We work hard to build a foundation of trust with all of our clients and carriers.</p>
                             </div><button id="btn1" class="btn text-warning module-cta-btn mt-3 ps-0 pe-0 text-start" data-bs-toggle="modal" data-bs-target="#quote_modal">Start a Quote&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
@@ -28,7 +28,7 @@
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
                         <div class="d-flex h-100 flex-wrap align-content-between">
                             <div class="d-flex flex-wrap flex-column">
-                                <h4 class="text-light lh-sm mb-1 pe-3">Take a look at our <b>service</b> offerings...</h4>
+                                <h4 class="text-light lh-sm mb-1 pe-3">Services that Raging Wolf <b>excels</b> in...</h4>
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light" style="min-height: 192px;">We offer a wide range of freight transportation services, including...<br><br>» Trucking<br>» Expedited Air<br>» Expedited Ground<br>» Specialized Services</p>
                             </div>
@@ -50,9 +50,9 @@
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
                         <div class="d-flex flex-wrap align-content-between h-100">
                             <div class="d-flex flex-column flex-wrap">
-                                <h4 class="text-light lh-sm mb-1 pe-3">Read what our <b>customers</b> are saying...</h4>
+                                <h4 class="text-light lh-sm mb-1 pe-3">Our <b>customers</b> love us, take their word for it...</h4>
                                 <p class="fw-bold text-danger">——</p>
-                                <p class="text-light" style="min-height: 192px;">"The right stop for affordable and dependable shipping needs! From pick up to delivery, you are kept informed of shipment status!"<br><br>— Satisfied Customer</p>
+                                <p class="text-light" style="min-height: 192px;">"The right stop for affordable and dependable shipping needs! From pick up to delivery, you are kept informed of shipment status!"<br><br>— Expedite Customer</p>
                             </div><button id="btn3" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-toggle="modal" data-bs-target="#quote_modal">Start A Quote&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
                         </div>
 
