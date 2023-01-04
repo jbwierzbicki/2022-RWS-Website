@@ -53,15 +53,17 @@
                                             <div class="modal-body bg-dark pt-1 pb-5" dmx-hide="(location_request_submitted.value==1)">
 
                                                 <p>In order to maintain confidentiality regarding your shipment, location updates can only be shared over email. <b>Please provide a valid point-of-contact email address for this load</b>, and an update will be sent via email.</p>
-                                                <div class="d-flex align-items-end justify-content-start">
+                                                <form is="dmx-api-form" id="form_location_update" method="post" action="https://usebasin.com/f/dd70a6a52004">
+                                                    <div class="d-flex align-items-end justify-content-start">
 
-                                                    <div class="d-flex flex-wrap">
-                                                        <p class="mb-1">Email Address</p>
-                                                        <input id="text1" name="text1" type="text" class="form-control me-3">
-                                                    </div><button id="btn2" class="module-cta-btn btn btn-warning text-nowrap text-uppercase pt-2 pb-2" dmx-on:click="location_request_submitted.setValue(1)">Submit&nbsp;<i class="fas fa-caret-right"></i></button>
+                                                        <div class="d-flex flex-wrap">
 
-
-                                                </div>
+                                                            <p class="mb-1">Email Address</p>
+                                                            <input id="email" name="email" type="email" class="form-control me-3" required="" data-rule-email="">
+                                                        </div>
+                                                        <button id="btn2" class="module-cta-btn btn btn-warning text-nowrap text-uppercase pt-2 pb-2" type="submit">Submit&nbsp;<i class="fas fa-caret-right"></i></button>
+                                                    </div>
+                                                </form>
                                             </div>
                                             <div class="modal-body bg-dark pt-1 pb-5" dmx-show="(location_request_submitted.value==1)">
 
