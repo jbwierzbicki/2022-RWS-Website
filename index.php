@@ -49,7 +49,7 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-md-9">
-                                    <p class="text-light text-center mt-1 mb-4"><b>Raging Wolf Solutions</b> is a full service third party logistics provider, offering shipping and freight transportation solutions across the continental United States and Canada. We leverage our expansive network of carriers and industry knowledge to bring our clients unparalleled communication and service — from pickup to delivery.</p>
+                                    <p class="text-light text-center mt-1 mb-4"><b>Raging Wolf Solutions</b> is a full service logistics solutions provider, offering freight coordination and transportation services across the continental United States and Canada. We leverage our expansive network of carriers and industry knowledge to bring our clients unparalleled communication and service — from pickup to delivery.</p>
                                 </div>
                             </div>
                         </div>
