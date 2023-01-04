@@ -51,7 +51,7 @@
                                         </div>
                                         <div class="modal-body bg-dark pt-1 pb-5" dmx-hide="(location_request_submitted.value==1)">
 
-                                            <p>In order to maintain confidentiality regarding your shipment, location updates can only be shared over email. <b>Please provide a valid point-of-contact email address for this load</b>, and an update will be sent via email.</p>
+                                            <p>Location updates can only be shared via email in order to maintain confidentiality. <b>Please provide a valid point-of-contact email address for this load&nbsp;</b>and an update will be sent.</p>
 
                                             <div class="d-flex align-items-end justify-content-start">
                                                 <form id="form_location_update" method="post" action="https://usebasin.com/f/dd70a6a52004" class="d-flex">
