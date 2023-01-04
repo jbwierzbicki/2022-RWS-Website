@@ -23,6 +23,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-value id="location_request_submitted" dmx-bind:value="0"></dmx-value>
     <dmx-value id="tracking_base_url" dmx-bind:value="'https://ragingwolf.secure.force.com/services/apexrest/Account/'"></dmx-value>
     <dmx-value id="load_ref"></dmx-value>
     <dmx-api-datasource id="tracking_api" is="dmx-fetch" dmx-bind:url="tracking_base_url.value+load_ref.value"></dmx-api-datasource>
@@ -49,7 +50,7 @@
                                                 <h5 class="modal-title"><i class="fas fa-location-arrow"></i>&nbsp;Shipment Location Update</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body bg-dark pt-1 pb-5">
+                                            <div class="modal-body bg-dark pt-1 pb-5" dmx-hide="(location_request_submitted.value==1)">
 
                                                 <p>In order to maintain confidentiality regarding your shipment, location updates can only be shared over email. <b>Please provide a valid point-of-contact email address for this load</b>, and an update will be sent via email.</p>
                                                 <div class="d-flex align-items-end justify-content-start">
@@ -57,10 +58,14 @@
                                                     <div class="d-flex flex-wrap">
                                                         <p class="mb-1">Email Address</p>
                                                         <input id="text1" name="text1" type="text" class="form-control me-3">
-                                                    </div><button id="btn2" class="module-cta-btn btn btn-warning text-nowrap text-uppercase pt-2 pb-2">Submit&nbsp;<i class="fas fa-caret-right"></i></button>
+                                                    </div><button id="btn2" class="module-cta-btn btn btn-warning text-nowrap text-uppercase pt-2 pb-2" dmx-on:click="location_request_submitted.setValue(1)">Submit&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                                 </div>
+                                            </div>
+                                            <div class="modal-body bg-dark pt-1 pb-5" dmx-show="(location_request_submitted.value==1)">
+
+                                                <p>Thank you for submitting this tracking request. If your email is valid for this load, a member of our team will contact you with an update shortly.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +73,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-8">
                                         <p class="text-white-50 mb-2">Your Load Reference Number</p>
-                                        <input id="load_ref_input" name="Load Ref Input" type="text" class="form-control mb-3" required="">
+                                        <input id="load_ref_input" name="Load Ref Input" type="text" class="form-control mb-3" required="" minlength="5" data-msg-minlength="Your reference number should be at least 5 digits." maxlength="5" data-msg-maxlength="Your reference number should be no more than 5 digits.">
                                     </div>
 
                                     <div class="col-md-8"><button id="btn4" class="btn module-cta-btn btn-warning w-100 fw-bold mt-1 mb-3" wappler-command="editContent" dmx-on:click="load_ref.setValue(load_ref_input.value);tracking_api.load()">Submit&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
