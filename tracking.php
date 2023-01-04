@@ -80,7 +80,7 @@
                                 </div>
 
                                 <div class="col-md-8"><button id="btn4" class="btn module-cta-btn btn-warning w-100 fw-bold mt-1 mb-3" wappler-command="editContent" dmx-on:click="load_ref.setValue(load_ref_input.value);tracking_api.load()">Submit&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
-                                <div class="col-md-8" dmx-show="tracking_api.data[0].FreightTM__Status__c=='Delivered'">
+                                <div class="col-md-8" dmx-show="(tracking_api.data[0].FreightTM__Status__c=='Delivered' || tracking_api.data[0].FreightTM__Status__c=='En_Route' || tracking_api.data[0].FreightTM__Status__c=='Assigned' || tracking_api.data[0].FreightTM__Status__c=='Committed' || tracking_api.data[0].FreightTM__Status__c=='Cancelled')">
                                     <div class="container border border-1 rounded border-light mt-3 mb-2 pt-3 pb-3">
                                         <div class="row">
                                             <div class="col">
