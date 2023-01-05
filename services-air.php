@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 
     <link rel="icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
+    <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
+    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
+    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
+    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">

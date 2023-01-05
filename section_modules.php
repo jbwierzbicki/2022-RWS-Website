@@ -1,4 +1,4 @@
-<!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" -->
+<!-- Wappler include head-page="services-trucking.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxSlideshow:{}}" -->
 <section id="modules" class="border-top rounded-1 rounded-0 border-secondary">
     <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
     <div class="container pb-5 modules-container">
@@ -58,6 +58,35 @@
 
 
 
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-md-12">
+                <div class="row h-100">
+
+                    <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
+                        <div class="container pt-3 pb-2 ps-0 pe-0">
+                            <div class="row justify-content-center g-0 gx-4">
+                                <div class="col-lg-5">
+
+                                    <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
+                                        <dmx-slide url="assets/images/slideshow_live/Assorted%20Promo%20Items.png" thumb="assets/images/slideshow_live/thumbs/Assorted%20Promo%20Items.png"></dmx-slide>
+                                        <dmx-slide url="assets/images/slideshow_live/Mousepad%20and%20Mug.png" thumb="assets/images/slideshow_live/thumbs/Mousepad%20and%20Mug.png"></dmx-slide>
+                                    </dmx-slideshow>
+                                </div>
+
+                                <div class="col-lg-6 align-self-center pt-2 pb-2">
+                                    <h4 class="text-light mb-0">Promoting Raging Wolf Solutions in Style</h4>
+                                    <p class="fw-bold text-danger mb-2">——</p>
+                                    <p class="text-light">Active supporters and partners of Raging Wolf are eligible for promotional contests and giveaways. Our team sponsors these promotions as a token of our gratitude, and so that you have some great gear to support the 'PACK'.</p><a href="contact.php"><button id="btn5" class="btn text-warning module-cta-btn text-start btn-lg mt-1 ps-0 pe-0">Get Yours&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
