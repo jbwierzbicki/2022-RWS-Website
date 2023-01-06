@@ -21,8 +21,7 @@
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
-    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
-    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
+    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/minimal.css" />
 </head>
 
 <body is="dmx-app" class="bg-dark">

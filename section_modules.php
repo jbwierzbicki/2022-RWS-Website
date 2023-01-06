@@ -76,6 +76,7 @@
 
                                     <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
                                         <dmx-slide url="assets/images/slideshow_live/Assorted%20Promo%20Items.png" thumb="assets/images/slideshow_live/thumbs/Assorted%20Promo%20Items.png"></dmx-slide>
+                                        <dmx-slide url="assets/images/slideshow_live/Diecast%20Trucks.png" thumb="assets/images/slideshow_live/thumbs/Diecast%20Trucks.png"></dmx-slide>
                                         <dmx-slide url="assets/images/slideshow_live/Mousepad%20and%20Mug.png" thumb="assets/images/slideshow_live/thumbs/Mousepad%20and%20Mug.png"></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
