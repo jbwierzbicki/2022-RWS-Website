@@ -101,9 +101,7 @@
                 <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                     <div class="navbar-nav align-items-stretch text-center">
                         <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php">Home</a>
-                        <!-- News Nav Item
                         <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="https://ragingwolfsolutions.com/blog">News</a>
-                        -->
                         <a class="nav-item nav-separator ms-2 me-2"></a>
 
 
