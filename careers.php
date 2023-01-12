@@ -56,46 +56,9 @@
                             <button id="btn_sales2" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Technology</button>
                         </div>
                     </div>
-                    <div id="conditional_operations" is="dmx-if" dmx-bind:condition="((visible_career.value == 'career_operations')||(visible_career.value == 'career_all'))">
-                        <section id="career_operations">
-                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
-                                <div class="col-lg-10 mb-2">
-                                    <h4 class="text-light" wappler-command="editContent">Coordinator, Freight Transportation Logistics</h4>
-                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation professional to join our team.</h5>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-user"></i>&nbsp; In-person</button>
-                                </div>
-                                <div class="col-lg-2 text-end">
-                                    <button id="apply_now" class="btn btn-link text-decoration-none text-warning btn-lg pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-2985/ECVWLNNEJSLZ433JM4')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+
                     <div id="conditional_sales" is="dmx-if" dmx-bind:condition="((visible_career.value == 'career_sales')||(visible_career.value == 'career_all'))">
                         <section id="career_sales">
-                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
-                                <div class="col-lg-10 mb-2">
-                                    <h4 class="text-light" wappler-command="editContent">Contractor, Regional Sales</h4>
-                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Contract</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Part time</button>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Potentially remote</button>
-                                </div>
-                                <div class="col-lg-2 text-end">
-                                    <button id="apply_now2" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3007/TLPZ7SME0J1UKEEPGY')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
-                                </div>
-                            </div>
-                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
-                                <div class="col-lg-10 mb-2">
-                                    <h4 class="text-light" wappler-command="editContent">Representative, Regional Sales</h4>
-                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
-                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Potentially remote</button>
-                                </div>
-                                <div class="col-lg-2 text-end">
-                                    <button id="apply_now1" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
-                                </div>
-                            </div>
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
                                 <div class="col-lg-10 mb-2">
 
@@ -128,6 +91,45 @@
                                 </div>
                                 <div class="col-lg-2 text-end">
                                     <button id="apply_now3" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                                <div class="col-lg-10 mb-2">
+                                    <h4 class="text-light" wappler-command="editContent">Contractor, Regional Sales</h4>
+                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Contract</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Part time</button>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Potentially remote</button>
+                                </div>
+                                <div class="col-lg-2 text-end">
+                                    <button id="apply_now2" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3007/TLPZ7SME0J1UKEEPGY')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                                <div class="col-lg-10 mb-2">
+                                    <h4 class="text-light" wappler-command="editContent">Representative, Regional Sales</h4>
+                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Potentially remote</button>
+                                </div>
+                                <div class="col-lg-2 text-end">
+                                    <button id="apply_now1" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div id="conditional_operations" is="dmx-if" dmx-bind:condition="((visible_career.value == 'career_operations')||(visible_career.value == 'career_all'))">
+                        <section id="career_operations">
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                                <div class="col-lg-10 mb-2">
+                                    <h4 class="text-light" wappler-command="editContent">Coordinator, Freight Transportation Logistics</h4>
+                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation professional to join our team.</h5>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-user"></i>&nbsp; In-person</button>
+                                </div>
+                                <div class="col-lg-2 text-end">
+                                    <button id="apply_now" class="btn btn-link text-decoration-none text-warning btn-lg pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-2985/ECVWLNNEJSLZ433JM4')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                         </section>
