@@ -24,6 +24,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-value id="job_description"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
     <dmx-value id="visible_career" dmx-bind:value="'career_all'"></dmx-value>
 
@@ -93,6 +94,40 @@
                                 </div>
                                 <div class="col-lg-2 text-end">
                                     <button id="apply_now1" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                                <div class="col-lg-10 mb-2">
+
+                                    <h4 class="text-light" wappler-command="editContent">Representative, Inside Sales</h4>
+                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; In-person</button>
+                                    <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue('representative_inside_sales')"><i class="fas fa-info-circle"></i>&nbsp; Position Information</button>
+                                    <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='representative_inside_sales')">
+                                        <h5>▶ Position Information</h5>
+                                        <p>Are you hungry? The PACK at Raging Wolf Solutions is looking for an outgoing, charismatic individual to join our sales team. If accepted, you will be responsible for investigating strong potential leads, setting up meetings, and working with sales to bring our premium freight transportation to new customers. Applications will be reviewed and prioritized based on…
+                                        <p wappler-command="editContent">This is a sales position, so it comes with strong incentive and commission opportunities. for you to connect with new customers and provide them with our outstanding service and competitive pricing. Any new business you help us to acquire will increase your earning potential.
+                                        </p>
+                                        <p wappler-command="editContent">--- ABOUT US ---
+                                        </p>
+                                        <p wappler-command="editContent">Raging Wolf Solutions is a full service third party logistics provider, offering shipping and freight transportation solutions across the continental United States. We leverage our expansive network of carriers and combined 60 years in the industry to bring our customers unparalleled communication and service.
+                                        </p>
+                                        <p wappler-command="editContent">Our team can move anything from one box to a full truckload. Some of our specialty moves include air/ground expedites, full truckloads, straight trucks, cargo vans, sprinter vans -- and much more! See our website for the full list &gt;
+                                        </p>
+                                        <p wappler-command="editContent">--- WHY RAGING WOLF ---
+                                        </p>
+                                        <p wappler-command="editContent">Why sell with us? Our team believes that its sales representatives should be rewarded for their success. Bringing in new business helps us all grow. So with that in mind, we do not put a "cap" on your earning potential through commissions. You have our full support!
+                                        </p>
+                                        <p wappler-command="editContent">---GUIDANCE AND SUPPORT---
+                                        </p>
+                                        <p wappler-command="editContent">Our operations are based out of Twinsburg OH, and the Raging Wolf team is equipped with the tools and resources you need to succeed. Our digital marketing and promotional team can help you seek out and target leads in markets all across the country. Our Sales team will help you with strategy and your transition into selling with Raging Wolf. We've got your back!</p>
+                                        </p>
+                                        <button id="apply_now3" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-end">
+                                    <button id="apply_now3" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                         </section>
