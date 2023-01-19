@@ -69,7 +69,15 @@
                                     <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue('representative_inside_sales')"><i class="fas fa-info-circle"></i>&nbsp; Position Information</button>
                                     <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='representative_inside_sales')">
                                         <h5>▶ Position Information</h5>
-                                        <p>Are you hungry? The PACK at Raging Wolf Solutions is looking for an outgoing, charismatic individual to join our sales team. If accepted, you will be responsible for investigating strong potential leads, setting up meetings, and working with sales to bring our premium freight transportation to new customers. Applications will be reviewed and prioritized based on…
+                                        <p class="mb-2">Are you hungry? The PACK at Raging Wolf Solutions is looking for an outgoing, charismatic individual to join our sales team. If accepted, you will be responsible for investigating strong potential leads, setting up meetings, and working with sales to bring our premium freight transportation to new customers. Applications will be reviewed and prioritized based on…
+                                        </p>
+                                        <ul class="list-group text-white">
+                                            <li class="list-group-item bg-transparent text-white">Sales-related background or experience</li>
+                                            <li class="list-group-item bg-transparent text-white">Ability to make meaningful connections with potential customers</li>
+                                            <li class="list-group-item bg-transparent text-white">Strong communication skills</li>
+                                            <li class="list-group-item bg-transparent text-white mb-3">(Preferred) Knowledge of freight transportation or supply chain</li>
+                                        </ul>
+
                                         <p wappler-command="editContent">This is a sales position, so it comes with strong incentive and commission opportunities. for you to connect with new customers and provide them with our outstanding service and competitive pricing. Any new business you help us to acquire will increase your earning potential.
                                         </p>
                                         <p wappler-command="editContent">--- ABOUT US ---
@@ -90,7 +98,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now3" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now3" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
