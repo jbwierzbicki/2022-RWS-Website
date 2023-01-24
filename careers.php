@@ -93,12 +93,11 @@
                                         <p wappler-command="editContent">---GUIDANCE AND SUPPORT---
                                         </p>
                                         <p wappler-command="editContent">Our operations are based out of Twinsburg OH, and the Raging Wolf team is equipped with the tools and resources you need to succeed. Our digital marketing and promotional team can help you seek out and target leads in markets all across the country. Our Sales team will help you with strategy and your transition into selling with Raging Wolf. We've got your back!</p>
-                                        </p>
-                                        <button id="apply_now3" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        <button id="apply_now3" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now3" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
