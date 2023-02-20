@@ -24,7 +24,7 @@
 
 <body is="dmx-app" id="index" class="bg-dark">
     <dmx-value id="location_request_submitted" dmx-bind:value="0"></dmx-value>
-    <dmx-value id="tracking_base_url" dmx-bind:value="'https://ragingwolf.secure.force.com/services/apexrest/Account/'"></dmx-value>
+    <dmx-value id="tracking_base_url" dmx-bind:value="'https://staff.my.salesforce-sites.com/services/apexrest/Account/'"></dmx-value>
     <dmx-value id="load_ref"></dmx-value>
     <dmx-api-datasource id="tracking_api" is="dmx-fetch" dmx-bind:url="tracking_base_url.value+load_ref.value"></dmx-api-datasource>
 
