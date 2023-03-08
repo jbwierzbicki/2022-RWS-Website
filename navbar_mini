@@ -1,17 +1,25 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" -->
-<section id="navbar_mini">
-        <div class="container-xl pt-2 pb-2 ps-3 pe-3">
-            <div class="row justify-content-end">
-                <div class="col-auto rws-nav-item">
-                    <a href="tel:855-965-3725" target="_blank" class="text-decoration-none">
+<section id="navbar_mini" class="bg-black">
+    <div class="container-xl pt-2 pb-2 ps-3 pe-3">
+        <div class="row justify-content-center justify-content-sm-between">
+            <div class="col-auto align-self-center">
+                <a href="media.php" class="text-decoration-none">
+                    <div class="d-flex align-items-center rws-nav-item">
+                        <h6 class="text-warning mt-auto mb-auto" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
+                        <img src="assets/images/music_preview.gif" height="30px">
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-auto">
+                <div class="d-flex"><a href="tel:855-965-3725" target="_blank" class="text-decoration-none me-4 rws-nav-item">
                         <small class="text-light mt-1 mb-1 text-end fw-bold"><i class="fas fa-phone"></i><span style="font-family: var(--bs-font-sans-serif); font-size: 1rem;">&nbsp; (855) 965 - 3725</span></small>
-                    </a>
-                </div>
-                <div class="col-auto rws-nav-item">
-                    <a href="careers.php" class="text-decoration-none">
+                    </a><a href="careers.php" class="text-decoration-none rws-nav-item">
                         <small class="text-light mt-1 mb-1 text-end fw-bold rws-nav-item"><i class="fas fa-address-card"></i><span style="font-family: var(--bs-font-sans-serif); font-size: 1rem;">&nbsp; Job Openings</span></small>
-                    </a>
-                </div>
+                    </a></div>
+
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
