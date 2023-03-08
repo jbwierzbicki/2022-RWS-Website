@@ -47,7 +47,7 @@
                     <div class="d-flex">
                         <iframe width="100%" height="400px" src="https://www.youtube.com/embed/v9FAGpOTZow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <h5 class="text-white-50 mt-4 mb-4" dmx-on:click="browser1.writeTextToClipboard('https://ragingwolfsolutions.com')">Enjoy the song? Click here to get a&nbsp;<span class="text-warning">shareable link.</span></h5>
+                    <h5 class="text-white-50 mt-4 mb-4 rws-nav-item hover-cursor" dmx-on:click="browser1.writeTextToClipboard('https://www.youtube.com/watch?v=v9FAGpOTZow');browser1.alert('Link successfully copied to your clipboard!')">Enjoy the song? Click here to get a&nbsp;<span class="text-warning">shareable link.</span></h5>
                 </div>
             </div>
             <section id="advertising">
