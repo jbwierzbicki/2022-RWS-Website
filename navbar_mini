@@ -4,8 +4,8 @@
         <div class="row justify-content-center justify-content-sm-between">
             <div class="col-auto align-self-center">
                 <a href="media.php" class="text-decoration-none">
-                    <div class="d-flex align-items-center rws-nav-item">
-                        <h6 class="text-warning mt-auto mb-auto" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
+                    <div class="d-flex align-items-center rws-nav-item flex-nowrap">
+                        <h6 class="text-warning mt-auto mb-auto text-nowrap" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
                         <img src="assets/images/music_preview.gif" height="30px">
                     </div>
                 </a>
