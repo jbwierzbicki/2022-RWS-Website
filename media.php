@@ -42,12 +42,29 @@
             <div class="row justify-content-center pb-4">
                 <div class="pb-4 pl-1 pr-1 col-12 text-center col-md-7">
 
+
                     <h5 class="text-uppercase text-yellow text-warning text-center">One of A Kind</h5>
                     <h2 class="text-light text-left mb-4">Raging Wolf Solutions Song<br></h2>
                     <div class="d-flex">
                         <iframe width="100%" height="400px" src="https://www.youtube.com/embed/v9FAGpOTZow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <h5 class="text-white-50 mt-4 mb-4 rws-nav-item hover-cursor" dmx-on:click="browser1.writeTextToClipboard('https://www.youtube.com/watch?v=v9FAGpOTZow');browser1.alert('Link successfully copied to your clipboard!')">Enjoy the song? Click here to get a&nbsp;<span class="text-warning">shareable link.</span></h5>
+                    <h5 class="text-white-50 rws-nav-item hover-cursor mt-4 mb-3" dmx-on:click="browser1.writeTextToClipboard('https://www.youtube.com/watch?v=v9FAGpOTZow');browser1.alert('Link successfully copied to your clipboard!')">Enjoy the song? Click here to get a&nbsp;<span class="text-warning">shareable link.</span></h5>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="module-card border rounded-0 rounded-1 border-secondary col-auto mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                    <a target="_blank" href="https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69"><img src="assets/images/Spotify-Logo-PNG5.png" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://music.apple.com/us/album/raging-wolf-solutions/1677461954?i=1677461955"><img src="assets/images/Apple_Music.png" height="58px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://amazon.com/music/player/albums/B0BYNHW9CX?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_mLSEJK7B5sXg9aKhTU41skLXB"><img src="assets/images/Amazon_Music_logo_PNG.png" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://www.pandora.com/artist/steve-radcliff/raging-wolf-solutions/raging-wolf-solutions/TRvb3wbPbZd656c?part=ug-desktop&amp;corr=160482520314414425"><img src="assets/images/pandora-logo-png.png" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <section id="advertising">
