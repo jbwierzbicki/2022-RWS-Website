@@ -72,7 +72,32 @@
                 <div class="col-12">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3 col-12">
+                            <div class="module-card border rounded-0 rounded-1 border-secondary col-12 mt-3 mb-3 pt-3 pb-3 ps-3 pe-3">
+                                <h5 class="text-light mb-3 pt-2">Have someone in mind? Let us know.</h5>
+
+                                <form id="referral_form">
+                                    <div class="d-flex flex-row">
+
+
+                                        <input id="contact_email" name="text1" type="text" class="form-control me-3" placeholder="Your email address..."><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold ps-4 pe-4 lh-1 btn-outline-warning"><i class="far fa-envelope"></i>&nbsp;Get in touch</button>
+                                    </div>
+                                </form>
+                                <div class="row text-white-50 mt-3 mb-2">
+
+                                    <div class="col">
+                                        <hr>
+                                    </div>
+                                    <div class="col-auto align-self-center">
+                                        <h6 class="mb-0 text-uppercase text-center">or</h6>
+                                    </div>
+                                    <div class="col">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4"></div>
+                                </div>
+
                             </div>
                         </div>
 
