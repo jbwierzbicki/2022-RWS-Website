@@ -54,22 +54,22 @@
                 <div class="col-lg-4">
                     <div class="d-flex flex-column">
                         <h1 class="text-light lh-base text-center"><i class="fas fa-user-check fa-lg"></i></h1>
-                        <h4 class="text-light text-center lh-base">1. Refer a shipper to the 'PACK'</h4>
-                        <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Business inquiries and quotes can be sent to support@ragingwolfsolutions.com — make sure they mention your name or business!</p>
+                        <h4 class="text-light text-center">1. Refer a shipper to the 'PACK'</h4>
+                        <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Contact us using the form below, or tell your referral about Raging Wolf by sharing our services to your network.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex flex-column">
-                        <h1 class="text-light lh-base text-center"><i class="far fa-check-circle fa-lg"></i></h1>
-                        <h4 class="text-light text-center lh-base">2. Your referral's first shipment is delivered</h4>
-                        <p class="text-white-50 text-center">To qualify for referral rewards, your referral must become an active customer with Raging Wolf Solutions. As soon as their first shipment has been delivered, a member of our team will reach out to you.</p>
+                        <h1 class="text-light lh-base text-center"><i class="fas fa-truck-loading fa-lg"></i></h1>
+                        <h4 class="text-light text-center">2. Your referral's first shipment is delivered</h4>
+                        <p class="text-white-50 text-center">To qualify for rewards, your referral must become an active customer with Raging Wolf Solutions. As soon as their first shipment has been delivered, a member of our team will reach out to you.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex flex-column">
                         <h1 class="text-light lh-base text-center"><i class="fas fa-smile-beam fa-lg"></i></h1>
-                        <h4 class="text-light text-center lh-base">3. Our team will be in touch!</h4>
-                        <p class="text-white-50 text-center">A member of our team will contact you regarding your referral gift card and donation contribution. Keep an eye on your email.</p>
+                        <h4 class="text-light text-center">3. A member of our team will be in touch!</h4>
+                        <p class="text-white-50 text-center">A member of our team will contact you regarding your referral gift card and donation contribution. Keep an eye on your email, and feel free to check on the status of your referral.</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,8 @@
                                     <div class="d-flex flex-row">
 
 
-                                        <input id="contact_email" name="text1" type="text" class="form-control me-3" placeholder="Your email address..."><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold ps-4 pe-4 lh-1 btn-outline-warning"><i class="far fa-envelope"></i>&nbsp;Get in touch</button>
+                                        <input id="contact_email" name="text1" type="text" class="form-control me-3" placeholder="Your email address...">
+                                        <input id="contact_message" name="text2" type="text" class="form-control me-3" placeholder="Your short message..."><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold ps-4 pe-4 lh-1 btn-outline-warning"><i class="far fa-envelope"></i>&nbsp;Get in touch</button>
                                     </div>
                                 </form>
                                 <div class="row text-white-50 mt-3 mb-2">
@@ -103,7 +104,12 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-4">
+                                    </div>
+                                    <div class="col-lg-4">
+                                    </div>
+                                    <div class="col-lg-4">
+                                    </div>
                                 </div>
 
                             </div>

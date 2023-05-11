@@ -65,8 +65,6 @@
                             To qualify for referral rewards, the referred customer must not be a current or past customer of Raging Wolf Solutions and must make a shipment through Raging Wolf Solutions within 90 days of referral. The referral rewards will be processed within 30 days of the referred customer's first shipment delivery.
                             <br /><br />
                             This promotion is void where prohibited by law. Participants are responsible for all applicable taxes, fees, and other charges related to the receipt and use of the referral rewards. Raging Wolf Solutions is not responsible for lost, stolen, or misdirected gift cards or donations.
-                            <br /><br />
-                            This email may contain confidential and/or privileged information. If you are not the intended recipient, please notify the sender immediately and delete this email. Unauthorized disclosure, copying, distribution, or use of this email or its contents is strictly prohibited.
                         </p>
 
                     </div>
