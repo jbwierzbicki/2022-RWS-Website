@@ -108,9 +108,13 @@
                                         <h1 class="text-white mb-3"><i class="fab fa-facebook-square fa-lg"></i></h1>
                                         <button id="referral_facebook" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25" style="letter-spacing: .6px;"><i class="fas fa-share"></i>&nbsp;Share on Facebook</button>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 text-center">
+                                        <h1 class="text-white mb-3"><i class="fab fa-linkedin fa-lg"></i></h1>
+                                        <button id="referral_linkedin" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25" style="letter-spacing: .6px;"><i class="fas fa-share"></i>Share on LinkedIn</button>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 text-center">
+                                        <h1 class="text-white mb-3"><i class="fas fa-question fa-lg"></i></h1>
+                                        <button id="referral_ursite" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25" style="letter-spacing: .6px;"><i class="fas fa-share"></i>Share on (Your Site)</button>
                                     </div>
                                 </div>
 
