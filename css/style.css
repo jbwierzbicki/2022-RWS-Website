@@ -196,6 +196,7 @@ background-position: center;
 
 .hover-cursor:hover {
     cursor: pointer;
+    opacity: 0.85;
 }
 
 .btn-close {

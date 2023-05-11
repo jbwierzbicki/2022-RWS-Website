@@ -46,7 +46,7 @@
                     <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-comments-dollar"></i></h1>
                     <h5 class="text-uppercase text-yellow text-warning text-center">Referral Rewards</h5>
                     <h1 class="text-light text-left">Raging Wolf Solutions Offers Referral Rewards</h1>
-                    <h5 class="text-white-50 lh-sm fw-normal mb-3" dmx-on:click="browser1.writeTextToClipboard('https://www.youtube.com/watch?v=v9FAGpOTZow');browser1.alert('Link successfully copied to your clipboard!')">Refer a customer to the 'PACK'. Once their first shipment is successfully delivered, you'll receive a $40 Visa Gift Card. Additionally, we'll make a charitable donation on your behalf as a token of our appreciation.&nbsp;<span class="text-warning">Terms apply.</span></h5>
+                    <h5 class="text-white-50 lh-sm fw-normal mb-3">Refer a customer to the 'PACK'. Once their first shipment is successfully delivered, you'll receive a $40 Visa Gift Card. Additionally, we'll make a charitable donation to the &nbsp;<span class="text-white-50 hover-cursor" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow')"><i>Rainbow Children's Hospital </i></span> on your behalf as a token of our appreciation.&nbsp;<span class="text-warning">Terms apply.</span></h5>
 
                 </div>
             </div>
@@ -59,10 +59,18 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="d-flex"></div>
+                    <div class="d-flex flex-column">
+                        <h1 class="text-light lh-base text-center"><i class="far fa-check-circle fa-lg"></i></h1>
+                        <h4 class="text-light text-center lh-base">2. Your referral's first shipment is delivered</h4>
+                        <p class="text-white-50 text-center">To qualify for referral rewards, your referral must become an active customer with Raging Wolf Solutions. As soon as their first shipment has been delivered, a member of our team will reach out to you.</p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="d-flex"></div>
+                    <div class="d-flex flex-column">
+                        <h1 class="text-light lh-base text-center"><i class="fas fa-smile-beam fa-lg"></i></h1>
+                        <h4 class="text-light text-center lh-base">3. Our team will be in touch!</h4>
+                        <p class="text-white-50 text-center">A member of our team will contact you regarding your referral gift card and donation contribution. Keep an eye on your email.</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
