@@ -38,15 +38,17 @@
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container modules-container mt-0 mb-5 pb-5">
+        <div class="container modules-container mt-0 mb-4 pb-5">
             <div class="row justify-content-center pb-4">
                 <div class="pl-1 pr-1 col-12 text-center col-md-10">
+
 
 
                     <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-comments-dollar"></i></h1>
                     <h5 class="text-uppercase text-yellow text-warning text-center">Referral Rewards</h5>
                     <h1 class="text-light text-left mb-4">Referral Rewards: Terms and Conditions</h1>
-                    <div class="d-flex overflow-auto" style="height: 400px;">
+
+                    <div class="d-flex overflow-auto mb-4" style="height: 400px;">
                         <p class="text-white-50 text-start">
                             Limitation of Liability: Raging Wolf Solutions shall not be liable for any indirect, special, incidental, consequential, or punitive damages, including but not limited to loss of use, loss of profits, or loss of data, whether in an action in contract, tort (including but not limited to negligence), or otherwise, arising out of or in any way connected with the use of or inability to use this program or the materials therein or resulting from unauthorized access to or alteration of data.
                             <br /><br />
@@ -67,6 +69,10 @@
                             This email may contain confidential and/or privileged information. If you are not the intended recipient, please notify the sender immediately and delete this email. Unauthorized disclosure, copying, distribution, or use of this email or its contents is strictly prohibited.
                         </p>
 
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h4 class="text-left text-uppercase text-white-50 hover-cursor" dmx-on:click="browser1.goto('index.php')"><i class="fas fa-arrow-left"></i>&nbsp;Go Home</h4>
+                        <h4 class="text-left text-warning text-uppercase hover-cursor" dmx-on:click="browser1.goto('referral.php')">Go To Program&nbsp;<i class="fas fa-arrow-right"></i></h4>
                     </div>
 
 
