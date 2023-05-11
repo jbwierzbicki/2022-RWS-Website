@@ -74,13 +74,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col text-light">
+                <div class="col text-light mt-3 mb-3">
                     <hr>
                 </div>
                 <div class="col-12">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="module-card border rounded-0 rounded-1 border-secondary col-12 mt-3 mb-3 pt-3 pb-3 ps-3 pe-3">
+                            <div class="module-card border rounded-0 rounded-1 border-secondary col-12 mt-3 mb-3 pt-3 pb-4 ps-3 pe-3">
                                 <h5 class="text-light mb-3 pt-2">Have someone in mind? Let us know.</h5>
 
                                 <form id="referral_form">
@@ -91,7 +91,7 @@
                                         <input id="contact_message" name="text2" type="text" class="form-control me-3" placeholder="Your short message..."><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold ps-4 pe-4 lh-1 btn-outline-warning"><i class="far fa-envelope"></i>&nbsp;Get in touch</button>
                                     </div>
                                 </form>
-                                <div class="row text-white-50 mt-3 mb-2">
+                                <div class="row text-white-50 mt-3 mb-4">
 
                                     <div class="col">
                                         <hr>
@@ -104,7 +104,9 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 text-center">
+                                        <h1 class="text-white mb-3"><i class="fab fa-facebook-square fa-lg"></i></h1>
+                                        <button id="referral_facebook" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25" style="letter-spacing: .6px;"><i class="fas fa-share"></i>&nbsp;Share on Facebook</button>
                                     </div>
                                     <div class="col-lg-4">
                                     </div>
