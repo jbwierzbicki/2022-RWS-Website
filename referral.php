@@ -88,7 +88,7 @@
                                     <div class="row justify-content-around gx-2">
                                         <div class="col-lg-5"><input id="contact_email" name="email" type="text" class="form-control mb-2 me-3" placeholder="Your email address..."></div>
                                         <div class="col-lg-5"><input id="contact_message" name="message" type="text" class="form-control mb-2 me-3" placeholder="Tell us about your referral..."></div>
-                                        <div class="col-lg-auto"><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold btn-outline-warning w-100 mb-2 pt-2 pb-2"><i class="far fa-envelope"></i>&nbsp;Get in touch</button></div>
+                                        <div class="col-lg-auto"><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold btn-outline-warning w-100 mb-2 pt-2 pb-2" dmx-on:click=""><i class="far fa-envelope"></i>&nbsp;Get in touch</button></div>
                                     </div>
                                 </form>
                                 <div class="row text-white-50 mt-3 mb-4">
@@ -114,7 +114,7 @@
                                     </div>
                                     <div class="col-lg-4 text-center">
                                         <h1 class="text-white lh-1 mb-3"><i class="fas fa-envelope fa-lg"></i></h1>
-                                        <button id="referral_ursite" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('mailto:?subject=Check%20Out%20the%20\'Pack\'!&amp;body=Dude%2C%20check%20out%20this%20sick%20a**%20company!%20They%20have%20a%20wolf!!%0A%0Awww.RagingWolfSolutions.com%0A%0A')"><i class="fas fa-share"></i>&nbsp;Share via Email</button>
+                                        <button id="referral_ursite" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('mailto:?subject=Check%20Out%20the%20\'Pack\'!&amp;body=Dude%2C%20check%20out%20this%20sick%20a**%20company!%20They%20have%20a%20wolf!!%0A%0Ahttps%3A%2F%2Fwww.RagingWolfSolutions.com%0A%0A')"><i class="fas fa-share"></i>&nbsp;Share via Email</button>
                                     </div>
                                 </div>
 
