@@ -1,6 +1,7 @@
-<!-- Wappler include head-page="services-trucking.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxSlideshow:{}}" -->
+<!-- Wappler include head-page="services-trucking.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxSlideshow:{},dmxBrowser:{}}" -->
+
 <section id="modules" class="border-top rounded-1 rounded-0 border-secondary">
-    <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+    <div is="dmx-browser" id="browser1"></div><img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
     <div class="container pb-5 modules-container">
         <div class="row">
             <div class="col-md-4">
@@ -45,7 +46,7 @@
 
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-none">
                 <div class="row h-100">
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
                         <div class="d-flex flex-wrap align-content-between h-100">
@@ -54,6 +55,27 @@
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light" style="min-height: 192px;">"The right stop for affordable and dependable shipping needs! From pick up to delivery, you are kept informed of shipment status!"<br><br>— Expedite Customer</p>
                             </div><button id="btn3" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-toggle="modal" data-bs-target="#quote_modal">Start A Quote&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="row h-100">
+                    <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
+                        <div class="d-flex flex-wrap align-content-between h-100">
+                            <div class="d-flex flex-column flex-wrap">
+                                <h4 class="text-light lh-sm mb-1 pe-3">We now offer <b>referral rewards</b>...</h4>
+                                <p class="fw-bold text-danger">——</p>
+                                <p class="text-light" style="min-height: 192px;">Know someone in need of freight shipping or logistics services? Send them our way!&nbsp; You can be recognized when you refer a new customer to Raging Wolf Solutions.<br><br>Learn more about how to participate in our referral rewards program by visiting the link below.</p>
+                            </div><button id="btn6" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-target="undefined" dmx-on:click="browser1.goto('referral.php')">Learn More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
                         </div>
 
 
