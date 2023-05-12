@@ -46,29 +46,31 @@
                     <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-comments-dollar"></i></h1>
                     <h5 class="text-uppercase text-yellow text-warning text-center">Referral Rewards</h5>
                     <h1 class="text-light text-left">Raging Wolf Solutions Offers Referral Rewards</h1>
-                    <h5 class="text-white-50 lh-sm fw-normal mb-3">Refer a customer to the 'PACK'. Once their first shipment is successfully delivered, you'll receive a $40 Visa Gift Card. Additionally, we'll make a charitable donation to the &nbsp;<span class="text-white-50 hover-cursor" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow')"><i>Rainbow Children's Hospital </i></span> on your behalf as a token of our appreciation.&nbsp;<span class="text-warning hover-cursor">Terms apply.</span></h5>
+                    <h5 class="text-white-50 lh-sm fw-normal mb-3">Refer a customer to the 'PACK'. Once their first shipment is successfully delivered, you'll receive a $40 Visa Gift Card. Additionally, we'll make a charitable donation to the&nbsp;<span class="text-white-50 hover-cursor" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow')"><i>Rainbow Children's Hospital </i></span> on your behalf as a token of our appreciation.&nbsp;<span class="text-warning hover-cursor">Terms apply.</span></h5>
 
                 </div>
+
             </div>
             <div class="row pt-3">
                 <div class="col-lg-4">
                     <div class="d-flex flex-column">
-                        <h1 class="text-light lh-base text-center"><i class="fas fa-user-check fa-lg"></i></h1>
-                        <h3 class="text-light text-center lh-base">1. Refer a shipper to the<br>'PACK'</h3>
-                        <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Contact us using the form below, or tell your referral about Raging Wolf by sharing our services to your network.</p>
+                        <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-user-check"></i></h1>
+                        <h5 class="text-light text-center lh-base">1. Refer a shipper to the 'PACK'</h5>
+                        <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Contact us using the form below, or tell your referral about Raging Wolf by sharing our services to your network. Make sure they mention your name or business!</p>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex flex-column">
-                        <h1 class="text-light lh-base text-center"><i class="fas fa-truck-loading fa-lg"></i></h1>
-                        <h3 class="text-light text-center lh-base">2. Your referral's first shipment is delivered</h3>
+                        <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-truck-loading"></i></h1>
+                        <h5 class="text-light text-center lh-base">2. Your referral's first shipment is delivered</h5>
                         <p class="text-white-50 text-center">To qualify for rewards, your referral must become an active customer with Raging Wolf Solutions. As soon as their first shipment has been delivered, a member of our team will reach out to you.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex flex-column">
-                        <h1 class="text-light lh-base text-center"><i class="fas fa-smile-beam fa-lg"></i></h1>
-                        <h3 class="text-light text-center lh-base">3. A member of our team will be in touch!</h3>
+                        <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-smile-beam"></i></h1>
+                        <h5 class="text-light text-center lh-base">3. A member of our team will be in touch!</h5>
                         <p class="text-white-50 text-center">A member of our team will contact you regarding your referral gift card and donation contribution. Keep an eye on your email, and feel free to check on the status of your referral.</p>
                     </div>
                 </div>
@@ -84,11 +86,12 @@
 
                                 <h5 class="text-light mb-3 pt-2">Have someone in mind? Let us know.</h5>
 
-                                <form id="referral_form">
+
+                                <form id="referral_form" method="post" action="https://usebasin.com/f/dd70a6a52004">
                                     <div class="row justify-content-around gx-2">
-                                        <div class="col-lg-5"><input id="contact_email" name="email" type="text" class="form-control mb-2 me-3" placeholder="Your email address..."></div>
-                                        <div class="col-lg-5"><input id="contact_message" name="message" type="text" class="form-control mb-2 me-3" placeholder="Tell us about your referral..."></div>
-                                        <div class="col-lg-auto"><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold btn-outline-warning w-100 mb-2 pt-2 pb-2" dmx-on:click=""><i class="far fa-envelope"></i>&nbsp;Get in touch</button></div>
+                                        <div class="col-lg-5"><input id="contact_email" name="email" type="text" class="form-control mb-2 me-3" placeholder="Your email address..." required="" data-rule-email=""></div>
+                                        <div class="col-lg-5"><input id="contact_message" name="message" type="text" class="form-control mb-2 me-3" placeholder="Tell us about your referral..." required=""></div>
+                                        <div class="col-lg-auto"><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold btn-outline-warning w-100 mb-2 pt-2 pb-2" dmx-on:click="" type="submit"><i class="far fa-envelope"></i>&nbsp;Get in touch</button></div>
                                     </div>
                                 </form>
                                 <div class="row text-white-50 mt-3 mb-4">
@@ -122,6 +125,19 @@
                         </div>
 
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-start mt-4">
+                <div class="pl-1 pr-1 col-12 col-md-10 gx-5">
+
+
+                    <h5 class="text-uppercase text-yellow text-warning">About Us</h5>
+                    <h1 class="text-light text-left">Why Ship With Raging Wolf Solutions?</h1>
+
+                    <p class="text-white-50">When it comes to logistics and freight management, the stakes are high and the challenges are many. Our dedicated team is here to navigate the complexities of shipping, offering you an unmatched combination of reliability, expertise, and personalized service. From air and ground expedites to full truckloads, van partials, flatbeds, and straight trucks, we tailor our services to meet your needs. And we do it all while maintaining the highest levels of communication and service, because we believe in building long-lasting relationships with our customers.</p>
+                    <h5 class="text-light text-left">Reason to choose us #1</h5>
+                    <p class="text-white-50">Reason explanation paragraph number 1.</p>
+
                 </div>
             </div>
         </div>
