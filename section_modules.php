@@ -100,7 +100,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 ps-3 pe-3">
-                        <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">Get in Touch</h4>
+                        <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">What can we do for you?</h4>
                         <p class="text-center mb-4 text-light">Do you have a general question or request for our team? We are happy to assist! Please just tell us...</p>
                         <form id="form1" method="post" action="https://usebasin.com/f/dd70a6a52004">
                             <div class="row justify-content-center">
