@@ -75,7 +75,7 @@
                                 <h4 class="text-light lh-sm mb-1 pe-3">We now offer <b>referral rewards</b>...</h4>
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light" style="min-height: 192px;">Know someone in need of freight shipping or logistics services? Send them our way!&nbsp; You can be recognized when you refer a new customer to Raging Wolf Solutions.<br><br>Learn more about how to participate in our referral rewards program by visiting the link below.</p>
-                            </div><button id="btn6" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-target="undefined" dmx-on:click="browser1.goto('referral.php')">Learn More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                            </div><a href="referral.php"><button id="btn6" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-target="undefined">Learn More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                         </div>
 
 

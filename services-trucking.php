@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/minimal.css" />
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" class="bg-dark">
