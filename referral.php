@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="col-lg-4 text-center">
                                         <h1 class="text-white lh-1 mb-3"><i class="fas fa-envelope fa-lg"></i></h1>
-                                        <button id="referral_ursite" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('mailto:?subject=Check%20Out%20the%20\'Pack\'!&amp;body=Dude%2C%20check%20out%20this%20sick%20a**%20company!%20They%20have%20a%20wolf!!%0A%0Ahttps%3A%2F%2Fwww.RagingWolfSolutions.com%0A%0A')"><i class="fas fa-share"></i>&nbsp;Share via Email</button>
+                                        <button id="referral_ursite" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('mailto:?subject=Raging%20Wolf&amp;body=Check%20out%20Raging%20Wolf%20Solutions%20freight%20transportation%20services%3A%20https%3A%2F%2Fragingwolfsolutions.com')"><i class="fas fa-share"></i>&nbsp;Share via Email</button>
                                     </div>
                                 </div>
 
