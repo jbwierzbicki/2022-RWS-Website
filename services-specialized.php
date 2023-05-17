@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
-    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
@@ -60,7 +59,7 @@
 
     <?php include 'section_modules.php'; ?>
 
-    <?php include 'footer'; ?>
+    <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>

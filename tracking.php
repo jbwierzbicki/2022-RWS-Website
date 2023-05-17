@@ -157,7 +157,7 @@
 
     </section>
 
-    <?php include 'footer'; ?>
+    <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
