@@ -216,3 +216,9 @@ background-position: center;
 .ls-1 {
     letter-spacing: 1.5px;
 }
+
+  .watermark {
+    background-image: url('assets/images/navbar-logo.png')!important;
+    background-size: cover;
+    
+  }

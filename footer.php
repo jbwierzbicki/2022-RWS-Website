@@ -1,10 +1,15 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" -->
-<footer class="univ--footer">
+<footer class="univ--footer module-card">
     <div class="container wappler-block univ--footer--container">
         <div class="row univ--footer--container--row">
             <div class="col-12 col-sm-6 col-md-6 univ--footer--container--row--col">
                 <h6 class="text-white mb-2 pb-1 ps-3 pe-3">Raging Wolf Solutions</h6>
-                <p class="text-justify mb-4 ps-3 pe-3">Freight transportation and logistics coordination done right. We deal with air/ground expedites, full truckloads, partials, cargo vans, sprinter vans and straight trucks all across the country. Here, you can view the full list of our services, request a quote, or track a shipment!</p>
+                <div class="d-flex watermark">
+                    <p class="text-justify mb-4 ps-3 pe-3">Freight transportation and logistics coordination done right. We deal with air/ground expedites, full truckloads, partials, cargo vans, sprinter vans and straight trucks all across the country. Here, you can view the full list of our services, request a quote, or track a shipment!</p>
+                </div>
+
+
+
             </div>
             <div class="col-12 col-sm-6 col-md-3 univ--footer--container--row--col2">
                 <h6 class="text-white mb-2 pb-1 ps-3 pe-3">Services</h6>
