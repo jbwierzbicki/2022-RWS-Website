@@ -218,7 +218,9 @@ background-position: center;
 }
 
   .watermark {
-    background-image: url('assets/images/navbar-logo.png')!important;
-    background-size: cover;
+    background-image: url('../assets/images/navbar-logo.png')!important;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
     
   }
