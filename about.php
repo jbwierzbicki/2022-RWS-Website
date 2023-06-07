@@ -41,7 +41,7 @@
                     <hr style="color: white;">
                     <form id="carrierform" is="dmx-form" novalidate="">
                         <div class="row mt-4">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-3">
                                 <div class="d-flex bg-secondary bg-opacity-10 border border-secondary rounded mb-3 pt-2 pb-2 ps-2 pe-2">
                                     <h4 class="text-warning mb-0">Overview</h4>
                                 </div>
@@ -55,17 +55,28 @@
 
                             <div class="text-left text-light col-lg-9">
 
-                                <h4>General Overview</h4>
-
-                                <p>Introductory paragraph summarizing Raging Wolf Solutions and our core values. This paragraph should emphasize our commitment to service, transparency, and communication with all of our partners. Introductory paragraph summarizing Raging Wolf Solutions and our core values. This paragraph should emphasize our commitment to service, transparency, and communication with all of our partners. Introductory paragraph summarizing Raging Wolf Solutions and our core values. This paragraph should emphasize our commitment to service, transparency, and communication with all of our partners.</p>
-
-                                <h4>Reasons shippers choose Raging Wolf</h4>
+                                <h4>About Raging Wolf Solutions</h4>
+                                <p>
+                                    At Raging Wolf Solutions, we are more than just a 3PL company, we are your trusted freight solutions providers. We understand the complexities of managing a distribution chain for growing businesses, and we're here to simplify your logistics. Our freight brokerage services are designed to free up your time and resources, allowing you to focus on your core business operations.
+                                </p>
+                                <p>
+                                    Established in 2012, Raging Wolf Solutions began as a specialist in expedited freight services. Over the years, we have expanded our capabilities to provide comprehensive logistics solutions. Whether you need to ship a single box or a full truckload, our dedicated team ensures your freight is handled with utmost care, from pickup to delivery.
+                                </p>
+                                <p>
+                                    At Raging Wolf Solutions, we believe that a freight solutions provider is not just an expense but a vital partner in the shipping industry. We ensure clear communication of shipment expectations and requirements, and leverage our extensive network of vetted carrier partners to find the best fit for your shipping needs.
+                                </p>
+                                <p>
+                                    Our team at Raging Wolf Solutions is composed of dedicated logistics professionals who work collaboratively to simplify your shipping process. We understand the challenges of selecting the right carrier and planning shipments. By partnering with us, you can save time and energy as we manage your shipping journey with our trusted, pre-vetted carriers.
+                                </p>
+                                <p>
+                                    Our deep industry knowledge and expertise make us a valuable asset to our clients. We help reduce risks, avoid mistakes, and cut costs in your shipping process. Regardless of your specific product or requirement, our team at Raging Wolf Solutions tailors customized logistics solutions to meet your unique needs. We strive to be your go-to logistics partner in this dynamic industry.
+                                </p>
+                                <h4>Why Choose Raging Wolf Solutions for Your Shipping Needs</h4>
                                 <ul>
-                                    <li>Reason one includes service</li>
-                                    <li>Reason two includes communication</li>
-                                    <li>Reason three includes experience</li>
-                                    <li>Reason four includes dedication</li>
-                                    <li>etc. etc. etc.</li>
+                                    <li class="mb-2"><b>Exceptional Service:</b> We prioritize your shipping needs and ensure your freight is handled with care.</li>
+                                    <li class="mb-2"><b>Clear Communication:</b> We maintain transparency in our operations, keeping you informed at every step of the shipping process.</li>
+                                    <li class="mb-2"><b>Industry Experience: </b>With years of experience in the freight brokerage industry, we have the expertise to manage your logistics efficiently.</li>
+                                    <li class="mb-2"><b>Dedication:</b> Our team is committed to making your shipping process as smooth as possible.</li>
                                 </ul>
 
                             </div>
