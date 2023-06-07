@@ -64,7 +64,7 @@
                                     <div class="col-12 text-white">
                                         <div class="form-group md-3 mt-0 mb-4 text-white"> <label for="input1" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Is Direct Delivery Required?</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="input1" name="DeliverDirectRequiredc" required="">
+                                                <input class="form-check-input" type="checkbox" value="" id="input1" name="DeliverDirectRequiredc">
                                                 <label class="form-check-label small" for="input1">Yes, direct delivery is required!</label>
                                             </div>
                                         </div>
