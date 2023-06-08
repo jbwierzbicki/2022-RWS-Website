@@ -1,4 +1,5 @@
-<!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{}}" -->
+<!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{},dmxBrowser:{}}" -->
+<div is="dmx-browser" id="browser1"></div>
 <header class="border-top rounded-1 border-secondary rounded-0 pb-0" id="navbar_main">
     <div class="modal" id="services_modal" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen" role="document">
@@ -31,6 +32,7 @@
             <div class="modal" id="quote_modal" is="dmx-bs5-modal" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content border-secondary border-2 pb-0">
+
                         <dmx-value id="quote_submitted" dmx-bind:value="0"></dmx-value>
                         <form id="quote_form" method="post" action="https://staff.my.salesforce-sites.com/services/apexrest/newquote" is="dmx-api-form" post-data="json" dmx-on:submit="quote_submitted.setValue(1)">
                             <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
@@ -64,7 +66,7 @@
                                     <div class="col-12 text-white">
                                         <div class="form-group md-3 mt-0 mb-4 text-white"> <label for="input1" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Is Direct Delivery Required?</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="input1" name="DeliverDirectRequiredc">
+                                                <input class="form-check-input" type="checkbox" value="" id="input1" name="DeliverDirectRequiredc" dmx-on:checked="bgvideo1.direct_confirmed.setValue(1)">
                                                 <label class="form-check-label small" for="input1">Yes, direct delivery is required!</label>
                                             </div>
                                         </div>
@@ -93,7 +95,8 @@
 
                             </div>
                             <div class="modal-footer bg-dark border-top-0 pt-0">
-                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" dmx-show="(bgvideo1.direct_confirmed.value==1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn_confirm_quote" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" dmx-on:click="browser1.alert('You have indicated direct delivery is not required. Please click the \'Confirm\' button to proceed.');bgvideo1.direct_confirmed.setValue(1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
                                 <button id="btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
                             </div>
                         </form>
