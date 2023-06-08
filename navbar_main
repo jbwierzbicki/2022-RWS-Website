@@ -96,7 +96,7 @@
                             </div>
                             <div class="modal-footer bg-dark border-top-0 pt-0">
                                 <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" dmx-show="(bgvideo1.direct_confirmed.value==1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
-                                <button id="btn_confirm_quote" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" dmx-on:click="browser1.alert('You have indicated direct delivery is not required. Please click the \'Confirm\' button to proceed.');bgvideo1.direct_confirmed.setValue(1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn_confirm_quote" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" dmx-on:click="browser1.alert('You have indicated direct delivery is not required. Please click the \'Confirm\' button to proceed.');bgvideo1.direct_confirmed.setValue(1)" dmx-hide="(bgvideo1.direct_confirmed.value==1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
                                 <button id="btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
                             </div>
                         </form>
