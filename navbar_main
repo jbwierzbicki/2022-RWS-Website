@@ -1,27 +1,5 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{}}" -->
 <header class="border-top rounded-1 border-secondary rounded-0 pb-0" id="navbar_main">
-    <script>
-        function confirmDirectDelivery(event) {
-        // Prevent form from being submitted
-        event.preventDefault();
-    
-        // Get the "Direct Delivery" checkbox
-        var directDeliveryCheckbox = document.getElementById('input1');
-    
-        // If "Direct Delivery" is not checked, show confirmation dialog
-        if (!directDeliveryCheckbox.checked) {
-            var userConfirmed = confirm('Direct Delivery is not checked. Are you sure you want to continue?');
-    
-            // If user confirmed, submit the form
-            if (userConfirmed) {
-                document.getElementById('quote_form').submit();
-            }
-        } else {
-            // If "Direct Delivery" is checked, submit the form
-            document.getElementById('quote_form').submit();
-        }
-    }
-    </script>
     <div class="modal" id="services_modal" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen" role="document">
             <div class="modal-content">
@@ -115,7 +93,7 @@
 
                             </div>
                             <div class="modal-footer bg-dark border-top-0 pt-0">
-                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" onclick="confirmDirectDelivery(event)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
                                 <button id="btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
                             </div>
                         </form>
