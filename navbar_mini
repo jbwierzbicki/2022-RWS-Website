@@ -6,8 +6,10 @@
                 <a href="media.php" class="text-decoration-none">
                     <div class="d-flex align-items-center rws-nav-item flex-nowrap">
                         <h6 class="text-warning mt-auto mb-auto text-nowrap" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
-                        <img src="assets/images/music_preview.mpeg" height="30px">
-                        <img src="assets/images/music_preview.webm" height="30px">
+                        <video controls>
+                            <source src="assets/images/music_preview.webm" type="video/webm">
+                            <source src="assets/images/music_preview.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </a>
 
