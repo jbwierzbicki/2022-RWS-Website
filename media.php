@@ -37,7 +37,7 @@
 
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
-        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+        <img src="assets/images/section-modal-bg-top-stone.webp" class="w-100">
         <div class="container modules-container mt-0 mb-5 pb-5">
             <div class="row justify-content-center pb-4">
                 <div class="pb-4 pl-1 pr-1 col-12 text-center col-md-7">
@@ -53,10 +53,10 @@
                         <div class="row justify-content-center">
                             <div class="module-card border rounded-0 rounded-1 border-secondary col-auto mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
                                 <div class="d-flex align-items-center justify-content-center flex-wrap">
-                                    <a target="_blank" href="https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69"><img src="assets/images/Spotify-Logo-PNG5.png" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-                                    <a target="_blank" href="https://music.apple.com/us/album/raging-wolf-solutions/1677461954?i=1677461955"><img src="assets/images/Apple_Music.png" height="58px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-                                    <a target="_blank" href="https://amazon.com/music/player/albums/B0BYNHW9CX?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_mLSEJK7B5sXg9aKhTU41skLXB"><img src="assets/images/Amazon_Music_logo_PNG.png" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-                                    <a target="_blank" href="https://www.pandora.com/artist/steve-radcliff/raging-wolf-solutions/raging-wolf-solutions/TRvb3wbPbZd656c?part=ug-desktop&amp;corr=160482520314414425"><img src="assets/images/pandora-logo-png.png" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69"><img src="assets/images/Spotify-Logo-PNG5.webp" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://music.apple.com/us/album/raging-wolf-solutions/1677461954?i=1677461955"><img src="assets/images/Apple_Music.webp" height="58px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://amazon.com/music/player/albums/B0BYNHW9CX?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_mLSEJK7B5sXg9aKhTU41skLXB"><img src="assets/images/Amazon_Music_logo_PNG.webp" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
+                                    <a target="_blank" href="https://www.pandora.com/artist/steve-radcliff/raging-wolf-solutions/raging-wolf-solutions/TRvb3wbPbZd656c?part=ug-desktop&amp;corr=160482520314414425"><img src="assets/images/pandora-logo-png.webp" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
 
 
 
@@ -72,7 +72,7 @@
                     <div class="row justify-content-around mt-5 mb-5">
 
                         <div class="col-lg-4">
-                            <img src="assets/images/VanAndBuilding.png" class="img-fluid w-100 mb-2">
+                            <img src="assets/images/VanAndBuilding.webp" class="img-fluid w-100 mb-2">
                         </div>
                         <div class="text-start col-lg-7">
                             <h1 class="text-white mt-3 mb-4">Got Expedite Troubles?</h1>
@@ -90,7 +90,7 @@
 
                     <div class="row justify-content-around mt-5 mb-5">
                         <div class="col-lg-5 order-lg-2">
-                            <img src="assets/images/rock_mountain.png" class="img-fluid w-100 mb-2">
+                            <img src="assets/images/rock_mountain.webp" class="img-fluid w-100 mb-2">
                         </div>
                         <div class="text-start col-lg-6 order-lg-1">
                             <h1 class="text-white mt-3 mb-4">How About Mountain Rocky Doubles?</h1>
@@ -107,7 +107,7 @@
                     <div class="row justify-content-around mt-5 mb-5">
 
                         <div class="col-lg-5">
-                            <img src="assets/images/Airline_Blurred.png" class="img-fluid w-100 mb-2">
+                            <img src="assets/images/Airline_Blurred.webp" class="img-fluid w-100 mb-2">
                         </div>
                         <div class="text-start col-lg-6">
                             <h1 class="text-white mt-3 mb-4">Make Shipping a WIN, WIN</h1>
