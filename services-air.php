@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
-    <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
@@ -37,7 +36,7 @@
                 <div class="col">
                     <div class="row justify-content-center gx-5">
                         <div class="text-sm-left text-left text-md-center services--main--section--container--row--col col-md-auto col-12 pt-3">
-                            <img src="assets/images/services-domestic-air-freight-icon.jpg" class="services--main--section--container--row--col--img rounded-circle mb-3">
+                            <img src="assets/images/services-domestic-air-freight-icon.webp" class="services--main--section--container--row--col--img rounded-circle mb-3">
                         </div>
                         <div class="services--main--section--container--row--col2 col-auto col-12 pt-3 pb-3 col-md-5">
                             <h5 class="services--main--section--container--row--col2-subtitle">Our services include</h5>
