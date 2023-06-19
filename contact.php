@@ -42,7 +42,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-9">
                                         <p class="text-white-50 mb-2">Your name</p>
-                                        <input id="name" name="name" type="text" class="form-control mb-3" required="">
+                                        <input id="name1" name="name" type="text" class="form-control mb-3" required="">
                                     </div>
                                     <div class="col-md-9">
                                         <p class="text-white-50 mb-2">Your email address</p>
