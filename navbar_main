@@ -1,4 +1,4 @@
-<!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{},dmxBrowser:{}}" -->
+<!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{},dmxBrowser:{},dmxBootstrap5Navigation:{},dmxBootstrap5Modal:{}}" -->
 <div is="dmx-browser" id="browser1"></div>
 <header class="border-top rounded-1 border-secondary rounded-0 pb-0" id="navbar_main">
     <div class="modal" id="services_modal" is="dmx-bs5-modal" tabindex="-1">
