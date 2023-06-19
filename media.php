@@ -72,7 +72,7 @@
                     <div class="row justify-content-around mt-5 mb-5">
 
                         <div class="col-lg-4">
-                            <img src="assets/images/VanAndBuilding.png" class="img-fluid w-100 mb-2">
+                            <img src="assets/images/VanAndBuilding.webp" class="img-fluid w-100 mb-2">
                         </div>
                         <div class="text-start col-lg-7">
                             <h1 class="text-white mt-3 mb-4">Got Expedite Troubles?</h1>
@@ -90,7 +90,7 @@
 
                     <div class="row justify-content-around mt-5 mb-5">
                         <div class="col-lg-5 order-lg-2">
-                            <img src="assets/images/rock_mountain.png" class="img-fluid w-100 mb-2">
+                            <img src="assets/images/rock_mountain.webp" class="img-fluid w-100 mb-2">
                         </div>
                         <div class="text-start col-lg-6 order-lg-1">
                             <h1 class="text-white mt-3 mb-4">How About Mountain Rocky Doubles?</h1>
@@ -107,7 +107,7 @@
                     <div class="row justify-content-around mt-5 mb-5">
 
                         <div class="col-lg-5">
-                            <img src="assets/images/Airline_Blurred.png" class="img-fluid w-100 mb-2">
+                            <img src="assets/images/Airline_Blurred.webp" class="img-fluid w-100 mb-2">
                         </div>
                         <div class="text-start col-lg-6">
                             <h1 class="text-white mt-3 mb-4">Make Shipping a WIN, WIN</h1>
