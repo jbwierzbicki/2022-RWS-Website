@@ -79,8 +79,8 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
-                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="input2" class="form-label col-form-label-sm mb-1" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Delivery</label>
-                                            <input type="text" class="form-control form-control-sm" id="input2" name="input2" placeholder="ZIP or City, State">
+                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="destination" class="form-label col-form-label-sm mb-1" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Delivery</label>
+                                            <input type="text" class="form-control form-control-sm" id="destination" name="input2" placeholder="ZIP or City, State">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">

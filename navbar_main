@@ -49,8 +49,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="input6" class="form-label col-form-label-sm mb-0" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Delivery</label>
-                                            <input type="text" class="form-control form-control-sm" id="input6" name="DeliveryLocationc" placeholder="ZIP or City, State" required="">
+                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="delzip" class="form-label col-form-label-sm mb-0" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Delivery</label>
+                                            <input type="text" class="form-control form-control-sm" id="delzip" name="DeliveryLocationc" placeholder="ZIP or City, State" required="">
                                         </div>
                                     </div>
                                     <div class="col-12">
