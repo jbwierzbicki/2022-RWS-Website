@@ -97,9 +97,9 @@
                                 <div class="col-lg-5">
 
                                     <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
-                                        <dmx-slide url="assets/images/slideshow_live/Assorted%20Promo%20Items.webp" thumb="assets/images/slideshow_live/thumbs/Assorted%20Promo%20Items.webp"></dmx-slide>
-                                        <dmx-slide url="assets/images/slideshow_live/Diecast%20Trucks.webp" thumb="assets/images/slideshow_live/thumbs/Diecast%20Trucks.webp"></dmx-slide>
-                                        <dmx-slide url="assets/images/slideshow_live/Mousepad%20and%20Mug.webp" thumb="assets/images/slideshow_live/thumbs/Mousepad%20and%20Mug.webp"></dmx-slide>
+                                        <dmx-slide url="assets/images/slideshow_live/Assorted%20Promo%20Items.webp" thumb="assets/images/slideshow_live/thumbs/Assorted%20Promo%20Items.webp" alt=""></dmx-slide>
+                                        <dmx-slide url="assets/images/slideshow_live/Diecast%20Trucks.webp" thumb="assets/images/slideshow_live/thumbs/Diecast%20Trucks.webp" alt=""></dmx-slide>
+                                        <dmx-slide url="assets/images/slideshow_live/Mousepad%20and%20Mug.webp" thumb="assets/images/slideshow_live/thumbs/Mousepad%20and%20Mug.webp" alt=""></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
 
