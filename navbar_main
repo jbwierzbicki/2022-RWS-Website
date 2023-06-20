@@ -44,8 +44,8 @@
 
                                 <div class="row" dmx-hide="(quote_submitted.value==1)">
                                     <div class="col-12">
-                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="input5" class="form-label col-form-label-sm mb-0" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Pickup</label>
-                                            <input type="text" class="form-control form-control-sm" id="input5" name="PickupLocationc" placeholder="ZIP or City, State" required="">
+                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="puzip" class="form-label col-form-label-sm mb-0" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Pickup</label>
+                                            <input type="text" class="form-control form-control-sm" id="puzip" name="PickupLocationc" placeholder="ZIP or City, State" required="">
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -54,13 +54,13 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="input7" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Freight Details</label>
-                                            <input type="text" class="form-control form-control-sm" id="input7" name="CommodityDetailsc" placeholder="Units, weight, dims, etc." required="">
+                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="details" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Freight Details</label>
+                                            <input type="text" class="form-control form-control-sm" id="details" name="CommodityDetailsc" placeholder="Units, weight, dims, etc." required="">
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-group md-3 text-white mt-0 mb-4"> <label for="input8" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Other Notes</label>
-                                            <input type="text" class="form-control form-control-sm" id="input8" name="AdditionalNotesc" placeholder="Optional notes here">
+                                        <div class="form-group md-3 text-white mt-0 mb-4"> <label for="remarks" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Other Notes</label>
+                                            <input type="text" class="form-control form-control-sm" id="remarks" name="AdditionalNotesc" placeholder="Optional notes here">
                                         </div>
                                     </div>
                                     <div class="col-12 text-white">
@@ -74,8 +74,8 @@
 
                                     </div>
                                     <div class="col-12">
-                                        <div class="module-card form-group md-3 text-center border border-secondary rounded border-2 text-light mt-0 mb-2 pt-3 pb-3 ps-3 pe-3"> <label for="input9" class="form-label mb-2 fw-bold"><i class="far fa-envelope"></i> Your Email Address</label>
-                                            <input type="email" class="form-control text-center mb-2" id="input9" name="CustomerNamec" placeholder="Your email address" required="">
+                                        <div class="module-card form-group md-3 text-center border border-secondary rounded border-2 text-light mt-0 mb-2 pt-3 pb-3 ps-3 pe-3"> <label for="replyemail" class="form-label mb-2 fw-bold"><i class="far fa-envelope"></i> Your Email Address</label>
+                                            <input type="email" class="form-control text-center mb-2" id="replyemail" name="CustomerNamec" placeholder="Your email address" required="">
                                             <p class="small text-white-50 text-center mb-1 pt-1 lh-sm" wappler-command="editContent">Contact information submitted through this quote request form will not be shared with any party outside of Raging Wolf Solutions.</p>
                                         </div>
                                     </div>

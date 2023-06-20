@@ -74,8 +74,8 @@
                             <form id="form2">
                                 <div class="row">
                                     <div class="col-lg-2">
-                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="input1" class="form-label col-form-label-sm mb-1" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Pickup</label>
-                                            <input type="text" class="form-control form-control-sm" id="input1" name="input1" placeholder="ZIP or City, State">
+                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="shipper" class="form-label col-form-label-sm mb-1" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Pickup</label>
+                                            <input type="text" class="form-control form-control-sm" id="shipper" name="input1" placeholder="ZIP or City, State">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
@@ -84,13 +84,13 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="input3" class="form-label col-form-label-sm mb-1" wappler-command="editContent">Freight Details</label>
-                                            <input type="text" class="form-control form-control-sm" id="input3" name="input3" placeholder="Units, weight, dims, etc.">
+                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="dims" class="form-label col-form-label-sm mb-1" wappler-command="editContent">Freight Details</label>
+                                            <input type="text" class="form-control form-control-sm" id="dims" name="input3" placeholder="Units, weight, dims, etc.">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="input4" class="form-label col-form-label-sm mb-1" wappler-command="editContent">Other Notes</label>
-                                            <input type="text" class="form-control form-control-sm" id="input4" name="input4" placeholder="Optional notes here">
+                                        <div class="form-group md-3 text-white mt-0 mb-3"> <label for="notes" class="form-label col-form-label-sm mb-1" wappler-command="editContent">Other Notes</label>
+                                            <input type="text" class="form-control form-control-sm" id="notes" name="input4" placeholder="Optional notes here">
                                         </div>
                                     </div>
                                     <div class="col-lg-2 align-self-end pb-1">
