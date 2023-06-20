@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="description" content="Raging Wolf Solutions is a full-service logistics solutions provider offering freight coordination and transportation services across the United States and Canada. Join the pack today for unparalleled communication and service from pickup to delivery.">
+    <meta name="description" content="Join the pack at Raging Wolf Solutions for all your freight coordination and transportation needs across the United States and Canada. Trust our team of highly skilled logistics professionals to deliver unparalleled communication and service from pickup to delivery.">
 
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
