@@ -127,15 +127,21 @@
                         <form id="form1" method="post" action="https://usebasin.com/f/dd70a6a52004">
                             <div class="row justify-content-center">
                                 <div class="col-md-9">
-                                    <p class="text-white-50 mb-2">Your name</p>
+                                    <label for="name">
+                                        <p class="text-white-50 mb-2">Your name:</p>
+                                    </label>
                                     <input id="name" name="name" type="text" class="form-control mb-3" required="">
                                 </div>
                                 <div class="col-md-9">
-                                    <p class="text-white-50 mb-2">Your email address</p>
+                                    <label for="email">
+                                        <p class="text-white-50 mb-2">Your email address:</p>
+                                    </label>
                                     <input id="email" name="email" type="email" class="form-control mb-3" required="">
                                 </div>
                                 <div class="col-md-9">
-                                    <p class="text-white-50 mb-2">Your message to the 'PACK'</p>
+                                    <label for="message">
+                                        <p class="text-white-50 mb-2">Your message to the 'PACK':</p>
+                                    </label>
                                     <textarea id="message" class="form-control" rows="4" name="message" required=""></textarea>
                                 </div>
                                 <div class="col-md-9"><button id="btn4" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-normal" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
