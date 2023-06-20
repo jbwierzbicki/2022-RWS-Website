@@ -12,7 +12,7 @@
                                 <h4 class="text-light lh-sm mb-1 pe-3">Why the 'PACK' is a team you can <b>trust</b>...</h4>
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light mb-4">In today's world, trust is a huge factor in any freight handling decision. Our team of highly skilled logistics professionals work hard every day to make those decisions easier for you.<br><br>We work hard to build a foundation of trust with all of our clients and carriers.</p>
-                            </div><button id="btn1" class="btn text-warning module-cta-btn mt-3 ps-0 pe-0 text-start" data-bs-toggle="modal" data-bs-target="#quote_modal">Start a Quote&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                            </div><button id="Start_A_Quote" class="btn text-warning module-cta-btn mt-3 ps-0 pe-0 text-start" data-bs-toggle="modal" data-bs-target="#quote_modal">Start a Quote&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
                         </div>
 
 
@@ -33,7 +33,7 @@
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light" style="min-height: 192px;">We offer a wide range of freight transportation services, including...<br><br>» Trucking<br>» Expedited Air<br>» Expedited Ground<br>» Specialized Services</p>
                             </div>
-                            <button id="btn2" class="btn text-warning ps-0 pe-0 module-cta-btn text-start text-truncate" data-bs-toggle="modal" data-bs-target="#services_modal">Explore Services&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                            <button id="Explore_Services" class="btn text-warning ps-0 pe-0 module-cta-btn text-start text-truncate" data-bs-toggle="modal" data-bs-target="#services_modal">Explore Services&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
                         </div>
 
 
@@ -75,7 +75,7 @@
                                 <h4 class="text-light lh-sm mb-1 pe-3">We now offer <b>referral rewards</b>...</h4>
                                 <p class="fw-bold text-danger">——</p>
                                 <p class="text-light" style="min-height: 192px;">Know someone in need of freight shipping or logistics services? Send them our way!&nbsp; You can be recognized when you refer a new customer to Raging Wolf Solutions.<br><br>Learn more about how to participate in our referral rewards program by visiting the link below.</p>
-                            </div><a href="referral.php"><button id="btn6" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-target="undefined">Learn More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                            </div><a href="referral.php"><button id="Learn_More" class="btn text-warning ps-0 pe-0 module-cta-btn text-start" data-bs-target="undefined">Learn More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                         </div>
 
 
@@ -106,7 +106,7 @@
                                 <div class="col-lg-6 align-self-center pt-2 pb-2">
                                     <h4 class="text-light mb-0">Promoting Raging Wolf Solutions in Style</h4>
                                     <p class="fw-bold text-danger mb-2">——</p>
-                                    <p class="text-light">Active supporters and partners of Raging Wolf are eligible for promotional contests and giveaways. Our team sponsors these promotions as a token of our gratitude, and so that you have some great gear to support the 'PACK'.</p><a href="contact.php"><button id="btn5" class="btn text-warning module-cta-btn text-start btn-lg mt-1 ps-0 pe-0">Get Yours&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                    <p class="text-light">Active supporters and partners of Raging Wolf are eligible for promotional contests and giveaways. Our team sponsors these promotions as a token of our gratitude, and so that you have some great gear to support the 'PACK'.</p><a href="contact.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 ps-0 pe-0">Get Yours&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     </label>
                                     <textarea id="message" class="form-control" rows="4" name="message" required=""></textarea>
                                 </div>
-                                <div class="col-md-9"><button id="btn4" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-normal" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
+                                <div class="col-md-9"><button id="Send_Your_Message" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-normal" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
                             </div>
                         </form>
                     </div>
