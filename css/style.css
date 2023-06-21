@@ -36,10 +36,18 @@ header {
     padding-bottom: 10px;
 }
 
+.index-header-h2 {
+    font-family: 'Sansation', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: calc(1.325rem + .9vw);
+}
+
 h2 {
     font-family: 'Sansation', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
+
 }
 
 h4 {

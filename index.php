@@ -50,7 +50,7 @@
                         <div class="style1 col main-card-inner ms-3 me-3 align-self-center">
                             <div class="row">
                                 <div class="col text-center pt-4">
-                                    <h2 class="text-center text-light mb-2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h2>
+                                    <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
