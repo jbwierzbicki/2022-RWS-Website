@@ -232,3 +232,21 @@ background-position: center;
     background-position: center;
     
   }
+
+#mediatabs .nav-item .active {
+    background: transparent;
+}
+
+#mediatabs {
+    border-color: #ffc107;
+}
+
+#mediatabs .nav-item .active {
+    border-color: #ffc107;
+    color: #ffc107 !important;
+}
+
+#mediatabs .nav-item .nav-link:hover {
+    border-color: #ffc107;
+    color: #ffc107 !important;
+}
