@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="description" content="Join the pack at Raging Wolf Solutions for all your freight coordination and transportation needs across the United States and Canada. Trust our team of highly skilled logistics professionals to deliver unparalleled communication and service from pickup to delivery.">
