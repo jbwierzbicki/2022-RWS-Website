@@ -266,7 +266,7 @@ a {
 
 /* Main (Services) */
 #servicesmainexpeditedground {
-    background-image: url("../assets/images/services-expedited-ground-bg.jpg");
+    background-image: url("../assets/images/services-expedited-ground-bg.webp");
     background-position-y: 75%;
 }
 
@@ -274,11 +274,11 @@ a {
     background-image: url("../assets/images/services-trucking-bg.webp");
 }
 #servicesmaindomesticairfreight {
-    background-image: url("../assets/images/services-domestic-air-freight.jpg");
+    background-image: url("../assets/images/services-domestic-air-freight.webp");
     background-position-y: 55%;
 }
 #servicesmaincustomizedservices {
-    background-image: url("../assets/images/services-customized-services-bg.jpg");
+    background-image: url("../assets/images/services-customized-services-bg.webp");
 }
 
 .services--main {
