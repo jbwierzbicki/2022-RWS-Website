@@ -181,7 +181,7 @@ background-position: center;
 .style1 {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../assets/images/wolf-eyes.png");
+    background-image: url("../assets/images/wolf-eyes.webp");
     background-position: center 100%;
     
 }
@@ -226,7 +226,7 @@ background-position: center;
 }
 
   .watermark {
-    background-image: url('../assets/images/wolf-eyes.png')!important;
+    background-image: url('../assets/images/wolf-eyes.webp')!important;
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
