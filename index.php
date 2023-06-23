@@ -47,7 +47,7 @@
             <div class="row justify-content-center index-main-container-row text-start align-items-end">
                 <div class="main-card col-md-8 mb-md-5 pt-3 pb-3">
                     <div class="row align-items-stretch module-card-row">
-                        <div class="style1-1 col main-card-inner ms-3 me-3 align-self-center">
+                        <div class="style1 col main-card-inner ms-3 me-3 align-self-center">
                             <div class="row">
                                 <div class="col text-center pt-4">
                                     <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
