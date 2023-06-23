@@ -267,11 +267,11 @@ background-position: center;
 
 .watermark1::after {
     content: "";
-    background-image: url('../assets/images/wolf-eyes-opaque.png');
+    background-image: url('../assets/images/wolf-eyes-opaque.webp');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: .7;
+    opacity: .8;
     top: 0;
     left: 0;
     bottom: 0;
