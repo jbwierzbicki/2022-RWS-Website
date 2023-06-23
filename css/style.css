@@ -268,9 +268,9 @@ background-position: center;
 .watermark1::after {
     content: "";
     background-image: url('../assets/images/wolf-eyes-opaque.webp');
-    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-position: center 100%;
     opacity: .8;
     top: 0;
     left: 0;
