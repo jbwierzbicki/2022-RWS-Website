@@ -181,8 +181,8 @@ background-position: center;
 .style1 {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../assets/images/wolf-eyes.webp");
     background-position: center 100%;
+    background-image: url("../assets/images/wolf-eyes-opaque.webp");
     
 }
 
@@ -225,13 +225,24 @@ background-position: center;
     letter-spacing: 1.5px;
 }
 
-  .watermark {
-    background-image: url('../assets/images/wolf-eyes.webp')!important;
+.watermark {
+    position: relative;
+}
+
+.watermark::after {
+    content: "";
+    background-image: url('../assets/images/wolf-eyes.webp');
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
-    
-  }
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;   
+}
 
 #mediatabs .nav-item .active {
     background: transparent;
@@ -250,3 +261,4 @@ background-position: center;
     border-color: #ffc107;
     color: #ffc107 !important;
 }
+
