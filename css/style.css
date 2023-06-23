@@ -182,7 +182,6 @@ background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 100%;
-    background-image: url("../assets/images/wolf-eyes-opaque.webp");
     
 }
 
@@ -262,3 +261,21 @@ background-position: center;
     color: #ffc107 !important;
 }
 
+.watermark1 {
+    position: relative;
+}
+
+.watermark1::after {
+    content: "";
+    background-image: url('../assets/images/wolf-eyes-opaque.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;   
+}
