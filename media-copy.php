@@ -84,21 +84,21 @@
                 </p>
                 <!-- About content goes here -->
             </div>
-            <div class="tab-pane fade" id="photos">
+            <div class="tab-pane fade pt-3 pb-3" id="photos">
                 <!-- Photos content goes here -->
                 <h1 class="text-light">Behind the Scenes</h1>
                 <p class="text-light">Get a behind-the-scenes look at the making of this powerful video with our exclusive music video behind the scenes photos. We provide a unique glimpse of the production of the music video, highlighting the hard work and dedication that went into creating this tribute.
                 <p>
             </div>
 
-            <div class="tab-pane fade" id="bloopers">
+            <div class="tab-pane fade pt-3 pb-3" id="bloopers">
                 <!-- Bloopers content goes here -->
                 <h1 class="text-light">Check Out Our Gag Reel!</h1>
                 <p class="text-light">This content is coming soon!
                 <p>
             </div>
 
-            <div class="tab-pane fade" id="collaborators">
+            <div class="tab-pane fade pt-3 pb-3" id="collaborators">
                 <!-- Collaborators content goes here -->
             </div>
         </div>
