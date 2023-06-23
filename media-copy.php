@@ -51,13 +51,13 @@
                 <li class="nav-item align-self-end">
                     <a class="nav-link active" data-bs-toggle="tab" href="#about">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item align-self-end">
                     <a class="nav-link" data-bs-toggle="tab" href="#photos">Photos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item align-self-end">
                     <a class="nav-link" data-bs-toggle="tab" href="#bloopers">Bloopers</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item align-self-end">
                     <a class="nav-link" data-bs-toggle="tab" href="#collaborators">Collaborators</a>
                 </li>
             </ul>
