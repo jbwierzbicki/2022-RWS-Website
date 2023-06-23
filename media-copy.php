@@ -45,7 +45,7 @@
 
     <!-- Tab menu -->
     <div class="container mt-3 mb-5">
-        <div class="d-flex justify-content-between flex-wrap">
+        <div class="d-flex justify-content-between flex-wrap" style="min-height: 10vh">
 
             <ul id="mediatabs" class="nav nav-tabs flex-column flex-lg-row">
                 <li class="nav-item">
@@ -64,7 +64,10 @@
             <div class="d-flex bg-transparent">
                 <h5 class="align-self-center text-light mb-0">Streaming:</h5>
                 <div class="d-flex ps-2 pe-2 align-items-center">
-                    <img src="assets/images/Spotify-Logo-PNG5.webp" height="32px">
+                    <img src="assets/images/Spotify-Logo-PNG5.webp" height="32px" class="hover-cursor me-1" dmx-on:click="browser1.goto('https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69')">
+                    <img src="assets/images/Apple_Music.webp" height="32px" class="hover-cursor me-1" dmx-on:click="browser1.goto('https://music.apple.com/us/album/raging-wolf-solutions/1677461954?i=1677461955')">
+                    <img src="assets/images/Amazon_Music_logo_PNG.webp" height="32px" class="hover-cursor me-1" dmx-on:click="browser1.goto('https://amazon.com/music/player/albums/B0BYNHW9CX?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_mLSEJK7B5sXg9aKhTU41skLXB')">
+                    <img src="assets/images/pandora-logo-png.webp" height="32px" class="hover-cursor me-1" dmx-on:click="browser1.goto('https://www.pandora.com/artist/steve-radcliff/raging-wolf-solutions/raging-wolf-solutions/TRvb3wbPbZd656c?part=ug-desktop&amp;corr=160482520314414425')">
                 </div>
             </div>
         </div>
@@ -83,10 +86,18 @@
             </div>
             <div class="tab-pane fade" id="photos">
                 <!-- Photos content goes here -->
+                <h1 class="text-light">Behind the Scenes</h1>
+                <p class="text-light">Get a behind-the-scenes look at the making of this powerful video with our exclusive music video behind the scenes photos. We provide a unique glimpse of the production of the music video, highlighting the hard work and dedication that went into creating this tribute.
+                <p>
             </div>
+
             <div class="tab-pane fade" id="bloopers">
                 <!-- Bloopers content goes here -->
+                <h1 class="text-light">Check Out Our Gag Reel!</h1>
+                <p class="text-light">This content is coming soon!
+                <p>
             </div>
+
             <div class="tab-pane fade" id="collaborators">
                 <!-- Collaborators content goes here -->
             </div>
