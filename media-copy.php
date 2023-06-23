@@ -48,7 +48,7 @@
         <div class="d-flex justify-content-between flex-wrap" style="min-height: 10vh">
 
             <ul id="mediatabs" class="nav nav-tabs flex-column flex-lg-row">
-                <li class="nav-item">
+                <li class="nav-item align-self-end">
                     <a class="nav-link active" data-bs-toggle="tab" href="#about">About</a>
                 </li>
                 <li class="nav-item">
