@@ -186,7 +186,6 @@ background-position: center;
 }
 
 .style1-1 {
-    -webkit-transition: background-color 300ms;
     background-image: url("../assets/images/wolf-eyes-opaque.webp");
     background-repeat: no-repeat;
     background-size: cover;
