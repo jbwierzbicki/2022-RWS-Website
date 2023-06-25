@@ -156,16 +156,50 @@
                 <div class="container wappler-block">
                     <div class="row gx-5">
                         <div class="col-12 col-md-4">
-                            <div class="row">
+                            <div class="row h-100">
                                 <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
                                     <div class="row">
                                         <div class="col-12 my-2">
-                                            <div class="d-flex justify-content-center"><img src="assets/images/Post_Road.png" width="230px"></div>
+                                            <div class="d-flex justify-content-center"><img src="assets/images/Post_Road.png"></div>
 
                                             <hr class="text-white">
                                             <h3 class="text-light mt-2 text-start">Post Road</h3>
-                                            <p class="text-start text-white-50 mb-2"><i>Post Road</i> is a multi-award-winning country band from Northeast Ohio that performs both original music and covers from today's top country artists. The band was formed in 2011 from a one-night show for a library fundraiser and has since opened for several national acts and headlined at various venues and festivals. The band consists of Sarah Radcliff and Shawn Roland on lead vocals, Steve Radcliff and Andrew Krakowski on guitars, Dave Warner on bass and Dave Vogrin on drums.</p>
+                                            <p class="text-start text-white-50 mb-2"><i>Post Road</i> is a popular country band from Northeast Ohio that performs both original music and covers from today's top country artists. The band was formed in 2011 from a one-night show for a library fundraiser and has since opened for several national acts and headlined at various venues and festivals. The band consists of Sarah Radcliff and Shawn Roland on lead vocals, Steve Radcliff and Andrew Krakowski on guitars, Dave Warner on bass and Dave Vogrin on drums.</p>
                                             <button id="btn1" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center"><img src="assets/images/bullseye_logo.webp" height="110px"></div>
+
+                                            <hr class="text-white">
+                                            <h3 class="text-light mt-2 text-start">Bullseye Activewear</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Bullseye Activewear</i> is a full service printing company that specializes in screen printing and embroidery of apparel and promotional items. They are based in Brunswick, Ohio and they serve customers in Cuyahoga, Medina and Summit Counties. Bullseye has been in business since 1992 and prides itself on delivering exceptional products with attention to detail.</p>
+                                            <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center"><img src="assets/images/bullseye_logo.webp" height="110px"></div>
+
+                                            <hr class="text-white">
+                                            <h3 class="text-light mt-2 text-start">Marsam Metal Fab</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Marsam Metal Fab</i> is a metal fabricating company that serves customers in Northeastern Ohio. They use state of the art technology to produce a wide range of products, from small sheet metal parts to large enclosures and assemblies. They have been in operation since 1998 and strives for excellence in quality, service and customer satisfaction.</p>
+                                            <button id="btn3" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
