@@ -47,7 +47,7 @@
             <div class="row justify-content-center index-main-container-row text-start align-items-end">
                 <div class="main-card col-md-8 mb-md-5 pt-3 pb-3">
                     <div class="row align-items-stretch module-card-row">
-                        <div class="style1 col main-card-inner ms-3 me-3 align-self-center">
+                        <div class="style1 col main-card-inner ms-3 me-3 align-self-center watermark1">
                             <div class="row">
                                 <div class="col text-center pt-4">
                                     <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
@@ -70,7 +70,7 @@
 
                 </div>
                 <div class="col-md-9 align-self-start">
-                    <div class="row main-card rounded rounded-1 pt-2 pb-2 ps-3 pe-3">
+                    <div class="row main-card rounded pt-2 pb-2 ps-3 pe-3 border border-secondary rounded-2">
 
                         <div class="col">
                             <form id="form2">
@@ -96,7 +96,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 align-self-end pb-1">
-                                        <button id="btn5" class="btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" data-bs-toggle="modal" data-bs-target="#quote_modal" dmx-on:click="quote_modal.quote_form.input5.setValue(input1.value);quote_modal.quote_form.input6.setValue(input2.value);quote_modal.quote_form.input7.setValue(input3.value);quote_modal.quote_form.input8.setValue(input4.value)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <button id="btn5" class="btn module-cta-btn btn-warning w-100 btn-sm lh-lg text-truncate mt-2 mb-2 ps-1 pe-1" wappler-command="editContent" data-bs-toggle="modal" data-bs-target="#quote_modal" dmx-on:click="quote_modal.quote_form.input5.setValue(input1.value);quote_modal.quote_form.input6.setValue(input2.value);quote_modal.quote_form.input7.setValue(input3.value);quote_modal.quote_form.input8.setValue(input4.value)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
                                     </div>
                                 </div>
 

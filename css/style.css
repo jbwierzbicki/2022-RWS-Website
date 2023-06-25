@@ -275,20 +275,22 @@ background-position: center;
 }
 
 .watermark1 {
+    
+    background-size: cover;
     position: relative;
+    z-index: 1;
 }
 
-.watermark1::after {
-    content: "";
-    background-image: url('');
-    background-repeat: no-repeat;
+.watermark1::before {
+    content: '';
+    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
     background-size: cover;
-    background-position: center 100%;
-    opacity: .8;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    display: block;
+    opacity: .25;
     position: absolute;
-    z-index: 0;   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
