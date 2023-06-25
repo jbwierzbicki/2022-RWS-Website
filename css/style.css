@@ -182,7 +182,7 @@ background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 100%;
-    background-image: url("../assets/images/wolf-eyes.webp");
+    //background-image: url("../assets/images/wolf-eyes.webp");
     opacity: 1;
 }
 
@@ -225,24 +225,36 @@ background-position: center;
     letter-spacing: 1.5px;
 }
 
+
+
 .watermark {
+    
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.watermark::before {
+    content: '';
+    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
+    background-size: 80%;
+    display: block;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.univ--footer--container--row--col,
+.univ--footer--container--row--col2,
+.univ--footer--container--row--col3 {
     position: relative;
 }
 
-.watermark::after {
-    content: "";
-    background-image: url('../assets/images/wolf-eyes.webp');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;   
-}
+
 
 #mediatabs .nav-item .active {
     background: transparent;
