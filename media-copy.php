@@ -37,31 +37,32 @@
 
     <!-- Full-width video player -->
     <div class="container-fluid p-0">
-        <video controls="" autoplay="" muted="" loop="" class="w-100" style="max-height: 70vh;">
+        <video controls="" autoplay="" muted="" loop="" class="w-100" style="height: 65vh;">
             <source src="path_to_your_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <!-- Tab menu -->
-    <div class="container mt-3 mb-5">
-        <div class="d-flex justify-content-between flex-wrap" style="min-height: 10vh">
-
-            <ul id="mediatabs" class="nav nav-tabs flex-column flex-lg-row">
-                <li class="nav-item align-self-end">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#about">About</a>
-                </li>
-                <li class="nav-item align-self-end">
-                    <a class="nav-link" data-bs-toggle="tab" href="#photos">Photos</a>
-                </li>
-                <li class="nav-item align-self-end">
-                    <a class="nav-link" data-bs-toggle="tab" href="#bloopers">Bloopers</a>
-                </li>
-                <li class="nav-item align-self-end">
-                    <a class="nav-link" data-bs-toggle="tab" href="#collaborators">Collaborators</a>
-                </li>
-            </ul>
-            <div class="d-flex bg-transparent">
+    <div class="container mt-2 mb-5">
+        <div class="d-flex justify-content-between flex-wrap-reverse align-items-center" style="min-height: 10vh" data-scrollx="true">
+            <div class="table-responsive" data-scrollX="true">
+                <ul id="mediatabs" class="nav nav-tabs flex-lg-row flex-row flex-nowrap">
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#about">About</a>
+                    </li>
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link" data-bs-toggle="tab" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link" data-bs-toggle="tab" href="#bloopers">Bloopers</a>
+                    </li>
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link" data-bs-toggle="tab" href="#collaborators">Collaborators</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex bg-transparent pt-3 pb-3 ps-3 pe-3">
                 <h5 class="align-self-center text-light mb-0">Streaming:</h5>
                 <div class="d-flex ps-2 pe-2 align-items-center">
                     <img src="assets/images/Spotify-Logo-PNG5.webp" height="32px" class="hover-cursor me-2 rws-nav-item" dmx-on:click="browser1.goto('https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69')">
@@ -74,8 +75,8 @@
 
 
         <!-- Tab content -->
-        <div class="tab-content">
-            <div class="tab-pane fade show active pt-3 pb-3" id="about">
+        <div class="tab-content p-3">
+            <div class="tab-pane fade show active" id="about">
                 <h1 class="text-light">About The Song</h1>
                 <p class="text-light">Raging Wolf Solutions' tribute to the trucking industry is a remarkable creation. The company partnered with a talented local artist to produce a video that showcases their core values: Family, Professionalism, and Country. The video is a celebration of the hardworking men and women of the trucking industry who keep our country moving. It is a testament to the importance of family and community in the lives of these dedicated professionals. The video highlights the professionalism and dedication of Raging Wolf Solutions to their customers, who they treat like family.
                 <p>
@@ -84,21 +85,105 @@
                 </p>
                 <!-- About content goes here -->
             </div>
-            <div class="tab-pane fade pt-3 pb-3" id="photos">
+            <div class="tab-pane fade" id="photos">
                 <!-- Photos content goes here -->
                 <h1 class="text-light">Behind the Scenes</h1>
-                <p class="text-light">Get a behind-the-scenes look at the making of this powerful video with our exclusive music video behind the scenes photos. We provide a unique glimpse of the production of the music video, highlighting the hard work and dedication that went into creating this tribute.
-                <p>
+                <p class="text-light">Get a behind-the-scenes look at the making of this powerful video with our exclusive music video behind the scenes photos. We provide a unique glimpse of the production of the music video, highlighting the hard work and dedication that went into creating this tribute.</p>
+
+                <div class="container wappler-block py-3 gx-0">
+                    <div class="row">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4">
+                            <img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="tab-pane fade pt-3 pb-3" id="bloopers">
+            <div class="tab-pane fade" id="bloopers">
                 <!-- Bloopers content goes here -->
-                <h1 class="text-light">Check Out Our Gag Reel!</h1>
-                <p class="text-light">This content is coming soon!
-                <p>
+                <h1 class="text-light">Blooper Video Clips</h1>
+                <p class="text-light">In addition to this heart-warming tribute, we've also included some light-hearted bloopers from filming that are sure to make you chuckle! The bloopers are a fun reminder that even the most professional of projects can have a bit of fun along the way. Enjoy!</p>
+                <div class="container wappler-block pt-4 pb-4">
+                    <div class="row">
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3">
+                            <video is="dmx-video" id="video1" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video2" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video3" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video4" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video5" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video6" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video7" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video8" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video9" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video10" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video11" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video12" width="100%"></video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="tab-pane fade pt-3 pb-3" id="collaborators">
+            <div class="tab-pane fade" id="collaborators">
+                <h1 class="text-light">Thanks to Our Collaborators</h1>
+                <p class="text-light">We couldn't have made this video without the help of some amazing collaborators. We are proud to have worked with a talented local artist, as well as a handful of local companies for shooting locations, music and video production, clothing and costumes, and more. A big thank you to everyone who helped make this video a reality and a tribute to our truckers.</p>
+                <div class="container wappler-block">
+                    <div class="row gx-5">
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center"><img src="assets/images/Post_Road.png" width="230px"></div>
+
+                                            <hr class="text-white">
+                                            <h3 class="text-light mt-2 text-start">Post Road</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Post Road</i> is a multi-award-winning country band from Northeast Ohio that performs both original music and covers from today's top country artists. The band was formed in 2011 from a one-night show for a library fundraiser and has since opened for several national acts and headlined at various venues and festivals. The band consists of Sarah Radcliff and Shawn Roland on lead vocals, Steve Radcliff and Andrew Krakowski on guitars, Dave Warner on bass and Dave Vogrin on drums.</p>
+                                            <button id="btn1" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Collaborators content goes here -->
             </div>
         </div>
