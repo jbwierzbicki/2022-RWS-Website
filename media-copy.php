@@ -105,14 +105,21 @@
 
                 <div class="container wappler-block py-3 gx-0">
                     <div class="row">
-                        <div class="mb-4 col-12 col-sm-6 col-md-4">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
                             <img class="wappler-type-picture w-100 h-100" src="assets/images/media/9b6cdb0b-21ac-47a2-bf33-de0e8aa0249c.png">
+                            <a href="assets/images/media/9b6cdb0b-21ac-47a2-bf33-de0e8aa0249c.png" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_00_44_23.Still004.jpg">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_00_44_23.Still004.jpg">
+                            <a href="assets/images/media/CLIPS.00_00_44_23.Still004.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_36_13.Still008.jpg">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_36_13.Still008.jpg">
+                            <a href="assets/images/media/CLIPS.00_03_36_13.Still008.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_56_00.Still009.jpg">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_56_00.Still009.jpg">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
                         <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
                         </div>
@@ -281,15 +288,26 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-      let images = document.querySelectorAll(".wappler-type-picture");
-      
-      images.forEach(function(image) {
-        image.addEventListener("click", function() {
-          let modal = new bootstrap.Modal(document.getElementById('imageModal'));
-          document.getElementById('imageModalSrc').src = this.src;
-          modal.show();
+        let containers = document.querySelectorAll(".image-container");
+        
+        containers.forEach(function(container) {
+            let image = container.querySelector(".wappler-type-picture");
+            let downloadBtn = container.querySelector(".download-btn");
+    
+            container.addEventListener("mouseover", function() {
+                downloadBtn.style.display = "block";
+            });
+    
+            container.addEventListener("mouseout", function() {
+                downloadBtn.style.display = "none";
+            });
+    
+            image.addEventListener("click", function() {
+                let modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                document.getElementById('imageModalSrc').src = this.src;
+                modal.show();
+            });
         });
-      });
     });
     </script>
 </body>
