@@ -34,11 +34,11 @@
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-body bg-dark">
                     <img id="imageModalSrc" src="" class="img-fluid rounded mx-auto d-block" alt="...">
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer bg-dark border-top-0 justify-content-center">
+                    <button type="button" class="btn module-cta-btn lh-lg text-truncate btn-outline-warning ps-5 pe-5" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
