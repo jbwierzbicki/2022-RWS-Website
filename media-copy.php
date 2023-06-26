@@ -31,6 +31,19 @@
 <body is="dmx-app" id="index" class="bg-dark">
     <div is="dmx-browser" id="browser1"></div>
 
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="imageModalSrc" src="" class="img-fluid rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php include 'navbar_mini'; ?>
 
     <?php include 'navbar_main'; ?>
@@ -93,13 +106,13 @@
                 <div class="container wappler-block py-3 gx-0">
                     <div class="row">
                         <div class="mb-4 col-12 col-sm-6 col-md-4">
-                            <img class="wappler-type-picture w-100">
+                            <img class="wappler-type-picture w-100 h-100" src="assets/images/media/9b6cdb0b-21ac-47a2-bf33-de0e8aa0249c.png">
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_00_44_23.Still004.jpg">
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_36_13.Still008.jpg">
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_56_00.Still009.jpg">
                         </div>
                         <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
                         </div>
@@ -265,6 +278,20 @@
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+      let images = document.querySelectorAll(".wappler-type-picture");
+      
+      images.forEach(function(image) {
+        image.addEventListener("click", function() {
+          let modal = new bootstrap.Modal(document.getElementById('imageModal'));
+          document.getElementById('imageModalSrc').src = this.src;
+          modal.show();
+        });
+      });
+    });
+    </script>
 </body>
 
 </html>
