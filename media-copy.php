@@ -152,7 +152,7 @@
 
             <div class="tab-pane fade" id="collaborators">
                 <h1 class="text-light">Thanks to Our Collaborators</h1>
-                <p class="text-light">We couldn't have made this video without the help of some amazing collaborators. We are proud to have worked with a talented local artist, as well as a handful of local companies for shooting locations, music and video production, clothing and costumes, and more. A big thank you to everyone who helped make this video a reality and a tribute to our truckers.</p>
+                <p class="text-light">We couldn't have made this video without the help of some amazing collaborators. We are proud to have worked with talented local artists, as well as a handful of local companies for shooting locations, music and video production, clothing and costumes, and more. A big thank you to everyone who helped make this video a reality and a tribute to our truckers.</p>
                 <div class="container wappler-block">
                     <div class="row gx-5">
                         <div class="col-12 col-md-4">
@@ -160,11 +160,14 @@
                                 <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
                                     <div class="row">
                                         <div class="col-12 my-2">
-                                            <div class="d-flex justify-content-center"><img src="assets/images/Post_Road.png"></div>
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="d-flex collaborator-flex justify-content-center align-items-center"><img src="assets/images/Post_Road.png" style="max-width: 100% !important;" width="272px;"></div>
 
-                                            <hr class="text-white">
+                                                <hr class="text-white">
+                                            </div>
+
                                             <h3 class="text-light mt-2 text-start">Post Road</h3>
-                                            <p class="text-start text-white-50 mb-2"><i>Post Road</i> is a popular country band from Northeast Ohio that performs both original music and covers from today's top country artists. The band was formed in 2011 from a one-night show for a library fundraiser and has since opened for several national acts and headlined at various venues and festivals. The band consists of Sarah Radcliff and Shawn Roland on lead vocals, Steve Radcliff and Andrew Krakowski on guitars, Dave Warner on bass and Dave Vogrin on drums.</p>
+                                            <p class="text-start text-white-50 mb-2"><i>Post Road</i> is a popular country band from Northeast Ohio that performs both original music and covers from today's top country artists. The band was formed in 2011 and has opened for several national acts and headlined at various venues and festivals. The band consists of Sarah Radcliff and Shawn Roland on lead vocals, Steve Radcliff and Andrew Krakowski on guitars, Dave Warner on bass and Dave Vogrin on drums.</p>
                                             <button id="btn1" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
@@ -177,12 +180,16 @@
                                 <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
                                     <div class="row">
                                         <div class="col-12 my-2">
-                                            <div class="d-flex justify-content-center"><img src="assets/images/bullseye_logo.webp" height="110px"></div>
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="d-flex justify-content-center collaborator-flex align-items-center"><img src="assets/images/StageS2-removebg-preview2.webp" height="82px;"></div>
 
-                                            <hr class="text-white">
-                                            <h3 class="text-light mt-2 text-start">Bullseye Activewear</h3>
-                                            <p class="text-start text-white-50 mb-2"><i>Bullseye Activewear</i> is a full service printing company that specializes in screen printing and embroidery of apparel and promotional items. They are based in Brunswick, Ohio and they serve customers in Cuyahoga, Medina and Summit Counties. Bullseye has been in business since 1992 and prides itself on delivering exceptional products with attention to detail.</p>
-                                            <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                                <hr class="text-white">
+                                            </div>
+
+
+                                            <h3 class="text-light mt-2 text-start">StageS</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>StageS</i> is a group of longtime friends and fellow musicians that plays a mix of rock and roll covers and originals that will keep you entertained all night long! They have been rocking the Northeast Ohio area since 2008, and they have a loyal fan base that follows them wherever they go. You can check out their Facebook page to see their upcoming events, photos and videos of their performances.</p>
+                                            <button id="btn4" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +201,32 @@
                                 <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
                                     <div class="row">
                                         <div class="col-12 my-2">
-                                            <div class="d-flex justify-content-center"><img src="assets/images/bullseye_logo.webp" height="110px"></div>
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="d-flex justify-content-center align-items-center"><img src="assets/images/Spider_Studios.webp" height="90px;"></div>
+
+                                                <hr class="text-white">
+                                            </div>
+
+
+
+                                            <h3 class="text-light mt-2 text-start">Spider Studios</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Spider Studios</i> is a recording studio located in Olmsted Falls, Ohio, near Cleveland. They have been in the industry for over 25 years, creating household names and setting trends. They offer services such as recording, mixing, and mastering, as well as a massive amount of gear and a great space to suit every need. Spider Studios has worked with artists such as Machine Gun Kelly, Chimaira, and Ohio Sky.</p>
+                                            <button id="btn5" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center collaborator-flex align-items-center"><img src="assets/images/marsam_main_logo.webp" height="74px;"></div>
 
                                             <hr class="text-white">
                                             <h3 class="text-light mt-2 text-start">Marsam Metal Fab</h3>
@@ -207,14 +239,21 @@
 
                         </div>
                         <div class="col-12 col-md-4">
-                            <div class="row">
-                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3"></div>
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center collaborator-flex align-items-center"><img src="assets/images/bullseye_logo.webp" height="80px"></div>
+
+                                            <hr class="text-white">
+                                            <h3 class="text-light mt-2 text-start">Bullseye Activewear</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Bullseye Activewear</i> is a full service printing company that specializes in screen printing and embroidery of apparel and promotional items. They are based in Brunswick, Ohio and they serve customers in Cuyahoga, Medina and Summit Counties. Bullseye has been in business since 1992 and prides itself on delivering exceptional products with attention to detail.</p>
+                                            <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="row">
-                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3"></div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
