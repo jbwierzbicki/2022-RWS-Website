@@ -51,7 +51,7 @@
                         <div class="col-12 text-start">
                             <button id="btn_viewall" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_all')" dmx-class:btn-outline-light="(visible_career.value=='career_all')" dmx-class:btn-outline-secondary="(visible_career.value!='career_all')">View all</button>
                             <button id="btn_operations" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_operations')" dmx-class:btn-outline-light="(visible_career.value=='career_operations')" dmx-class:btn-outline-secondary="(visible_career.value!='career_operations')">Operations (1)</button>
-                            <button id="btn_sales" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_sales')" dmx-class:btn-outline-light="(visible_career.value=='career_sales')" dmx-class:btn-outline-secondary="(visible_career.value!='career_sales')">Sales (2)</button>
+                            <button id="btn_sales" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_sales')" dmx-class:btn-outline-light="(visible_career.value=='career_sales')" dmx-class:btn-outline-secondary="(visible_career.value!='career_sales')">Sales (3)</button>
                             <button id="btn_sales1" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Accounting</button>
                             <button id="btn_sales2" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Technology</button>
                         </div>
