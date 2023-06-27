@@ -90,12 +90,32 @@
         <!-- Tab content -->
         <div class="tab-content p-3">
             <div class="tab-pane fade show active" id="about">
-                <h1 class="text-light">About The Song</h1>
-                <p class="text-light">Raging Wolf Solutions' tribute to the trucking industry is a remarkable creation. The company partnered with a talented local artist to produce a video that showcases their core values: Family, Professionalism, and Country. The video is a celebration of the hardworking men and women of the trucking industry who keep our country moving. It is a testament to the importance of family and community in the lives of these dedicated professionals. The video highlights the professionalism and dedication of Raging Wolf Solutions to their customers, who they treat like family.
-                <p>
-                </p>
-                <p class="text-light">This video also underscores the company's commitment to their country and to the vital role that the trucking industry plays in our economy and our daily lives. All in all, this video is a stirring tribute to the trucking industry and to the values that Raging Wolf Solutions holds dear.</p>
-                </p>
+                <div class="container gx-0">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-light">About The Song</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-light">Raging Wolf Solutions' tribute to the trucking industry is a remarkable creation. We partnered with some talented local artists to produce a video that showcases <strong>our core values: Family, Professionalism, and Country.</strong> This video is a celebration of the hardworking men and women of the trucking industry who keep our country moving. It is a testament to the importance of family and community in the lives of these dedicated professionals. The video highlights the professionalism and dedication of Raging Wolf Solutions to their customers, who we treat like family.</p>
+                            <p class="text-light mb-lg-4">This video also underscores the company's commitment to their country and to the vital role that the trucking industry plays in our economy and our daily lives. All in all, this video is a stirring tribute to the trucking industry and to the values that Raging Wolf Solutions holds dear.</p>
+                            <h5 class="text-light mb-lg-3">Enjoy the music video?
+                            </h5>
+
+                            <div class="d-flex">
+                                <button id="btn1" class="btn module-cta-btn btn-warning lh-lg text-truncate ps-3 pe-3 me-lg-3" data-bs-toggle="modal" data-bs-target="#quote_modal">Get a Quote</button>
+                                <a href="contact.php"><button id="btn2" class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Contact Us</button></a>
+                            </div>
+                        </div>
+                        <div class="text-center col-auto">
+                            <img src="assets/images/VanAndBuilding.webp">
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <!-- About content goes here -->
             </div>
             <div class="tab-pane fade" id="photos">
@@ -209,7 +229,7 @@
 
                                             <h3 class="text-light mt-2 text-start">StageS</h3>
                                             <p class="text-start text-white-50 mb-2"><i>StageS</i> is a group of longtime friends and fellow musicians that plays a mix of rock and roll covers and originals that will keep you entertained all night long! They have been rocking the Northeast Ohio area since 2008, and they have a loyal fan base that follows them wherever they go. You can check out their Facebook page to see their upcoming events, photos and videos of their performances.</p>
-                                            <button id="btn4" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                            <button id="btn4" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('https://www.facebook.com/groups/2432586306788328/media')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -231,7 +251,7 @@
 
                                             <h3 class="text-light mt-2 text-start">Spider Studios</h3>
                                             <p class="text-start text-white-50 mb-2"><i>Spider Studios</i> is a recording studio located in Olmsted Falls, Ohio, near Cleveland. They have been in the industry for over 25 years, creating household names and setting trends. They offer services such as recording, mixing, and mastering, as well as a massive amount of gear and a great space to suit every need. Spider Studios has worked with artists such as Machine Gun Kelly, Chimaira, and Ohio Sky.</p>
-                                            <button id="btn5" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                            <button id="btn5" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://spiderstudiosohio.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -251,7 +271,7 @@
                                             <hr class="text-white">
                                             <h3 class="text-light mt-2 text-start">Marsam Metal Fab</h3>
                                             <p class="text-start text-white-50 mb-2"><i>Marsam Metal Fab</i> is a metal fabricating company that serves customers in Northeastern Ohio. They use state of the art technology to produce a wide range of products, from small sheet metal parts to large enclosures and assemblies. They have been in operation since 1998 and strives for excellence in quality, service and customer satisfaction.</p>
-                                            <button id="btn3" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                            <button id="btn3" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('https://www.marsamfab.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +288,7 @@
                                             <hr class="text-white">
                                             <h3 class="text-light mt-2 text-start">Bullseye Activewear</h3>
                                             <p class="text-start text-white-50 mb-2"><i>Bullseye Activewear</i> is a full service printing company that specializes in screen printing and embroidery of apparel and promotional items. They are based in Brunswick, Ohio and they serve customers in Cuyahoga, Medina and Summit Counties. Bullseye has been in business since 1992 and prides itself on delivering exceptional products with attention to detail.</p>
-                                            <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                            <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('https://bullseyeactivewear.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
