@@ -182,8 +182,10 @@ background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 100%;
-    //background-image: url("../assets/images/wolf-eyes.webp");
-    opacity: 1;
+    background-image: url("../assets/images/wolf-eyes.png");
+
+    opacity: .1;
+    
 }
 
 .univ--footer {
@@ -225,36 +227,24 @@ background-position: center;
     letter-spacing: 1.5px;
 }
 
-
-
 .watermark {
-    
-    background-size: cover;
     position: relative;
-    z-index: 1;
 }
 
-.watermark::before {
-    content: '';
-    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
-    background-size: 80%;
-    display: block;
-    opacity: .1;
-    position: absolute;
+.watermark::after {
+    content: "";
+    background-image: url('../assets/images/wolf-eyes.webp');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    z-index: -1;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;   
 }
-
-.univ--footer--container--row--col,
-.univ--footer--container--row--col2,
-.univ--footer--container--row--col3 {
-    position: relative;
-}
-
-
 
 #mediatabs .nav-item .active {
     background: transparent;
@@ -275,42 +265,20 @@ background-position: center;
 }
 
 .watermark1 {
-    
-    background-size: cover;
     position: relative;
-    z-index: 1;
 }
 
-.watermark1::before {
-    content: '';
-    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
+.watermark1::after {
+    content: "";
+    background-image: url('');
+    background-repeat: no-repeat;
     background-size: cover;
-    display: block;
-    opacity: .25;
-    position: absolute;
+    background-position: center 100%;
+    opacity: .8;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    z-index: -1;
-}
-
-.collaborator-flex {
-    height: 90px;
-}
-
-.image-container {
-    position: relative;
-}
-
-.download-btn {
+    bottom: 0;
+    right: 0;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    display: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
+    z-index: 0;   
 }
