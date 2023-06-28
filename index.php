@@ -47,22 +47,71 @@
             <div class="row justify-content-center index-main-container-row text-start align-items-end">
                 <div class="main-card col-md-8 mb-md-5 pt-3 pb-3">
                     <div class="row align-items-stretch module-card-row">
-                        <div class="style1 col main-card-inner ms-3 me-3 align-self-center watermark1">
-                            <div class="row">
-                                <div class="col text-center pt-4">
-                                    <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-9">
-                                    <p class="text-light text-center mt-1 mb-3"><b>Raging Wolf Solutions</b> is a full service logistics solutions provider, offering freight coordination and transportation services across the continental United States and Canada. We leverage our expansive network of carriers and industry knowledge to bring our clients unparalleled communication and service — from pickup to delivery.</p>
-                                    <a href="media.php" class="text-decoration-none">
-                                        <div class="d-flex align-items-center rws-nav-item flex-nowrap justify-content-center mb-4">
-                                            <h5 class="text-warning text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h5>
+                        <div id="carouselExampleIndicators" class="carousel slide style1 col main-card-inner ms-3 me-3 align-self-center watermark1" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col text-center pt-4">
+                                            <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-9">
+                                            <p class="text-light text-center mt-1 mb-3"><b>Raging Wolf Solutions</b> is a full service logistics solutions provider, offering freight coordination and transportation services across the continental United States and Canada. We leverage our expansive network of carriers and industry knowledge to bring our clients unparalleled communication and service — from pickup to delivery.</p>
+                                            <a href="media.php" class="text-decoration-none">
+                                                <div class="d-flex align-items-center rws-nav-item flex-nowrap justify-content-center mb-4">
+                                                    <h5 class="text-warning text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <!-- You can add more "carousel-item" divs for more sections. Here is an example: -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col text-center pt-3">
+                                            <h4 class="text-center text-light text-uppercase">Check out the<br><span class="text-warning fw-bold">Latest From Raging Wolf Solutions</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-9">
+                                            <div class="row align-items-center">
+                                                <div class="border col-12 align-self-center bg-dark mb-3 pt-2 pb-2 ps-3 pe-3 rounded rounded-3 border-secondary border-2">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <h5 class="lh-sm text-white">The Raging Wolf Music Video</h5>
+                                                            <p class="text-light mb-0 lh-sm">We produced an amazing music video tribute to truckers, families, and american businesses. Watch the video and learn more about how it was made!</p>
+                                                            <a href="media.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 pt-2 pb-0 ps-0 pe-0">Watch Now&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center pt-1 pb-1 image-container">
+                                                            <a href="media.php">
+                                                                <img src="assets/images/rws_music_video_thumb.webp" class="img-fluid">
+                                                                <div class="overlay">
+                                                                    <button class="btn text-warning watch-btn btn-lg">Watch ▷</button>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add more sections as needed. -->
                             </div>
+                            <!-- Optional controls -->
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
                         </div>
                     </div>
 

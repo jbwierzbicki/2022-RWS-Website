@@ -184,6 +184,7 @@ background-position: center;
     background-position: center 100%;
     //background-image: url("../assets/images/wolf-eyes.webp");
     opacity: 1;
+    min-height: 310px;
 }
 
 .univ--footer {
@@ -313,4 +314,42 @@ background-position: center;
     border-radius: 5px;
     text-decoration: none;
     color: black;
+}
+
+/* This styles the image container and positions it relative so that the overlay can be positioned absolutely inside it */
+.image-container {
+    position: relative;
+}
+
+/* This styles the overlay and positions it absolutely to cover the image, and also makes it invisible by default */
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+/* This styles the 'Watch' button */
+.image-container .overlay .watch-btn {
+    background: rgba(0, 0, 0, 0.5); /* Change this to match your design */
+    color: #fff; /* Change this to match your design */
+    border: none;
+}
+
+/* This makes the overlay and 'Watch' button visible when the user hovers over the image */
+.image-container:hover .overlay {
+    opacity: 1;
 }
