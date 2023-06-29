@@ -124,32 +124,81 @@
                 <p class="text-light">Get a behind-the-scenes look at the making of this powerful video with our exclusive music video behind the scenes photos. We provide a unique glimpse of the production of the music video, highlighting the hard work and dedication that went into creating this tribute.</p>
 
                 <div class="container wappler-block py-3 gx-0">
-                    <div class="row">
+                    <div class="row align-items-baseline">
                         <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
-                            <img class="wappler-type-picture w-100 h-100" src="assets/images/media/9b6cdb0b-21ac-47a2-bf33-de0e8aa0249c.png">
+                            <img class="wappler-type-picture w-100 h-100" src="assets/images/media/Image%201.webp" loading="lazy">
                             <a href="assets/images/media/9b6cdb0b-21ac-47a2-bf33-de0e8aa0249c.png" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
                         <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
-                            <img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_00_44_23.Still004.jpg">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%205.webp" loading="lazy">
                             <a href="assets/images/media/CLIPS.00_00_44_23.Still004.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
                         <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
-                            <img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_36_13.Still008.jpg">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%202.webp" loading="lazy">
                             <a href="assets/images/media/CLIPS.00_03_36_13.Still008.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
+
+                    </div>
+                    <div class="row align-items-baseline">
                         <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
-                            <img class="wappler-type-picture w-100" src="assets/images/media/CLIPS.00_03_56_00.Still009.jpg">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%204.webp" loading="lazy">
                             <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%206.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%207.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2012.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2013.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
-                        <div class="mb-4 col-12 col-sm-6 col-md-4"><img class="wappler-type-picture w-100">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2014.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2015.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2016.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2018.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2020.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2021.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2022.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2023.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
                         </div>
                     </div>
                 </div>

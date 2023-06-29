@@ -78,17 +78,17 @@
                                         <div class="col-md-9">
                                             <div class="row align-items-center">
                                                 <div class="border col-12 align-self-center bg-dark rounded rounded-3 border-secondary border-2 mb-3 pt-3 pb-3 ps-3 pe-3">
-                                                    <div class="row">
+                                                    <div class="row ps-2 pe-2">
                                                         <div class="col-lg-6 align-self-center">
                                                             <h5 class="lh-sm text-white">The Raging Wolf Music Video</h5>
-                                                            <p class="text-light mb-0 lh-sm">We produced an amazing music video tribute to truckers, families, and american businesses. Watch the video and learn more about how it was made!</p>
-                                                            <a href="media.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 pt-2 pb-0 ps-0 pe-0">Watch Now&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                                            <p class="text-light mb-0 small">We produced an amazing music video tribute to truckers, families, and american businesses. Watch the video and learn more about how it was made!</p>
+                                                            <a href="media.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start mt-1 pt-2 pb-2 ps-0 pe-0 small btn-sm">Watch Now&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                                                         </div>
                                                         <div class="col-lg-6 align-self-center pt-1 pb-1 image-container">
                                                             <a href="media.php">
                                                                 <img src="assets/images/rws_music_video_thumb.webp" class="img-fluid">
                                                                 <div class="overlay">
-                                                                    <button class="btn text-warning watch-btn btn-lg fw-bold">Watch <i class="fas fa-play-circle"></i></button>
+                                                                    <button class="btn watch-btn btn-lg fw-bold text-white bg-opacity-100 pt-3 pb-3 ps-4 pe-4">Watch <i class="fas fa-play-circle"></i></button>
                                                                 </div>
                                                             </a>
                                                         </div>
