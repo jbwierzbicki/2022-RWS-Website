@@ -50,10 +50,8 @@
 
     <!-- Full-width video player -->
     <div class="container-fluid p-0">
-        <video controls="" autoplay="" muted="" loop="" class="w-100" style="height: 65vh;">
-            <source src="path_to_your_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe width="100%" height="990" src="https://www.youtube.com/embed/CsZhGcVKOjw" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     </div>
 
     <!-- Tab menu -->
