@@ -49,8 +49,18 @@
     <?php include 'navbar_main'; ?>
 
     <!-- Full-width video player -->
-    <div class="container-fluid p-0">
-        <iframe width="100%" height="990" src="https://www.youtube.com/embed/CsZhGcVKOjw" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="container-fluid bg-black">
+        <div class="row">
+            <div class="col">
+                <div class="container" style="height: 70vh;">
+                    <div class="row h-100 justify-content-center">
+                        <div class="col">
+                            <iframe src="https://www.youtube.com/embed/CsZhGcVKOjw" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true" height="100%" width="100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
