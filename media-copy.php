@@ -54,7 +54,7 @@
             <div class="col">
                 <div class="container" style="height: 70vh;">
                     <div class="row h-100 justify-content-center">
-                        <div class="col">
+                        <div class="col gx-0">
                             <iframe src="https://www.youtube.com/embed/CsZhGcVKOjw" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true" height="100%" width="100%"></iframe>
                         </div>
                     </div>
