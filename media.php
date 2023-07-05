@@ -31,98 +31,362 @@
 <body is="dmx-app" id="index" class="bg-dark">
     <div is="dmx-browser" id="browser1"></div>
 
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body bg-dark">
+                    <img id="imageModalSrc" src="" class="img-fluid rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="modal-footer bg-dark border-top-0 justify-content-center">
+                    <button type="button" class="btn module-cta-btn lh-lg text-truncate btn-outline-warning ps-5 pe-5" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php include 'navbar_mini'; ?>
 
     <?php include 'navbar_main'; ?>
 
-    <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
-
-        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container modules-container mt-0 mb-5 pb-5">
-            <div class="row justify-content-center pb-4">
-                <div class="pb-4 pl-1 pr-1 col-12 text-center col-md-7">
-
-
-                    <h5 class="text-uppercase text-yellow text-warning text-center">One of A Kind</h5>
-                    <h2 class="text-light text-left mb-4">Raging Wolf Solutions Song<br></h2>
-                    <div class="d-flex">
-                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/v9FAGpOTZow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h5 class="text-white-50 rws-nav-item hover-cursor mt-4 mb-3" dmx-on:click="browser1.writeTextToClipboard('https://www.youtube.com/watch?v=v9FAGpOTZow');browser1.alert('Link successfully copied to your clipboard!')">Enjoy the song? Click here to get a&nbsp;<span class="text-warning">shareable link.</span></h5>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="module-card border rounded-0 rounded-1 border-secondary col-auto mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
-                                <div class="d-flex align-items-center justify-content-center flex-wrap">
-                                    <a target="_blank" href="https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69"><img src="assets/images/Spotify-Logo-PNG5.webp" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-                                    <a target="_blank" href="https://music.apple.com/us/album/raging-wolf-solutions/1677461954?i=1677461955"><img src="assets/images/Apple_Music.webp" height="58px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-                                    <a target="_blank" href="https://amazon.com/music/player/albums/B0BYNHW9CX?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_mLSEJK7B5sXg9aKhTU41skLXB"><img src="assets/images/Amazon_Music_logo_PNG.webp" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-                                    <a target="_blank" href="https://www.pandora.com/artist/steve-radcliff/raging-wolf-solutions/raging-wolf-solutions/TRvb3wbPbZd656c?part=ug-desktop&amp;corr=160482520314414425"><img src="assets/images/pandora-logo-png.webp" height="55px" class="mt-2 mb-2 ms-3 me-3 rws-nav-item hover-cursor"></a>
-
-
-
-                                </div>
-                            </div>
+    <!-- Full-width video player -->
+    <div class="container-fluid bg-black">
+        <div class="row">
+            <div class="col">
+                <div class="container" style="height: 70vh;">
+                    <div class="row h-100 justify-content-center">
+                        <div class="col gx-0">
+                            <iframe src="https://www.youtube.com/embed/i9QUdsBoaAQ" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true" height="100%" width="100%"></iframe>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <section id="advertising">
-                <div class="container">
-                    <div class="row justify-content-around mt-5 mb-5">
+        </div>
 
-                        <div class="col-lg-4">
-                            <img src="assets/images/VanAndBuilding.webp" class="img-fluid w-100 mb-2">
-                        </div>
-                        <div class="text-start col-lg-7">
-                            <h1 class="text-white mt-3 mb-4">Got Expedite Troubles?</h1>
-                            <h5 class="text-light mb-4 pe-4">Raging Wolf Solutions offers expedited air and ground services to get your freight where it needs to be, when it needs to be there. Our strong network of expedite carriers allows us to find coverage fast. Find out for yourself!</h5>
-                            <button id="btn1" class="btn module-cta-btn btn-warning lh-lg text-truncate ps-3 pe-3" data-bs-toggle="modal" data-bs-target="#quote_modal">Get a Quote</button>
-                        </div>
-                    </div>
+    </div>
 
+    <!-- Tab menu -->
+    <div class="container mt-2 mb-5">
+        <div class="d-flex justify-content-between flex-wrap-reverse align-items-center" style="min-height: 10vh" data-scrollx="true">
+            <div class="table-responsive" data-scrollX="true">
+                <ul id="mediatabs" class="nav nav-tabs flex-lg-row flex-row flex-nowrap">
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#about">About</a>
+                    </li>
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link" data-bs-toggle="tab" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link disabled text-secondary" data-bs-toggle="tab" href="#bloopers">Bloopers</a>
+                    </li>
+                    <li class="nav-item align-self-end">
+                        <a class="nav-link" data-bs-toggle="tab" href="#collaborators">Collaborators</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex bg-transparent pt-3 pb-3 ps-3 pe-3">
+                <h5 class="align-self-center text-light mb-0">Streaming:</h5>
+                <div class="d-flex ps-2 pe-2 align-items-center">
+                    <img src="assets/images/Spotify-Logo-PNG5.webp" height="32px" class="hover-cursor me-2 rws-nav-item" dmx-on:click="browser1.goto('https://open.spotify.com/track/3lcTN29iAWUrN3OVDomFY8?si=523cabcd92a94c69')">
+                    <img src="assets/images/Apple_Music.webp" height="32px" class="hover-cursor me-2 rws-nav-item" dmx-on:click="browser1.goto('https://music.apple.com/us/album/raging-wolf-solutions/1677461954?i=1677461955')">
+                    <img src="assets/images/Amazon_Music_logo_PNG.webp" height="32px" class="hover-cursor me-2 rws-nav-item" dmx-on:click="browser1.goto('https://amazon.com/music/player/albums/B0BYNHW9CX?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_mLSEJK7B5sXg9aKhTU41skLXB')">
+                    <img src="assets/images/pandora-logo-png.webp" height="32px" class="hover-cursor me-2 rws-nav-item" dmx-on:click="browser1.goto('https://www.pandora.com/artist/steve-radcliff/raging-wolf-solutions/raging-wolf-solutions/TRvb3wbPbZd656c?part=ug-desktop&amp;corr=160482520314414425')">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tab content -->
+        <div class="tab-content p-3">
+            <div class="tab-pane fade show active" id="about">
+                <div class="container gx-0">
                     <div class="row">
-
-                        <div class="col text-light">
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-around mt-5 mb-5">
-                        <div class="col-lg-5 order-lg-2">
-                            <img src="assets/images/rock_mountain.webp" class="img-fluid w-100 mb-2">
-                        </div>
-                        <div class="text-start col-lg-6 order-lg-1">
-                            <h1 class="text-white mt-3 mb-4">How About Mountain Rocky Doubles?</h1>
-                            <h5 class="text-light mb-4 pe-4">With specialized equipment and experienced drivers, we can safely and efficiently transport your freight up and down steep grades, winding roads, and narrow passes. Choose Raging Wolf Solutions for reliable and efficient transportation services in even the most challenging terrain.</h5>
-                            <a href="contact.php"><button id="btn2" class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Contact Us</button></a>
+                        <div class="col">
+                            <h1 class="text-light">About The Song</h1>
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col">
+                            <p class="text-light">Raging Wolf Solutions' tribute to the trucking industry is a remarkable creation. We partnered with some talented local artists to produce a video that showcases <strong>our core values: Family, Professionalism, and Country.</strong> This video is a celebration of the hardworking men and women of the trucking industry who keep our country moving. It is a testament to the importance of family and community in the lives of these dedicated professionals. The video highlights the professionalism and dedication of Raging Wolf Solutions to their customers, who we treat like family.</p>
+                            <p class="text-light mb-lg-4">This video also underscores the company's commitment to their country and to the vital role that the trucking industry plays in our economy and our daily lives. All in all, this video is a stirring tribute to the trucking industry and to the values that Raging Wolf Solutions holds dear.</p>
+                            <h5 class="text-light mb-lg-3">Enjoy the music video?
+                            </h5>
 
-                        <div class="col text-light">
-                            <hr>
+                            <div class="d-flex">
+                                <button id="btn1" class="btn module-cta-btn btn-warning lh-lg text-truncate ps-3 pe-3 me-lg-3" data-bs-toggle="modal" data-bs-target="#quote_modal">Get a Quote</button>
+                                <a href="contact.php"><button id="btn2" class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Contact Us</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-around mt-5 mb-5">
-
-                        <div class="col-lg-5">
-                            <img src="assets/images/Airline_Blurred.webp" class="img-fluid w-100 mb-2">
-                        </div>
-                        <div class="text-start col-lg-6">
-                            <h1 class="text-white mt-3 mb-4">Make Shipping a WIN, WIN</h1>
-                            <h5 class="text-light mb-4 pe-4">Where it's needed, when it's needed. At Raging Wolf Solutions, we understand that timely and efficient logistics are critical to the success of your business. You can trust our team to deliver the logistics solutions you need, when you need them most.</h5>
-                            <button id="btn3" class="btn module-cta-btn btn-warning lh-lg text-truncate ps-3 pe-3" data-bs-toggle="modal" data-bs-target="#quote_modal">Get a Quote</button>
+                        <div class="text-center col-auto">
+                            <img src="assets/images/VanAndBuilding.webp">
                         </div>
                     </div>
                 </div>
-            </section>
+
+
+
+                <!-- About content goes here -->
+            </div>
+            <div class="tab-pane fade" id="photos">
+                <!-- Photos content goes here -->
+                <h1 class="text-light">Behind the Scenes</h1>
+                <p class="text-light">Get a behind-the-scenes look at the making of this powerful video with our exclusive music video behind the scenes photos. We provide a unique glimpse of the production of the music video, highlighting the hard work and dedication that went into creating this tribute.</p>
+
+                <div class="container wappler-block py-3 gx-0">
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100 h-100" src="assets/images/media/Image%201.webp" loading="lazy">
+                            <a href="assets/images/media/9b6cdb0b-21ac-47a2-bf33-de0e8aa0249c.png" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%205.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_00_44_23.Still004.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%202.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_36_13.Still008.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%204.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%206.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%207.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2012.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2013.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2014.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2015.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2016.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2018.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2020.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2021.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2022.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="mb-4 col-12 col-sm-6 col-md-4 image-container">
+                            <img class="wappler-type-picture w-100" src="assets/images/media/Image%2023.webp" loading="lazy">
+                            <a href="assets/images/media/CLIPS.00_03_56_00.Still009.jpg" download class="download-btn">Download&nbsp;<i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="bloopers">
+                <!-- Bloopers content goes here -->
+                <h1 class="text-light">Blooper Video Clips</h1>
+                <p class="text-light">In addition to this heart-warming tribute, we've also included some light-hearted bloopers from filming that are sure to make you chuckle! The bloopers are a fun reminder that even the most professional of projects can have a bit of fun along the way. Enjoy!</p>
+                <div class="container wappler-block pt-4 pb-4">
+                    <div class="row">
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3">
+                            <video is="dmx-video" id="video1" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video2" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video3" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video4" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video5" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video6" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video7" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video8" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video9" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video10" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video11" width="100%"></video>
+                        </div>
+                        <div class="text-center col-12 col-sm-6 col-lg-3 mb-3"><video is="dmx-video" id="video12" width="100%"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="collaborators">
+                <h1 class="text-light">Thanks to Our Collaborators</h1>
+                <p class="text-light">We couldn't have made this video without the help of some amazing collaborators. We are proud to have worked with talented local artists, as well as a handful of local companies for shooting locations, music and video production, clothing and costumes, and more. A big thank you to everyone who helped make this video a reality and a tribute to our truckers.</p>
+                <div class="container wappler-block">
+                    <div class="row gx-5">
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="d-flex collaborator-flex justify-content-center align-items-center"><img src="assets/images/Post_Road.png" style="max-width: 100% !important;" width="272px;"></div>
+
+                                                <hr class="text-white">
+                                            </div>
+
+                                            <h3 class="text-light mt-2 text-start">Post Road</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Post Road</i> is a popular country band from Northeast Ohio that performs both original music and covers from today's top country artists. The band was formed in 2011 and has opened for several national acts and headlined at various venues and festivals. The band consists of Sarah Radcliff and Shawn Roland on lead vocals, Steve Radcliff and Andrew Krakowski on guitars, Dave Warner on bass and Dave Vogrin on drums.</p>
+                                            <button id="btn1" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://www.postroadcountry.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="d-flex justify-content-center collaborator-flex align-items-center"><img src="assets/images/StageS2-removebg-preview2.webp" height="82px;"></div>
+
+                                                <hr class="text-white">
+                                            </div>
+
+
+                                            <h3 class="text-light mt-2 text-start">StageS</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>StageS</i> is a group of longtime friends and fellow musicians that plays a mix of rock and roll covers and originals that will keep you entertained all night long! They have been rocking the Northeast Ohio area since 2008, and they have a loyal fan base that follows them wherever they go. You can check out their Facebook page to see their upcoming events, photos and videos of their performances.</p>
+                                            <button id="btn4" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('https://www.facebook.com/groups/2432586306788328/media')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <div class="d-flex justify-content-center align-items-center"><img src="assets/images/Spider_Studios.webp" height="90px;"></div>
+
+                                                <hr class="text-white">
+                                            </div>
+
+
+
+                                            <h3 class="text-light mt-2 text-start">Spider Studios</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Spider Studios</i> is a recording studio located in Olmsted Falls, Ohio, near Cleveland. They have been in the industry for over 25 years, creating household names and setting trends. They offer services such as recording, mixing, and mastering, as well as a massive amount of gear and a great space to suit every need. Spider Studios has worked with artists such as Machine Gun Kelly, Chimaira, and Ohio Sky.</p>
+                                            <button id="btn5" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('http://spiderstudiosohio.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center collaborator-flex align-items-center"><img src="assets/images/marsam_main_logo.webp" height="74px;"></div>
+
+                                            <hr class="text-white">
+                                            <h3 class="text-light mt-2 text-start">Marsam Metal Fab</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Marsam Metal Fab</i> is a metal fabricating company that serves customers in Northeastern Ohio. They use state of the art technology to produce a wide range of products, from small sheet metal parts to large enclosures and assemblies. They have been in operation since 1998 and strives for excellence in quality, service and customer satisfaction.</p>
+                                            <button id="btn3" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('https://www.marsamfab.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row h-100">
+                                <div class="col module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 pt-2 pb-2 ps-3 pe-3">
+                                    <div class="row">
+                                        <div class="col-12 my-2">
+                                            <div class="d-flex justify-content-center collaborator-flex align-items-center"><img src="assets/images/bullseye_logo.webp" height="80px"></div>
+
+                                            <hr class="text-white">
+                                            <h3 class="text-light mt-2 text-start">Bullseye Activewear</h3>
+                                            <p class="text-start text-white-50 mb-2"><i>Bullseye Activewear</i> is a full service printing company that specializes in screen printing and embroidery of apparel and promotional items. They are based in Brunswick, Ohio and they serve customers in Cuyahoga, Medina and Summit Counties. Bullseye has been in business since 1992 and prides itself on delivering exceptional products with attention to detail.</p>
+                                            <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-sm btn-outline-link text-warning pt-1 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('https://bullseyeactivewear.com/')">Learn more&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Collaborators content goes here -->
+            </div>
         </div>
-    </section>
+    </div>
 
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        let containers = document.querySelectorAll(".image-container");
+        
+        containers.forEach(function(container) {
+            let image = container.querySelector(".wappler-type-picture");
+            let downloadBtn = container.querySelector(".download-btn");
+    
+            container.addEventListener("mouseover", function() {
+                downloadBtn.style.display = "block";
+            });
+    
+            container.addEventListener("mouseout", function() {
+                downloadBtn.style.display = "none";
+            });
+    
+            image.addEventListener("click", function() {
+                let modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                document.getElementById('imageModalSrc').src = this.src;
+                modal.show();
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
