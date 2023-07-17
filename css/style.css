@@ -365,3 +365,7 @@ background-position: center;
         -ms-flex-align: center;
             align-items: center;
 }
+
+.border-offwhite {
+    border-color: #7a7a7a !important;
+}
