@@ -36,21 +36,24 @@
     <?php include 'navbar_main'; ?>
 
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
-
-        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container">
+        <div class="container-fluid style2 pt-4 pb-3">
             <div class="row">
-                <div class="col text-center" id="faceook">
+                <div class="col text-center">
 
-                    <h1 class="text-uppercase text-yellow text-center mb-3 text-light display-4"><i class="fas fa-football-ball"></i></h1>
-                    <h5 class="text-uppercase text-yellow text-warning text-center mb-3">special promotion</h5>
-                    <h2 class="text-light text-left mb-4">Raging Wolf Solutions Football Pool<br></h2>
+                    <h1 class="text-uppercase text-yellow text-center mb-3 text-light display-4 text-shadow"><i class="fas fa-football-ball"></i></h1>
+                    <h5 class="text-uppercase text-yellow text-warning text-center mb-3 text-shadow">special promotion</h5>
+                    <h2 class="text-light text-left mb-4 text-uppercase lh-base text-shadow">Raging Wolf Solutions<br>Football Pool<br></h2>
 
                 </div>
             </div>
+        </div>
+
+        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+        <div class="container">
+
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
-                    <h4 class="text-light lh-base fw-bold">Are you ready for some football?</h4>
+                    <h2 class="text-light lh-base fw-bold">Are you ready for some football?</h2>
                     <h5 class="text-light fw-normal mb-5 lh-base">
                         We are excited to announce that our weekly football pool is back for the 2023 season, and we have some new rules to make it more fun and rewarding for our loyal customers and supporters.</h5>
 
@@ -88,7 +91,10 @@
                         Please contact us at support@ragingwolfsolutions.com or call us at (855) 965-3725 and we will be happy to assist you.
                     </p>
                     <h5 class="text-light lh-base mb-3">Want your name on the list?</h5>
-                    <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-outline-warning mb-4 ps-3 pe-3">Contact Us</button>
+                    <a href="contact.php">
+                        <button id="btn2" class="btn module-cta-btn lh-lg text-truncate btn-outline-warning mb-4 ps-3 pe-3">Contact Us</button>
+                    </a>
+
                 </div>
             </div>
             <div class="row">

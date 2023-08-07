@@ -74,11 +74,16 @@
                                     <div class="row justify-content-center">
                                         <div class="col-md-9">
                                             <p class="text-light text-center mt-1 mb-3"><b>Raging Wolf Solutions</b> is a full service logistics solutions provider, offering freight coordination and transportation services across the continental United States and Canada. We leverage our expansive network of carriers and industry knowledge to bring our clients unparalleled communication and service — from pickup to delivery.</p>
-                                            <a href="media.php" class="text-decoration-none">
-                                                <div class="d-flex align-items-center rws-nav-item flex-nowrap justify-content-center mb-4">
-                                                    <h5 class="text-warning text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h5>
-                                                </div>
-                                            </a>
+
+                                            <div class="d-flex align-items-center flex-nowrap justify-content-center mb-4">
+                                                <a href="media.php" class="text-decoration-none">
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 me-3 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
+                                                </a>
+                                                <a href="football_pool.php" class="text-decoration-none">
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h6>
+                                                </a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
