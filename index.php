@@ -77,7 +77,7 @@
 
                                             <div class="d-flex align-items-center flex-nowrap justify-content-center mb-4">
                                                 <a href="media.php" class="text-decoration-none">
-                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 me-3 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 me-3 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle me-1"></i>Watch Our Video</h6>
                                                 </a>
                                                 <a href="football_pool.php" class="text-decoration-none">
                                                     <h6 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h6>
