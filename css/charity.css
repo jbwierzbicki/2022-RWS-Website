@@ -1,0 +1,75 @@
+
+
+.progress-container {
+    width: 94%;
+    height: 30px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+
+.progress-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); /* Center the track vertically */
+    left: 0;
+    right: 0;
+    height: 30px; /* Same height as the progress bar */
+    background-color: #9b9b9b; /* Lighter gray for the track */
+    z-index: 1; /* Place it below the progress bar */
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #7e9976; /* Darker gray for the actual progress */
+    z-index: 2; /* Ensure it's above the track */
+    position: relative;
+}
+
+.progress-info {
+    margin-top: 20px;
+}
+
+.milestone {
+    width: 37.5px; /* 25% larger than 30px */
+    height: 37.5px; /* 25% larger than 30px */
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); /* Center the milestone vertically */
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    z-index: 3;
+}
+
+.checkmark {
+    display: none; /* Hidden by default */
+    color: white; /* White color checkmark */
+    font-size: 24
+      px; /* Adjust as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* Center the checkmark inside the circle */
+}
+
+/* Define positions for each milestone */
+.milestone:nth-child(1) { left: 0%; } 
+.milestone:nth-child(2) { left: calc(10% - 15px); }
+.milestone:nth-child(3) { left: calc(20% - 15px); }
+.milestone:nth-child(4) { left: calc(30% - 15px); }
+.milestone:nth-child(5) { left: calc(40% - 15px); }
+.milestone:nth-child(6) { left: calc(50% - 15px); }
+.milestone:nth-child(7) { left: calc(60% - 15px); }
+.milestone:nth-child(8) { left: calc(70% - 15px); }
+.milestone:nth-child(9) { left: calc(80% - 15px); }
+.milestone:nth-child(10) { left: calc(90% - 15px); }
+.milestone:nth-child(11) { left: calc(100% - 15px); }
+
