@@ -139,7 +139,7 @@
                     <h1 class="text-white text-uppercase"><i class="far fa-question-circle"></i></h1>
                     <h4 class="text-white text-uppercase">Questions about the rules?</h4>
                     <p class="text-light fw-normal">Learn more about the specific terms and conditions for this promotion.</p>
-                    <a href="contact.php"><button class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Learn More</button></a>
+                    <a href="charity_terms.php"><button class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Learn More</button></a>
                 </div>
             </div>
 
