@@ -105,13 +105,13 @@
             <div class="row justify-content-around mb-5 pt-4">
 
                 <div class="col-lg-5">
-                    <img src="assets/images/imageedit_1_4728293636.png" class="img-fluid w-100 mb-2 rounded">
+                    <img src="assets/images/imageedit_1_4728293636.webp" class="img-fluid w-100 mb-2 rounded">
                 </div>
                 <div class="text-start col-lg-7">
-                    <h3 class="text-white mt-1 mb-3">About Rainbow Babies &amp; Children's</h3>
-                    <h6 class="text-light mb-4 pe-4 lh-base fw-normal">University Hospitals Rainbow Babies &amp; Children’s is one of the top pediatric care providers in all of Ohio. With over 80 locations and 850 pediatric specialists, UH Rainbow offers a full range of services for infants, children and adolescents, from routine well-child care to the diagnosis and treatment of complex conditions.<br><br>
-                        UH Rainbow is nationally recognized for its excellence in oncology, neonatology, neurology and endocrinology, and has been ranked among the best children’s hospitals in the country by U.S. News &amp; World Report. By donating to UH Rainbow, you are helping to provide compassionate, high-quality care to the young patients and families who need it most.</h6>
-                    <a href="contact.php"><button class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Learn More</button></a>
+                    <h3 class="text-white mt-1 mb-3">About Rainbow Babies &amp; Children's Hospital</h3>
+                    <h6 class="text-light mb-4 pe-4 lh-base fw-normal">University Hospitals Rainbow Babies &amp; Children’s Hospital is one of the top pediatric care providers in all of Ohio. With over 80 locations and 850 pediatric specialists, UH Rainbow offers a full range of services for infants, children and adolescents, from routine well-child care to the diagnosis and treatment of complex conditions.<br><br>
+                        UH Rainbow is nationally recognized for its excellence in oncology, neonatology, neurology and endocrinology, and has been ranked among the best children’s hospitals in the country by U.S. News &amp; World Report. By donating to Rainbow Babies &amp Children’s Foundation, you are helping to provide compassionate, high-quality care to the young patients and families who need it most.</h6>
+                    <a href="contact.php"><button class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow/about/uh-rainbow-foundation')">Learn More</button></a>
                 </div>
             </div>
 
