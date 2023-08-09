@@ -105,7 +105,7 @@
             <div class="row justify-content-around mb-5 pt-4">
 
                 <div class="col-lg-5">
-                    <img src="assets/images/imageedit_1_4728293636.webp" class="img-fluid w-100 mb-2 rounded">
+                    <img src="assets/images/rainbow.webp" class="img-fluid w-100 mb-2 rounded">
                 </div>
                 <div class="text-start col-lg-7">
                     <h3 class="text-white mt-1 mb-3">About Rainbow Babies &amp; Children's Hospital</h3>
