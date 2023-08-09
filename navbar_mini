@@ -7,8 +7,8 @@
                     <div class="d-flex align-items-center rws-nav-item flex-nowrap">
                         <h6 class="text-warning mt-auto mb-auto text-nowrap" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle"></i>&nbsp;Listen To Our Song</h6>
                         <video height="30px" autoplay loop muted playsinline>
-                            <source src="assets/images/music_preview.webm" type="video/webm">
-                            <source src="assets/images/music_preview.mp4" type="video/mp4">
+                            <source src="../assets/images/music_preview.webm" type="video/webm">
+                            <source src="../assets/images/music_preview.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
