@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <script src="../dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
     <title>Terms and Conditions: Referral Rewards Program | Raging Wolf Solutions</title>
 
