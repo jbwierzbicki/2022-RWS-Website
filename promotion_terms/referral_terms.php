@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <script src="../dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
     <title>Terms and Conditions: Referral Rewards Program | Raging Wolf Solutions</title>
 
@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer=""></script>
     <script src="../dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js" defer=""></script>
 
     <script src="../dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
-    <link rel="icon" href="icons/favicon.ico">
+    <link rel="icon" href="../icons/favicon.ico">
     <link rel="stylesheet" href="../dmxAppConnect/dmxValidator/dmxValidator.css" />
     <script src="../dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
     <script src="../dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
@@ -31,46 +31,40 @@
 <body is="dmx-app" id="index" class="bg-dark">
     <div is="dmx-browser" id="browser1"></div>
 
-    <?php include 'navbar_mini'; ?>
+    <?php include '../navbar_mini'; ?>
 
-    <?php include 'navbar_main'; ?>
+    <?php include '../navbar_main'; ?>
 
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
-        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+        <img src="../assets/images/section-modal-bg-top-stone.png" class="w-100">
         <div class="container modules-container mt-0 mb-4 pb-5">
             <div class="row justify-content-center pb-4">
                 <div class="pl-1 pr-1 col-12 text-center col-md-10">
 
 
 
-                    <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-football-ball"></i></h1>
-                    <h5 class="text-uppercase text-yellow text-warning text-center">Special Promotion</h5>
-                    <h1 class="text-light text-left mb-4">Football Pool: Terms and Conditions</h1>
+                    <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-comments-dollar"></i></h1>
+                    <h5 class="text-uppercase text-yellow text-warning text-center">Referral Rewards</h5>
+                    <h1 class="text-light text-left mb-4">Referral Rewards: Terms and Conditions</h1>
 
                     <div class="d-flex overflow-auto mb-4" style="height: 400px;">
                         <p class="text-white-50 text-start">
-                            NO PURCHASE OR PAYMENT NECESSARY TO ENTER OR WIN. A PURCHASE OR PAYMENT WILL NOT INCREASE YOUR CHANCES OF WINNING.
-                            <br><br>
-                            Eligibility: The Raging Wolf Solutions Football Pool 2023 (the "Promotion") is open only to individuals who are 21 years of age or older at the time of entry and who meet other eligibility requirements set forth in these Official Rules. The Promotion is void where prohibited or restricted by law.
-                            <br><br>
-                            Promotion Period: The Promotion begins at 12 AM Eastern Standard Time on July 17, 2023, and ends at 12 AM Eastern Standard Time on February 12, 2024 (the "Promotion Period").
-                            <br><br>
-                            How to Enter: Follow the instructions provided in the email you receive. Limit one entry per person, per email address, during the Promotion Period.
-                            <br><br>
-                            Prizes: The prize of the Promotion is a $100 Visa Gift Card. The approximate retail value ("ARV") of the prize is $100. The total ARV of all prizes available in this Promotion is $100.
-                            <br><br>
-                            Winner Selection and Notification: The winner of the Promotion will be selected based on their correct predictions of the most winners. In the event of a tie, the tie-breaker question included in the poll each week will determine the winner. The winner will be notified via email or phone.
-                            <br><br>
-                            Odds of Winning: The odds of winning depend on the number of eligible entries received.
-                            <br><br>
-                            Sponsor: The Promotion is sponsored by Raging Wolf Solutions, LLC.
-                            <br><br>
-                            Data Handling: By participating in the Promotion, entrants agree to the Sponsor's use and handling of their personal information for all purposes related to this Promotion (including, without limitation, data storage, processing, and administration).
-                            <br><br>
-                            Disclaimer: This Promotion is in no way sponsored, endorsed, administered by, or associated with, any other company or social media platform. By entering, entrants release and hold harmless the Sponsor, its subsidiaries, affiliates, and each of their respective officers, directors, employees, and agents from any and all liability or any injuries, loss, or damage of any kind arising from or in connection with this Promotion or the acceptance, use, misuse, or possession of any prize won.
-                            <br><br>
-                            Compliance with Relevant Laws: The Promotion is subject to all applicable federal, state, and local laws and regulations.
+                            Limitation of Liability: Raging Wolf Solutions shall not be liable for any indirect, special, incidental, consequential, or punitive damages, including but not limited to loss of use, loss of profits, or loss of data, whether in an action in contract, tort (including but not limited to negligence), or otherwise, arising out of or in any way connected with the use of or inability to use this program or the materials therein or resulting from unauthorized access to or alteration of data.
+                            <br /><br />
+                            No Warranties: Raging Wolf Solutions does not guarantee, represent, or warrant that your use of our service will be uninterrupted, timely, secure, or error-free. We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable.
+                            <br /><br />
+                            Indemnification: By participating in the referral program, you agree to indemnify, defend, and hold harmless Raging Wolf Solutions and its officers, directors, employees, contractors, agents, licensors, service providers, subcontractors, and suppliers from and against any and all losses, liabilities, expenses, damages, and costs, including reasonable attorneys' fees and court costs, arising or resulting from your use of the service and any violation of these Terms of Service.
+                            <br /><br />
+                            Dispute Resolution: Any dispute or claim arising out of or in connection with this referral program shall be adjudicated in the state or federal courts located within the state where Raging Wolf Solutions is headquartered, and you consent to exclusive jurisdiction and venue in such courts.
+                            <br /><br />
+                            Severability: If any provision of these terms is found to be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable from these terms and shall not affect the validity and enforceability of any remaining provisions.
+                            <br /><br />
+                            This offer is valid only for Raging Wolf Solutions customers and supporters who are legal residents of the United States, 18 years or older. Offer valid from May 15, 2023 until further notice. By participating in this program, you agree to these terms and conditions. Raging Wolf Solutions reserves the right to modify or terminate this program at any time without prior notice.
+                            <br /><br />
+                            To qualify for referral rewards, the referred customer must not be a current or past customer of Raging Wolf Solutions and must make a shipment through Raging Wolf Solutions within 90 days of referral. The referral rewards will be processed within 30 days of the referred customer's first shipment delivery.
+                            <br /><br />
+                            This promotion is void where prohibited by law. Participants are responsible for all applicable taxes, fees, and other charges related to the receipt and use of the referral rewards. Raging Wolf Solutions is not responsible for lost, stolen, or misdirected gift cards or donations.
                         </p>
 
                     </div>
@@ -85,7 +79,7 @@
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <?php include '../footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
