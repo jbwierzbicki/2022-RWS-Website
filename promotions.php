@@ -46,7 +46,7 @@
                     <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-hands-helping fa-lg"></i></h1>
                     <h5 class="text-uppercase text-yellow text-warning text-center">Active Promotions</h5>
                     <h1 class="text-light text-left">Raging Wolf Solutions Promotional Offers</h1>
-                    <h5 class="text-white-50 mb-3 lh-base fw-normal">--insert promo desc here--</h5>
+                    <h5 class="text-white-50 mb-3 lh-base fw-normal">If you like to keep in the "know," you have come the right place. Whether it is to find a shipping solution, give back to the comunity or try your luck you will find the details here!</h5>
 
                 </div>
 
