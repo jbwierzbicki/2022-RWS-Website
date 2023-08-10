@@ -53,11 +53,11 @@
             </div>
             <div class="row pt-3 justify-content-between">
                 <div class="col-lg-4 pt-3 pb-2 px-4">
-                    <div class="row border rounded rounded-2 border-light border-offwhite">
-                        <div class="col promo-card">
+                    <div class="row border rounded rounded-2 border-light border-offwhite h-100">
+                        <div class="col promo-card pt-2">
                             <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('referral.php')">
                                 <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-user-friends"></i></h1>
-                                <h5 class="text-light text-center lh-base">Freinds don't let friends ship alone!</h5>
+                                <h5 class="text-light text-center lh-base">Friends don't let friends ship alone!</h5>
 
 
 
@@ -72,8 +72,8 @@
 
                 </div>
                 <div class="col-lg-4 pt-3 pb-2 px-4">
-                    <div class="row">
-                        <div class="border rounded rounded-2 border-light border-offwhite promo-card col">
+                    <div class="row h-100">
+                        <div class="border rounded rounded-2 border-light border-offwhite promo-card col pt-2">
                             <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('charity.php')">
 
                                 <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-hand-holding-medical"></i></h1>
@@ -89,8 +89,8 @@
 
                 </div>
                 <div class="col-lg-4 pt-3 pb-2 px-4">
-                    <div class="row border rounded rounded-2 border-light border-offwhite">
-                        <div class="col promo-card">
+                    <div class="row border rounded rounded-2 border-light border-offwhite h-100">
+                        <div class="col promo-card pt-2">
                             <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('football_pool.php')">
 
                                 <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-football-ball"></i></h1>
