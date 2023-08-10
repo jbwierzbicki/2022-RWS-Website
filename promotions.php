@@ -51,93 +51,64 @@
                 </div>
 
             </div>
-            <div class="row pt-3">
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('referral.php')">
-                        <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-user-friends"></i></h1>
-                        <h5 class="text-light text-center lh-base">Refer a shipper in your network to the 'PACK'</h5>
+            <div class="row pt-3 justify-content-between">
+                <div class="col-lg-4 pt-3 pb-2 px-4">
+                    <div class="row border rounded rounded-2 border-light border-offwhite">
+                        <div class="col promo-card">
+                            <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('referral.php')">
+                                <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-user-friends"></i></h1>
+                                <h5 class="text-light text-center lh-base">Freinds don't let friends ship alone!</h5>
 
 
 
 
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Contact us using the form below, or tell your referral about Raging Wolf by sharing our services to your network. Make sure they mention your name or business!<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/referral_terms.php')">&nbsp;See Terms.</span></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Contact us using the form below, or tell your referral about Raging Wolf by sharing our services to your network. Make sure they mention your name or business!<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/referral_terms.php')">&nbsp;See Terms.</span></p>
-                    </div>
+
+
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('charity.php')">
+                <div class="col-lg-4 pt-3 pb-2 px-4">
+                    <div class="row">
+                        <div class="border rounded rounded-2 border-light border-offwhite promo-card col">
+                            <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('charity.php')">
 
-                        <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-hand-holding-medical"></i></h1>
-                        <h5 class="text-light text-center lh-base">Help donate to an Alpha cause!</h5>
+                                <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-hand-holding-medical"></i></h1>
+                                <h5 class="text-light text-center lh-base">Help donate to an Alpha cause!</h5>
 
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-white-50 text-center">Our team is giving back to our future - <span class="text-white-50 hover-cursor" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow')"><i>UH Rainbow Children's Hospital </i></span>- and we need your help! Support this great cause and promote Raging Wolf Solutions at the same time.<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/charity_terms.php')">&nbsp;See Terms.</span></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <p class="text-white-50 text-center">Our team is giving back to our future - <span class="text-white-50 hover-cursor" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow')"><i>UH Rainbow Children's Hospital </i></span>- and we need your help! Support this great cause and promote Raging Wolf Solutions at the same time.<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/charity_terms.php')">&nbsp;See Terms.</span></p>
-                    </div>
+
+
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('football_pool.php')">
+                <div class="col-lg-4 pt-3 pb-2 px-4">
+                    <div class="row border rounded rounded-2 border-light border-offwhite">
+                        <div class="col promo-card">
+                            <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('football_pool.php')">
 
-                        <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-football-ball"></i></h1>
-                        <h5 class="text-light text-center lh-base">If your team wins, so do you!</h5>
+                                <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-football-ball"></i></h1>
+                                <h5 class="text-light text-center lh-base">If your team wins, so do you!</h5>
 
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-white-50 text-center">If you enjoy the battle of the grid-iron, you'll love this! Every week, you will receive an email with a link to our online football pool, where you can make your picks for the upcoming NFL games, preseason too! If you correctly predict the most winners, you could receive with a $100.<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/football_pool_terms.php')">&nbsp;See Terms.</span></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <p class="text-white-50 text-center">If you enjoy the battle of the grid-iron, you'll love this! Every week, you will receive an email with a link to our online football pool, where you can make your picks for the upcoming NFL games, preseason too! If you correctly predict the most winners, you could receive with a $100.<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/football_pool_terms.php')">&nbsp;See Terms.</span></p>
-                    </div>
+
+
                 </div>
             </div>
             <div class="row">
                 <div class="col text-light mt-3 mb-3">
                     <hr>
-                </div>
-                <div class="col-12">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="module-card border rounded-0 rounded-1 border-secondary col-12 mt-3 mb-3 pt-3 pb-3 ps-3 pe-3" id="Referral_Form_Col">
-
-                                <h5 class="text-light mb-3 pt-2">Have someone in mind? Let us know.</h5>
-
-
-                                <form id="referral_form" method="post" action="https://usebasin.com/f/dd70a6a52004">
-                                    <div class="row gx-2 justify-content-start">
-                                        <div class="col-lg-5 col-auto"><input id="contact_email" name="email" type="text" class="form-control mb-2 me-3" placeholder="Your email address..." required="" data-rule-email=""></div>
-                                        <div class="col-lg-5 col-auto"><input id="contact_message" name="message" type="text" class="form-control mb-2 me-3" placeholder="Tell us about your referral..." required=""></div>
-                                        <div class="col-lg-auto"><button id="btn1" class="btn module-cta-btn btn text-nowrap fw-bold btn-outline-warning w-100 mb-2 pt-2 pb-2" dmx-on:click="" type="submit">Let Us Know&nbsp;<i class="fas fa-arrow-right"></i></button></div>
-                                    </div>
-                                </form>
-                                <div class="row text-white-50 mt-3 mb-4">
-
-                                    <div class="col">
-                                        <hr>
-                                    </div>
-                                    <div class="col-auto align-self-center">
-                                        <h6 class="mb-0 text-uppercase text-center">or</h6>
-                                    </div>
-                                    <div class="col">
-                                        <hr>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-4 text-center">
-                                        <h1 class="text-white mb-3 lh-1"><i class="fab fa-facebook-square fa-lg"></i></h1>
-                                        <button id="referral_facebook" class="btn btn-outline-link text-light bg-secondary hover-cursor fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('https://www.facebook.com/sharer/sharer.php?u=ragingwolfsolutions.com')"><i class="fas fa-share"></i>&nbsp;Share on Facebook</button>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <h1 class="text-white mb-3 lh-1"><i class="fab fa-linkedin fa-lg"></i></h1>
-                                        <button id="referral_linkedin" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('https://www.linkedin.com/shareArticle?mini=true&amp;url=ragingwolfsolutions.com')"><i class="fas fa-share"></i>&nbsp;Share on LinkedIn</button>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <h1 class="text-white lh-1 mb-3"><i class="fas fa-envelope fa-lg"></i></h1>
-                                        <button id="referral_ursite" class="btn btn-outline-link text-light bg-secondary fw-bold bg-opacity-25 mb-4 rws-nav-item" style="letter-spacing: .6px;" dmx-on:click="browser1.goto('mailto:?subject=Raging%20Wolf&amp;body=Check%20out%20Raging%20Wolf%20Solutions%20freight%20transportation%20services%3A%20https%3A%2F%2Fragingwolfsolutions.com')"><i class="fas fa-share"></i>&nbsp;Share via Email</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
             <div class="row justify-content-start mt-4">
