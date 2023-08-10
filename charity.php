@@ -123,12 +123,12 @@
             </div>
 
             <div class="row justify-content-around mt-5 mb-5">
-                <div class="col-lg-4 order-lg-2">
+                <div class="col-lg-5 order-lg-2">
                     <img src="assets/images/VanAndBuilding.webp" class="img-fluid w-100 mb-2">
                 </div>
                 <div class="text-start col-lg-7 order-lg-1">
                     <h3 class="text-white mt-1 mb-3">Shipping With Raging Wolf is a WIN, WIN</h3>
-                    <h6 class="text-light mb-4 pe-4">With specialized equipment and experienced drivers, we can safely and efficiently transport your freight up and down steep grades, winding roads, and narrow passes. Choose Raging Wolf Solutions for reliable and efficient transportation services in even the most challenging terrain.<br><br>Where it's needed, when it's needed. At Raging Wolf Solutions, we understand that timely and efficient logistics are critical to the success of your business. You can trust our team to deliver the logistics solutions you need, when you need them most.</h6>
+                    <h6 class="text-light mb-4 pe-4 lh-base fw-normal">With specialized equipment and experienced drivers, we can safely and efficiently transport your freight up and down steep grades, winding roads, and narrow passes. Choose Raging Wolf Solutions for reliable and efficient transportation services in even the most challenging terrain.<br><br>Where it's needed, when it's needed. At Raging Wolf Solutions, we understand that timely and efficient logistics are critical to the success of your business. You can trust our team to deliver the logistics solutions you need, when you need them most.</h6>
                     <a href="contact.php"><button id="btn2" class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Contact Us</button></a>
                 </div>
             </div>

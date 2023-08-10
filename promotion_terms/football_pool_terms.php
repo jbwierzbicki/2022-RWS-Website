@@ -76,7 +76,7 @@
                     </div>
                     <div class="d-flex justify-content-between">
                         <h4 class="text-left text-uppercase text-white-50 hover-cursor" dmx-on:click="browser1.goto('index.php')"><i class="fas fa-arrow-left"></i>&nbsp;Go Home</h4>
-                        <h4 class="text-left text-warning text-uppercase hover-cursor" dmx-on:click="browser1.goto('referral.php')">Go To Program&nbsp;<i class="fas fa-arrow-right"></i></h4>
+                        <h4 class="text-left text-warning text-uppercase hover-cursor" dmx-on:click="browser1.goto('../football_pool.php')">Go To Program&nbsp;<i class="fas fa-arrow-right"></i></h4>
                     </div>
 
 

@@ -6,7 +6,7 @@ const checkmarks = document.querySelectorAll('.checkmark');
 const viewCount = document.getElementById('viewCount');
 const donationAmount = document.getElementById('donationAmount');
 
-const currentViews = 350000; // Example number, adjust as needed
+const currentViews = 110000; // Example number, adjust as needed
 
 // Calculate the donation amount and progress
 const donationPer100k = 500;
