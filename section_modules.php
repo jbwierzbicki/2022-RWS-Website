@@ -118,6 +118,24 @@
 
 
             </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
+                        <div class="pl-1 pr-1 col-12 col-md-10 w-100 text-center">
+
+
+                            <h4 class="text-light text-left mt-2 mb-3">Raging Wolf Solutions Promotional Offers</h4>
+                            <p class="text-white-50 lh-base fw-normal mb-3 ms-5 me-5 ps-5 pe-5">If you like to keep in the "know," you have come the right place. Whether it is to find a shipping solution, give back to the comunity or try your luck you will find the details here!</p>
+
+                        </div>
+                        <?php include 'component--promotions--termsgroup.php'; ?>
+                    </div>
+                </div>
+
+
+
+
+            </div>
 
             <div class="col-md-12">
                 <div class="row">
