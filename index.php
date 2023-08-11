@@ -75,12 +75,12 @@
                                         <div class="col-md-9">
                                             <p class="text-light text-center mt-1 mb-3"><b>Raging Wolf Solutions</b> is a full service logistics solutions provider, offering freight coordination and transportation services across the continental United States and Canada. We leverage our expansive network of carriers and industry knowledge to bring our clients unparalleled communication and service — from pickup to delivery.</p>
 
-                                            <div class="d-flex align-items-center flex-nowrap justify-content-center mb-4">
-                                                <a href="media.php" class="text-decoration-none">
-                                                    <h5 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 me-3 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle me-1"></i>Watch Our Video</h5>
+                                            <div class="d-flex align-items-center justify-content-center flex-wrap mb-2">
+                                                <a href="media.php" class="text-decoration-none mb-2 ms-2 me-2">
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle me-1"></i>Watch Our Video</h6>
                                                 </a>
-                                                <a href="football_pool.php" class="text-decoration-none">
-                                                    <h5 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h5>
+                                                <a href="football_pool.php" class="text-decoration-none mb-2 ms-2 me-2">
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h6>
                                                 </a>
                                             </div>
 
