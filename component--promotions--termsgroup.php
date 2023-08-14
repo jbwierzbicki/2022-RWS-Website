@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="d-flex">
-                    <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Contact us using the form below, or tell your referral about Raging Wolf by sharing our services to your network. Make sure they mention your name or business!<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/referral_terms.php')">&nbsp;See Terms.</span></p>
+                    <p class="text-white-50 text-center">Know someone in need of freight transportation? Send them our way! Tell your referral about Raging Wolf by sharing our services to your network. Make sure they mention your name or business!<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/referral_terms.php')">&nbsp;See Terms.</span></p>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
 
                 </div>
                 <div class="d-flex">
-                    <p class="text-white-50 text-center">If you enjoy the battle of the grid-iron, you'll love this! Every week, you will receive an email with a link to our online football pool, where you can make your picks for the upcoming NFL games, preseason too! If you correctly predict the most winners, you could receive with a $100.<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/football_pool_terms.php')">&nbsp;See Terms.</span></p>
+                    <p class="text-white-50 text-center">Put your NFL knowledge to the test! Play in our weekly NFL Pick 'Em Pool, where you can make your picks for the upcoming NFL games. If you correctly predict the most winners, you could win a $100 Visa Gift Card!<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/football_pool_terms.php')">&nbsp;See Terms.</span></p>
                 </div>
             </div>
         </div>

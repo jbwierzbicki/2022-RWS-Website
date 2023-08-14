@@ -130,7 +130,12 @@
                             </div>
                         </div>
 
-                        <?php include 'component--promotions--termsgroup.php'; ?>
+
+                        <?php include 'component--promotions--termsgroup.php'; ?><div class="row justify-content-center mt-2 mb-1">
+                            <div class="col-auto">
+                                <button id="" class="btn text-warning module-cta-btn text-start btn-lg mt-1 ps-0 pe-0" dmx-on:click="browser1.goto('promotions.php')">See All Promotions&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
