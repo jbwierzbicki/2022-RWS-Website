@@ -47,7 +47,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
                     <h2 class="text-light lh-base fw-bold mb-3"><i class="fas fa-hand-holding-heart fa-lg"></i></h2>
-                    <h2 class="text-light lh-base fw-bold">Giving Back To The Community</h2>
+                    <h2 class="text-light lh-base fw-bold">Giving Back To The Kids</h2>
                     <h6 class="text-light fw-normal lh-base mb-4">Our team is giving back to Rainbow Children's Hospital - and we need your help. Support this great cause and promote Raging Wolf Solutions at the same time.</h6>
 
                 </div>
@@ -135,7 +135,7 @@
 
 
             <div class="row justify-content-center mb-5 pt-5">
-                <div class="col-lg-8 text-center border rounded rounded-2 border-light border-offwhite pt-3 pb-4 ps-4 pe-4">
+                <div class="text-center border rounded rounded-2 border-light border-offwhite pt-3 pb-4 ps-4 pe-4 col-lg-10">
                     <h1 class="text-white text-uppercase"><i class="far fa-question-circle"></i></h1>
                     <h4 class="text-white text-uppercase">Questions about the rules?</h4>
                     <p class="text-light fw-normal">Learn more about the specific terms and conditions for this promotion.</p>
