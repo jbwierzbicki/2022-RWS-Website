@@ -56,7 +56,7 @@
               <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">Book an Appointment</h4>
               <div class="row justify-content-center">
                 <div class="col-md-9">
-                  <iframe src="https://outlook.office365.com/owa/calendar/RagingWolfSolutionsSalesAppointment@NETORG5121535.onmicrosoft.com/bookings/" width="100%" scrolling="yes" style="border:0; height:70vh"></iframe>
+                  <iframe src="https://outlook.office365.com/owa/calendar/RagingWolfSolutionsSalesAppointment@NETORG5121535.onmicrosoft.com/bookings/" width="100%" scrolling="yes" style="border:0; height:70vh" name="Appointment Booking"></iframe>
                 </div>
 
                 <div class="col-md-9">
