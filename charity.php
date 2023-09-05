@@ -83,7 +83,6 @@
                                 <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
                                 <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
                                 <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
 
                             </div>
                             <div class="progress-info">
@@ -94,7 +93,7 @@
                                     <span id="donationAmount" class="fw-bold">$500</span> donated to Rainbow Children's Hospital so far.
                                 </h6>
                                 <p>
-                                    Help us reach up to $5k by viewing and sharing. Thank you for your support!
+                                    Help us reach up to $4.5k by viewing and sharing. Thank you for your support!
                                 </p>
                             </div>
                         </div>

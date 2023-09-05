@@ -6,11 +6,11 @@ const checkmarks = document.querySelectorAll('.checkmark');
 const viewCount = document.getElementById('viewCount');
 const donationAmount = document.getElementById('donationAmount');
 
-const currentViews = 110000; // Example number, adjust as needed
+const currentViews = 215000; // Example number, adjust as needed
 
 // Calculate the donation amount and progress
 const donationPer100k = 500;
-const milestonesPassed = Math.floor(currentViews / 100000);
+const milestonesPassed = Math.floor(currentViews / 200000);
 const currentDonation = milestonesPassed * donationPer100k;
 const progressPercentage = (currentViews / 1000000) * 100;
 
