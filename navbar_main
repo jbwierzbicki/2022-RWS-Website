@@ -10,7 +10,7 @@
                 </div>
                 <div class="modal-body bg-dark text-center">
                     <div class="container">
-                        <h2 class="modal-title text-white w-100 text-center mt-3 mb-3">Our Services Include</h2>
+                        <h2 class="modal-title text-white w-100 text-center mt-3 mb-3">Our Service Categories Include</h2>
                         <h4 class="fw-normal mb-3 hover-cursor"><a href="services-air.php" class="text-decoration-none text-warning">Expedited Air</a></h4>
                         <h4 class="text-warning fw-normal mb-3 hover-cursor"><a href="services-ground.php" class="text-decoration-none text-warning">Expedited Ground</a></h4>
                         <h4 class="text-warning fw-normal mb-3 hover-cursor"><a href="services-specialized.php" class="text-decoration-none text-warning">Specialized Services</a></h4>
@@ -122,7 +122,7 @@
 
                     <a class="nav-item nav-link rws-nav-item" href="#" data-bs-toggle="modal" data-bs-target="#services_modal" dmx-on:click="services_modal.show()">Services</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
-                    <a class="nav-item nav-link rws-nav-item text-truncate" href="tracking.php">Track Shipment</a>
+                    <a class="nav-item nav-link rws-nav-item" href="tracking.php">Track Shipment</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
                     <a class="nav-item nav-link rws-nav-item" href="rwscarriers.php">Carriers</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
