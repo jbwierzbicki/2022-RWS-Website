@@ -97,9 +97,20 @@
                                 <div class="col-lg-5">
 
                                     <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
-                                        <dmx-slide url="assets/images/slideshow_live/Assorted%20Promo%20Items.webp" thumb="assets/images/slideshow_live/thumbs/Assorted%20Promo%20Items.webp" alt=""></dmx-slide>
-                                        <dmx-slide url="assets/images/slideshow_live/Diecast%20Trucks.webp" thumb="assets/images/slideshow_live/thumbs/Diecast%20Trucks.webp" alt=""></dmx-slide>
-                                        <dmx-slide url="assets/images/slideshow_live/Mousepad%20and%20Mug.webp" thumb="assets/images/slideshow_live/thumbs/Mousepad%20and%20Mug.webp" alt=""></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_115713_328%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_115713_328%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121137_971%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121137_971%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_115834_040%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_115834_040%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121205_543%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121205_543%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_120552_378%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_120552_378%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_120941_409%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_120941_409%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121323_526%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121323_526%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121815_509%282%29%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121815_509%282%29%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_122000_570%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_122000_570%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_122036_418%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_122036_418%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_122158_660%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_122158_660%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_123818_581%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_123818_581%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_124022_789-transformed%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_124022_789-transformed%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/IMG_7107%20%281%29%201.webp" thumb="assets/images/slideshow_live/thumbs/IMG_7107%20%281%29%201.webp"></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
 
