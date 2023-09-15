@@ -97,20 +97,20 @@
                                 <div class="col-lg-5">
 
                                     <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_115713_328%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_115713_328%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121137_971%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121137_971%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_115834_040%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_115834_040%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121205_543%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121205_543%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_120552_378%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_120552_378%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_120941_409%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_120941_409%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121323_526%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121323_526%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_121815_509%282%29%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_121815_509%282%29%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_122000_570%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_122000_570%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_122036_418%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_122036_418%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_122158_660%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_122158_660%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_123818_581%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_123818_581%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/DJI_20230912_124022_789-transformed%201.webp" thumb="assets/images/slideshow_live/thumbs/DJI_20230912_124022_789-transformed%201.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/IMG_7107%20%281%29%201.webp" thumb="assets/images/slideshow_live/thumbs/IMG_7107%20%281%29%201.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/coaster.webp" thumb="assets/images/slideshow_live/thumbs/coaster.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/coozie.webp" thumb="assets/images/slideshow_live/thumbs/coozie.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/die-cast-1.webp" thumb="assets/images/slideshow_live/thumbs/die-cast-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/diecast-2.webp" thumb="assets/images/slideshow_live/thumbs/diecast-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/hitch.webp" thumb="assets/images/slideshow_live/thumbs/hitch.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad1.webp" thumb="assets/images/slideshow_live/thumbs/mousepad1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad2.webp" thumb="assets/images/slideshow_live/thumbs/mousepad2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-lft-1.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-lft-2.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-rt-1.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-rt-2.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pamphlet.webp" thumb="assets/images/slideshow_live/thumbs/pamphlet.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pen.webp" thumb="assets/images/slideshow_live/thumbs/pen.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/phone-stand.webp" thumb="assets/images/slideshow_live/thumbs/phone-stand.webp"></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
 
