@@ -49,6 +49,7 @@
                     <h2 class="text-light lh-base fw-bold mb-3"><i class="fas fa-hand-holding-heart fa-lg"></i></h2>
                     <h2 class="text-light lh-base fw-bold">Giving Back To The Kids</h2>
                     <h6 class="text-light fw-normal lh-base mb-4">Our team is giving back to Rainbow Children's Hospital - and we need your help. Support this great cause and promote Raging Wolf Solutions at the same time.</h6>
+                    <h6 class="text-light fw-normal lh-base mb-4">We are also a proud sponsor of this year's Rainbow Radiothon. Learn more about this event and our involvement in this <a href="assets/RADIOTHON%202023%20PRESS%20RELEASE.pdf" class="text-warning" data-lf-fd-inspected-kn9eq4r1yyr7rlvp="true">press release.</a></h6>
 
                 </div>
             </div>
