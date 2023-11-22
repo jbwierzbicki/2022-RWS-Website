@@ -153,6 +153,15 @@
 
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex flex-column">
+                        <h1 class="text-warning">i class="far fa-check-circle"></i></h1>
+                        <h1 class="text-white text-center">Thanks for checking in.</h1>
+                        <h5 class="text-white text-center">The shipment location has been updated in our system.</h5>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
