@@ -16,6 +16,9 @@
 </head>
 
 <body is="dmx-app" id="trakingph3">
+    <dmx-api-datasource id="tracking_api" is="dmx-fetch" url="tracking_base_url.value+load_ref.value"></dmx-api-datasource>
+    <dmx-value id="load_ref"></dmx-value>
+    <dmx-value id="tracking_base_url" dmx-bind:value="'https://staff.my.salesforce-sites.com/services/apexrest/LoadLocationCustomerView/'"></dmx-value>
     <main class="min-vh-100 bg-dark text-warning">
         <div class="container">
             <div class="row">
