@@ -20,7 +20,7 @@
     <dmx-value id="load_ref"></dmx-value>
     <dmx-value id="tracking_base_url" dmx-bind:value="'https://staff.my.salesforce-sites.com/services/apexrest/LoadLocationCustomerView/'"></dmx-value>
     <main class="min-vh-100 bg-dark text-warning">
-        <div class="container">
+        <div class="container-xl">
             <div class="row">
                 <div class="col">
                     <div class="d-flex justify-content-center mt-5 pb-4">
@@ -54,14 +54,14 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div class="container-xl">
+            <div class="row mt-3 mb-2">
+                <div class="col mt-2 mb-2">
                     <div id="mapCanvas" style="height: 400px; width: 100%;"></div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-xl">
             <div class="row">
                 <div class="col">
                     <div class="d-flex justify-content-center mt-5 pb-4">
