@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="dmxAppConnect/dmxAutocomplete/dmxAutocomplete.css" />
     <script src="dmxAppConnect/dmxAutocomplete/dmxAutocomplete.js" defer></script>
+    <script src="dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer></script>
 </head>
 
 <body is="dmx-app" id="trakingph3">
-    <dmx-api-datasource id="tracking_api" is="dmx-fetch" url="tracking_base_url.value+load_ref.value"></dmx-api-datasource>
-    <dmx-value id="load_ref"></dmx-value>
+    <dmx-query-manager id="load_ref_param"></dmx-query-manager>
+    <dmx-api-datasource id="tracking_api" is="dmx-fetch" dmx-bind:url="tracking_base_url.value+load_ref.value"></dmx-api-datasource>
+    <dmx-value id="load_ref" dmx-bind:value="load_ref_param.data.load_ref"></dmx-value>
     <dmx-value id="tracking_base_url" dmx-bind:value="'https://staff.my.salesforce-sites.com/services/apexrest/LoadLocationCustomerView/'"></dmx-value>
     <main class="min-vh-100 bg-dark text-warning">
         <div class="container-xl">
@@ -37,16 +39,16 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th scope="row" class="w-50 text-secondary">Load ID:&nbsp;<span>{Load_Reference__c}</span></th>
-                                    <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;<span>{PO__c}</span></td>
+                                    <th scope="row" class="w-50 text-secondary">Load ID:&nbsp;<span dmx-text="tracking_api.data[0].Load_Reference__c"></span></th>
+                                    <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;<span dmx-text="tracking_api.data[0].PO__c"></span></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="w-50 text-secondary">From:&nbsp;<span>{Pickup_Name_Address__c}</span></th>
-                                    <td class="w-50 fw-bold text-secondary">To:&nbsp;<span>{Deliver_Name_Address__c}</span></td>
+                                    <th scope="row" class="w-50 text-secondary">From:&nbsp;<span dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></span></th>
+                                    <td class="w-50 fw-bold text-secondary">To:&nbsp;<span dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></span></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="w-50 text-secondary">Current Location:&nbsp;<span>{Location__c}</span></th>
-                                    <td class="w-50 fw-bold text-secondary">Approx. Miles Remaining:&nbsp;<span>{Distance}</span></td>
+                                    <th scope="row" class="w-50 text-secondary">Current Location:&nbsp;<span dmx-text="tracking_api.data[0].Location__c"></span></th>
+                                    <td class="w-50 fw-bold text-secondary">Approx. Miles Remaining:&nbsp;<span dmx-text="tracking_api.data[0].Distance"></span></td>
                                 </tr>
                             </tbody>
                         </table>
