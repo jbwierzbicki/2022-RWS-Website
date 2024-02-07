@@ -45,6 +45,7 @@ header {
 
 h2 {
     font-family: 'Sansation', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -52,6 +53,7 @@ h2 {
 
 h4 {
     font-family: 'Sansation', sans-serif;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -88,6 +90,7 @@ h4 {
     font-family: 'Sansation', sans-serif;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 300 !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
