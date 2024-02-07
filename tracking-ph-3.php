@@ -214,7 +214,7 @@
                                     <h6 class="text-white-50"><i class="fas fa-map-marker-alt fa-fw pe-2 pt-1"></i>&nbsp;Current Location:</h6>
                                 </div>
                                 <div class="col">
-                                    <h6 class="text-light" dmx-text="(location_city.value+', '+location_state.value)" dmx-show="location_state.value"></h6>
+                                    <h6 class="text-light" dmx-text="(location_city.value+', '+location_state.value+' ('+tracking_api.data[0].Last_Tracked_Timestamp__c.formatDate('HH:mm:ss')+')')" dmx-show="location_state.value"></h6>
                                 </div>
                             </div>
                         </div>
