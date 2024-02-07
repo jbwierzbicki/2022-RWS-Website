@@ -189,7 +189,7 @@
                         <div class="col-lg-6">
                             <div class="row">
                                 <div class="col-4">
-                                    <h6 class="text-white-50"><i class="fas fa-hashtag pe-2 fa-fw"></i>&nbsp;Load Reference:</h6>
+                                    <h6 class="text-white-50"><i class="fab fa-wolf-pack-battalion pe-2 fa-fw fa-lg"></i>&nbsp;Load Reference:</h6>
                                 </div>
                                 <div class="col">
                                     <h6 class="text-light" dmx-text="tracking_api.data[0].Load_Reference__c"></h6>
