@@ -141,7 +141,7 @@
                                                         </div>
                                                         <div class="col-lg-6 align-self-center pt-1 pb-1 image-container">
                                                             <a href="https://www.ragingwolfsolutions.com/blog/">
-                                                                <img src="assets/images/Appreciating_Our_Truck_Drivers.webp" class="img-fluid">
+                                                                <img src="assets/images/Frame_10.webp" class="img-fluid">
                                                                 <div class="overlay">
                                                                     <button class="btn blog-btn btn-lg fw-bold text-white bg-opacity-100 pt-3 pb-3 ps-4 pe-4">Read <i class="fas fa-play-circle"></i></button>
                                                                 </div>
