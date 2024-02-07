@@ -134,8 +134,8 @@
                                                 <div class="border col-12 align-self-center bg-dark rounded rounded-3 border-secondary border-2 mb-3 pt-3 pb-3 ps-3 pe-3">
                                                     <div class="row ps-2 pe-2">
                                                         <div class="col-lg-6 align-self-center">
-                                                            <h5 class="lh-sm text-white text-truncate">The Fall Frenzy: How To Prepare For The Upcoming Holiday Shipping Season</h5>
-                                                            <p class="text-light mb-0 small">Read about the source of rising shipping costs, shipping delays in the Panama Canal, and the seasonal impact on capacity in our latest blog article.
+                                                            <h5 class="lh-sm text-white text-truncate">How Brokers Thrive Amid Trucking Woes</h5>
+                                                            <p class="text-light mb-0 small">How the freight recession and the rise of customer expectations have reshaped the trucking industry.
                                                             </p>
                                                             <a href="https://www.ragingwolfsolutions.com/blog/"><button id="Read_Blog" class="btn text-warning module-cta-btn text-start mt-1 pt-2 pb-2 ps-0 pe-0 small btn-sm">Read More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                                                         </div>
