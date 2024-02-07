@@ -53,7 +53,12 @@
                                     <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;<span dmx-text="tracking_api.data[0].PO__c"></span></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="w-50 text-secondary">From:&nbsp;<span dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></span></th>
+                                    <th scope="row" class="w-50 text-secondary">
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex">From:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></span></div>
+                                        </div>
+                                    </th>
                                     <td class="w-50 fw-bold text-secondary">To:&nbsp;<span dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></span></td>
                                 </tr>
                                 <tr>
