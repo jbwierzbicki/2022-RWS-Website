@@ -35,37 +35,54 @@
         <div class="container-xl">
             <div class="row">
                 <div class="col">
-                    <div class="d-flex justify-content-center mt-5 pb-4">
-                        <a href="https://www.ragingwolfsolutions.com" class="w-50"><button id="btn1" class="btn btn-outline-warning w-100">
-                                <i class="fas fa-arrow-left fa-fw me-2"></i>Return Home
-                            </button></a>
-
-
-                    </div>
                     <div class="d-flex justify-content-center mt-4 mb-4">
                         <h1>Load Summary</h1>
                     </div>
-                    <div class="d-flex mb-3">
+                    <div class="d-flex mb-3" id="loadInfo">
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th scope="row" class="w-50 text-secondary">Load ID:&nbsp;<span dmx-text="tracking_api.data[0].Load_Reference__c"></span></th>
-                                    <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;<span dmx-text="tracking_api.data[0].PO__c"></span></td>
+                                    <th scope="row" class="w-50 text-secondary">
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex" style="text-decoration: underline;">Load ID:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Load_Reference__c"></span></div>
+                                        </div>
+                                    </th>
+                                    <th scope="row" class="w-50 text-secondary">
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex" style="text-decoration: underline;">Customer PO:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].PO__c"></span></div>
+                                        </div>
+                                    </th>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="w-50 text-secondary">
                                         <div class="d-flex flex-row">
-                                            <div class="d-flex">From:</div>
-                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></span></div>
+                                            <div class="d-flex" style="text-decoration: underline;">Current Location:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="(location_city.value+', '+location_state.value)" dmx-show="location_state.value"></span></div>
                                         </div>
                                     </th>
-                                    <td class="w-50 fw-bold text-secondary">To:&nbsp;<span dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="w-50 text-secondary">Current Location:&nbsp;<span dmx-text="(location_city.value+', '+location_state.value)" dmx-show="location_state.value"></span>
+                                    <th scope="row" class="w-50 text-secondary">
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex" style="text-decoration: underline;">Approx. Miles Remaining:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="distance_remaining.value"></span></div>
+                                        </div>
                                     </th>
-                                    <td class="w-50 fw-bold text-secondary">Approx. Miles Remaining:&nbsp;<span dmx-text="distance_remaining.value"></span>
-                                    </td>
+                                <tr>
+                                    <th scope="row" class="w-50 text-secondary">
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex" style="text-decoration: underline;">Origin:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></span>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="row" class="w-50 text-secondary">
+                                        <div class="d-flex flex-row">
+                                            <div class="d-flex" style="text-decoration: underline;">Destination:</div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></span></div>
+                                        </div>
+                                    </th>
+                                </tr>
                                 </tr>
                             </tbody>
                         </table>
