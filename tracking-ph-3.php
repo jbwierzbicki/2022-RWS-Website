@@ -185,68 +185,69 @@
                         <h1 style="font-family: Sansation; letter-spacing: 3px; font-weight: 700;" class="text-uppercase">Load Summary</h1>
 
                     </div>
-                    <div class="row border-bottom pt-3 pb-2">
+                    <div class="row border-bottom pt-3">
                         <div class="col-lg-6">
                             <div class="row">
-                                <div class="col-4">
-                                    <h6 class="text-white-50"><i class="fab fa-wolf-pack-battalion pe-2 fa-fw fa-lg"></i>&nbsp;Load Reference:</h6>
+                                <div class="col-lg-4">
+                                    <h6 class="text-white-50 mb-3"><i class="fab fa-wolf-pack-battalion pe-2 fa-fw fa-lg"></i>&nbsp;Load Reference:</h6>
                                 </div>
                                 <div class="col">
-                                    <h6 class="text-light" dmx-text="tracking_api.data[0].Load_Reference__c"></h6>
+                                    <h6 class="text-light mb-3" dmx-text="tracking_api.data[0].Load_Reference__c"></h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="row">
-                                <div class="col-4">
-                                    <h6 class="text-white-50"><i class="fas fa-hashtag pe-2 fa-fw"></i>&nbsp;Customer PO:</h6>
+                                <div class="col-lg-4">
+                                    <h6 class="text-white-50 mb-3"><i class="fas fa-hashtag pe-2 fa-fw"></i>&nbsp;Customer PO:</h6>
                                 </div>
                                 <div class="col">
-                                    <h6 class="text-light" dmx-text="tracking_api.data[0].PO__c"></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row border-bottom pt-3 pb-2">
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col-4">
-                                    <h6 class="text-white-50"><i class="fas fa-map-marker-alt fa-fw pe-2 pt-1"></i>&nbsp;Current Location:</h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="text-light" dmx-text="(location_city.value+', '+location_state.value+' ('+tracking_api.data[0].Last_Tracked_Timestamp__c.formatDate('HH:mm:ss')+')')" dmx-show="location_state.value"></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col-4">
-                                    <h6 class="text-white-50 text-truncate"><i class="fas fa-info-circle pe-2 pt-1 fa-fw"></i>&nbsp;Est. Miles Remaining:</h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="text-light" dmx-text="distance_remaining.value"></h6>
+                                    <h6 class="text-light mb-3" dmx-text="tracking_api.data[0].PO__c"></h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row border-bottom pt-3 pb-2">
+                    <div class="row border-bottom pt-4">
                         <div class="col-lg-6">
                             <div class="row">
-                                <div class="col-4">
-                                    <h6 class="text-white-50"><i class="far fa-flag pe-2 pt-1 fa-fw"></i>&nbsp;Pickup Location:</h6>
+                                <div class="col-lg-4">
+                                    <h6 class="text-white-50 mb-3"><i class="fas fa-map-marker-alt fa-fw pe-2 pt-1"></i>&nbsp;Current Location:</h6>
                                 </div>
                                 <div class="col">
-                                    <h6 class="text-light" dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></h6>
+                                    <h6 class="text-light" dmx-text="(location_city.value+', '+location_state.value+' (at '+tracking_api.data[0].Last_Tracked_Timestamp__c.formatDate('h:mma')+' EST)')" dmx-show="location_state.value"></h6>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="row">
-                                <div class="col-4">
-                                    <h6 class="text-white-50"><i class="fas fa-flag-checkered fa-fw pt-1 pe-2"></i>&nbsp;Delivery Location:</h6>
+                                <div class="col-lg-4">
+                                    <h6 class="text-white-50 text-truncate mb-3"><i class="fas fa-info-circle pe-2 pt-1 fa-fw"></i>&nbsp;Est. Miles Remaining:</h6>
                                 </div>
                                 <div class="col">
-                                    <h6 class="text-light" dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></h6>
+                                    <h6 class="text-light mb-3" dmx-text="distance_remaining.value"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom pt-4">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h6 class="text-white-50 mb-3"><i class="far fa-flag pe-2 pt-1 fa-fw"></i>&nbsp;Pickup Location:</h6>
+                                </div>
+                                <div class="col">
+                                    <h6 class="text-light mb-3" dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h6 class="text-white-50 mb-3"><i class="fas fa-flag-checkered fa-fw pt-1 pe-2"></i>&nbsp;Delivery Location:</h6>
+                                </div>
+                                <div class="col">
+                                    <h6 class="text-light mb-3" dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></h6>
                                 </div>
                             </div>
                         </div>
