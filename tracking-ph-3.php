@@ -46,14 +46,14 @@
                                         <div class="d-flex flex-row"><i class="fab fa-wolf-pack-battalion pe-2 pt-1 fa-fw fa-fw fa-lg"></i>
 
                                             <div class="d-flex" style="text-decoration: underline;">Load ID:</div>
-                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Load_Reference__c"></span></div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Load_Reference__c" style="color: white;"></span></div>
                                         </div>
                                     </th>
                                     <th scope="row" class="w-50 text-secondary">
                                         <div class="d-flex flex-row"><i class="fas fa-hashtag pe-2 pt-1 fa-fw"></i>
 
                                             <div class="d-flex" style="text-decoration: underline;">Customer PO:</div>
-                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].PO__c"></span></div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].PO__c" style="color: white;"></span></div>
                                         </div>
                                     </th>
                                 </tr>
@@ -62,14 +62,14 @@
                                         <div class="d-flex flex-row"><i class="fas fa-map-marker-alt fa-fw pe-2 pt-1"></i>
 
                                             <div class="d-flex" style="text-decoration: underline;">Current Location:</div>
-                                            <div class="d-flex ps-2"><span dmx-text="(location_city.value+', '+location_state.value)" dmx-show="location_state.value"></span></div>
+                                            <div class="d-flex ps-2"><span dmx-text="(location_city.value+', '+location_state.value)" dmx-show="location_state.value" style="color: white;"></span></div>
                                         </div>
                                     </th>
                                     <th scope="row" class="w-50 text-secondary">
                                         <div class="d-flex flex-row"><i class="fas fa-info-circle pe-2 pt-1 fa-fw"></i>
 
                                             <div class="d-flex" style="text-decoration: underline;">Approx. Miles Remaining:</div>
-                                            <div class="d-flex ps-2"><span dmx-text="distance_remaining.value"></span></div>
+                                            <div class="d-flex ps-2"><span dmx-text="distance_remaining.value" style="color: white;"></span></div>
                                         </div>
                                     </th>
                                 <tr>
@@ -78,7 +78,7 @@
 
                                             <div class="d-flex" style="text-decoration: underline;">
                                                 Origin:</div>
-                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Pickup_Name_Address__c"></span>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Pickup_Name_Address__c" style="color: white;"></span>
                                             </div>
                                         </div>
                                     </th>
@@ -88,7 +88,7 @@
                                             <div class="d-flex" style="text-decoration: underline;">
                                                 Destination:
                                             </div>
-                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Delivery_Name_Address__c"></span></div>
+                                            <div class="d-flex ps-2"><span dmx-text="tracking_api.data[0].Delivery_Name_Address__c" style="color: white;"></span></div>
                                         </div>
                                     </th>
                                 </tr>
