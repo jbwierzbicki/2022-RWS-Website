@@ -84,7 +84,7 @@
                                                 <a href="media.php" class="text-decoration-none mb-2 ms-2 me-2">
                                                     <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="far fa-play-circle me-1"></i>Watch Our Video</h6>
                                                 </a>
-                                                <a href="football_pool.php" class="text-decoration-none mb-2 ms-2 me-2">
+                                                <a href="football_pool.php" class="text-decoration-none mb-2 ms-2 me-2 visually-hidden">
                                                     <h6 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h6>
                                                 </a>
                                             </div>

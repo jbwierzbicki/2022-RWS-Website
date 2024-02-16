@@ -55,7 +55,7 @@
                 <div class="col-lg-9 text-center">
                     <h2 class="text-light lh-base fw-bold">Are you ready for some football?</h2>
                     <h5 class="text-light fw-normal mb-5 lh-base">
-                        We are excited to announce that our weekly football pool is back for the 2023 season, and we have some new rules to make it more fun and rewarding for our loyal customers and supporters.&nbsp;<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/football_pool_terms.php')">Terms apply.</span></h5>
+                        We are excited to announce that our weekly football pool is back for the 2024 season, and we have some new rules to make it more fun and rewarding for our loyal customers and supporters.&nbsp;<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/football_pool_terms.php')">Terms apply.</span></h5>
 
                 </div>
             </div>
