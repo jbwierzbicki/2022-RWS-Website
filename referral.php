@@ -46,7 +46,8 @@
                     <h1 class="text-uppercase text-yellow text-warning text-center"><i class="fas fa-comments-dollar"></i></h1>
                     <h5 class="text-uppercase text-yellow text-warning text-center">Referral Rewards</h5>
                     <h1 class="text-light text-left">Raging Wolf Solutions Offers Referral Rewards</h1>
-                    <h5 class="text-white-50 mb-3 lh-base fw-normal">Refer a customer to the 'PACK'. Once their first shipment is successfully delivered, you'll receive a $40 Visa Gift Card. Additionally, we'll make a charitable donation to the&nbsp;<span class="text-white-50 hover-cursor" dmx-on:click="browser1.goto('https://www.uhhospitals.org/rainbow')"><i>Rainbow Children's Hospital </i></span> on your behalf as a token of our appreciation.&nbsp;<span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/referral_terms.php')">Terms apply.</span></h5>
+                    <h5 class="text-white-50 mb-3 lh-base fw-normal text-center">Refer a new customer to the 'PACK'. Once their first shipment is successfully delivered, you will receive a free promotional 40oz. travel mug!<br><span class="text-warning hover-cursor" dmx-on:click="browser1.goto('promotion_terms/referral_terms.php')">Terms apply.</span></h5>
+                    <img src="assets/images/Wide_40oz_Mug_Promo_Referral-_1_.webp" class="w-100">
 
                 </div>
 
