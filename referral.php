@@ -72,7 +72,7 @@
                     <div class="d-flex flex-column">
                         <h1 class="text-light lh-base text-center mb-1"><i class="fas fa-smile-beam"></i></h1>
                         <h5 class="text-light text-center lh-base">3. A member of our team will be in touch with you!</h5>
-                        <p class="text-white-50 text-center">A member of our team will contact you regarding your referral gift card and donation contribution. Keep an eye on your email, and feel free to check on the status of your referral.</p>
+                        <p class="text-white-50 text-center">A member of our team will contact you regarding your referral gift. Keep an eye on your email, and feel free to check on the status of your referral.</p>
                     </div>
                 </div>
             </div>
