@@ -58,7 +58,7 @@
                                 <div class="row justify-content-center g-0 gx-4">
                                     <div class="col-lg-5">
 
-                                        <dmx-slideshow id="slideshow1" class="ms-2 me-2" show-nav="true" delay="" pause-on-hover="true" no-autostart="true" show-paging="true">
+                                        <dmx-slideshow id="slideshow1" class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true">
                                             <dmx-slide alt="" id="blackMug" url="assets/images/Wolfs_Den_Products/black.webp"></dmx-slide>
                                             <dmx-slide alt="" id="dk_blueMug" url="assets/images/Wolfs_Den_Products/dk_blue.webp"></dmx-slide>
                                             <dmx-slide alt="" id="redMug" url="assets/images/Wolfs_Den_Products/red.webp"></dmx-slide>
