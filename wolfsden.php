@@ -91,11 +91,11 @@
                                             <span class="badge rounded-pill bg-light" style="color: black;" id="white" dmx-on:click="mug_color_opt.setValue('white')">White</span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
-                                        <p class="text-light">Whether you are in the office or on the go, this giant 44-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p><a href="wolfsden-checkout.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <p class="text-light">Whether you are in the office or on the go, this giant 44-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p><a><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                         </a>
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
-                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout"><button id="viewCart" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout"><button id="viewCart" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                                     </div>
                                 </div>
                             </div>
