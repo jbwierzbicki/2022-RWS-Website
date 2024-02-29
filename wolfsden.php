@@ -36,6 +36,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-value id="mug_color_opt"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
 
     <?php include 'navbar_mini'; ?>
@@ -56,7 +57,7 @@
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
                             <div class="container pt-3 pb-2 ps-0 pe-0">
                                 <div class="row justify-content-center g-0 gx-4">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5" dmx-hide="mug_color_opt.value">
 
                                         <dmx-slideshow id="slideshow1" class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true">
                                             <dmx-slide alt="" id="blackMug" url="assets/images/Wolfs_Den_Products/black.webp"></dmx-slide>
@@ -67,6 +68,15 @@
                                         </dmx-slideshow>
                                     </div>
 
+                                    <div class="col-lg-5" dmx-show="mug_color_opt.value">
+                                        <img src="assets/images/Wolfs_Den_Products/black.webp" class="img-fluid" dmx-show="mug_color_opt.value=='black'">
+                                        <img src="assets/images/Wolfs_Den_Products/dk_blue.webp" class="img-fluid" dmx-show="mug_color_opt.value=='dk_blue'">
+                                        <img src="assets/images/Wolfs_Den_Products/red.webp" class="img-fluid" dmx-show="mug_color_opt.value=='red'">
+                                        <img src="assets/images/Wolfs_Den_Products/teal.webp" class="img-fluid" dmx-show="mug_color_opt.value=='teal'">
+                                        <img src="assets/images/Wolfs_Den_Products/white.webp" class="img-fluid" dmx-show="mug_color_opt.value=='white'">
+
+                                    </div>
+
                                     <div class="col-lg-6 align-self-center pt-2 pb-2">
                                         <h4 class="text-light mb-0"><span class="badge bg-secondary rounded-pill">New!</span>
                                             Large 44z Thermal Travel Mug</h4>
@@ -74,11 +84,11 @@
                                         <p class="fw-bold text-danger mb-2">——</p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark" id="black">Black</span>
-                                            <span class="badge rounded-pill bg-primary" id="dk_blue">Dark Blue</span>
-                                            <span class="badge rounded-pill bg-danger" id="red">Red</span>
-                                            <span class="badge rounded-pill bg-info" id="teal">Teal</span>
-                                            <span class="badge rounded-pill bg-light" style="color: black;" id="white">White</span>
+                                            <span class="badge rounded-pill bg-dark" id="black" dmx-on:click="mug_color_opt.setValue('black')">Black</span>
+                                            <span class="badge rounded-pill bg-primary" id="dk_blue" dmx-on:click="mug_color_opt.setValue('dk_blue')">Dark Blue</span>
+                                            <span class="badge rounded-pill bg-danger" id="red" dmx-on:click="mug_color_opt.setValue('red')">Red</span>
+                                            <span class="badge rounded-pill bg-info" id="teal" dmx-on:click="mug_color_opt.setValue('teal')">Teal</span>
+                                            <span class="badge rounded-pill bg-light" style="color: black;" id="white" dmx-on:click="mug_color_opt.setValue('white')">White</span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
                                         <p class="text-light">Whether you are in the office or on the go, this giant 44-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p><a href="wolfsden-checkout.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
@@ -118,6 +128,14 @@
 
     <script src="js/script.js"></script>
 
+    <!-- Add this JavaScript function to your file wolfsden.php to display the respective image when each badge is clicked -->
+    <script>
+        document.getElementById('black').addEventListener('click', function() {
+    document.getElementById('blackMug').style.display = 'block';
+});
+    </script>
+
+    <!--
     <script>
         // Add this JavaScript function to your file wolfsden.php to display the respective image when each badge is clicked
 document.getElementById('black').addEventListener('click', function() {
@@ -149,6 +167,7 @@ document.getElementById('white').style.cursor = 'pointer';
 
 
     </script>
+-->
 
 </body>
 
