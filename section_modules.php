@@ -111,6 +111,7 @@
                                         <dmx-slide alt="" url="assets/images/slideshow_live/pamphlet.webp" thumb="assets/images/slideshow_live/thumbs/pamphlet.webp"></dmx-slide>
                                         <dmx-slide alt="" url="assets/images/slideshow_live/pen.webp" thumb="assets/images/slideshow_live/thumbs/pen.webp"></dmx-slide>
                                         <dmx-slide alt="" url="assets/images/slideshow_live/phone-stand.webp" thumb="assets/images/slideshow_live/thumbs/phone-stand.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pocket-knife.webp"></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
 
