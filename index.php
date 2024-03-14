@@ -232,37 +232,6 @@
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
-
-    <div id="cookBan" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(33, 37, 41, 0.85); padding: 10px; text-align: center; color: #fff;" class="container mw-100">
-        <div class="d-flex justify-content-center align-items-center">Your continued use of our website constitutes acceptance of our Cookie Policy, which is essential for providing you with a tailored experience. Please be aware that by navigating further, you agree to the use of cookies in accordance with our policy.<button id="cookNo" style="margin: 10px 0px 10px 20px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Decline</button><button id="cookYes" style="margin: 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Accept</button></div>
-        <div class="container">
-            <a href="https://s3.privyr.com/privacy/privacy-policy.html?d=eyJlbWFpbCI6ImpvaG5hdGhhbkByYWdpbmd3b2xmc29sdXRpb25zLmNvbSIsImNvbXBhbnkiOiJSYWdpbmcgV29sZiBTb2x1dGlvbnMgTExDIiwiZ2VuX2F0IjoiMjAyMi0wOC0yNVQxNDowNTo0My44NTZaIn0=">Privacy Policy</a>
-        </div>
-
-
-
-    </div>
-
-    <script>
-        document.getElementById('cookYes').addEventListener('click', function() {
-    document.getElementById('cookie-banner').style.display = 'none';
-});
-
-document.getElementById('cookNo').addEventListener('click', function() {
-    var countdown = 10; // 20 seconds countdown
-    var countdownInterval = setInterval(function() {
-        document.getElementById('cookBan').innerHTML = 'You will be redirected back in ' + countdown + ' seconds.';
-        countdown--;
-        if (countdown < 0) {
-            clearInterval(countdownInterval);
-            // Add code here to redirect the user back one page
-            window.history.back();
-        }
-    }, 1000);
-});
-
-    </script>
-
 </body>
 
 </html>
