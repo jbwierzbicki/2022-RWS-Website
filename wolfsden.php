@@ -48,7 +48,22 @@
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container">
+
+
+        <div class="container small text-end">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div id="viewButtons" class="pe-4">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4nO3TSwoAIAwD0dz/WPZgcV8siIIfmAfdFbIaCTjE6Z4ZjsHP7MWt4bYzDCwzHSd0jP+YjhM6BlTpD5eMnv1+LjoAAAAASUVORK5CYII=" id="listButton" onclick="changeView('list')" class="pe-1" width="25px" height="25px">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVR4nGNgGAUUACYGBgYJKmAmfJaAFPynApYgxpLtDAwMFVjwPKj8PBzy20mxBKQBG/CAyoNobACkb9QSOPAYDS5kMJq6YGA0nwzxfLKdHqXwf1rWJ0z0qBlHAQM+AADSi3dOJFIa1QAAAABJRU5ErkJggg==" id="twoColumnButton" onclick="changeView('two-column')" class="pe-1" width="25px" height="25px">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2VPU6CQRCGnwYLsRMv4A9eASpoIP40EuA8YkvAQiss4CDKBdBL6AGkwB4zyUAmm5nk02JDwZtMsftMZr+ZnfkW9tpVjYGPxN6AivJb4D3hsr5WfgLMnRgje8gKWDt2o3wacNlH/Twucbf6CZwkA9Es4DOTqccl7lZfgVPNlHPt2KYctYB/2kPOgH5iDcPLwF3CZX1ofBpOjFNyqwdMEhsAB8ovgeeEy7qqXPwenBhde8gyqGlL+UvAZV/UDvh39u5a/jOTifJWkUy6Tj3vgZLyqnMnT8CFuZOBE6NDbp07Pd40/Ei/yvKOzs9GTSeGzF/hiX8MuPwJRPUiE5+lu1Y5/sIj5y14BY6Vy7uxSLisr5RX9P1JYwz/2Bt7kUe/LtDf4unX+l0AAAAASUVORK5CYII=" id="threeColumnButton" onclick="changeView('three-column')" width="25px" height="25px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="con1">
 
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -109,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="con2">
 
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -121,25 +136,25 @@
                                     <div class="col-lg-5" dmx-hide="hat_color_opt.value">
 
                                         <dmx-slideshow id="slideshow2" class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true">
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-black-Brown-front.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-left.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-right.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-back.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-left.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-right.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-back.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-front.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-left.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-right.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-back.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Brown-front" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Brown-left" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-left.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Brown-right" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-right.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Brown-back" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-back.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Gray-front" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Gray-left" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-left.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Gray-right" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-right.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-Black-Gray-back" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-back.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-White-Black-front" url="assets/images/Wolfs_Den_Products/hat-White-Black-front.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-White-Black-left" url="assets/images/Wolfs_Den_Products/hat-White-Black-left.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-White-Black-right" url="assets/images/Wolfs_Den_Products/hat-White-Black-right.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="hat-White-Black-back" url="assets/images/Wolfs_Den_Products/hat-White-Black-back.webp"></dmx-slide>
                                         </dmx-slideshow>
                                     </div>
 
                                     <div class="col-lg-5" dmx-show="hat_color_opt.value">
-                                        <img src="assets/images/Wolfs_Den_Products/hat-black-Brown-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='black/brown'">
-                                        <img src="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='black/gray'">
-                                        <img src="assets/images/Wolfs_Den_Products/hat-White-Black-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='white/black'">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='hat-Black-Brown-front'">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='hat-Black-Gray-front'">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-White-Black-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='hat-White-Black-front'">
 
                                     </div>
 
@@ -150,9 +165,9 @@
                                         <p class="fw-bold text-danger mb-2">——</p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark" id="black-brown" dmx-on:click="hat_color_opt.setValue('black/brown')">Black/Brown</span>
-                                            <span class="badge rounded-pill bg-primary" id="black-gray" dmx-on:click="hat_color_opt.setValue('black/gray')">Black/Gray</span>
-                                            <span class="badge rounded-pill bg-danger" id="white-black" dmx-on:click="hat_color_opt.setValue('white/black')">White/Black</span>
+                                            <span class="badge rounded-pill bg-dark" id="black-brown" dmx-on:click="hat_color_opt.setValue('hat-Black-Brown-front')">Black/Brown</span>
+                                            <span class="badge rounded-pill bg-primary" id="black-gray" dmx-on:click="hat_color_opt.setValue('hat-Black-Gray-front')">Black/Gray</span>
+                                            <span class="badge rounded-pill bg-danger" id="white-black" dmx-on:click="hat_color_opt.setValue('hat-White-Black-front')">White/Black</span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
                                         <p class="text-light">Check out these hats!</p><a><button id="Get_Yours1" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
@@ -160,6 +175,60 @@
                                         </a>
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
                                         <a href="wolfsden-checkout.php" id="wolfsdencheckout1"><button id="viewCart1" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="con3">
+
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="row h-100">
+
+                        <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
+                            <div class="container pt-3 pb-2 ps-0 pe-0">
+                                <div class="row justify-content-center g-0 gx-4">
+                                    <div class="col-lg-5" dmx-hide="coffee_mug_opt.value">
+
+                                        <dmx-slideshow id="slideshow3" class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true">
+                                            <dmx-slide alt="" id="mug-lft-1" url="assets/images/Wolfs_Den_Products/mug-lft-1.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="mug-rt-1" url="assets/images/Wolfs_Den_Products/mug-rt-1.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="mug-lft-2" url="assets/images/Wolfs_Den_Products/mug-lft-2.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="mug-rt-2" url="assets/images/Wolfs_Den_Products/mug-rt-2.webp"></dmx-slide>
+                                        </dmx-slideshow>
+                                    </div>
+
+                                    <div class="col-lg-5" dmx-show="coffee_mug_opt.value">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp" class="img-fluid" dmx-show="coffee_mug_opt.value=='mug-rt-1'">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp" class="img-fluid" dmx-show="coffee_mug_opt.value=='mug-rt-2'">
+
+                                    </div>
+
+                                    <div class="col-lg-6 align-self-center pt-2 pb-2">
+                                        <h4 class="text-light mb-0"><span class="badge bg-secondary rounded-pill">New!</span>
+                                            Coffee Mugs</h4>
+
+                                        <p class="fw-bold text-danger mb-2">——</p>
+
+                                        <h6>
+                                            <span class="badge rounded-pill bg-dark" id="mug_small" dmx-on:click="coffee_mug_opt.setValue('mug-rt-1')">Small</span>
+                                            <span class="badge rounded-pill bg-primary" id="mug_med" dmx-on:click="coffee_mug_opt.setValue('mug-rt-2')">Medium</span>
+                                        </h6>
+                                        <p class="fw-bold text-danger mb-2">——</p>
+                                        <p class="text-light">Check out these sweet mugs!</p><a><button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+
+                                        </a>
+                                        <p class="text-danger mb-2 fw-bold w-25">——</p>
+                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout2"><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -197,6 +266,14 @@
         document.getElementById('black').addEventListener('click', function() {
     document.getElementById('blackMug').style.display = 'block';
 });
+
+        document.getElementById('black-brown').addEventListener('click', function() {
+    document.getElementById('hat-Black-Brown-front').style.display = 'block';
+        });
+
+        document.getElementById('mug_small').addEventListener('click', function() {
+    document.getElementById('mug-lft-1').style.display = 'block';
+        });
     </script>
 
     <!--
