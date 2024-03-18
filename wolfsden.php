@@ -109,6 +109,70 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="row h-100">
+
+                        <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
+                            <div class="container pt-3 pb-2 ps-0 pe-0">
+                                <div class="row justify-content-center g-0 gx-4">
+                                    <div class="col-lg-5" dmx-hide="hat_color_opt.value">
+
+                                        <dmx-slideshow id="slideshow2" class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true">
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-black-Brown-front.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-left.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-right.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Brown-back.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-left.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-right.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-Black-Gray-back.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-front.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-left.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-right.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="" url="assets/images/Wolfs_Den_Products/hat-White-Black-back.webp"></dmx-slide>
+                                        </dmx-slideshow>
+                                    </div>
+
+                                    <div class="col-lg-5" dmx-show="hat_color_opt.value">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-black-Brown-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='black/brown'">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='black/gray'">
+                                        <img src="assets/images/Wolfs_Den_Products/hat-White-Black-front.webp" class="img-fluid" dmx-show="hat_color_opt.value=='white/black'">
+
+                                    </div>
+
+                                    <div class="col-lg-6 align-self-center pt-2 pb-2">
+                                        <h4 class="text-light mb-0"><span class="badge bg-secondary rounded-pill">New!</span>
+                                            Seggsy Trucker Hats</h4>
+
+                                        <p class="fw-bold text-danger mb-2">——</p>
+
+                                        <h6>
+                                            <span class="badge rounded-pill bg-dark" id="black-brown" dmx-on:click="hat_color_opt.setValue('black/brown')">Black/Brown</span>
+                                            <span class="badge rounded-pill bg-primary" id="black-gray" dmx-on:click="hat_color_opt.setValue('black/gray')">Black/Gray</span>
+                                            <span class="badge rounded-pill bg-danger" id="white-black" dmx-on:click="hat_color_opt.setValue('white/black')">White/Black</span>
+                                        </h6>
+                                        <p class="fw-bold text-danger mb-2">——</p>
+                                        <p class="text-light">Check out these hats!</p><a><button id="Get_Yours1" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+
+                                        </a>
+                                        <p class="text-danger mb-2 fw-bold w-25">——</p>
+                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout1"><button id="viewCart1" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
 
         <div class="row">
 
