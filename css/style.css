@@ -2,30 +2,35 @@
     .modules-container {
         margin-top: 0 !important;
     }
+
     header {
         background-image: none !important;
         background-color: #121212;
     }
+
     .index-main {
         background-repeat: no-repeat;
         background-position: center center;
         background-image: url("../assets/images/ezgif.com-gif-maker.gif");
         height: auto !important;
     }
+
     .main-card {
         background: linear-gradient(120deg, rgba(26, 26, 26, 0.75) 0%, rgba(35, 35, 35, 0.75) 100%) !important;
         -ms-flex-item-align: stretch !important;
-            align-self: stretch !important;
-    
+        align-self: stretch !important;
+
     }
+
     .module-card-row {
         height: 100%;
     }
+
     .refer-button {
         width: 100%;
-        margin-right: 0px!important;
+        margin-right: 0px !important;
     }
-    
+
 }
 
 
@@ -75,15 +80,15 @@ h4 {
 }
 
 .logo-img {
-      display: inline-block;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out;
+    display: inline-block;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-        .logo-img:hover {
-          -webkit-transform: scale(1.075);
-                  transform: scale(1.075);
-        }
+.logo-img:hover {
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075);
+}
 
 .nav-item {
     color: #FAFAFA !important;
@@ -95,23 +100,23 @@ h4 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    
+
 }
 
 .rws-nav-item {
-          -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; 
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .rws-nav-item:hover {
-          -webkit-transform: scale(1.075);
-                  transform: scale(1.075);
-        }
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075);
+}
 
 .nav-item.nav-separator {
     background: -webkit-gradient(linear, left top, right top, color-stop(32.55%, #3D3D3D), color-stop(33.98%, #000000), color-stop(66.41%, #000000), color-stop(67.45%, #3D3D3D));
@@ -157,6 +162,7 @@ h4 {
 #modules {
     background: #121212;
 }
+
 .module-card {
     background: linear-gradient(120deg, rgba(26, 26, 26, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%);
 }
@@ -173,7 +179,7 @@ h4 {
 }
 
 .services-main {
-background-position: center;
+    background-position: center;
 }
 
 .services-container {
@@ -198,11 +204,13 @@ background-position: center;
     padding: 45px 0 20px;
 }
 
-.univ--footer--container--row--col2 > ul > a > li,  .univ--footer--container--row--col2 > ul > a{
+.univ--footer--container--row--col2>ul>a>li,
+.univ--footer--container--row--col2>ul>a {
     color: #9e9e9e;
 }
 
-.univ--footer--container--row--col3 > ul > a > li,  .univ--footer--container--row--col3 > ul > a{
+.univ--footer--container--row--col3>ul>a>li,
+.univ--footer--container--row--col3>ul>a {
     color: #9e9e9e;
 }
 
@@ -232,7 +240,7 @@ background-position: center;
 
 
 .watermark {
-    
+
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -279,7 +287,7 @@ background-position: center;
 }
 
 .watermark1 {
-    
+
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -335,11 +343,11 @@ background-position: center;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease;
@@ -347,8 +355,10 @@ background-position: center;
 
 /* This styles the 'Watch' button */
 .image-container .overlay .watch-btn {
-    background: rgba(0, 0, 0, 0.5); /* Change this to match your design */
-    color: #fff; /* Change this to match your design */
+    background: rgba(0, 0, 0, 0.5);
+    /* Change this to match your design */
+    color: #fff;
+    /* Change this to match your design */
     border: none;
 }
 
@@ -362,11 +372,11 @@ background-position: center;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .border-offwhite {
@@ -375,7 +385,7 @@ background-position: center;
 
 .style2 {
     background-image: url("../assets/images/Football_Banner_Image_2023_Season.png");
-    
+
 }
 
 .promo-card:hover {
@@ -384,4 +394,21 @@ background-position: center;
 
 h4 {
     font-weight: bold !important;
+}
+
+/* Grid view styles */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* This will create a 4 container wide grid */
+    gap: 20px;
+}
+
+/* Clear any margin or padding that might cause wrapping */
+.container.grid-view > * {
+    margin: 0;
+    padding: 0;
+}
+
+#gridView, #listView {
+    cursor: pointer;
 }
