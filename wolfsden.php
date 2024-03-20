@@ -33,9 +33,13 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
+    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+    <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="slides[0].url"></dmx-data-detail>
+    <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="wolfsden.json"></dmx-json-datasource>
     <dmx-value id="mug_color_opt"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
 
@@ -62,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="con1">
+        <div class="container" id="con1" dmx-repeat:directory="jsonDS1.data">
 
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -74,52 +78,47 @@
                                     <div class="col-lg-5" dmx-hide="mug_color_opt.value">
 
                                         <dmx-slideshow id="slideshow1" class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true">
-                                            <dmx-slide alt="" id="blackMug" url="assets/images/Wolfs_Den_Products/black.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="dk_blueMug" url="assets/images/Wolfs_Den_Products/dk_blue.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="redMug" url="assets/images/Wolfs_Den_Products/red.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="tealMug" url="assets/images/Wolfs_Den_Products/teal.webp"></dmx-slide>
-                                            <dmx-slide alt="" id="whiteMug" url="assets/images/Wolfs_Den_Products/white.webp"></dmx-slide>
+                                            <dmx-slide alt="" id="blackMug"></dmx-slide>
+                                            <dmx-slide alt="" id="dk_blueMug"></dmx-slide>
+                                            <dmx-slide alt="" id="redMug"></dmx-slide>
+                                            <dmx-slide alt="" id="tealMug"></dmx-slide>
+                                            <dmx-slide alt="" id="whiteMug"></dmx-slide>
                                         </dmx-slideshow>
                                     </div>
 
                                     <div class="col-lg-5" dmx-show="mug_color_opt.value">
-                                        <img src="assets/images/Wolfs_Den_Products/black.webp" class="img-fluid" dmx-show="mug_color_opt.value=='black'">
-                                        <img src="assets/images/Wolfs_Den_Products/dk_blue.webp" class="img-fluid" dmx-show="mug_color_opt.value=='dk_blue'">
-                                        <img src="assets/images/Wolfs_Den_Products/red.webp" class="img-fluid" dmx-show="mug_color_opt.value=='red'">
-                                        <img src="assets/images/Wolfs_Den_Products/teal.webp" class="img-fluid" dmx-show="mug_color_opt.value=='teal'">
-                                        <img src="assets/images/Wolfs_Den_Products/white.webp" class="img-fluid" dmx-show="mug_color_opt.value=='white'">
+                                        <img src="" class="img-fluid" dmx-show="mug_color_opt.value=='black'">
+                                        <img src="" class="img-fluid" dmx-show="mug_color_opt.value=='dk_blue'">
+                                        <img src="" class="img-fluid" dmx-show="mug_color_opt.value=='red'">
+                                        <img src="" class="img-fluid" dmx-show="mug_color_opt.value=='teal'">
+                                        <img src="" class="img-fluid" dmx-show="mug_color_opt.value=='white'">
 
                                     </div>
 
                                     <div class="col-lg-6 align-self-center pt-2 pb-2">
-                                        <h4 class="text-light mb-0"><span class="badge bg-secondary rounded-pill">New!</span>
-                                            Large 44z Thermal Travel Mug</h4>
+                                        <h4 class="text-light mb-0"><span class="badge bg-secondary rounded-pill"></span></h4>
 
-                                        <p class="fw-bold text-danger mb-2">——</p>
+                                        <p class="fw-bold text-danger mb-2"></p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark" id="black" dmx-on:click="mug_color_opt.setValue('black')">Black</span>
-                                            <span class="badge rounded-pill bg-primary" id="dk_blue" dmx-on:click="mug_color_opt.setValue('dk_blue')">Dark Blue</span>
-                                            <span class="badge rounded-pill bg-danger" id="red" dmx-on:click="mug_color_opt.setValue('red')">Red</span>
-                                            <span class="badge rounded-pill bg-info" id="teal" dmx-on:click="mug_color_opt.setValue('teal')">Teal</span>
-                                            <span class="badge rounded-pill bg-light" style="color: black;" id="white" dmx-on:click="mug_color_opt.setValue('white')">White</span>
+                                            <span class="badge rounded-pill bg-dark" id="black" dmx-on:click="mug_color_opt.setValue('black')"></span>
+                                            <span class="badge rounded-pill bg-primary" id="dk_blue" dmx-on:click="mug_color_opt.setValue('dk_blue')"></span>
+                                            <span class="badge rounded-pill bg-danger" id="red" dmx-on:click="mug_color_opt.setValue('red')"></span>
+                                            <span class="badge rounded-pill bg-info" id="teal" dmx-on:click="mug_color_opt.setValue('teal')"></span>
+                                            <span class="badge rounded-pill bg-light" id="white" dmx-on:click="mug_color_opt.setValue('white')"></span>
                                         </h6>
-                                        <p class="fw-bold text-danger mb-2">——</p>
-                                        <p class="text-light">Whether you are in the office or on the go, this giant 44-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p><a><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <p class="fw-bold text-danger mb-2"></p>
+                                        <p class="text-light"></p><a><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0"><i class="fas fa-caret-right"></i></button>
 
                                         </a>
-                                        <p class="text-danger mb-2 fw-bold w-25">——</p>
-                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout"><button id="viewCart" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                        <p class="text-danger mb-2 fw-bold w-25"></p>
+                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout"><button id="viewCart" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')"><i class="fas fa-caret-right"></i></button></a>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
@@ -261,6 +260,137 @@
     <script src="js/script.js"></script>
 
     <!-- Add this JavaScript function to your file wolfsden.php to display the respective image when each badge is clicked -->
+
+    <script>
+        setTimeout(() => {
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('wolfsden.json')
+                .then(response => response.json())
+                .then(data => {
+                data.forEach(card => {
+                const container = document.getElementById(card.containerId);
+
+                const row = document.createElement('div');
+                row.classList.add('row', card.rowClass);
+
+                const col = document.createElement('div');
+                col.classList.add(card.colClass);
+
+                const h100Row = document.createElement('div');
+                h100Row.classList.add(card.h100RowClass);
+
+                const moduleCard = document.createElement('div');
+                moduleCard.classList.add(card.moduleCardClass);
+
+                const innerContainer = document.createElement('div');
+                innerContainer.classList.add('container', card.containerClass);
+
+                const g0Row = document.createElement('div');
+                g0Row.classList.add('row', card.g0RowClass);
+
+                const colLg5Slideshow = document.createElement('div');
+                colLg5Slideshow.classList.add(card.colLg5Class);
+                colLg5Slideshow.setAttribute('dmx-hide', 'mug_color_opt.value');
+
+                const slideshow = document.createElement('dmx-slideshow');
+                slideshow.id = card.slideshowId;
+                slideshow.classList.add(card.slideshowClass);
+                slideshow.setAttribute('show-nav', card.showNav);
+                slideshow.setAttribute('delay', card.delay);
+                slideshow.setAttribute('no-autostart', card.noAutostart);
+                slideshow.setAttribute('show-paging', card.showPaging);
+
+                card.slides.forEach(slide => {
+                    const slideElement = document.createElement('dmx-slide');
+                    slideElement.alt = slide.alt;
+                    slideElement.id = slide.id;
+                    slideElement.url = slide.url;
+                    slideshow.appendChild(slideElement);
+                });
+
+                colLg5Slideshow.appendChild(slideshow);
+
+                const colLg5Image = document.createElement('div');
+                colLg5Image.classList.add(card.colLg5Class);
+                colLg5Image.setAttribute('dmx-show', 'mug_color_opt.value');
+
+                g0Row.appendChild(colLg5Image);
+                
+                card.slides.forEach(slide => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = slide.url;
+                    imgElement.classList.add('img-fluid');
+                    imgElement.setAttribute('dmx-bind:src', `directory.slides.${slide.id}.url`);
+                    colLg5Image.appendChild(imgElement);
+                });
+
+                const colLg6Content = document.createElement('div');
+                colLg6Content.classList.add('col-lg-6', 'align-self-center', 'pt-2', 'pb-2');
+
+                const heading = document.createElement('h4');
+                heading.classList.add('text-light', 'mb-0');
+                const badge = document.createElement('span');
+                badge.classList.add('badge', 'bg-secondary', 'rounded-pill');
+                badge.textContent = 'New!';
+                heading.appendChild(badge);
+                heading.textContent += ' ' + card.title;
+
+                const hr = document.createElement('p');
+                hr.classList.add('fw-bold', 'text-danger', 'mb-2');
+                hr.textContent = '——';
+
+                const colorOptionsContainer = document.createElement('h6');
+                card.colorOptions.forEach(option => {
+                    const colorOption = document.createElement('span');
+                    colorOption.classList.add('badge', 'rounded-pill');
+                    colorOption.classList.add(`bg-${option.color}`);
+                    colorOption.id = option.id;
+                    colorOption.textContent = option.name;
+                    colorOption.setAttribute('dmx-on:click', `mug_color_opt.setValue('${option.id}')`);
+                    colorOptionsContainer.appendChild(colorOption);
+                });
+
+                const hr2 = document.createElement('p');
+                hr2.classList.add('fw-bold', 'text-danger', 'mb-2');
+                hr2.textContent = '——';
+
+                const description = document.createElement('p');
+                description.classList.add('text-light');
+                description.textContent = card.description;
+
+                const addToCartButton = document.createElement('button');
+                addToCartButton.id = card.addToCartButtonId;
+                addToCartButton.classList.add('btn', 'text-warning', 'module-cta-btn', 'text-start', 'btn-lg', 'mt-1', 'mb-1', 'ps-0', 'pe-0');
+                addToCartButton.textContent = 'Add to cart ';
+                const cartIcon = document.createElement('i');
+                cartIcon.classList.add('fas', 'fa-caret-right');
+                addToCartButton.appendChild(cartIcon);
+
+                const viewCartButton = document.createElement('button');
+                viewCartButton.id = card.viewCartButtonId;
+                viewCartButton.classList.add('btn', 'text-warning', 'module-cta-btn', 'btn-lg', 'text-start', 'ps-0', 'pe-0');
+                viewCartButton.textContent = 'view cart ';
+                const viewCartIcon = document.createElement('i');
+                viewCartIcon.classList.add('fas', 'fa-caret-right');
+                viewCartButton.appendChild(viewCartIcon);
+                viewCartButton.setAttribute('dmx-on:click', `browser1.goto('wolfsden-checkout.php')`);
+
+                // Append elements to the container
+                g0Row.appendChild(colLg5Slideshow);
+                g0Row.appendChild(colLg5Image);
+                g0Row.appendChild(colLg6Content);
+                innerContainer.appendChild(g0Row);
+                moduleCard.appendChild(innerContainer);
+                h100Row.appendChild(moduleCard);
+                col.appendChild(h100Row);
+                row.appendChild(col);
+                container.appendChild(row);
+            });
+        });
+    });
+        }, 2000);
+    </script>
+
     <script>
         document.getElementById('black').addEventListener('click', function() {
     document.getElementById('blackMug').style.display = 'block';

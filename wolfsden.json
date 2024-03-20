@@ -1,0 +1,75 @@
+[
+  {
+    "containerId": "con1",
+    "rowClass": "justify-content-center",
+    "colClass": "col-md-12",
+    "h100RowClass": "row-h-100",
+    "moduleCardClass": "module-card-col-border-rounded-0-rounded-1-border-secondary-mt-3-mb-3-ms-3-me-3-pt-3-pb-5-ps-3-pe-3",
+    "containerClass": "container-pt-3-pb-2-ps-0-pe-0",
+    "g0RowClass": "row-justify-content-center-g-0-gx-4",
+    "colLg5Class": "col-lg-5",
+    "slideshowId": "slideshow1",
+    "slideshowClass": "ms-2-me-2",
+    "delay": "",
+    "noAutostart": true,
+    "showPaging": true,
+    "slides": [
+      {
+        "alt": "",
+        "id": "blackMug",
+        "url": "assets/images/Wolfs_Den_Products/black.webp"
+      },
+      {
+        "alt": "",
+        "id": "dk_blueMug",
+        "url": "assets/images/Wolfs_Den_Products/dk_blue.webp"
+      },
+      {
+        "alt": "",
+        "id": "redMug",
+        "url": "assets/images/Wolfs_Den_Products/red.webp"
+      },
+      {
+        "alt": "",
+        "id": "tealMug",
+        "url": "assets/images/Wolfs_Den_Products/teal.webp"
+      },
+      {
+        "alt": "",
+        "id": "whiteMug",
+        "url": "assets/images/Wolfs_Den_Products/white.webp"
+      }
+    ],
+    "title": "Large 44z Thermal Travel Mug",
+    "colorOptions": [
+      {
+        "id": "black",
+        "name": "Black",
+        "color": "dark"
+      },
+      {
+        "id": "dk_blue",
+        "name": "Dark-Blue",
+        "color": "dark-blue"
+      },
+      {
+        "id": "red",
+        "name": "Red",
+        "color": "red"
+      },
+      {
+        "id": "teal",
+        "name": "Teal",
+        "color": "teal"
+      },
+      {
+        "id": "white",
+        "name": "White",
+        "color": "black"
+      }
+    ],
+    "description": "Whether you are in the office or on the go, this giant 44-ounce thermal drink mug will keep your favorite beverage at the perfect temperature for hours!",
+    "addToCartButtonId": "Get_Yours",
+    "viewCartButtonId": "viewCart"
+  }
+]
