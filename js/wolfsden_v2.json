@@ -1,0 +1,236 @@
+[
+    {
+        "slideshowSrc": "",
+        "title": "Large 40z Thermal Travel Mug",
+        "slideshowId": "trvl_mugs",
+        "newItem": "true",
+        "description": "Whether you are in the office or on the go, this giant 40-ounce thermal drink mug will keep your favorite beverage at the perfect temperature for hours!",
+        "storeId": [
+            {
+                "id": "trvl_black"
+            },
+            {
+                "id": "trvl_dk_blue"
+            },
+            {
+                "id": "trvl_red"
+            },
+            {
+                "id": "trvl_teal"
+            },
+            {
+                "id": "trvl_white"
+            }
+        ],
+        "variationBadge": [
+            {
+                "id": "black",
+                "name": "Black",
+                "color": "dark",
+                "slideId": "assets/images/Wolfs_Den_Products/black.webp"
+            },
+            {
+                "id": "dk_blue",
+                "name": "Dark-Blue",
+                "color": "dark-blue",
+                "slideId": "assets/images/Wolfs_Den_Products/dk_blue.webp"
+            },
+            {
+                "id": "red",
+                "name": "Red",
+                "color": "red",
+                "slideId": "redMug"
+            },
+            {
+                "id": "teal",
+                "name": "Teal",
+                "color": "teal",
+                "slideId": "tealMug"
+            },
+            {
+                "id": "white",
+                "name": "White",
+                "color": "white",
+                "slideId": "whiteMug"
+            }
+        ],
+        "slides": [
+            {
+                "alt": "",
+                "id": "blackMug",
+                "url": "assets/images/Wolfs_Den_Products/black.webp"
+            },
+            {
+                "alt": "",
+                "id": "dk_blueMug",
+                "url": "assets/images/Wolfs_Den_Products/dk_blue.webp"
+            },
+            {
+                "alt": "",
+                "id": "redMug",
+                "url": "assets/images/Wolfs_Den_Products/red.webp"
+            },
+            {
+                "alt": "",
+                "id": "tealMug",
+                "url": "assets/images/Wolfs_Den_Products/teal.webp"
+            },
+            {
+                "alt": "",
+                "id": "whiteMug",
+                "url": "assets/images/Wolfs_Den_Products/white.webp"
+            }
+        ]
+    },
+    {
+        "slideshowSrc": "",
+        "title": "Seggsy Trucker Hats",
+        "slideshowId": "hats",
+        "newItem": "true",
+        "description": "Check out these hats!",
+        "storeId": [
+            {
+                "id": "hat_brown"
+            },
+            {
+                "id": "hat_black"
+            },
+            {
+                "id": "hat_brown"
+            }
+        ],
+        "variationBadge": [
+            {
+                "id": "black",
+                "name": "Black",
+                "color": "dark",
+                "slideId": "hat-Black-Gray-front"
+            },
+            {
+                "id": "brown",
+                "name": "Brown",
+                "color": "brown",
+                "slideId": "hat-Black-Brown-front"
+            },
+            {
+                "id": "white",
+                "name": "White",
+                "color": "white",
+                "slideId": "hat-White-Black-front"
+            }
+        ],
+        "slides": [
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-front",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-left",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-left.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-right",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-right.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-back",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-back.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Gray-front",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Gray-left",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-left.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Gray-right",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-right.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Gray-back",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-back.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-White-Black-front",
+                "url": "assets/images/Wolfs_Den_Products/hat-White-Black-front.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-White-Black-left",
+                "url": "assets/images/Wolfs_Den_Products/hat-White-Black-left.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-White-Black-right",
+                "url": "assets/images/Wolfs_Den_Products/hat-White-Black-right.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-White-Black-back",
+                "url": "assets/images/Wolfs_Den_Products/hat-White-Black-back.webp"
+            }
+        ]
+    },
+    {
+        "slideshowSrc": "",
+        "title": "Coffee Mugs",
+        "slideshowId": "coffee_mugs",
+        "newItem": "true",
+        "description": "Check out these sweet mugs!",
+        "storeId": [
+            {
+                "id": "small_mug"
+            },
+            {
+                "id": "medium_mug"
+            }
+        ],
+        "variationBadge": [
+            {
+                "id": "small",
+                "name": "Small",
+                "color": "black",
+                "slideId": "mug-rt-1"
+            },
+            {
+                "id": "medium",
+                "name": "Medium",
+                "color": "blue",
+                "slideId": "mug-rt-2"
+            }
+        ],
+        "slides": [
+            {
+                "alt": "",
+                "id": "mug-lft-1",
+                "url": "assets/images/Wolfs_Den_Products/mug-lft-1.webp"
+            },
+            {
+                "alt": "",
+                "id": "mug-rt-1",
+                "url": "assets/images/Wolfs_Den_Products/mug-rt-1.webp"
+            },
+            {
+                "alt": "",
+                "id": "mug-lft-2",
+                "url": "assets/images/Wolfs_Den_Products/mug-lft-2.webp"
+            },
+            {
+                "alt": "",
+                "id": "mug-rt-2",
+                "url": "assets/images/Wolfs_Den_Products/mug-rt-2.webp"
+            }
+        ]
+    }
+]

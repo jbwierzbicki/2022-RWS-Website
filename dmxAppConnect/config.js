@@ -105,6 +105,132 @@ dmx.config({
     "data_detail1": {
       "meta": null,
       "outputType": "object"
+    },
+    "repeat1": {
+      "meta": [
+        {
+          "name": "containerId",
+          "type": "text"
+        },
+        {
+          "name": "rowClass",
+          "type": "text"
+        },
+        {
+          "name": "colClass",
+          "type": "text"
+        },
+        {
+          "name": "h100RowClass",
+          "type": "text"
+        },
+        {
+          "name": "moduleCardClass",
+          "type": "text"
+        },
+        {
+          "name": "containerClass",
+          "type": "text"
+        },
+        {
+          "name": "g0RowClass",
+          "type": "text"
+        },
+        {
+          "name": "colLg5Class",
+          "type": "text"
+        },
+        {
+          "name": "slideshowId",
+          "type": "text"
+        },
+        {
+          "name": "slideshowClass",
+          "type": "text"
+        },
+        {
+          "name": "delay",
+          "type": "text"
+        },
+        {
+          "name": "noAutostart",
+          "type": "boolean"
+        },
+        {
+          "name": "showPaging",
+          "type": "boolean"
+        },
+        {
+          "name": "slides",
+          "type": "array",
+          "sub": [
+            {
+              "name": "alt",
+              "type": "text"
+            },
+            {
+              "name": "id",
+              "type": "text"
+            },
+            {
+              "name": "url",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "colorOptions",
+          "type": "array",
+          "sub": [
+            {
+              "name": "id",
+              "type": "text"
+            },
+            {
+              "name": "name",
+              "type": "text"
+            },
+            {
+              "name": "color",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "addToCartButtonId",
+          "type": "text"
+        },
+        {
+          "name": "viewCartButtonId",
+          "type": "text"
+        }
+      ],
+      "outputType": "object"
+    },
+    "repeat2": {
+      "meta": [
+        {
+          "name": "id",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "color",
+          "type": "text"
+        }
+      ],
+      "outputType": "array"
     }
   }
 });
