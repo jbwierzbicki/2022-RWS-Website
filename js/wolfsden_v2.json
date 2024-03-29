@@ -104,13 +104,13 @@
                 "id": "black",
                 "name": "Black",
                 "color": "dark",
-                "slideId": 4
+                "slideId": 0
             },
             {
                 "id": "brown",
                 "name": "Brown",
                 "color": "brown",
-                "slideId": 0
+                "slideId": 4
             },
             {
                 "id": "white",
@@ -120,26 +120,6 @@
             }
         ],
         "slides": [
-            {
-                "alt": "",
-                "id": "hat-Black-Brown-front",
-                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"
-            },
-            {
-                "alt": "",
-                "id": "hat-Black-Brown-left",
-                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-left.webp"
-            },
-            {
-                "alt": "",
-                "id": "hat-Black-Brown-right",
-                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-right.webp"
-            },
-            {
-                "alt": "",
-                "id": "hat-Black-Brown-back",
-                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-back.webp"
-            },
             {
                 "alt": "",
                 "id": "hat-Black-Gray-front",
@@ -159,6 +139,26 @@
                 "alt": "",
                 "id": "hat-Black-Gray-back",
                 "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-back.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-front",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-left",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-left.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-right",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-right.webp"
+            },
+            {
+                "alt": "",
+                "id": "hat-Black-Brown-back",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-back.webp"
             },
             {
                 "alt": "",
