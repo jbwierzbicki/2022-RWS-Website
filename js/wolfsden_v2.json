@@ -27,31 +27,31 @@
                 "id": "black",
                 "name": "Black",
                 "color": "dark",
-                "slideId": "assets/images/Wolfs_Den_Products/black.webp"
+                "slideId": 0
             },
             {
                 "id": "dk_blue",
                 "name": "Dark-Blue",
                 "color": "dark-blue",
-                "slideId": "assets/images/Wolfs_Den_Products/dk_blue.webp"
+                "slideId": 1
             },
             {
                 "id": "red",
                 "name": "Red",
                 "color": "red",
-                "slideId": "redMug"
+                "slideId": 2
             },
             {
                 "id": "teal",
                 "name": "Teal",
                 "color": "teal",
-                "slideId": "tealMug"
+                "slideId": 3
             },
             {
                 "id": "white",
                 "name": "White",
                 "color": "white",
-                "slideId": "whiteMug"
+                "slideId": 4
             }
         ],
         "slides": [
@@ -104,19 +104,19 @@
                 "id": "black",
                 "name": "Black",
                 "color": "dark",
-                "slideId": "hat-Black-Gray-front"
+                "slideId": 4
             },
             {
                 "id": "brown",
                 "name": "Brown",
                 "color": "brown",
-                "slideId": "hat-Black-Brown-front"
+                "slideId": 0
             },
             {
                 "id": "white",
                 "name": "White",
                 "color": "white",
-                "slideId": "hat-White-Black-front"
+                "slideId": 8
             }
         ],
         "slides": [
@@ -201,13 +201,13 @@
                 "id": "small",
                 "name": "Small",
                 "color": "black",
-                "slideId": "mug-rt-1"
+                "slideId": 0
             },
             {
                 "id": "medium",
                 "name": "Medium",
                 "color": "blue",
-                "slideId": "mug-rt-2"
+                "slideId": 3
             }
         ],
         "slides": [
