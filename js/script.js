@@ -28,3 +28,5 @@ milestones.forEach((milestone, index) => {
         checkmarks[index].style.display = 'none'; // Hide the checkmark
     }
 });
+
+

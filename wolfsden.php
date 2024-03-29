@@ -77,7 +77,7 @@
                                 <div class="row justify-content-center g-0 gx-4">
                                     <div class="col-lg-5" dmx-hide="coffee_mug_opt.value">
 
-                                        <dmx-slideshow class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true" dmx-bind:slides="slides" dmx-bind:id="slideshowId">
+                                        <dmx-slideshow class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true" dmx-bind:slides="slides" id="slideshow1">
                                         </dmx-slideshow>
                                     </div>
 
@@ -94,7 +94,7 @@
                                         <p class="fw-bold text-danger mb-2">——</p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="variationBadge" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-text="name" dmx-style:background-color="color" dmx-on:click="slideshow.show(slideId)"></span>
+                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="variationBadge" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-text="name" dmx-style:background-color="color" dmx-on:click="slideshow1.show($index)"></span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
                                         <p class="text-light" dmx-text="description">Check out these sweet mugs!</p><a><button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
@@ -333,6 +333,39 @@ document.getElementById('white').style.cursor = 'pointer';
 
     </script>
 -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'childList') {
+                // Assuming the slideshow elements have a class 'dmx-slideshow'
+                const slideshows = document.querySelectorAll('.dmx-slideshow');
+                fetch('js/wolfsden_v2.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        slideshows.forEach((slideshow, index) => {
+                            // Ensure there's a corresponding item in the JSON data
+                            if (data[index]) {
+                                slideshow.id = data[index].slideshowId;
+                            }
+                        });
+                    })
+                    .catch(error => console.error('Error loading JSON data:', error));
+            }
+        });
+    });
+
+    // Configuration of the observer:
+    const config = { childList: true, subtree: true };
+
+    // Select the node that will be observed for mutations
+    const targetNode = document.getElementById('modules');
+
+    // Start observing the target node for configured mutations
+    observer.observe(targetNode, config);
+});
+    </script>
 
 </body>
 
