@@ -412,3 +412,11 @@ h4 {
 #gridView, #listView {
     cursor: pointer;
 }
+span.price {
+  float: right;
+  color: #ffc107;
+}
+
+a {
+    text-decoration: none;
+}

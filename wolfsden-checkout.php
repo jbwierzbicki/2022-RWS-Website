@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
+    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
@@ -47,16 +50,66 @@
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container">
+        <div class="container text-nowrap" id="shopping_Cart">
+
+            <div class="row justify-content-center row-cols-12">
+                <div class="col-lg-8 order-2 order-lg-1 col-md-12 col-sm-12 col-12">
+                    <div class="row h-100">
+
+                        <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
+                            <div class="container pt-3 pb-2 ps-0 pe-0">
+
+                                <div class="col text-center" is="dmx-data-detail">
+                                    <div class="container-fluid">
+                                        <h1 class="text-secondary mt-4 fst-italic text-wrap">Your Cart is Currently Empty.
+                                        </h1>
+                                        <p class="text-secondary hover-cursor" dmx-on:click="browser1.goto('wolfsden.php')"><i><u>Click here to add items!</u></i></p>
+                                    </div>
+
+
+                                </div>
+                                <div class="row justify-content-center g-0 gx-4" id="selectedItems">
+
+
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 text-warning order-1 order-lg-2 col-md-12 col-sm-12 col-12" id="cart_Snapshot">
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="module-card border rounded-0 border-secondary mt-3 mb-3 pt-3 pb-3 ps-3 pe-3 col fw-bolder lh-lg rounded-1">
+                                    <h5 class="text-warning text-center lh-1">Your Cart</h5>
+                                    <hr>
+                                    <p class="ps-1 pe-1"><a href="#">Product 1</a> <span class="price">$15</span></p>
+                                    <p class="ps-1 pe-1"><a href="#">Product 2</a> <span class="price">$5</span></p>
+                                    <p class="ps-1 pe-1"><a href="#">Product 3</a> <span class="price">$8</span></p>
+                                    <p class="ps-1 pe-1"><a href="#">Product 4</a> <span class="price">$2</span></p>
+                                    <hr>
+                                    <p class="ps-1 pe-1">Total <span class="price"><b>$30</b></span></p>
+                                    <button id="btn1" class="btn w-100 text-black bg-warning fw-bold mt-3" dmx-on:click="">Proceed To Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container" id="selectedItems_Placeholder">
 
             <div class="row justify-content-center">
-                <div class="col-md-12">
+                <div class="col-md-12 col">
                     <div class="row h-100">
 
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
                             <div class="container pt-3 pb-2 ps-0 pe-0">
                                 <div class="row justify-content-center g-0 gx-4">
-                                    <div class="col-lg-5" dmx-hide="mug_color_opt.value">
+                                    <div class="col-12 col-lg-5" dmx-hide="mug_color_opt.value">
 
                                     </div>
 
@@ -69,25 +122,37 @@
 
                                     </div>
 
-                                    <div class="col-lg-6 align-self-center pt-2 pb-2">
-                                        <h4 class="text-light mb-0"><span class="badge bg-secondary rounded-pill">New!</span>
-                                            Large 44z Thermal Travel Mug</h4>
+                                    <div class="col-12 col-lg pt-2 pb-2">
+                                        <div class="row row-cols-12 g-0" id="sel_item_design_placeholder">
+                                            <div class="text-start m-0 p-0 w-25 col">
+                                                <h4 class="text-light m-0 p-0">Large 44z Thermal Travel Mug</h4>
+                                            </div>
+                                            <div class="text-end col-4">
+                                                <h4 class="text-light m-0 p-0">$24.99</h4>
+                                            </div>
+
+                                        </div>
+
 
                                         <p class="fw-bold text-danger mb-2">——</p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark" id="black" dmx-on:click="mug_color_opt.setValue('black')">Black</span>
-                                            <span class="badge rounded-pill bg-primary" id="dk_blue" dmx-on:click="mug_color_opt.setValue('dk_blue')">Dark Blue</span>
-                                            <span class="badge rounded-pill bg-danger" id="red" dmx-on:click="mug_color_opt.setValue('red')">Red</span>
-                                            <span class="badge rounded-pill bg-info" id="teal" dmx-on:click="mug_color_opt.setValue('teal')">Teal</span>
-                                            <span class="badge rounded-pill bg-light" style="color: black;" id="white" dmx-on:click="mug_color_opt.setValue('white')">White</span>
+                                            <span class="badge rounded-pill bg-dark" id="black1" dmx-on:click="mug_color_opt.setValue('black')">Black</span>
+                                            <span class="badge rounded-pill bg-primary" id="dk_blue1" dmx-on:click="mug_color_opt.setValue('dk_blue')">Dark Blue</span>
+                                            <span class="badge rounded-pill bg-danger" id="red1" dmx-on:click="mug_color_opt.setValue('red')">Red</span>
+                                            <span class="badge rounded-pill bg-info" id="teal1" dmx-on:click="mug_color_opt.setValue('teal')">Teal</span>
+                                            <span class="badge rounded-pill bg-light" style="color: black;" id="white1" dmx-on:click="mug_color_opt.setValue('white')">White</span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
-                                        <p class="text-light">Whether you are in the office or on the go, this giant 44-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p><a href="wolfsden-checkout.php"><button id="Get_Yours" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
-
-                                        </a>
+                                        <p class="text-light">Whether you are in the office or on the go, this giant 40-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p>
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
-                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout"><button id="viewCart" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-6"><input id="text1" name="text1" type="number" class="form-control" placeholder="Qty."></div>
+                                            <div class="col-lg-2 col-6"><button id="btn2" class="btn bg-secondary w-100">
+                                                    <i class="far fa-trash-alt fa-fw me-1"></i>Delete</button></div>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
