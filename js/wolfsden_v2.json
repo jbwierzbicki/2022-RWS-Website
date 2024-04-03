@@ -1,9 +1,10 @@
 [
     {
         "slideshowSrc": "",
-        "title": "Large 40z Thermal Travel Mug",
+        "prodTitle": "Large 40z Thermal Travel Mug",
         "slideshowId": "trvl_mugs",
         "newItem": "true",
+        "itemCost": "26.99",
         "description": "Whether you are in the office or on the go, this giant 40-ounce thermal drink mug will keep your favorite beverage at the perfect temperature for hours!",
         "storeId": [
             {

@@ -39,6 +39,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="js/wolfsden_v2.json"></dmx-json-datasource>
     <div is="dmx-browser" id="browser1"></div>
 
     <?php include 'navbar_mini'; ?>
@@ -56,11 +57,11 @@
                 <div class="col-lg-8 order-2 order-lg-1 col-md-12 col-sm-12 col-12">
                     <div class="row h-100">
 
-                        <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
+                        <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3 align-self-center">
                             <div class="container pt-3 pb-2 ps-0 pe-0">
 
                                 <div class="col text-center" is="dmx-data-detail">
-                                    <div class="container-fluid">
+                                    <div class="container-fluid" id="emptyCart">
                                         <h1 class="text-secondary mt-4 fst-italic text-wrap">Your Cart is Currently Empty.
                                         </h1>
                                         <p class="text-secondary hover-cursor" dmx-on:click="browser1.goto('wolfsden.php')"><i><u>Click here to add items!</u></i></p>
@@ -68,10 +69,10 @@
 
 
                                 </div>
-                                <div class="row justify-content-center g-0 gx-4" id="selectedItems">
+                                <div class="row justify-content-center g-0 gx-4">
 
 
-                                    <div class="col"></div>
+                                    <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3" id="selectedItems" dmx-repeat:repeat1="jsonDS2.data"></div>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +82,7 @@
                 <div class="col-lg-4 text-warning order-1 order-lg-2 col-md-12 col-sm-12 col-12" id="cart_Snapshot">
                     <div class="row">
                         <div class="col">
-                            <div class="container">
+                            <div class="container ps-sm-1 pe-sm-1 ps-1 pe-1">
                                 <div class="module-card border rounded-0 border-secondary mt-3 mb-3 pt-3 pb-3 ps-3 pe-3 col fw-bolder lh-lg rounded-1">
                                     <h5 class="text-warning text-center lh-1">Your Cart</h5>
                                     <hr>
@@ -125,10 +126,10 @@
                                     <div class="col-12 col-lg pt-2 pb-2">
                                         <div class="row row-cols-12 g-0" id="sel_item_design_placeholder">
                                             <div class="text-start m-0 p-0 w-25 col">
-                                                <h4 class="text-light m-0 p-0">Large 44z Thermal Travel Mug</h4>
+                                                <h4 class="text-light m-0 p-0" id="prodTitle">Large 44z Thermal Travel Mug</h4>
                                             </div>
                                             <div class="text-end col-4">
-                                                <h4 class="text-light m-0 p-0">$24.99</h4>
+                                                <h4 class="text-light m-0 p-0" id="itemCost">$24.99</h4>
                                             </div>
 
                                         </div>
@@ -148,7 +149,7 @@
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
                                         <div class="row">
                                             <div class="col-lg-2 col-6"><input id="text1" name="text1" type="number" class="form-control" placeholder="Qty."></div>
-                                            <div class="col-lg-2 col-6"><button id="btn2" class="btn bg-secondary w-100">
+                                            <div class="col-lg-2 col-6"><button id="btn2" class="btn bg-secondary w-100" dmx-on:click="">
                                                     <i class="far fa-trash-alt fa-fw me-1"></i>Delete</button></div>
                                         </div>
 
