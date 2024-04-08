@@ -243,7 +243,7 @@
 
     <script>
         document.getElementById('cookYes').addEventListener('click', function() {
-    document.getElementById('cookie-banner').style.display = 'none';
+    document.getElementById('cookBan').style.display = 'none';
 });
 
 document.getElementById('cookNo').addEventListener('click', function() {
