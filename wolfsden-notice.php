@@ -14,7 +14,7 @@
 </head>
 
 <body is="dmx-app" id="wolfsdenotice">
-    <div class="modal" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal" id="notice" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -24,13 +24,14 @@
                     <p>Modal body text goes here.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger w-100 fw-bold text-black" data-bs-dismiss="modal">Go Back</button>
-                    <button type="button" class="btn btn-warning w-100 fw-bold">Proceed with Checkout</button>
+                    <button type="button" class="btn btn-danger w-100 fw-bold text-black" data-bs-dismiss="modal" id="back">Go Back</button>
+                    <button type="button" class="btn btn-warning w-100 fw-bold" id="proceed" dmx-on:click="">Proceed with Checkout</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
