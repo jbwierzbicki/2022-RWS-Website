@@ -92,7 +92,7 @@
                                     <p class="ps-1 pe-1"><a href="#">Product 4</a> <span class="price">$2</span></p>
                                     <hr>
                                     <p class="ps-1 pe-1">Total <span class="price"><b>$30</b></span></p>
-                                    <button id="btn1" class="btn w-100 text-black bg-warning fw-bold mt-3" dmx-on:click="">Proceed To Checkout</button>
+                                    <button id="purchase" class="btn w-100 text-black bg-warning fw-bold mt-3" dmx-on:click="">Proceed To Checkout</button>
                                 </div>
                             </div>
                         </div>
@@ -185,6 +185,10 @@
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+
+    <script>
+
+    </script>
 
 
 </body>
