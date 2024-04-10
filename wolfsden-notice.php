@@ -14,18 +14,20 @@
 </head>
 
 <body is="dmx-app" id="wolfsdenotice">
-    <div class="modal" id="notice" is="dmx-bs5-modal" tabindex="-1">
+    <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3 text-light w-50 col" id="notice" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center">!! AN IMPORTANT NOTICE REGARDING RWS CHECKOUT PROCESS !!</h5>
+                <div class="module-card-header">
+                    <h4 class="modal-title mt-3 mb-3 text-center">!! AN IMPORTANT NOTICE REGARDING RWS CHECKOUT PROCESS !!</h4>
                 </div>
-                <div class="modal-body text-center">
-                    <p>Modal body text goes here.</p>
+                <hr>
+                <div class="module-card-body text-center">
+                    <p class="mt-3 mb-3">Details of our checkout/purchase process goes here.</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger w-100 fw-bold text-black" data-bs-dismiss="modal" id="back">Go Back</button>
-                    <button type="button" class="btn btn-warning w-100 fw-bold" id="proceed" dmx-on:click="">Proceed with Checkout</button>
+                <hr>
+                <div class="module-card-footer">
+                    <button type="button" class="btn btn-danger w-100 fw-bold text-black mb-1" data-bs-dismiss="modal" id="back">Go Back</button>
+                    <button type="button" class="btn btn-warning w-100 fw-bold mt-1" id="proceed" dmx-on:click="">Proceed with Checkout</button>
                 </div>
             </div>
         </div>
