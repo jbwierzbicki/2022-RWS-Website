@@ -420,3 +420,12 @@ span.price {
 a {
     text-decoration: none;
 }
+
+#fname {
+    -ms-flex-item-align: right;
+        align-self: right;
+}
+
+#privPol {
+    color: #ffc107;
+}

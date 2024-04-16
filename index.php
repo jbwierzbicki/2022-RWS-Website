@@ -229,12 +229,13 @@
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
-    <div id="cookBan" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(33, 37, 41, 0.85); padding: 10px; text-align: center; color: #fff;" class="container mw-100">
+    <div id="cookBan" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(33, 37, 41, 0.85); padding: 10px; text-align: center; color: #fff;" class="container mw-100" dmx-hide="cookieBanVis.value==false">
+        <dmx-value id="cookieBanVis" dmx-bind:value="true"></dmx-value>
         <div class="d-flex justify-content-center align-items-center">
             <div class="d-flex flex-column">
-                <p class="mb-0">Your continued use of our website constitutes acceptance of our Cookie Policy, which is essential for providing you with a tailored experience. Please be aware that by navigating further, you agree to the use of cookies in accordance with our policy.</p><a href="https://s3.privyr.com/privacy/privacy-policy.html?d=eyJlbWFpbCI6ImpvaG5hdGhhbkByYWdpbmd3b2xmc29sdXRpb25zLmNvbSIsImNvbXBhbnkiOiJSYWdpbmcgV29sZiBTb2x1dGlvbnMgTExDIiwiZ2VuX2F0IjoiMjAyMi0wOC0yNVQxNDowNTo0My44NTZaIn0=">Privacy Policy</a>
+                <p class="mb-0">Your continued use of our website constitutes acceptance of our Cookie Policy, which is essential for providing you with a tailored experience. Please be aware that by navigating further, you agree to the use of cookies in accordance with our policy.</p><a href="https://s3.privyr.com/privacy/privacy-policy.html?d=eyJlbWFpbCI6ImpvaG5hdGhhbkByYWdpbmd3b2xmc29sdXRpb25zLmNvbSIsImNvbXBhbnkiOiJSYWdpbmcgV29sZiBTb2x1dGlvbnMgTExDIiwiZ2VuX2F0IjoiMjAyMi0wOC0yNVQxNDowNTo0My44NTZaIn0=" id="privPol">Privacy Policy</a>
             </div>
-            <button id="cookNo" style="margin: 10px 0px 10px 20px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Decline</button><button id="cookYes" style="margin: 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Accept</button>
+            <button id="cookNo" style="margin: 10px 0px 10px 20px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Decline</button><button id="cookYes" style="margin: 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;" dmx-on:click="cookieBanVis.setValue(false)">Close</button>
         </div>
 
 
@@ -254,7 +255,7 @@ document.getElementById('cookNo').addEventListener('click', function() {
         if (countdown < 0) {
             clearInterval(countdownInterval);
             // Add code here to redirect the user back one page
-            window.history.back();
+            window.location.replace('https://www.google.com'); 
         }
     }, 1000);
 });
