@@ -420,12 +420,16 @@ span.price {
 a {
     text-decoration: none;
 }
-
-#fname {
-    -ms-flex-item-align: right;
-        align-self: right;
+#privPol {
+    color: #ffc107 !important;
 }
 
-#privPol {
-    color: #ffc107;
+#shipTo label {
+    display: inline-block; /* Ensure labels take up full width */
+    width: 100px; /* Adjust width as needed for label text */
+}
+
+#shipTo input {
+    display: inline-block; /* Allow inputs to be positioned beside labels */
+    width: calc(100% - 120px); /* Adjust width calculation based on label width */
 }
