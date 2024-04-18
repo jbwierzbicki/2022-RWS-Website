@@ -88,8 +88,8 @@
                                     </div>
 
                                     <div class="col-lg-6 align-self-center pt-2 pb-2">
-                                        <h4 class="text-light mb-0" dmx-text="title"><span class="badge bg-secondary rounded-pill">New!</span>
-                                            Coffee Mugs</h4>
+                                        <h4 class="mb-0 text-light" dmx-text="prodTitle"><span class="badge bg-secondary rounded-pill">New!</span>
+                                            Travel Mugs</h4>
 
                                         <p class="fw-bold text-danger mb-2">——</p>
 
@@ -101,7 +101,11 @@
 
                                         </a>
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
-                                        <a href="wolfsden-checkout.php" id="wolfsdencheckout2"><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-checkout.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                        <a href="wolfsden-cart.php" id="wolfsdencheckout2"><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php')">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
+                                        <p class="text-danger mb-2 fw-bold w-25">——</p>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." value="1"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +253,7 @@
                 const viewCartIcon = document.createElement('i');
                 viewCartIcon.classList.add('fas', 'fa-caret-right');
                 viewCartButton.appendChild(viewCartIcon);
-                viewCartButton.setAttribute('dmx-on:click', `browser1.goto('wolfsden-checkout.php')`);
+                viewCartButton.setAttribute('dmx-on:click', `browser1.goto('wolfsden-cart.php')`);
 
                 // Append elements to the container
                 g0Row.appendChild(colLg5Slideshow);
