@@ -1,11 +1,11 @@
 [
     {
         "slideshowSrc": "",
-        "prodTitle": "Large 40z Thermal Travel Mug",
+        "prodTitle": "Large 40oz Thermal Travel Mug",
         "slideshowId": "trvl_mugs",
         "newItem": "true",
         "itemCost": "26.99",
-        "description": "Whether you are in the office or on the go, this giant 40-ounce thermal drink mug will keep your favorite beverage at the perfect temperature for hours!",
+        "prodDesc": "Whether you are in the office or on the go, this giant 40-ounce thermal drink mug will keep your favorite beverage at the perfect temperature for hours!",
         "storeId": [
             {
                 "id": "trvl_black"
@@ -23,61 +23,61 @@
                 "id": "trvl_white"
             }
         ],
-        "variationBadge": [
+        "optionChoice": [
             {
                 "id": "black",
                 "name": "Black",
                 "color": "dark",
-                "slideId": 0
+                "slideId": "0"
             },
             {
                 "id": "dk_blue",
                 "name": "Dark-Blue",
                 "color": "dark-blue",
-                "slideId": 1
+                "slideId": "1"
             },
             {
                 "id": "red",
                 "name": "Red",
                 "color": "red",
-                "slideId": 2
+                "slideId": "2"
             },
             {
                 "id": "teal",
                 "name": "Teal",
                 "color": "teal",
-                "slideId": 3
+                "slideId": "3"
             },
             {
                 "id": "white",
                 "name": "White",
                 "color": "white",
-                "slideId": 4
+                "slideId": "4"
             }
         ],
         "slides": [
             {
-                "alt": "",
+                "alt": "0",
                 "id": "blackMug",
                 "url": "assets/images/Wolfs_Den_Products/black.webp"
             },
             {
-                "alt": "",
+                "alt": "1",
                 "id": "dk_blueMug",
                 "url": "assets/images/Wolfs_Den_Products/dk_blue.webp"
             },
             {
-                "alt": "",
+                "alt": "2",
                 "id": "redMug",
                 "url": "assets/images/Wolfs_Den_Products/red.webp"
             },
             {
-                "alt": "",
+                "alt": "3",
                 "id": "tealMug",
                 "url": "assets/images/Wolfs_Den_Products/teal.webp"
             },
             {
-                "alt": "",
+                "alt": "4",
                 "id": "whiteMug",
                 "url": "assets/images/Wolfs_Den_Products/white.webp"
             }
@@ -85,10 +85,10 @@
     },
     {
         "slideshowSrc": "",
-        "title": "Seggsy Trucker Hats",
+        "prodTitle": "Seggsy Trucker Hats",
         "slideshowId": "hats",
         "newItem": "true",
-        "description": "Check out these hats!",
+        "prodDesc": "Check out these hats!",
         "storeId": [
             {
                 "id": "hat_brown"
@@ -185,10 +185,10 @@
     },
     {
         "slideshowSrc": "",
-        "title": "Coffee Mugs",
+        "prodTitle": "Coffee Mugs",
         "slideshowId": "coffee_mugs",
         "newItem": "true",
-        "description": "Check out these sweet mugs!",
+        "prodDesc": "Check out these sweet mugs!",
         "storeId": [
             {
                 "id": "small_mug"
