@@ -88,6 +88,7 @@
         "prodTitle": "Seggsy Trucker Hats",
         "slideshowId": "hats",
         "newItem": "true",
+        "itemCost": "16.99",
         "prodDesc": "Check out these hats!",
         "storeId": [
             {
@@ -100,7 +101,7 @@
                 "id": "hat_brown"
             }
         ],
-        "variationBadge": [
+        "optionChoice": [
             {
                 "id": "black",
                 "name": "Black",
@@ -188,6 +189,7 @@
         "prodTitle": "Coffee Mugs",
         "slideshowId": "coffee_mugs",
         "newItem": "true",
+        "itemCost": "10.99",
         "prodDesc": "Check out these sweet mugs!",
         "storeId": [
             {
@@ -197,7 +199,7 @@
                 "id": "medium_mug"
             }
         ],
-        "variationBadge": [
+        "optionChoice": [
             {
                 "id": "small",
                 "name": "Small",

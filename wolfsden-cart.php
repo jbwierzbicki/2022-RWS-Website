@@ -160,7 +160,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="container ps-sm-1 pe-sm-1 ps-1 pe-1">
-                                <div class="module-card border rounded-0 border-secondary mt-3 mb-3 pt-3 pb-3 ps-3 pe-3 col fw-bolder lh-lg rounded-1">
+                                <div class="module-card border rounded-0 border-secondary mt-3 mb-3 pt-3 pb-3 ps-3 pe-3 col fw-bolder lh-lg rounded-1" style="min-height: 278px">
                                     <h5 class="text-warning text-center lh-1">Your Cart</h5>
                                     <hr>
 
@@ -201,13 +201,13 @@
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
                             <div class="container pt-3 pb-2 ps-0 pe-0">
                                 <div class="row justify-content-center g-0 gx-4">
-                                    <div class="col-12 col-lg-5" dmx-hide="mug_color_opt.value" id="choiceImage">
+                                    <div class="col-12 col-lg-5" id="choiceImage">
 
                                     </div>
 
-                                    <div class="col-lg-5 offset-8" dmx-show="storeId.value" id="choiceSlide">
+                                    <div class="col-lg-5 offset-8" dmx-show="storeId.value">
                                         <!--- Adds corrosponding image slide selected from wolfsden.php --->
-                                        <img src="" class="img-fluid" dmx-show="slideId.value==''">
+                                        <img src="" class="img-fluid" dmx-show="slideId.value==''" id="choiceSlide">
 
                                     </div>
 

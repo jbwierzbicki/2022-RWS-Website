@@ -88,16 +88,23 @@
                                     </div>
 
                                     <div class="col-lg-6 align-self-center pt-2 pb-2">
-                                        <h4 class="mb-0 text-light" dmx-text="prodTitle"><span class="badge bg-secondary rounded-pill">New!</span>
-                                            Travel Mugs</h4>
+                                        <div class="row row-cols-12 g-0" id="sel_item_design_placeholder">
+                                            <div class="text-start m-0 p-0 w-25 col">
+                                                <h4 class="text-light m-0 p-0" id="prodTitle" dmx-text="prodTitle">Large 44z Thermal Travel Mug</h4>
+                                            </div>
+                                            <div class="text-end col-4">
+                                                <h4 class="text-light m-0 p-0" id="itemCost" dmx-html="itemCost">$24.99</h4>
+                                            </div>
+
+                                        </div>
 
                                         <p class="fw-bold text-danger mb-2">——</p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="variationBadge" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-text="name" dmx-style:background-color="color" dmx-on:click="slideshow1.show(slideId)"></span>
+                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" dmx-on:click="slideshow1.show(slideId)" id="optionChoice" dmx-text="name">New</span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
-                                        <p class="text-light" dmx-text="description">Check out these sweet mugs!</p><a><button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <p class="text-light" dmx-text="prodDesc" id="prodDesc">Check out these sweet mugs!</p><a><button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                         </a>
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
