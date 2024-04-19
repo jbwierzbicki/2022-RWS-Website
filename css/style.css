@@ -433,3 +433,7 @@ a {
     display: inline-block; /* Allow inputs to be positioned beside labels */
     width: calc(100% - 120px); /* Adjust width calculation based on label width */
 }
+
+#a, #b {
+    border: 2px solid #ffc107;
+}
