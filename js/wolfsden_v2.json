@@ -28,31 +28,36 @@
                 "id": "trvl_mugs_black",
                 "name": "Black",
                 "color": "dark",
-                "slideId": "0"
+                "slideId": "0",
+                "url": "assets/images/Wolfs_Den_Products/black.webp"
             },
             {
                 "id": "trvl_mugs_dk_blue",
                 "name": "Dark-Blue",
                 "color": "dark-blue",
-                "slideId": "1"
+                "slideId": "1",
+                "url": "assets/images/Wolfs_Den_Products/dk_blue.webp"
             },
             {
                 "id": "trvl_mugs_red",
                 "name": "Red",
                 "color": "red",
-                "slideId": "2"
+                "slideId": "2",
+                "url": "assets/images/Wolfs_Den_Products/red.webp"
             },
             {
                 "id": "trvl_mugs_teal",
                 "name": "Teal",
                 "color": "teal",
-                "slideId": "3"
+                "slideId": "3",
+                "url": "assets/images/Wolfs_Den_Products/teal.webp"
             },
             {
                 "id": "trvl_mugs_white",
                 "name": "White",
                 "color": "white",
-                "slideId": "4"
+                "slideId": "4",
+                "url": "assets/images/Wolfs_Den_Products/white.webp"
             }
         ],
         "slides": [
@@ -111,25 +116,28 @@
                 "id": "hats_black",
                 "name": "Black",
                 "color": "dark",
-                "slideId": 0
+                "slideId": "0",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"
             },
             {
                 "id": "hats_brown",
                 "name": "Brown",
                 "color": "brown",
-                "slideId": 4
+                "slideId": "4",
+                "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"
             },
             {
                 "id": "hats_white",
                 "name": "White",
                 "color": "white",
-                "slideId": 8
+                "slideId": "8",
+                "url": "assets/images/Wolfs_Den_Products/hat-White-Black-front.webp"
             }
         ],
         "slides": [
             {
                 "alt": "",
-                "slideId": "5",
+                "slideId": "0",
                 "id": "hat-Black-Gray-front",
                 "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"
             },
@@ -150,7 +158,7 @@
             },
             {
                 "alt": "",
-                "slideId": "6",
+                "slideId": "4",
                 "id": "hat-Black-Brown-front",
                 "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"
             },
@@ -171,7 +179,7 @@
             },
             {
                 "alt": "",
-                "slideId": "7",
+                "slideId": "8",
                 "id": "hat-White-Black-front",
                 "url": "assets/images/Wolfs_Den_Products/hat-White-Black-front.webp"
             },
@@ -212,19 +220,21 @@
                 "id": "coffee_mugs_small",
                 "name": "Small",
                 "color": "black",
-                "slideId": 0
+                "slideId": "0",
+                "url": "assets/images/Wolfs_Den_Products/mug-lft-1.webp"
             },
             {
                 "id": "coffee_mugs_medium",
                 "name": "Medium",
                 "color": "blue",
-                "slideId": 3
+                "slideId": "3",
+                "url": "assets/images/Wolfs_Den_Products/mug-lft-2.webp"
             }
         ],
         "slides": [
             {
                 "alt": "",
-                "slideId": "8",
+                "slideId": "0",
                 "id": "mug-lft-1",
                 "url": "assets/images/Wolfs_Den_Products/mug-lft-1.webp"
             },
@@ -235,7 +245,7 @@
             },
             {
                 "alt": "",
-                "slideId": "9",
+                "slideId": "3",
                 "id": "mug-lft-2",
                 "url": "assets/images/Wolfs_Den_Products/mug-lft-2.webp"
             },

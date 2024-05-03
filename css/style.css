@@ -392,26 +392,22 @@ h4 {
     background: linear-gradient(120deg, rgba(26, 26, 26, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%)
 }
 
-h4 {
+.h4 {
     font-weight: bold !important;
 }
 
 /* Grid view styles */
-.grid-view {
+/* .grid-view {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* This will create a 4 container wide grid */
-    gap: 20px;
-}
-
-/* Clear any margin or padding that might cause wrapping */
-.container.grid-view > * {
-    margin: 0;
-    padding: 0;
-}
+    grid-template-columns: repeat(3, 1fr); /* This will create a 3 container wide grid
+    gap: 10px;
+    max-height: 30vh;
+} */
 
 #gridView, #listView {
     cursor: pointer;
 }
+
 span.price {
   float: right;
   color: #ffc107;
@@ -432,8 +428,4 @@ a {
 #shipTo input {
     display: inline-block; /* Allow inputs to be positioned beside labels */
     width: calc(100% - 120px); /* Adjust width calculation based on label width */
-}
-
-#a, #b {
-    border: 2px solid #ffc107;
 }

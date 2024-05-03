@@ -42,6 +42,7 @@
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="slides[0].url"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS2" is="dmx-serverconnect" url="js/wolfsden_v2.json"></dmx-json-datasource>
     <dmx-value id="mug_color_opt" dmx-bind:value="value==[slideId]"></dmx-value>
+    <dmx-value id="badge_slideId" dmx-bind:value="sel_badge.value==optionChoice.slideId"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
 
     <?php include 'navbar_mini'; ?>
@@ -70,9 +71,10 @@
         <h6 class="text-light" dmx-text="arrCart.items">Fancy display heading</h6>
         <div class="container" dmx-repeat:repeat1="jsonDS2.data">
             <dmx-value id="sel_badge"></dmx-value>
+            <dmx-value id="sel_badge_url"></dmx-value>
 
             <div class="row justify-content-center">
-                <div class="col-md-12">
+                <div class="col-md-12 col-4">
                     <div class="row h-100">
 
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
@@ -104,7 +106,7 @@
                                         <p class="fw-bold text-danger mb-2">——</p>
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" dmx-on:click="slideshow1.show(slideId);sel_badge.setValue(id)" id="optionChoice" dmx-text="name">New</span>
+                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" dmx-on:click="slideshow1.show(slideId);sel_badge.setValue(id);sel_badge_url.setValue(url)" id="optionChoice" dmx-text="name" dmx-class:border="sel_badge.value==id" dmx-class:border-warning="sel_badge.value==id" dmx-class:border-2="sel_badge.value==id">New</span>
                                         </h6>
                                         <p class="fw-bold text-danger mb-2">——</p>
                                         <p class="text-light" dmx-text="prodDesc" id="prodDesc">Check out these sweet mugs!</p>
@@ -112,9 +114,10 @@
                                             <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." value="1"></div>
                                         </div><a>
 
-                                            <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge.value+'|'+slideId))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
-                                            <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge.value+'|'+slideId))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <!-- If no badge is selected -->
+                                            <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge.value+'|'+sel_badge.value))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                         </a>
@@ -318,42 +321,6 @@
             });
         }
     </script>
-
-    <!--
-    <script>
-        // Add this JavaScript function to your file wolfsden.php to display the respective image when each badge is clicked
-document.getElementById('black').addEventListener('click', function() {
-    document.getElementById('blackMug').style.display = 'block';
-});
-
-document.getElementById('dk_blue').addEventListener('click', function() {
-    document.getElementById('dk_blueMug').style.display = 'block';
-});
-
-document.getElementById('red').addEventListener('click', function() {
-    document.getElementById('redMug').style.display = 'block';
-});
-
-document.getElementById('teal').addEventListener('click', function() {
-    document.getElementById('tealMug').style.display = 'block';
-});
-
-document.getElementById('white').addEventListener('click', function() {
-    document.getElementById('whiteMug').style.display = 'block';
-});
-
-// Add CSS to change cursor to pointer when hovering over each badge
-document.getElementById('black').style.cursor = 'pointer';
-document.getElementById('dk_blue').style.cursor = 'pointer';
-document.getElementById('red').style.cursor = 'pointer';
-document.getElementById('teal').style.cursor = 'pointer';
-document.getElementById('white').style.cursor = 'pointer';
-
-
-    </script>
--->
-
-
 
 
 </body>

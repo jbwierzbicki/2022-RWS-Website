@@ -149,13 +149,10 @@
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
                             <div class="container pt-3 pb-2 ps-0 pe-0">
                                 <div class="row justify-content-center g-0 gx-4">
-                                    <div class="col-12 col-lg-5" id="choiceImage">
 
-                                    </div>
-
-                                    <div class="col-lg-5 offset-8" dmx-show="storeId.value">
+                                    <div class="col-lg-5">
                                         <!--- Adds corrosponding image slide selected from wolfsden.php --->
-                                        <img src="" class="img-fluid" dmx-show="slideId.value==''" id="choiceSlide">
+                                        <img class="img-fluid" id="choiceSlide" dmx-bind:src="arrCartItemsBelow.items[3]">
 
                                     </div>
 
@@ -169,20 +166,25 @@
                                             </div>
 
                                         </div>
+                                        <p class="fw-bold text-danger mb-2">——</p>
+
+
+                                        <div dmx-on:load="var urlParams=dmx.parseQueryString();">
+                                            <h6>
+                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name" dmx-show="jsonDS1.data.optionChoice.id">
+                                                    New
+                                                </span>
+                                            </h6>
+                                        </div>
+
 
 
                                         <p class="fw-bold text-danger mb-2">——</p>
-                                        <!--- Should only show 1 badge, seleceted from wolfsden.php (appended url) --->
-                                        <h6 id="optionChoice">
-                                            <span class="badge rounded-pill bg-dark" id="black1" dmx-on:click="mug_color_opt.setValue('black')">Black</span>
-                                            <span class="badge rounded-pill bg-primary" id="dk_blue1" dmx-on:click="mug_color_opt.setValue('dk_blue')">Dark Blue</span>
-                                            <span class="badge rounded-pill bg-danger" id="red1" dmx-on:click="mug_color_opt.setValue('red')">Red</span>
-                                            <span class="badge rounded-pill bg-info" id="teal1" dmx-on:click="mug_color_opt.setValue('teal')">Teal</span>
-                                            <span class="badge rounded-pill bg-light" style="color: black;" id="white1" dmx-on:click="mug_color_opt.setValue('white')">White</span>
-                                        </h6>
-                                        <p class="fw-bold text-danger mb-2">——</p>
-                                        <p class="text-light" id="prodDesc">Whether you are in the office or on the go, this giant 40-ounce thermal drink mug will keep your favorite beverage at the perfect temprature for hours!</p>
+
+                                        <p class="text-light" id="prodDesc"></p>
+
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
+
                                         <div class="row">
                                             <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." dmx-bind:value="arrCartItemsBelow.items[1]"></div>
                                             <div class="col-lg-2 col-6"><button id="removeThisProd" class="btn bg-secondary w-100 text-truncate" dmx-on:click="">
