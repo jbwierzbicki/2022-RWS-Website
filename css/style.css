@@ -396,14 +396,6 @@ h4 {
     font-weight: bold !important;
 }
 
-/* Grid view styles */
-/* .grid-view {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* This will create a 3 container wide grid
-    gap: 10px;
-    max-height: 30vh;
-} */
-
 #gridView, #listView {
     cursor: pointer;
 }
@@ -428,4 +420,21 @@ a {
 #shipTo input {
     display: inline-block; /* Allow inputs to be positioned beside labels */
     width: calc(100% - 120px); /* Adjust width calculation based on label width */
+}
+
+.gridView.active, .listView.active {
+  background-color: black;
+  color: #ffc107;
+}
+
+.grid-view {
+    display: grid !important; 
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-auto-rows: 30% !important;
+    grid-auto-flow: row dense !important;
+    min-height: 300px;
+}
+
+.list-view .container {
+    width: 100%;
 }

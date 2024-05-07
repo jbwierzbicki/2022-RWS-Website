@@ -61,8 +61,8 @@
                 <div class="col">
                     <div class="row">
                         <div id="viewButtons" class="pe-4">
-                            <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4nO3TSwoAIAwD0dz/WPZgcV8siIIfmAfdFbIaCTjE6Z4ZjsHP7MWt4bYzDCwzHSd0jP+YjhM6BlTpD5eMnv1+LjoAAAAASUVORK5CYII=" id="listView" onclick="changeView('listView')" class="pe-1" width="30px" height="30px"></a>
-                            <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2VPU6CQRCGnwYLsRMv4A9eASpoIP40EuA8YkvAQiss4CDKBdBL6AGkwB4zyUAmm5nk02JDwZtMsftMZr+ZnfkW9tpVjYGPxN6AivJb4D3hsr5WfgLMnRgje8gKWDt2o3wacNlH/Twucbf6CZwkA9Es4DOTqccl7lZfgVPNlHPt2KYctYB/2kPOgH5iDcPLwF3CZX1ofBpOjFNyqwdMEhsAB8ovgeeEy7qqXPwenBhde8gyqGlL+UvAZV/UDvh39u5a/jOTifJWkUy6Tj3vgZLyqnMnT8CFuZOBE6NDbp07Pd40/Ei/yvKOzs9GTSeGzF/hiX8MuPwJRPUiE5+lu1Y5/sIj5y14BY6Vy7uxSLisr5RX9P1JYwz/2Bt7kUe/LtDf4unX+l0AAAAASUVORK5CYII=" id="gridView" onclick="changeView('gridView')" width="30px" height="30px"></a>
+                            <a class="d-none d-lg-inline"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4nO3TSwoAIAwD0dz/WPZgcV8siIIfmAfdFbIaCTjE6Z4ZjsHP7MWt4bYzDCwzHSd0jP+YjhM6BlTpD5eMnv1+LjoAAAAASUVORK5CYII=" id="listView" class="pe-1" width="30px" height="30px"></a>
+                            <a class="d-none d-lg-inline"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2VPU6CQRCGnwYLsRMv4A9eASpoIP40EuA8YkvAQiss4CDKBdBL6AGkwB4zyUAmm5nk02JDwZtMsftMZr+ZnfkW9tpVjYGPxN6AivJb4D3hsr5WfgLMnRgje8gKWDt2o3wacNlH/Twucbf6CZwkA9Es4DOTqccl7lZfgVPNlHPt2KYctYB/2kPOgH5iDcPLwF3CZX1ofBpOjFNyqwdMEhsAB8ovgeeEy7qqXPwenBhde8gyqGlL+UvAZV/UDvh39u5a/jOTifJWkUy6Tj3vgZLyqnMnT8CFuZOBE6NDbp07Pd40/Ei/yvKOzs9GTSeGzF/hiX8MuPwJRPUiE5+lu1Y5/sIj5y14BY6Vy7uxSLisr5RX9P1JYwz/2Bt7kUe/LtDf4unX+l0AAAAASUVORK5CYII=" id="gridView" width="30px" height="30px"></a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
             <dmx-value id="sel_badge_url"></dmx-value>
 
             <div class="row justify-content-center">
-                <div class="col-md-12 col-4">
+                <div class="col-md-12 col-4" id="prodList">
                     <div class="row h-100">
 
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
@@ -301,17 +301,11 @@
     document.getElementById('mug-lft-1').style.display = 'block';
         });
     </script>
-
     <script>
-        // Add this JavaScript to your file wolfsden.php
         document.addEventListener('DOMContentLoaded', (event) => {
-            document.getElementById('gridView').addEventListener('click', function() {
-                changeView('grid');
-            });
-
-            document.getElementById('listView').addEventListener('click', function() {
-                changeView('list');
-            });
+            var elements = document.getElementById("prodList");
+            document.getElementById('gridView').addEventListener('click', () => gridView(elements));
+            document.getElementById('listView').addEventListener('click', () => listView(elements));
         });
 
         function changeView(viewType) {
@@ -321,6 +315,33 @@
             });
         }
     </script>
+    <script>
+        function listView(elements) {
+            document.querySelectorAll("#prodList").forEach(prodList => {
+                Array.from(prodList.children).forEach(element => {
+                    element.style.width = "100%";
+                });
+            });
+        }
+
+        function gridView(elements) {
+            document.querySelectorAll("#prodList").forEach(prodList => {
+                Array.from(prodList.children).forEach(element => {
+                    element.style.width = "30%";
+                });
+            });
+        }
+
+        function changeView(viewType) {
+            var containers = document.querySelectorAll('.container');
+            containers.forEach(function(container) {
+                container.classList.toggle('grid-view', viewType === 'grid');
+            });
+        }
+        
+    </script>
+
+
 
 
 </body>
