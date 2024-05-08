@@ -427,14 +427,22 @@ a {
   color: #ffc107;
 }
 
-.grid-view {
-    display: grid !important; 
-    grid-template-columns: repeat(3, 1fr) !important;
-    grid-auto-rows: 30% !important;
-    grid-auto-flow: row dense !important;
-    min-height: 300px;
-}
-
 .list-view .container {
     width: 100%;
+}
+
+.container .my-value {
+    display: none; /* Or other styles */
+}
+
+#prodBody {
+    min-height: 412px;
+}
+
+#bodyTitle {
+    min-height: 58px;
+}
+
+#grid_layout {
+    display: none;
 }

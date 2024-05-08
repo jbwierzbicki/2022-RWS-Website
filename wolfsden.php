@@ -69,9 +69,9 @@
             </div>
         </div>
         <h6 class="text-light" dmx-text="arrCart.items">Fancy display heading</h6>
-        <div class="container" dmx-repeat:repeat1="jsonDS2.data">
-            <dmx-value id="sel_badge"></dmx-value>
-            <dmx-value id="sel_badge_url"></dmx-value>
+        <div class="container" dmx-repeat:repeat1="jsonDS2.data" id="list_layout">
+            <dmx-value class="my-value" id="sel_badge"></dmx-value>
+            <dmx-value class="my-value" id="sel_badge_url"></dmx-value>
 
             <div class="row justify-content-center">
                 <div class="col-md-12 col-4" id="prodList">
@@ -128,6 +128,78 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container" dmx-repeat:repeat1="jsonDS2.data" id="grid_layout">
+            <dmx-value class="my-value" id="sel_badge"></dmx-value>
+            <dmx-value class="my-value" id="sel_badge_url"></dmx-value>
+
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-4" id="prodList">
+                    <div class="row h-100 justify-content-around">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="module-card border rounded-0 rounded-1 border-secondary col-3 mt-3 mb-3 ms-1 me-2 pt-3 pb-5 ps-3 pe-3" style="width:32%" dmx-repeat:repeat3="jsonDS2.data">
+                                    <div class="row justify-content-center g-0 gx-4">
+                                        <div class="col-lg-5 h-50 mb-5 w-75" dmx-hide="coffee_mug_opt.value" id="slideshowParent">
+
+                                            <div class="image-container">
+                                                <dmx-slideshow class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" dmx-bind:slides="slides" id="slideshow1">
+                                                </dmx-slideshow>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-5" dmx-show="coffee_mug_opt.value">
+                                            <img src="assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp" class="img-fluid" dmx-show="coffee_mug_opt.value=='mug-rt-1'">
+                                            <img src="assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp" class="img-fluid" dmx-show="coffee_mug_opt.value=='mug-rt-2'">
+
+                                        </div>
+
+                                        <div class="col-lg-6 pt-2 pb-2 w-100 col-auto" id="prodBody">
+                                            <div class="row row-cols-12 g-0" id="sel_item_design_placeholder">
+                                                <div class="text-start m-0 p-0 w-25 col" id="bodyTitle">
+                                                    <h4 class="text-light m-0 p-0" id="prodTitle" dmx-text="prodTitle">Large 44z Thermal Travel Mug</h4>
+                                                </div>
+                                                <div class="text-end col-4">
+                                                    <h4 class="text-light m-0 p-0" id="itemCost" dmx-html="itemCost">$24.99</h4>
+                                                </div>
+
+                                            </div>
+
+                                            <p class="fw-bold text-danger mb-2">——</p>
+
+                                            <h6>
+                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" dmx-on:click="slideshow1.show(slideId);sel_badge.setValue(id);sel_badge_url.setValue(url)" id="optionChoice" dmx-text="name" dmx-class:border="sel_badge.value==id" dmx-class:border-warning="sel_badge.value==id" dmx-class:border-2="sel_badge.value==id">New</span>
+                                            </h6>
+                                            <p class="fw-bold text-danger mb-2">——</p>
+                                            <p class="text-light text-truncate" dmx-text="prodDesc" id="prodDesc">Check out these sweet mugs!</p>
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col-lg-2 col-6 w-25"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." value="1"></div>
+                                            </div><a>
+
+                                                <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+
+                                                <!-- If no badge is selected -->
+                                                <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge.value+'|'+sel_badge.value))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+
+
+                                            </a>
+                                            <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCart.items)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -301,44 +373,46 @@
     document.getElementById('mug-lft-1').style.display = 'block';
         });
     </script>
+
+
+
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             var elements = document.getElementById("prodList");
-            document.getElementById('gridView').addEventListener('click', () => gridView(elements));
-            document.getElementById('listView').addEventListener('click', () => listView(elements));
-        });
 
-        function changeView(viewType) {
-            var containers = document.querySelectorAll('.container');
-            containers.forEach(function(container) {
-                container.classList.toggle('grid-view', viewType === 'grid');
+            document.getElementById('gridView').addEventListener('click', () => {
+                changeView('grid');
             });
-        }
+
+            document.getElementById('listView').addEventListener('click', () => {
+                changeView('list');
+            });
+        });
     </script>
     <script>
-        function listView(elements) {
-            document.querySelectorAll("#prodList").forEach(prodList => {
-                Array.from(prodList.children).forEach(element => {
-                    element.style.width = "100%";
-                });
-            });
-        }
-
-        function gridView(elements) {
-            document.querySelectorAll("#prodList").forEach(prodList => {
-                Array.from(prodList.children).forEach(element => {
-                    element.style.width = "30%";
-                });
-            });
-        }
-
         function changeView(viewType) {
-            var containers = document.querySelectorAll('.container');
-            containers.forEach(function(container) {
-                container.classList.toggle('grid-view', viewType === 'grid');
-            });
-        }
-        
+    var listLayout = document.getElementById('list_layout');
+    var gridLayout = document.getElementById('grid_layout');
+    var repeatedItems = listLayout.querySelectorAll('[dmx-repeat="repeat1"]'); // Select repeated items
+
+    if (viewType === 'grid') {
+        listLayout.style.display = 'none';
+        gridLayout.style.display = 'block';
+
+        // Hide repeated items
+        repeatedItems.forEach(item => {
+            item.style.display = 'none';
+        });
+    } else {
+        listLayout.style.display = 'block';
+        gridLayout.style.display = 'none';
+
+        // Show repeated items 
+        repeatedItems.forEach(item => {
+            item.style.display = 'block';
+        });
+    }
+}      
     </script>
 
 
