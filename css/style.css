@@ -396,10 +396,6 @@ h4 {
     font-weight: bold !important;
 }
 
-#gridView, #listView {
-    cursor: pointer;
-}
-
 span.price {
   float: right;
   color: #ffc107;
@@ -422,17 +418,23 @@ a {
     width: calc(100% - 120px); /* Adjust width calculation based on label width */
 }
 
-.gridView.active, .listView.active {
-  background-color: black;
-  color: #ffc107;
+#gridView, #listView {
+  cursor: pointer;
+  color: black; /* Default color */
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s; /* Smooth transition for color change */
+}
+
+#gridView:focus, #listView:focus {
+  color: #ffc107; /* Warning color on click */
+}
+
+#gridView:hover, #listView:hover {
+  color: #ffc107; /* Warning color on hover */
 }
 
 .list-view .container {
     width: 100%;
-}
-
-.container .my-value {
-    display: none; /* Or other styles */
 }
 
 #prodBody {
@@ -443,6 +445,19 @@ a {
     min-height: 58px;
 }
 
-#grid_layout {
-    display: none;
+#slideshowParentGridView {
+    max-height: 310px;
+    min-height: 310px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#slideshow1 img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; /* or contain, depending on desired fit */
+  -o-object-position: center;
+     object-position: center;  
 }

@@ -38,6 +38,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-value id="active_view" dmx-bind:value="'list_view'"></dmx-value>
     <dmx-array id="arrCart"></dmx-array>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="slides[0].url"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS2" is="dmx-serverconnect" url="js/wolfsden_v2.json"></dmx-json-datasource>
@@ -56,31 +57,31 @@
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
 
 
-        <div class="container small text-end" id="views">
+        <div class="container small text-end d-none d-lg-block" id="views">
             <div class="row">
                 <div class="col">
                     <div class="row">
                         <div id="viewButtons" class="pe-4">
-                            <a class="d-none d-lg-inline"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4nO3TSwoAIAwD0dz/WPZgcV8siIIfmAfdFbIaCTjE6Z4ZjsHP7MWt4bYzDCwzHSd0jP+YjhM6BlTpD5eMnv1+LjoAAAAASUVORK5CYII=" id="listView" class="pe-1" width="30px" height="30px"></a>
-                            <a class="d-none d-lg-inline"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2VPU6CQRCGnwYLsRMv4A9eASpoIP40EuA8YkvAQiss4CDKBdBL6AGkwB4zyUAmm5nk02JDwZtMsftMZr+ZnfkW9tpVjYGPxN6AivJb4D3hsr5WfgLMnRgje8gKWDt2o3wacNlH/Twucbf6CZwkA9Es4DOTqccl7lZfgVPNlHPt2KYctYB/2kPOgH5iDcPLwF3CZX1ofBpOjFNyqwdMEhsAB8ovgeeEy7qqXPwenBhde8gyqGlL+UvAZV/UDvh39u5a/jOTifJWkUy6Tj3vgZLyqnMnT8CFuZOBE6NDbp07Pd40/Ei/yvKOzs9GTSeGzF/hiX8MuPwJRPUiE5+lu1Y5/sIj5y14BY6Vy7uxSLisr5RX9P1JYwz/2Bt7kUe/LtDf4unX+l0AAAAASUVORK5CYII=" id="gridView" width="30px" height="30px"></a>
+                            <i class="fas fa-bars fa-fw fa-2x" id="listView" dmx-on:click="active_view.setValue('list_view')"></i>
+                            <i class="fas fa-th fa-2x fa-fw" id="gridView" dmx-on:click="active_view.setValue('grid_view')"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <h6 class="text-light" dmx-text="arrCart.items">Fancy display heading</h6>
-        <div class="container" dmx-repeat:repeat1="jsonDS2.data" id="list_layout">
+        <div class="container" dmx-repeat:repeat1="jsonDS2.data" id="list_layout" dmx-show="(active_view.value==&quot;list_view&quot;)">
             <dmx-value class="my-value" id="sel_badge"></dmx-value>
             <dmx-value class="my-value" id="sel_badge_url"></dmx-value>
 
             <div class="row justify-content-center">
-                <div class="col-md-12 col-4" id="prodList">
+                <div class="col-12" id="prodList">
                     <div class="row h-100">
 
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3">
                             <div class="container pt-3 pb-2 ps-0 pe-0">
                                 <div class="row justify-content-center g-0 gx-4">
-                                    <div class="col-lg-5" dmx-hide="coffee_mug_opt.value">
+                                    <div class="col-lg-5 mb-md-4 mb-sm-4 mb-4" dmx-hide="coffee_mug_opt.value">
 
                                         <dmx-slideshow class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" show-paging="true" dmx-bind:slides="slides" id="slideshow1">
                                         </dmx-slideshow>
@@ -137,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" dmx-repeat:repeat1="jsonDS2.data" id="grid_layout">
+        <div class="container d-none d-lg-block" dmx-repeat:repeat3="jsonDS2.data" id="grid_layout" dmx-show="(active_view.value=='grid_view')">
             <dmx-value class="my-value" id="sel_badge"></dmx-value>
             <dmx-value class="my-value" id="sel_badge_url"></dmx-value>
 
@@ -149,7 +150,7 @@
                             <div class="row">
                                 <div class="module-card border rounded-0 rounded-1 border-secondary col-3 mt-3 mb-3 ms-1 me-2 pt-3 pb-5 ps-3 pe-3" style="width:32%" dmx-repeat:repeat3="jsonDS2.data">
                                     <div class="row justify-content-center g-0 gx-4">
-                                        <div class="col-lg-5 h-50 mb-5 w-75" dmx-hide="coffee_mug_opt.value" id="slideshowParent">
+                                        <div class="col-lg-5 h-50 mb-5 w-75" dmx-hide="coffee_mug_opt.value" id="slideshowParentGridView">
 
                                             <div class="image-container">
                                                 <dmx-slideshow class="ms-2 me-2" show-nav="true" delay="" no-autostart="true" dmx-bind:slides="slides" id="slideshow1">
@@ -376,44 +377,6 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            var elements = document.getElementById("prodList");
-
-            document.getElementById('gridView').addEventListener('click', () => {
-                changeView('grid');
-            });
-
-            document.getElementById('listView').addEventListener('click', () => {
-                changeView('list');
-            });
-        });
-    </script>
-    <script>
-        function changeView(viewType) {
-    var listLayout = document.getElementById('list_layout');
-    var gridLayout = document.getElementById('grid_layout');
-    var repeatedItems = listLayout.querySelectorAll('[dmx-repeat="repeat1"]'); // Select repeated items
-
-    if (viewType === 'grid') {
-        listLayout.style.display = 'none';
-        gridLayout.style.display = 'block';
-
-        // Hide repeated items
-        repeatedItems.forEach(item => {
-            item.style.display = 'none';
-        });
-    } else {
-        listLayout.style.display = 'block';
-        gridLayout.style.display = 'none';
-
-        // Show repeated items 
-        repeatedItems.forEach(item => {
-            item.style.display = 'block';
-        });
-    }
-}      
-    </script>
 
 
 
