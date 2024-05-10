@@ -7,6 +7,10 @@ dmx.config({
     "badge_slideId": {
       "meta": null,
       "outputType": "object"
+    },
+    "prodDescSel": {
+      "meta": null,
+      "outputType": "object"
     }
   }
 });

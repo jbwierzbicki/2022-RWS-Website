@@ -38,6 +38,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-value id="arrCartVar"></dmx-value>
     <dmx-value id="active_view" dmx-bind:value="'list_view'"></dmx-value>
     <dmx-array id="arrCart"></dmx-array>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="slides[0].url"></dmx-data-detail>
@@ -68,7 +69,9 @@
                     </div>
                 </div>
             </div>
+
         </div>
+        <h6 class="text-light" dmx-text="arrCartVar.value">Fancy display heading</h6>
         <h6 class="text-light" dmx-text="arrCart.items">Fancy display heading</h6>
         <div class="container" dmx-repeat:repeat1="jsonDS2.data" id="list_layout" dmx-show="(active_view.value==&quot;list_view&quot;)">
             <dmx-value class="my-value" id="sel_badge"></dmx-value>
@@ -115,14 +118,14 @@
                                             <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." value="1"></div>
                                         </div><a>
 
-                                            <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                             <!-- If no badge is selected -->
-                                            <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge.value+'|'+sel_badge.value))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);sel_badge_url.setValue(optionChoice[0].url);arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                         </a>
-                                        <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCart.items)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCartVar.value)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                     </div>
@@ -186,14 +189,14 @@
                                                 <div class="col-lg-2 col-6 w-25"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." value="1"></div>
                                             </div><a>
 
-                                                <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                                <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                                 <!-- If no badge is selected -->
-                                                <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);arrCart.add((prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge.value+'|'+sel_badge.value))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                                <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);sel_badge_url.setValue(optionChoice[0].url);arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                             </a>
-                                            <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCart.items)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCartVar.value)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                         </div>

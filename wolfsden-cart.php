@@ -44,7 +44,7 @@
 <body is="dmx-app" id="index" class="bg-dark">
 
     <dmx-value id="strCart" dmx-bind:value="queryCart.data.items"></dmx-value>
-    <dmx-array id="arrCart" dmx-bind:items="strCart.value.split(',')"></dmx-array>
+    <dmx-array id="arrCart" dmx-bind:items="strCart.value.split('—')"></dmx-array>
     <dmx-query-manager id="queryCart"></dmx-query-manager>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="js/wolfsden_v2.json"></dmx-json-datasource>
     <div is="dmx-browser" id="browser1"></div>
@@ -171,8 +171,7 @@
 
                                         <div dmx-on:load="var urlParams=dmx.parseQueryString();">
                                             <h6>
-                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeat2="optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name" dmx-show="jsonDS1.data.optionChoice.id">
-                                                    New
+                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatBadge="jsonDS1.data.optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name" dmx-show="id==arrCartItemsBelow.items[4]">
                                                 </span>
                                             </h6>
                                         </div>
@@ -181,7 +180,7 @@
 
                                         <p class="fw-bold text-danger mb-2">——</p>
 
-                                        <p class="text-light" id="prodDesc"></p>
+                                        <p class="text-light" id="prodDesc" dmx-text="arrCartItemsBelow.items[5]"></p>
 
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
 
