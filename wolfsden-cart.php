@@ -169,7 +169,7 @@
 
 
                                         <h6>
-                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatbadge="jsonDS1.data.where(`prodTitle`, var_prodName.value, '==')[0].optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" dmx-class:border="id==arrCartItemsBelow.items[4]" dmx-class:border-warning="id==arrCartItemsBelow.items[4]" dmx-class:border-2="id==arrCartItemsBelow.items[4]" id="optionChoice" dmx-text="name">
+                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatbadge="jsonDS1.data.where(`prodTitle`, var_prodName.value, '==')[0].optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" dmx-class:border="id==arrCartItemsBelow.items[4]" dmx-class:border-warning="id==arrCartItemsBelow.items[4]" dmx-class:border-2="id==arrCartItemsBelow.items[4]" id="optionChoice" dmx-text="name" dmx-show="id==arrCartItemsBelow.items[4]">
                                             </span>
                                         </h6>
 
