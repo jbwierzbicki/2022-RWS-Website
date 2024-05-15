@@ -104,7 +104,7 @@
                                         <div class="col text-center" id="purchQuantity"><u>Quantity</u></div>
 
                                         <!-- Price of indiv. item/ ($ x # = subt) -->
-                                        <div class="col"><span class="price display-none" id="itemCost"><u>$/ea.</u></span></div>
+                                        <div class="col"><span class="price" id="itemCost"><u>$/ea.</u></span></div>
 
                                     </div>
                                     <div class="row text-nowrap" dmx-repeat:repeat2="arrCart.items">
