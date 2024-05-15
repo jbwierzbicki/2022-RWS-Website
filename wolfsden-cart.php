@@ -58,7 +58,7 @@
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container text-nowrap" id="wholeCart">
+        <div class="container" id="wholeCart">
 
             <div class="row justify-content-center row-cols-12">
                 <div class="col-lg-8 order-2 order-lg-1 col-md-12 col-sm-12 col-12" id="shopping_Cart">
@@ -70,7 +70,7 @@
                                 <div class="col text-center" is="dmx-data-detail">
                                     <div class="container-fluid" id="emptyCart">
                                         <h6 class="text-light" dmx-text="strCart.value">Fancy display heading</h6>
-                                        <h6 class="text-light" dmx-text="arrCart.count">Fancy display heading</h6>
+                                        <h6 class="text-light text-truncate" dmx-text="arrCart.count">Fancy display heading</h6>
                                         <h1 class="text-secondary mt-4 fst-italic text-wrap">Your Cart is Currently Empty.
                                         </h1>
                                         <p class="text-secondary hover-cursor" dmx-on:click="browser1.goto('wolfsden.php')"><i><u>Click here to add items!</u></i></p>
@@ -79,10 +79,6 @@
 
                                 </div>
                                 <div class="row justify-content-center g-0 gx-4">
-
-
-
-
                                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-5 ps-3 pe-3" id="selectedItems" dmx-repeat:repeat1="jsonDS2.data"></div>
                                 </div>
                             </div>
@@ -90,7 +86,8 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 text-warning order-1 order-lg-2 col-md-12 col-sm-12 col-12" id="cart_Snapshot">
+
+                <div class="col-lg-4 text-warning order-1 order-lg-2 col-md-12 col-sm-12 col-12 sticky-top" id="cart_Snapshot">
                     <div class="row">
                         <div class="col">
                             <div class="container ps-sm-1 pe-sm-1 ps-1 pe-1">
@@ -107,10 +104,10 @@
                                         <div class="col text-center" id="purchQuantity"><u>Quantity</u></div>
 
                                         <!-- Price of indiv. item/ ($ x # = subt) -->
-                                        <div class="col"><span class="price" id="itemCost"><u>$/ea.</u></span></div>
+                                        <div class="col"><span class="price display-none" id="itemCost"><u>$/ea.</u></span></div>
 
                                     </div>
-                                    <div class="row" dmx-repeat:repeat2="arrCart.items">
+                                    <div class="row text-nowrap" dmx-repeat:repeat2="arrCart.items">
                                         <dmx-array id="arrCartItems" dmx-bind:items="$value.split('|')"></dmx-array>
                                         <!-- Needs to show 'prodTitle' appended from wolfsdend.php -->
                                         <div class="col"><a dmx-text="arrCartItems.items[0]">Item</a></div>
@@ -171,7 +168,7 @@
 
                                         <div dmx-on:load="var urlParams=dmx.parseQueryString();">
                                             <h6>
-                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatBadge="jsonDS1.data.optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name" dmx-show="id==arrCartItemsBelow.items[4]">
+                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatBadge="jsonDS1.data.optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name" dmx-text="optionChoice.items[arrCartItemsBelow.items[4] - 1].name">
                                                 </span>
                                             </h6>
                                         </div>
