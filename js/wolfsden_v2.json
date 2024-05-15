@@ -25,6 +25,7 @@
         ],
         "optionChoice": [
             {
+                "relatedProdTitle": "Large 40oz Thermal Travel Mug",
                 "id": "trvl_mugs_black",
                 "name": "Black",
                 "color": "dark",
@@ -32,6 +33,7 @@
                 "url": "assets/images/Wolfs_Den_Products/black.webp"
             },
             {
+                "relatedProdTitle": "Large 40oz Thermal Travel Mug",
                 "id": "trvl_mugs_dk_blue",
                 "name": "Dark-Blue",
                 "color": "dark-blue",
@@ -39,6 +41,7 @@
                 "url": "assets/images/Wolfs_Den_Products/dk_blue.webp"
             },
             {
+                "relatedProdTitle": "Large 40oz Thermal Travel Mug",
                 "id": "trvl_mugs_red",
                 "name": "Red",
                 "color": "red",
@@ -46,6 +49,7 @@
                 "url": "assets/images/Wolfs_Den_Products/red.webp"
             },
             {
+                "relatedProdTitle": "Large 40oz Thermal Travel Mug",
                 "id": "trvl_mugs_teal",
                 "name": "Teal",
                 "color": "teal",
@@ -53,6 +57,7 @@
                 "url": "assets/images/Wolfs_Den_Products/teal.webp"
             },
             {
+                "relatedProdTitle": "Large 40oz Thermal Travel Mug",
                 "id": "trvl_mugs_white",
                 "name": "White",
                 "color": "white",
@@ -113,6 +118,7 @@
         ],
         "optionChoice": [
             {
+                "relatedProdTitle": "Seggsy Trucker Hats",
                 "id": "hats_black",
                 "name": "Black",
                 "color": "dark",
@@ -120,6 +126,7 @@
                 "url": "assets/images/Wolfs_Den_Products/hat-Black-Gray-front.webp"
             },
             {
+                "relatedProdTitle": "Seggsy Trucker Hats",
                 "id": "hats_brown",
                 "name": "Brown",
                 "color": "brown",
@@ -127,6 +134,7 @@
                 "url": "assets/images/Wolfs_Den_Products/hat-Black-Brown-front.webp"
             },
             {
+                "relatedProdTitle": "Seggsy Trucker Hats",
                 "id": "hats_white",
                 "name": "White",
                 "color": "white",
@@ -217,6 +225,7 @@
         ],
         "optionChoice": [
             {
+                "relatedProdTitle": "Coffee Mugs",
                 "id": "coffee_mugs_small",
                 "name": "Small",
                 "color": "black",
@@ -224,6 +233,7 @@
                 "url": "assets/images/Wolfs_Den_Products/mug-lft-1.webp"
             },
             {
+                "relatedProdTitle": "Coffee Mugs",
                 "id": "coffee_mugs_medium",
                 "name": "Medium",
                 "color": "blue",

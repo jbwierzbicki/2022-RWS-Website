@@ -137,7 +137,9 @@
         </div>
         <div class="container" id="selectedItems_Placeholder" dmx-repeat:repeat3="arrCart.items">
 
+
             <dmx-array id="arrCartItemsBelow" dmx-bind:items="$value.split('|')"></dmx-array>
+            <dmx-value id="var_prodName" dmx-bind:value="arrCartItemsBelow.items[0]"></dmx-value>
 
             <div class="row justify-content-center">
                 <div class="col-md-12 col">
@@ -156,7 +158,7 @@
                                     <div class="col-12 col-lg pt-2 pb-2">
                                         <div class="row row-cols-12 g-0" id="sel_item_design_placeholder">
                                             <div class="text-start m-0 p-0 w-25 col">
-                                                <h4 class="text-light m-0 p-0" id="prodTitle" dmx-text="arrCartItemsBelow.items[0]">Large 44z Thermal Travel Mug</h4>
+                                                <h4 class="text-light m-0 p-0" id="prodTitle" dmx-text="var_prodName.value">Large 44z Thermal Travel Mug</h4>
                                             </div>
                                             <div class="text-end col-4">
                                                 <h4 class="text-light m-0 p-0" id="itemCost" dmx-text="arrCartItemsBelow.items[2]">$24.99</h4>
@@ -166,12 +168,10 @@
                                         <p class="fw-bold text-danger mb-2">——</p>
 
 
-                                        <div dmx-on:load="var urlParams=dmx.parseQueryString();">
-                                            <h6>
-                                                <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatBadge="jsonDS1.data.optionChoice" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name" dmx-text="optionChoice.items[arrCartItemsBelow.items[4] - 1].name">
-                                                </span>
-                                            </h6>
-                                        </div>
+                                        <h6>
+                                            <span class="badge rounded-pill bg-dark me-1 hover-cursor" dmx-repeat:repeatbadge="jsonDS1.data.optionChoice.where(`relatedProdTitle`, var_prodName.value, '==')" dmx-class:bg-dark="color=='dark'" dmx-class:bg-primary="color=='dark-blue'" dmx-class:bg-danger="color=='red'" dmx-class:bg-info="color=='teal'" dmx-class:bg-white="color=='white'" dmx-class:text-dark="color=='white'" dmx-style:background-color="color" id="optionChoice" dmx-text="name">
+                                            </span>
+                                        </h6>
 
 
 
