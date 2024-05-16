@@ -62,7 +62,7 @@ document.head.appendChild(o)}initApollo();
 
     <section id="modules" class="border-top rounded-1 rounded-0 border-secondary pb-3">
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container pb-5 modules-container">
+        <div class="container modules-container mt-2 pb-5">
             <div class="row">
 
                 <div class="col-md-12">
