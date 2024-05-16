@@ -1,7 +1,9 @@
 <!-- Wappler include head-page="services-trucking.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxSlideshow:{},dmxBrowser:{}}" -->
 
 <section id="modules" class="border-top rounded-1 rounded-0 border-secondary">
-    <div is="dmx-browser" id="browser1"></div><img src="assets/images/section-modal-bg-top-stone.png" class="w-100" alt="">
+    <div is="dmx-browser" id="browser1"></div>
+    <img src="assets/images/section-modal-bg-top-stone.png" class="w-100 d-none d-lg-inline" alt="" height="110">
+    <img src="assets/images/section-modal-bg-top-stone.png" class="w-100 d-lg-none" alt="">
     <div class="container pb-5 modules-container">
         <div class="row">
             <div class="col-md-4">
