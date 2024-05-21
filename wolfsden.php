@@ -38,6 +38,18 @@
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <div class="modal fade" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center text-bg-secondary rounded-2">
+                    <p class="mt-3">
+                        OOPS! There are no items in your cart to view, please go back and select a product.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <dmx-value id="arrCartVar"></dmx-value>
     <dmx-value id="active_view" dmx-bind:value="'list_view'"></dmx-value>
     <dmx-array id="arrCart"></dmx-array>
@@ -121,11 +133,12 @@
                                             <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                             <!-- If no badge is selected -->
-                                            <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);sel_badge_url.setValue(optionChoice[0].url);arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.push({'title': prodTitle, 'quantity': prodQuantity.value, 'cost': itemCost, 'url': sel_badge_url.value, 'badgeId': sel_badge.value, 'desc': prodDesc, 'badgeHTML': document.getElementById('badge'+sel_badge.value).outerHTML}); arrCartVar.setValue(JSON.stringify(arrCart))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                         </a>
-                                        <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCartVar.value)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <p class="text-danger mb-2 fw-bold w-25">——</p>
+                                        <button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="(arrCartVar.value) ? browser1.goto('wolfsden-cart.php?items='+arrCartVar.value) : modal1.show()">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                     </div>
@@ -192,11 +205,11 @@
                                                 <button id="Get_Yours2" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-show="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                                 <!-- If no badge is selected -->
-                                                <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="sel_badge.setValue(optionChoice[0].id);sel_badge_url.setValue(optionChoice[0].url);arrCartVar.setValue((arrCartVar.value+'—'+prodTitle+'|'+prodQuantity.value+'|'+itemCost+'|'+sel_badge_url.value+'|'+sel_badge.value+'|'+prodDesc))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                                <button id="Get_Yours3" class="btn text-warning module-cta-btn text-start btn-lg mt-1 mb-1 ps-0 pe-0" dmx-on:click="arrCart.push({'title': prodTitle, 'quantity': prodQuantity.value, 'cost': itemCost, 'url': sel_badge_url.value, 'badgeId': sel_badge.value, 'desc': prodDesc, 'badgeHTML': document.getElementById('badge'+sel_badge.value).outerHTML}); arrCartVar.setValue(JSON.stringify(arrCart))" dmx-hide="sel_badge.value">Add to cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                             </a>
-                                            <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="browser1.goto('wolfsden-cart.php?items='+arrCartVar.value)">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                            <p class="text-danger mb-2 fw-bold w-25">——</p><button id="viewCart2" class="btn text-warning module-cta-btn btn-lg text-start ps-0 pe-0" dmx-on:click="(arrCartVar.value) ? browser1.goto('wolfsden-cart.php?items='+arrCartVar.value) : modal1.show()">view cart&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
 
                                         </div>
@@ -367,7 +380,7 @@
     <script>
         document.getElementById('black').addEventListener('click', function() {
     document.getElementById('blackMug').style.display = 'block';
-});
+        });
 
         document.getElementById('black-brown').addEventListener('click', function() {
     document.getElementById('hat-Black-Brown-front').style.display = 'block';

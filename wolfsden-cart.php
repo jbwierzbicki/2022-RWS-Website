@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Giving Back | Raging Wolf Solutions</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,6 +53,21 @@
 
     <?php include 'navbar_main'; ?>
 
+    <script>
+        function removeItem(index) {
+            // Get the arrCart array
+            const cartArray = dmx.app.data.arrCart;
+
+            // Remove the item at the given index
+            cartArray.items.splice(index, 1);
+
+            // Set the modified array back to the arrCart data
+            dmx.app.data.arrCart = { items: cartArray.items }; 
+
+            // Reload the page
+            dmx.app.browser1.goto(window.location.href); 
+        }
+    </script>
 
 
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
@@ -135,7 +150,7 @@
             </div>
 
         </div>
-        <div class="container" id="selectedItems_Placeholder" dmx-repeat:repeat3="arrCart.items">
+        <div class="container" id="selectedItems_Placeholder" dmx-repeat:repeat3="arrCart.items" dmx-on:done="browser1.reload()" dmx-on:click="removeItem(repeat3.index)">
 
 
             <dmx-array id="arrCartItemsBelow" dmx-bind:items="$value.split('|')"></dmx-array>
@@ -183,7 +198,7 @@
 
                                         <div class="row">
                                             <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." dmx-bind:value="arrCartItemsBelow.items[1]"></div>
-                                            <div class="col-lg-2 col-6"><button id="removeThisProd" class="btn bg-secondary w-100 text-truncate" dmx-on:click="">
+                                            <div class="col-lg-2 col-6"><button id="removeThisProd" class="btn bg-secondary w-100 text-truncate active" dmx-on:click="removeItem(repeat3.index)">
                                                     <i class="far fa-trash-alt fa-fw me-1"></i>Delete</button></div>
                                         </div>
 
