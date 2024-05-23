@@ -95,6 +95,7 @@ document.head.appendChild(o)}initApollo();
                                         <p class="text-white-50 mb-2">Your Load Reference Number<i class="fas fa-exclamation-circle ms-1 fa-sm fa-fw"></i>
                                         </p>
                                         <div class="tooltip-video">
+                                            <div class="video-caption text-light">You will find your reference number on your BOL/RC, here:</div>
                                             <video width="320" height="240" loop="true" muted>
                                                 <source src="assets/images/BOL%20Reference%20Image%20Tracking%202.mp4" type="video/mp4">
                                                 Your browser does not support the video tag.
