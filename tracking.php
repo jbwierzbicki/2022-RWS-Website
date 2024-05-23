@@ -91,9 +91,19 @@ document.head.appendChild(o)}initApollo();
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-md-8">
-                                    <p class="text-white-50 mb-2">Your Load Reference Number</p>
+                                    <div class="tooltip-container">
+                                        <p class="text-white-50 mb-2">Your Load Reference Number<i class="fas fa-exclamation-circle ms-1 fa-sm fa-fw"></i>
+                                        </p>
+                                        <div class="tooltip-video">
+                                            <video width="320" height="240" loop="true" muted>
+                                                <source src="assets/images/BOL%20Reference%20Image%20Tracking%202.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
                                     <input id="load_ref_input" name="Load Ref Input" type="text" class="form-control mb-3" required="" minlength="5" data-msg-minlength="Your reference number should be at least 5 digits." maxlength="5" data-msg-maxlength="Your reference number should be no more than 5 digits.">
                                 </div>
+
 
                                 <div class="col-md-8"><button id="btn4" class="btn module-cta-btn btn-warning w-100 fw-bold mt-1 mb-3" wappler-command="editContent" dmx-on:click="load_ref.setValue(load_ref_input.value);tracking_api.load()">Submit&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
                                 <div class="col-md-8" dmx-show="(tracking_api.data[0].FreightTM__Status__c=='Delivered' || tracking_api.data[0].FreightTM__Status__c=='En_Route' || tracking_api.data[0].FreightTM__Status__c=='Assigned' || tracking_api.data[0].FreightTM__Status__c=='Committed' || tracking_api.data[0].FreightTM__Status__c=='Cancelled')">
@@ -176,6 +186,27 @@ document.head.appendChild(o)}initApollo();
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Get the video and tooltip elements
+        const tooltipContainer = document.querySelector('.tooltip-container');
+        const video = tooltipContainer.querySelector('video');
+
+        // Function to play the video
+        function playVideo() {
+            video.play();
+        }
+
+        // Function to pause the video and reset its time
+        function pauseVideo() {
+            video.pause();
+            video.currentTime = 0; 
+        }
+
+        // Event listeners for mouseover and mouseout
+        tooltipContainer.addEventListener('mouseover', playVideo);
+        tooltipContainer.addEventListener('mouseout', pauseVideo);
+    </script>
 </body>
 
 </html>

@@ -397,40 +397,52 @@ h4 {
 }
 
 span.price {
-  float: right;
-  color: #ffc107;
+    float: right;
+    color: #ffc107;
 }
 
 a {
     text-decoration: none;
 }
+
 #privPol {
     color: #ffc107 !important;
 }
 
 #shipTo label {
-    display: inline-block; /* Ensure labels take up full width */
-    width: 100px; /* Adjust width as needed for label text */
+    display: inline-block;
+    /* Ensure labels take up full width */
+    width: 100px;
+    /* Adjust width as needed for label text */
 }
 
 #shipTo input {
-    display: inline-block; /* Allow inputs to be positioned beside labels */
-    width: calc(100% - 120px); /* Adjust width calculation based on label width */
+    display: inline-block;
+    /* Allow inputs to be positioned beside labels */
+    width: calc(100% - 120px);
+    /* Adjust width calculation based on label width */
 }
 
-#gridView, #listView {
-  cursor: pointer;
-  color: black; /* Default color */
-  -webkit-transition: color 0.4s;
-  transition: color 0.4s; /* Smooth transition for color change */
+#gridView,
+#listView {
+    cursor: pointer;
+    color: black;
+    /* Default color */
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+    /* Smooth transition for color change */
 }
 
-#gridView:focus, #listView:focus {
-  color: #ffc107; /* Warning color on click */
+#gridView:focus,
+#listView:focus {
+    color: #ffc107;
+    /* Warning color on click */
 }
 
-#gridView:hover, #listView:hover {
-  color: #ffc107; /* Warning color on hover */
+#gridView:hover,
+#listView:hover {
+    color: #ffc107;
+    /* Warning color on hover */
 }
 
 .list-view .container {
@@ -449,15 +461,38 @@ a {
     max-height: 310px;
     min-height: 310px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #slideshow1 img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover; /* or contain, depending on desired fit */
-  -o-object-position: center;
-     object-position: center;  
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* or contain, depending on desired fit */
+    -o-object-position: center;
+    object-position: center;
+}
+
+
+
+
+/* Tooltip CSS */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-video {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 5px;
+    z-index: 1;
+}
+
+.tooltip-container:hover .tooltip-video {
+    display: block;
 }
