@@ -204,9 +204,9 @@
 
                                         <script>
                                             function removeItem(index) {
-  console.log("removeItem function called with index:", index); 
-  // ... rest of your function code ...
-}
+                                            console.log("removeItem function called with index:", index); 
+                                            // ... rest of your function code ...
+                                            }
                                         </script>
 
 
