@@ -202,6 +202,13 @@
                                                     <i class="far fa-trash-alt fa-fw me-1"></i>Delete</button></div>
                                         </div>
 
+                                        <script>
+                                            function removeItem(index) {
+  console.log("removeItem function called with index:", index); 
+  // ... rest of your function code ...
+}
+                                        </script>
+
 
                                     </div>
                                 </div>
