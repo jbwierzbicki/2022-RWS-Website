@@ -1,6 +1,7 @@
 .dmx-slideshow {
     position: relative;
     height: 0;
+    margin-bottom: 48px;
 }
 
 .dmx-slideshow-slides-container,
