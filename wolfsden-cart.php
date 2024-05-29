@@ -210,8 +210,8 @@
                                         <p class="text-danger mb-2 fw-bold w-25">——</p>
 
                                         <div class="row">
-                                            <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." dmx-bind:value="arrCartItemsBelow.items[1]"></div>
-                                            <div class="col-lg-2 col-6"><button id="removeThisProd" class="btn bg-secondary w-100 text-truncate active" dmx-on:click="removeItem(repeat3.index)">
+                                            <div class="col-lg-2 col-6"><input id="prodQuantity" name="text1" type="number" class="form-control" placeholder="Qty." dmx-bind:value="arrCartItemsBelow.items[0]"></div>
+                                            <div class="col-lg-2 col-6"><button id="removeThisProd" class="btn bg-secondary w-100 text-truncate active">
                                                     <i class="far fa-trash-alt fa-fw me-1"></i>Delete</button></div>
                                         </div>
                                     </div>
@@ -239,32 +239,30 @@
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
-    <script src="js/script.js"></script>
-
     <script>
         function removeItem(index) {
-    console.log("removeItem function called with index:", index); 
+            console.log("removeItem function called with index:", index); 
 
-    // Get the current URL 
-    let currentUrl = window.location.href; 
-    console.log("Original URL:", currentUrl); 
+            // Get the current URL 
+            let currentUrl = window.location.href; 
+            console.log("Original URL:", currentUrl); 
 
-    // Extract the 'items' parameter from the URL 
-    let params = new URLSearchParams(currentUrl.split('?')[1]); 
-    let items = params.get("items"); 
-    console.log("items parameter value:", items); 
+            // Extract the 'items' parameter from the URL 
+            let params = new URLSearchParams(currentUrl.split('?')[1]); 
+            let items = params.get("items"); 
+            console.log("items parameter value:", items); 
 
-    // Split the 'items' string into an array, filter, and rejoin 
-    let updatedItems = items.split('—').filter((item, i) => i !== index).join('—'); 
-    console.log("Updated items parameter value:", updatedItems); 
+            // Split the 'items' string into an array, filter, and rejoin 
+            let updatedItems = items.split('—').filter((item, i) => i !== index).join('—'); 
+            console.log("Updated items parameter value:", updatedItems); 
 
-    // Construct the new URL 
-    let newUrl = currentUrl.split('?')[0] + "?items=" + updatedItems; 
-    console.log("Updated URL:", newUrl); 
+            // Construct the new URL 
+            let newUrl = currentUrl.split('?')[0] + "?items=" + updatedItems; 
+            console.log("Updated URL:", newUrl); 
 
-    // Update the URL
-    window.location.href = newUrl; 
-}
+            // Update the URL
+            window.location.href = newUrl; 
+        }
     </script>
 
 </body>

@@ -243,8 +243,6 @@
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
-    <script src="js/script.js"></script>
-
     <!-- Add this JavaScript function to your file wolfsden.php to display the respective image when each badge is clicked -->
 
     <script>
