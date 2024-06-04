@@ -50,7 +50,7 @@ document.head.appendChild(o)}initApollo();
         <div class="container modules-container mt-0 mb-5 pb-5">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-light text-center display-4 fw-bold"><u>Celebrate Tradition, Trust and Legacy with The 'Pack' on June 23rd!</u></h1>
+                    <h1 class="text-light text-center display-4 fw-bold ms-4"><u>Celebrate Tradition, Trust and Legacy with The 'Pack' on June 23rd!</u></h1>
                 </div>
             </div>
             <div class="row mt-3">
