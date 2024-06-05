@@ -37,6 +37,7 @@ document.head.appendChild(o)}initApollo();
     <script>
         !function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_8f6e0e1be3ac9f1e37dea684410f7c092849/sdk.js"),(document.body || document.head).appendChild(n)}();
     </script>
+
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
@@ -55,11 +56,11 @@ document.head.appendChild(o)}initApollo();
             </div>
             <div class="row mt-3">
 
-                <div class="col">
+                <div class="col" id="full_post">
                     <div class="row">
                         <div class="offset-1 col-12" id="landing_teaser">
 
-                            <a><img src="assets/images/OIP.jpg" width="100%" class="img-fluid mb-3"></a>
+                            <a><img src="assets/images/OIP.jpg" width="100%" class="img-fluid mb-3" loading="lazy"></a>
                             <h1 class="text-light mt-3 mb-3 display-6">Spotlighting Local Business for Upcoming National Family Owned &amp; Operated Business Day</h1>
                             <h3 class="text-light mt-3 fw-light">Sunday, June 23rd marks National Family Owned &amp; Opporated Business Day and Raging Wolf Solutions takes this oppprtunity to highlight why shippers should choose to work with a smaller, more personal business like Raging Wolf. We will post about the things that our team does for its customers, the value we offer compared to a faceless, mega corporation like TQL, CH Robinson, etc.</h3>
                             <article class="text-light mt-3">Every year on June 23, we observe <b>National Family Owned &amp; Operated Businesses Day</b> as a tribute to the resilience and longevity of family-run businesses that have withstood the test of time, navigating through various market challenges and obstacles. These businesses often exude a sense of warmth, personal touch, and reliability that many find lacking in larger corporate entities. This day serves as a reminder for proprietors of family enterprises to honor the dedication and groundwork laid by their ancestors, upon which their current success is built. It's a day for the members of such businesses to come together, celebrate their heritage, and acknowledge the enduring nature of family-owned companies, which represent some of the earliest business models in history.</article>
@@ -67,19 +68,124 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">Join us in our engaging articles as we spotlight Raging Wolf Solutions’ commitment to <b>National Family Owned &amp; Operated Businesses Day</b>. Our story is one of community engagement and heartfelt support, showcasing the initiatives that allow us to contribute meaningfully to the community. As you read on, you’ll uncover the various ways we’re making a difference and how these efforts resonate with the values of this special day, and how you can help us continue the cause!</article>
                             <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
                         </div>
+                        <br><br>
+                        <div class="offset-1 col-12" id="music_video_promotion">
+
+                            <a><iframe src="https://www.youtube.com/embed/i9QUdsBoaAQ" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true" width="100%" height="450px"></iframe></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">The trucking industry has never had a song like this!</h1>
+                            <h3 class="text-light mt-3 fw-light">Last year, Raging Wolf Solutions worked with local artists to release a song (and music video) celebrating our country, our industry, and the heart of it all - our families. If you haven't seen it yet, watch the music video and help us reach our goal of 1 million views - for every 100,000 views received, we're donating to our local <span class="text-warning hover-cursor" dmx-on:click="browser1.goto('charity.php')">UH Rainbow Babies &amp; Children's Hospital!</span></h3>
+                            <article class="text-light mt-3">Every year on June 23, we observe <b>National Family Owned &amp; Operated Businesses Day</b> as a tribute to the resilience and longevity of family-run businesses that have withstood the test of time, navigating through various market challenges and obstacles. These businesses often exude a sense of warmth, personal touch, and reliability that many find lacking in larger corporate entities. This day serves as a reminder for proprietors of family enterprises to honor the dedication and groundwork laid by their ancestors, upon which their current success is built. It's a day for the members of such businesses to come together, celebrate their heritage, and acknowledge the enduring nature of family-owned companies, which represent some of the earliest business models in history.</article>
+
+                            <article class="text-light mt-3">Join us in our engaging articles as we spotlight Raging Wolf Solutions’ commitment to <b>National Family Owned &amp; Operated Businesses Day</b>. Our story is one of community engagement and heartfelt support, showcasing the initiatives that allow us to contribute meaningfully to the community. As you read on, you’ll uncover the various ways we’re making a difference and how these efforts resonate with the values of this special day, and how you can help us continue the cause!</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div><br><br>
+                        <div class="offset-1 col-12" id="scotts_thoughts">
+
+                            <a><img src="assets/images/Scotts-Thoughts-The-Raging-Wolf-Difference.jpg" width="100%" class="img-fluid mb-3" loading="lazy"></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">Scott's Thoughts: The Raging Wolf Difference</h1>
+                            <h3 class="text-light mt-3 fw-light">Our president and founder, Scott Brownfield, has worked in the logistics industry for decades. Since the day he started Raging Wolf Solutions, Scott's goal was to support his customers by committing to a high standard of service and communication. The team at Raging Wolf builds all of their relationships with those principles in mind. We are committed to being a true partner in your freight coordination.</h3>
+                            <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
+
+                            <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div><br><br>
+                        <div class="offset-1 col-12" id="pricing">
+
+                            <a><img src="assets/images/cheap-vs-comp-price.jpg" width="100%" class="img-fluid mb-3" loading="lazy"></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">Cheap vs. Competitive Pricing</h1>
+                            <h3 class="text-light mt-3 fw-light">Rock bottom pricing tends to result in rock bottom service. Choosing Raging Wolf Solutions means that you benefit from our established buying power and reliable network of carriers. With Raging Wolf, you are treated as family, and we work hard to provide you with great service at a fair price.</h3>
+                            <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
+
+                            <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div><br><br>
+                        <div class="offset-1 col-12" id="promoitems2024">
+
+                            <a><img src="assets/images/Wide_40oz_Mug_Promo_Referral-_1_.webp" width="100%" class="img-fluid mb-3" loading="lazy"></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">Customer Perk: New Promo Items (2024)</h1>
+                            <h3 class="text-light mt-3 fw-light">Showing thanks to all of our customers and supporters is very important to the team at Raging Wolf Solutions — and no one shows their appreciation like us! Get your first shipment quoted today and become eligible for these premium promotional gifts. Experience the Raging Wolf difference for yourself.</h3>
+                            <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
+
+                            <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div><br><br>
+                        <div class="offset-1 col-12" id="footballpool">
+
+                            <a><img src="assets/images/Football%20Header%20Icon.png" width="100%" class="img-fluid mb-3" loading="lazy"></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">Customer Perk: Annual Football Pool</h1>
+                            <h3 class="text-light mt-3 fw-light">Our annual football pool is a great way for customers and supporters of Raging Wolf Solutions to win big! During the NFL pre-season and regular season, you can submit your picks and compete to win the weekly $100 gift card prize. <span class="text-warning hover-cursor" dmx-on:click="browser1.goto('football_pool.php')"> Click here </span> to learn more about this program and how to get started.</h3>
+                            <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
+
+                            <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div><br><br>
+                        <div class="offset-1 col-12" id="outreach">
+
+                            <a><img src="assets/images/UH_New-Rainbow-Babies-Children_CMYK-removebg-preview-white-text.png" width="100%" class="img-fluid mb-3" loading="lazy"></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">Past Charity/Community Outreach</h1>
+                            <h3 class="text-light mt-3 fw-light">Raging Wolf Solutions loves giving back to the community, which is why we have joined a wide range of charity initiatives — most recently, we participated in the <span class="text-warning hover-cursor" dmx-on:click="browser1.goto('charity.php')">UH Rainbow Babies and Children's Radiothon.</span> We were honored to pledge $5,000 to the cause, and we are thankful for the work our local charities do to support the community.</h3>
+                            <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
+
+                            <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div><br><br>
+                        <div class="offset-1 col-12" id="thanks">
+
+                            <a><img src="assets/images/cheap-vs-comp-price.jpg" width="100%" class="img-fluid mb-3" loading="lazy"></a>
+                            <h1 class="text-light mt-3 mb-3 display-6">Cheap vs. Competitive Pricing</h1>
+                            <h3 class="text-light mt-3 fw-light">Rock bottom pricing tends to result in rock bottom service. Choosing Raging Wolf Solutions means that you benefit from our established buying power and reliable network of carriers. With Raging Wolf, you are treated as family, and we work hard to provide you with great service at a fair price.</h3>
+                            <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
+
+                            <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
+                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                        </div>
+
+
                     </div>
                 </div>
 
                 <!-- Make into an include component! -->
                 <div class="col-3 offset-1 me-5" id="article_list">
-                    <a><img src="assets/images/OIP%20%281%29.jpg" class="img-fluid mb-2"></a>
-                    <h5 class="text-light">Outstanding Service with Competitive Pricing (compared to rock-bottom pricing)</h5>
-                    <a><img src="assets/images/media/Image%206.webp" class="img-fluid mt-3 mb-2"></a>
-                    <h5 class="text-light">Family and fun meets small business</h5><a><img src="assets/images/media/Image%2019.webp" class="img-fluid mt-3 mb-2"></a>
-                    <h5 class="text-light">Interview with a Founder</h5><a><img src="assets/images/Football%20Header%20Icon.png" class="img-fluid mt-3 mb-2"></a>
-                    <h5 class="text-light">Customer Perks: Annual football pool promotion</h5><a><img src="assets/images/Wide_40oz_Mug_Promo_Referral-_1_.webp" class="img-fluid mt-3 mb-2"></a>
-                    <h5 class="text-light">Customer Perks: New, premium promo items</h5><a><img src="assets/images/UH_New-Rainbow-Babies-Children_CMYK-removebg-preview-white-text.png" class="mt-3 mb-2 img-fluid"></a>
-                    <h5 class="text-light">Partnering with UH Rainbow Children's Hospital for an Alpha Cause, while Supporting the Future!</h5>
+                    <div class="row" id="topic1">
+                        <div class="col"><a><iframe src="https://www.youtube.com/embed/i9QUdsBoaAQ" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe></a>
+                            <p class="text-light">Last year, Raging Wolf Solutions worked with local artists to release a song (and music video) celebrating our country, our industry, and the heart of it all - our families. If you haven't seen it yet, watch the music video and help us reach our goal of 1 million views - for every 100,000 views received, we're donating to our local UH Rainbow Babies &amp; Children's</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row" id="topic2">
+                        <div class="col"><a><img src="assets/images/Scotts-Thoughts-The-Raging-Wolf-Difference.jpg" class="img-fluid mt-3 mb-2" loading="lazy"></a>
+                            <p class="text-light">Our president and founder, Scott Brownfield, has worked in the logistics industry for decades. Since the day he started Raging Wolf Solutions, Scott's goal was to support his customers by committing to a high standard of service and communication. The team at Raging Wolf builds all of their relationships with those principles in mind. We are committed to being a true partner in your freight coordination.Our president and founder, Scott Brownfield, has worked in the logistics industry for decades. Since the day he started Raging Wolf Solutions, Scott's goal was to support his customers by committing to a high standard of service and communication. The team at Raging Wolf builds all of their relationships with those principles in mind. We are committed to being a true partner in your freight coordination.</p>
+                        </div>
+                    </div>
+                    <div class="row" id="topic3">
+                        <div class="col"><a><img src="assets/images/OIP%20%281%29.jpg" class="img-fluid mt-3 mb-2" loading="lazy"></a>
+                            <h5 class="text-light">Cheap vs. Competitive Pricing</h5>
+                        </div>
+                    </div>
+                    <div class="row" id="topic4">
+                        <div class="col"><a><img src="assets/images/Wide_40oz_Mug_Promo_Referral-_1_.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
+                            <h5 class="text-light">Customer Perk: New Promo Items (2024)</h5>
+                        </div>
+                    </div>
+                    <div class="row" id="topic5">
+                        <div class="col"><a><img src="assets/images/Football%20Header%20Icon.png" class="img-fluid mt-3 mb-2" loading="lazy"></a>
+                            <h5 class="text-light">Customer Perk: Annual Football Pool</h5>
+                        </div>
+                    </div>
+                    <div class="row" id="topic6">
+                        <div class="col"><a><img src="assets/images/UH_New-Rainbow-Babies-Children_CMYK-removebg-preview-white-text.png" class="mt-3 mb-2 img-fluid" loading="lazy"></a>
+                            <h5 class="text-light">Past Charity/Community Outreach</h5>
+                        </div>
+                    </div>
+                    <div class="row" id="topic7">
+                        <div class="col"><a><img src="assets/images/media/Image%206.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
+                            <h5 class="text-light">Celebrating National Family Owned &amp; Operated Businesses Day + Recap &amp; Thank You to Customers/Supporters</h5>
+                        </div>
+                    </div>
+
 
 
 
@@ -93,6 +199,75 @@ document.head.appendChild(o)}initApollo();
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Adjusted function to handle click event on #article_list for scrolling within #full_post
+    document.addEventListener("DOMContentLoaded", function () {
+      // Function to handle scrolling within #full_post
+      function scrollToSection(sectionId) {
+        var kbBody = document.getElementById("full_post");
+        var targetSection = document.getElementById(sectionId);
+        if (kbBody && targetSection) {
+          var sectionTopPosition = targetSection.offsetTop - kbBody.offsetTop;
+          kbBody.scrollTo({ top: sectionTopPosition, behavior: "smooth" });
+        }
+      }
+
+      // Set up click event listeners for each menu item
+      var menuItems = {
+        "topic1": "music_video_promotion", // Music Video Promotion
+        "topic2": "scotts_thoughts", // Scott's Thoughts: The Raging Wolf Difference
+        "topic3": "pricing", // Cheap vs. Competitive Pricing
+        "topic4": "promoitems2024", // Customer Perk: New Promo Items (2024)
+        "topic5": "footballpool", // Customer Perk: Annual Football Pool
+        "topic6": "outreach", // Past Charity/Community Outreach
+        "topic7": "thanks", // Celebrating National Family Owned & Operated Businesses Day + Recap & Thank You to Customers/Supporters
+      };
+
+      Object.keys(menuItems).forEach(function (menuItemId) {
+        var menuItem = document.getElementById(menuItemId);
+        if (menuItem) {
+          menuItem.addEventListener("click", function () {
+            scrollToSection(menuItems[menuItemId]);
+          });
+        }
+      });
+    });
+
+    // Function to scroll to the corrosponding post in 'full_post' element with offset
+    function scrollToPost() {
+      // Get the keyword entered by the user
+      const keyword = document.getElementById('KBsearch').value.toLowerCase();
+
+      // Find the column element containing the keyword
+      const articleList = document.getElementById('article_list');
+      let targetColumn = null;
+
+      const columns = articleList.querySelectorAll('div[id^="topic"]');
+      columns.forEach((column) => {
+        if (column.textContent.toLowerCase().includes(keyword)) {
+          targetColumn = column;
+        }
+      });
+
+      if (targetColumn) {
+        // Extract the target ID from the column's ID
+        const targetId = targetColumn.id.split('topic')[1];
+
+        // Find the corresponding post element in #full_post
+        const targetPost = document.getElementById(`full_post #${menuItems[`topic${targetId}`]}`);
+
+        if (targetPost) {
+          // Calculate the offset position relative to the top of the container
+          const container = document.getElementById('full_post');
+          const offset = targetPost.offsetTop - container.offsetTop;
+
+          // Scroll to the target post within the 'full_post' element with offset
+          container.scrollTo({ top: offset, behavior: "smooth" });
+        }
+      }
+    }
+    </script>
 </body>
 
 </html>
