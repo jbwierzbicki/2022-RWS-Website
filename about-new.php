@@ -6,6 +6,23 @@
     <meta charset="UTF-8">
     <title>N.F.O.O.B. Day</title>
 
+    <style>
+        #article_list {
+            position: sticky;
+            top: 50px;
+            /* Initial offset from the top */
+            z-index: 100;
+            /* Ensure it's on top of other elements */
+        }
+
+        #full_post {
+            overflow-y: none;
+            /* Enable vertical scrolling */
+            min-height: 99%;
+            /* Make the container at least as tall as the viewport */
+        }
+    </style>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
@@ -148,7 +165,7 @@ document.head.appendChild(o)}initApollo();
                 <div class="col-3 offset-1 me-5" id="article_list">
                     <div class="row" id="topic1">
                         <div class="col"><a><iframe src="https://www.youtube.com/embed/i9QUdsBoaAQ" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe></a>
-                            <p class="text-light">Last year, Raging Wolf Solutions worked with local artists to release a song (and music video) celebrating our country, our industry, and the heart of it all - our families. If you haven't seen it yet, watch the music video and help us reach our goal of 1 million views - for every 100,000 views received, we're donating to our local UH Rainbow Babies &amp; Children's</p>
+                            <h5 class="text-light">The trucking industry has never had a song like this!</h5>
                         </div>
                     </div>
 
@@ -157,7 +174,7 @@ document.head.appendChild(o)}initApollo();
 
                     <div class="row" id="topic2">
                         <div class="col"><a><img src="assets/images/Scotts-Thoughts-The-Raging-Wolf-Difference.jpg" class="img-fluid mt-3 mb-2" loading="lazy"></a>
-                            <p class="text-light">Our president and founder, Scott Brownfield, has worked in the logistics industry for decades. Since the day he started Raging Wolf Solutions, Scott's goal was to support his customers by committing to a high standard of service and communication. The team at Raging Wolf builds all of their relationships with those principles in mind. We are committed to being a true partner in your freight coordination.Our president and founder, Scott Brownfield, has worked in the logistics industry for decades. Since the day he started Raging Wolf Solutions, Scott's goal was to support his customers by committing to a high standard of service and communication. The team at Raging Wolf builds all of their relationships with those principles in mind. We are committed to being a true partner in your freight coordination.</p>
+                            <h5 class="text-light">Scott's Thoughts: The Raging Wolf Difference</h5>
                         </div>
                     </div>
                     <div class="row" id="topic3">
