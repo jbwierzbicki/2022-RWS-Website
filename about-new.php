@@ -15,11 +15,33 @@
             /* Ensure it's on top of other elements */
         }
 
+        /* Add this CSS to style the #article_list element when it's below #scotts_thoughts */
+        #scotts_thoughts~#article_list {
+            /* Selector that targets #article_list when it is directly after #scotts_thoughts */
+            top: calc(100vh - 50px);
+            /* Position relative to the bottom of the viewport */
+        }
+
         #full_post {
             overflow-y: none;
             /* Enable vertical scrolling */
-            min-height: 99%;
+            min-height: 75%;
             /* Make the container at least as tall as the viewport */
+        }
+
+        /* Add CSS for carousel styling and animation */
+        #article_list {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+            /* Set the height of the carousel */
+        }
+
+        #article_list>div {
+            flex: 1 0 auto;
+            transition: transform 0.5s ease;
+            /* Add smooth transition for the rotation effect */
         }
     </style>
 
@@ -218,38 +240,37 @@ document.head.appendChild(o)}initApollo();
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Adjusted function to handle click event on #article_list for scrolling within #full_post
-    document.addEventListener("DOMContentLoaded", function () {
-      // Function to handle scrolling within #full_post
-      function scrollToSection(sectionId) {
-        var kbBody = document.getElementById("full_post");
-        var targetSection = document.getElementById(sectionId);
-        if (kbBody && targetSection) {
-          var sectionTopPosition = targetSection.offsetTop - kbBody.offsetTop;
-          kbBody.scrollTo({ top: sectionTopPosition, behavior: "smooth" });
-        }
-      }
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to handle scrolling within #full_post
+            function scrollToSection(sectionId) {
+                var targetSection = document.getElementById(sectionId);
 
-      // Set up click event listeners for each menu item
-      var menuItems = {
-        "topic1": "music_video_promotion", // Music Video Promotion
-        "topic2": "scotts_thoughts", // Scott's Thoughts: The Raging Wolf Difference
-        "topic3": "pricing", // Cheap vs. Competitive Pricing
-        "topic4": "promoitems2024", // Customer Perk: New Promo Items (2024)
-        "topic5": "footballpool", // Customer Perk: Annual Football Pool
-        "topic6": "outreach", // Past Charity/Community Outreach
-        "topic7": "thanks", // Celebrating National Family Owned & Operated Businesses Day + Recap & Thank You to Customers/Supporters
-      };
+                if (targetSection) {
+                var sectionTopPosition = targetSection.offsetTop; // No need for container offset
+                window.scrollTo({ top: sectionTopPosition, behavior: "smooth" });
+                }
+            }
 
-      Object.keys(menuItems).forEach(function (menuItemId) {
-        var menuItem = document.getElementById(menuItemId);
-        if (menuItem) {
-          menuItem.addEventListener("click", function () {
-            scrollToSection(menuItems[menuItemId]);
-          });
-        }
-      });
-    });
+            // Set up click event listeners for each menu item
+            var menuItems = {
+                "topic1": "music_video_promotion", // Music Video Promotion
+                "topic2": "scotts_thoughts", // Scott's Thoughts: The Raging Wolf Difference
+                "topic3": "pricing", // Cheap vs. Competitive Pricing
+                "topic4": "promoitems2024", // Customer Perk: New Promo Items (2024)
+                "topic5": "footballpool", // Customer Perk: Annual Football Pool
+                "topic6": "outreach", // Past Charity/Community Outreach
+                "topic7": "thanks", // Celebrating National Family Owned & Operated Businesses Day + Recap & Thank You to Customers/Supporters
+            };
+
+            Object.keys(menuItems).forEach(function (menuItemId) {
+                var menuItem = document.getElementById(menuItemId);
+                if (menuItem) {
+                menuItem.addEventListener("click", function () {
+                    scrollToSection(menuItems[menuItemId]);
+                });
+                }
+            });
+        });
 
     // Function to scroll to the corrosponding post in 'full_post' element with offset
     function scrollToPost() {
@@ -284,6 +305,32 @@ document.head.appendChild(o)}initApollo();
         }
       }
     }
+    </script>
+    <script>
+        // Add JavaScript for carousel rotation
+        document.addEventListener("DOMContentLoaded", function () {
+        let currentIndex = 0;
+        const carouselItems = document.querySelectorAll("#article_list > div");
+
+        setInterval(() => {
+            carouselItems.forEach((item, index) => {
+            // Calculate the new top position based on the current index and carousel height
+            const newTop = (index - currentIndex) * item.offsetHeight; // Use item height for accurate positioning
+
+            // Apply the top position directly
+            item.style.top = `${newTop}px`; 
+            });
+
+            // Reset the top position of each item after the cycle
+            setTimeout(() => {
+            carouselItems.forEach((item) => {
+                item.style.top = '0px'; // Reset the top property to 0px
+            });
+            }, 2900); // Reset after 2.9 seconds (before the next iteration of setInterval)
+
+            currentIndex = (currentIndex + 1) % carouselItems.length; // Update the index for the next item
+            }, 3000); // Adjust the interval as needed
+        });
     </script>
 </body>
 
