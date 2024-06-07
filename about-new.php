@@ -171,6 +171,11 @@ document.head.appendChild(o)}initApollo();
 
                 <!-- Make into an include component! -->
                 <div class="col-3 offset-1 me-5 h-100" id="article_list" dmx-animate-enter.duration:2500.delay:250.inview-target="#fade_start" .inview-percentage:1="fadeInUp" dmx-animate-leave.duration:5000.delay:1000="fadeOutDown">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="text-warning text-center">Coming Soon!</h3>
+                        </div>
+                    </div>
                     <div class="row" id="topic1">
                         <div class="col"><a><img src="assets/images/rws_music_video_thumb.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">The trucking industry has never had a song like this!</h5>
