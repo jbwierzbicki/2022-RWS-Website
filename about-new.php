@@ -171,7 +171,7 @@ document.head.appendChild(o)}initApollo();
 
                 <!-- Make into an include component! -->
                 <div class="col-3 offset-1 me-5 h-100" id="article_list" dmx-animate-enter.duration:2500.delay:250.inview-target="#fade_start" .inview-percentage:1="fadeInUp" dmx-animate-leave.duration:5000.delay:1000="fadeOutDown">
-                    <div class="row" id="topic1">
+                    <div class="row hover-cursor" id="topic1">
                         <div class="col">
                             <h3 class="text-warning text-center">Coming Soon!</h3><a><img src="assets/images/rws_music_video_thumb.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">The trucking industry has never had a song like this!</h5>
@@ -181,32 +181,32 @@ document.head.appendChild(o)}initApollo();
 
 
 
-                    <div class="row" id="topic2">
+                    <div class="row hover-cursor" id="topic2">
                         <div class="col"><a><img src="assets/images/Scotts-Thoughts-The-Raging-Wolf-Difference.jpg" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">Scott's Thoughts: The Raging Wolf Difference</h5>
                         </div>
                     </div>
-                    <div class="row" id="topic3">
+                    <div class="row hover-cursor" id="topic3">
                         <div class="col"><a><img src="assets/images/OIP%20%281%29.jpg" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">Cheap vs. Competitive Pricing</h5>
                         </div>
                     </div>
-                    <div class="row" id="topic4">
+                    <div class="row hover-cursor" id="topic4">
                         <div class="col"><a><img src="assets/images/Wide_40oz_Mug_Promo_Referral-_1_.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">Customer Perk: New Promo Items (2024)</h5>
                         </div>
                     </div>
-                    <div class="row" id="topic5">
+                    <div class="row hover-cursor" id="topic5">
                         <div class="col"><a><img src="assets/images/Football%20Header%20Icon.png" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">Customer Perk: Annual Football Pool</h5>
                         </div>
                     </div>
-                    <div class="row" id="topic6">
+                    <div class="row hover-cursor" id="topic6">
                         <div class="col"><a><img src="assets/images/UH_New-Rainbow-Babies-Children_CMYK-removebg-preview-white-text.png" class="mt-3 mb-2 img-fluid" loading="lazy"></a>
                             <h5 class="text-light">Past Charity/Community Outreach</h5>
                         </div>
                     </div>
-                    <div class="row" id="topic7">
+                    <div class="row hover-cursor" id="topic7">
                         <div class="col"><a><img src="assets/images/media/Image%206.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">Celebrating National Family Owned &amp; Operated Businesses Day + Recap &amp; Thank You to Customers/Supporters</h5>
                         </div>
