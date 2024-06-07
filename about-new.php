@@ -8,40 +8,20 @@
 
     <style>
         #article_list {
-            position: sticky;
-            top: 50px;
-            /* Initial offset from the top */
-            z-index: 100;
-            /* Ensure it's on top of other elements */
+            animation: fadeInUp 10s ease-in-out;
+            position: relative;
+            /* Position it off-screen */
         }
 
-        /* Add this CSS to style the #article_list element when it's below #scotts_thoughts */
-        #scotts_thoughts~#article_list {
-            /* Selector that targets #article_list when it is directly after #scotts_thoughts */
-            top: calc(100vh - 50px);
-            /* Position relative to the bottom of the viewport */
-        }
-
-        #full_post {
-            overflow-y: none;
-            /* Enable vertical scrolling */
-            min-height: 75%;
-            /* Make the container at least as tall as the viewport */
-        }
-
-        /* Add CSS for carousel styling and animation */
-        #article_list {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            height: 100%;
-            /* Set the height of the carousel */
-        }
-
-        #article_list>div {
-            flex: 1 0 auto;
-            transition: transform 0.5s ease;
-            /* Add smooth transition for the rotation effect */
+        #music_video_promotion,
+        #scotts_thoughts,
+        #pricing,
+        #promoitems2024,
+        #footballpool,
+        #outreach,
+        #thanks {
+            display: none;
+            /* Hide these elements by default */
         }
     </style>
 
@@ -77,9 +57,13 @@ document.head.appendChild(o)}initApollo();
         !function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_8f6e0e1be3ac9f1e37dea684410f7c092849/sdk.js"),(document.body || document.head).appendChild(n)}();
     </script>
 
+    <link rel="stylesheet" href="dmxAppConnect/dmxAnimateCSS/animate.min.css" />
+    <script src="dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer></script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <div is="dmx-browser" id="browser1"></div>
 
     <?php include 'navbar_mini'; ?>
 
@@ -93,9 +77,9 @@ document.head.appendChild(o)}initApollo();
                     <h1 class="text-light text-center display-4 fw-bold ms-4"><u>Celebrate Tradition, Trust and Legacy with The 'Pack' on June 23rd!</u></h1>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3" id="content-container">
 
-                <div class="col" id="full_post">
+                <div class="col" id="full_post" style="padding-top: 0;">
                     <div class="row">
                         <div class="offset-1 col-12" id="landing_teaser">
 
@@ -105,7 +89,7 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">At Raging Wolf Solutions, we know that real connections and top-notch service are what shippers need most. Unlike big corporations, our family-owned status lets us give you the personalized attention and dedication you deserve. We’re all about open communication and making sure our customers are happy, which means you’re not just a number to us—you’re part of the family.</article>
 
                             <article class="text-light mt-3">We love showing our appreciation in unique and fun ways. From our music video celebrating the trucking industry and our local community, to our annual football pool and special promo items, we go the extra mile to thank our supporters. When you choose Raging Wolf Solutions, you get the benefit of our industry know-how, fair pricing, and our promise to always put you first.</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div>
                         <br><br>
                         <div class="offset-1 col-12" id="music_video_promotion">
@@ -116,17 +100,17 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">Every year on June 23, we observe <b>National Family Owned &amp; Operated Businesses Day</b> as a tribute to the resilience and longevity of family-run businesses that have withstood the test of time, navigating through various market challenges and obstacles. These businesses often exude a sense of warmth, personal touch, and reliability that many find lacking in larger corporate entities. This day serves as a reminder for proprietors of family enterprises to honor the dedication and groundwork laid by their ancestors, upon which their current success is built. It's a day for the members of such businesses to come together, celebrate their heritage, and acknowledge the enduring nature of family-owned companies, which represent some of the earliest business models in history.</article>
 
                             <article class="text-light mt-3">Join us in our engaging articles as we spotlight Raging Wolf Solutions’ commitment to <b>National Family Owned &amp; Operated Businesses Day</b>. Our story is one of community engagement and heartfelt support, showcasing the initiatives that allow us to contribute meaningfully to the community. As you read on, you’ll uncover the various ways we’re making a difference and how these efforts resonate with the values of this special day, and how you can help us continue the cause!</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
                         <div class="offset-1 col-12" id="scotts_thoughts">
 
                             <a><img src="assets/images/Scotts-Thoughts-The-Raging-Wolf-Difference.jpg" width="100%" class="img-fluid mb-3" loading="lazy"></a>
-                            <h1 class="text-light mt-3 mb-3 display-6">Scott's Thoughts: The Raging Wolf Difference</h1>
+                            <h1 class="text-light mt-3 mb-3 display-6">Scott's Thoughts: <span class="text-warning hover-cursor" dmx-on:click="browser1.goto('about.php')">The Raging Wolf Difference</span></h1>
                             <h3 class="text-light mt-3 fw-light">Our president and founder, Scott Brownfield, has worked in the logistics industry for decades. Since the day he started Raging Wolf Solutions, Scott's goal was to support his customers by committing to a high standard of service and communication. The team at Raging Wolf builds all of their relationships with those principles in mind. We are committed to being a true partner in your freight coordination.</h3>
                             <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
 
                             <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
                         <div class="offset-1 col-12" id="pricing">
 
@@ -136,17 +120,17 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
 
                             <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
                         <div class="offset-1 col-12" id="promoitems2024">
 
                             <a><img src="assets/images/Wide_40oz_Mug_Promo_Referral-_1_.webp" width="100%" class="img-fluid mb-3" loading="lazy"></a>
                             <h1 class="text-light mt-3 mb-3 display-6">Customer Perk: New Promo Items (2024)</h1>
-                            <h3 class="text-light mt-3 fw-light">Showing thanks to all of our customers and supporters is very important to the team at Raging Wolf Solutions — and no one shows their appreciation like us! Get your first shipment quoted today and become eligible for these premium promotional gifts. Experience the Raging Wolf difference for yourself.</h3>
+                            <h3 class="text-light mt-3 fw-light">Showing thanks to all of our customers and supporters is very important to the team at Raging Wolf Solutions — and no one shows their appreciation like us! Get your first shipment quoted today and become eligible for these <span class="text-warning hover-cursor" dmx-on:click="browser1.goto('referral.php')">premium promotional gifts.</span> Experience the Raging Wolf difference for yourself.</h3>
                             <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
 
                             <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
                         <div class="offset-1 col-12" id="footballpool">
 
@@ -156,7 +140,7 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
 
                             <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
                         <div class="offset-1 col-12" id="outreach">
 
@@ -166,7 +150,7 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
 
                             <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
+                            <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
                         <div class="offset-1 col-12" id="thanks">
 
@@ -176,17 +160,19 @@ document.head.appendChild(o)}initApollo();
                             <article class="text-light mt-3">All the fun non-sensical other stuff goes here... </article>
 
                             <article class="text-light mt-3">Some more fun wibbly wobelly timey wimey stuff here...</article>
-                            <article class="text-light mt-3">............................................................................................Teaser for next article.................................................................................................</article>
                         </div>
-
-
+                        <div class="row" id="stay_tuned">
+                            <div class="offset-1 col-12 mt-5" style="display: flex; flex-direction: column;">
+                                <h4 class="mt-3 text-warning text-center"><u>Stay tuned for more adventures with Raging Wolf Solutions where every day&apos;s a legacy in Family Business pride!</u></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Make into an include component! -->
-                <div class="col-3 offset-1 me-5" id="article_list">
+                <div class="col-3 offset-1 me-5 h-100" id="article_list" dmx-animate-enter.duration:2500.delay:250.inview-target="#fade_start" .inview-percentage:1="fadeInUp" dmx-animate-leave.duration:5000.delay:1000="fadeOutDown">
                     <div class="row" id="topic1">
-                        <div class="col"><a><iframe src="https://www.youtube.com/embed/i9QUdsBoaAQ" title="Raging Wolf - Song Celebrating Truckers, American Businesses, and Family" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe></a>
+                        <div class="col"><a><img src="assets/images/rws_music_video_thumb.webp" class="img-fluid mt-3 mb-2" loading="lazy"></a>
                             <h5 class="text-light">The trucking industry has never had a song like this!</h5>
                         </div>
                     </div>
@@ -239,6 +225,7 @@ document.head.appendChild(o)}initApollo();
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Targeting for auto scroll on click #article_list -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Function to handle scrolling within #full_post
@@ -306,31 +293,80 @@ document.head.appendChild(o)}initApollo();
       }
     }
     </script>
+
+    <!-- Time lock script for #full_post-->
     <script>
-        // Add JavaScript for carousel rotation
-        document.addEventListener("DOMContentLoaded", function () {
-        let currentIndex = 0;
-        const carouselItems = document.querySelectorAll("#article_list > div");
+        document.addEventListener("DOMContentLoaded", function() {
+        // Function to check if the current date is after a target date
+        function isDateAfter(targetDate) {
+        const currentDate = new Date();
+        const targetDateObj = new Date(targetDate);
+        return currentDate >= targetDateObj;
+        }
 
-        setInterval(() => {
-            carouselItems.forEach((item, index) => {
-            // Calculate the new top position based on the current index and carousel height
-            const newTop = (index - currentIndex) * item.offsetHeight; // Use item height for accurate positioning
+        // Define the target dates for each element
+        const elementDates = {
+        "music_video_promotion": "2024-06-17",
+        "scotts_thoughts": "2024-06-18",
+        "pricing": "2024-06-19",
+        "promoitems2024": "2024-06-20",
+        "footballpool": "2024-06-21",
+        "outreach": "2024-06-22",
+        "thanks": "2024-06-22",
+        };
 
-            // Apply the top position directly
-            item.style.top = `${newTop}px`; 
-            });
+        // Loop through each element and check if it should be shown
+        for (const elementId in elementDates) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            // Check if the current date is after the target date
+            if (isDateAfter(elementDates[elementId])) {
+            // Show the element
+            element.style.display = "block"; 
+            } else {
+            // Hide the element
+            element.style.display = "none";
+            }
+        }
+        }
+    });
+    </script>
 
-            // Reset the top position of each item after the cycle
-            setTimeout(() => {
-            carouselItems.forEach((item) => {
-                item.style.top = '0px'; // Reset the top property to 0px
-            });
-            }, 2900); // Reset after 2.9 seconds (before the next iteration of setInterval)
+    <!-- Time lock script for #article_list-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Function to check if the current date is after a target date
+        function isDateAfter(targetDate) {
+        const currentDate = new Date();
+        const targetDateObj = new Date(targetDate);
+        return currentDate >= targetDateObj;
+        }
 
-            currentIndex = (currentIndex + 1) % carouselItems.length; // Update the index for the next item
-            }, 3000); // Adjust the interval as needed
-        });
+        // Define the target dates for each element
+        const elementDates = {
+        "topic2": "2024-06-18",
+        "topic3": "2024-06-19",
+        "topic4": "2024-06-20",
+        "topic5": "2024-06-21",
+        "topic6": "2024-06-22",
+        "topic7": "2024-06-22",
+        };
+
+        // Loop through each element and check if it should be shown
+        for (const elementId in elementDates) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            // Check if the current date is after the target date
+            if (isDateAfter(elementDates[elementId])) {
+            // Show the element
+            element.style.display = "block"; 
+            } else {
+            // Hide the element
+            element.style.display = "none";
+            }
+        }
+        }
+    });
     </script>
 </body>
 
