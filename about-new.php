@@ -135,7 +135,7 @@ document.head.appendChild(o)}initApollo();
                         </div><br><br>
                         <div class="offset-1 col-12" id="outreach">
 
-                            <a><img src="assets/images/UH_New-Rainbow-Babies-Children_CMYK-removebg-preview-white-text.png" width="100%" class="img-fluid mb-3" loading="lazy" border="2" bordercolor="#ffffff"></a>
+                            <a><img src="assets/images/UHCH.jpg" width="100%" class="img-fluid mb-3" loading="lazy" border="2" bordercolor="#ffffff"></a>
                             <h1 class="text-light mt-3 mb-3 display-6">Past Charity/Community Outreach</h1>
                             <h3 class="text-light mt-3 fw-light">Raging Wolf Solutions loves giving back to the community, which is why we have joined a wide range of charity initiatives — most recently, we participated in the <span class="text-warning hover-cursor" dmx-on:click="browser1.goto('charity.php')">UH Rainbow Babies and Children&apos;s Radiothon.</span> We were honored to pledge $5,000 to the cause, and we are thankful for the work our local charities do to support the community.</h3>
 
