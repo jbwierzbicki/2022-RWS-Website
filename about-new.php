@@ -141,7 +141,7 @@ document.head.appendChild(o)}initApollo();
 
                             <hr class="mt-5 mb-2" style="border-top: 3px solid #ffff00;">
                         </div><br><br>
-                        <div class="offset-1 col-12" id="thanks">
+                        <div class="offset-1 col-12 visually-hidden" id="thanks">
 
                             <a><img src="assets/images/cheap-vs-comp-price.jpg" width="100%" class="img-fluid mb-3" loading="lazy"></a>
                             <h1 class="text-light mt-3 mb-3 display-6">Cheap vs. Competitive Pricing</h1>
