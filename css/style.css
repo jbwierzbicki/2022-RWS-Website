@@ -498,7 +498,7 @@ a {
 }
 
 #swiper1, #swipeHome {
+    overflow: hidden !important;
     max-height: 250px;
     max-width: 1288px;
-    overflow: hidden !important;
 }
