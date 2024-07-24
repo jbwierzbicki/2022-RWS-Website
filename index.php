@@ -331,10 +331,6 @@ document.getElementById('cookNo').addEventListener('click', function() {
                 delay: 3000, // Set autoplay interval
                 disableOnInteraction: false,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
         });
     </script>
 
