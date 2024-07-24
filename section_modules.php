@@ -1,9 +1,10 @@
-<!-- Wappler include head-page="services-trucking.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxSlideshow:{},dmxBrowser:{}}" -->
+<!-- Wappler include head-page="services-trucking.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxSlideshow:{},dmxBrowser:{},dmxSwiper:{}}" -->
 
 <section id="modules" class="border-top rounded-1 rounded-0 border-secondary">
     <div is="dmx-browser" id="browser1"></div>
     <img src="assets/images/section-modal-bg-top-stone.png" class="w-100 d-none d-lg-inline" alt="" height="110">
     <img src="assets/images/section-modal-bg-top-stone.png" class="w-100 d-lg-none" alt="">
+
     <div class="container pb-5 modules-container">
         <div class="row">
             <div class="col-md-4">
@@ -85,11 +86,63 @@
 
                     </div>
                 </div>
-
-
-
-
             </div>
+
+
+            <section class="text-center text-break lh-lg">
+                <div class="container text-bg-dark h-25">
+                    <div class="row justify-content-center align-items-center bg-dark">
+                        <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-2 align-self-center" id="swipeHome">
+                            <div is="dmx-swiper" class="" id="swiper1" centered-slides="true" grab-cursor="true" loop="true" speed="600" space-between="150" navigation="true" style="--swiper-navigation-color: #c7c5c5;" autoplay="true">
+                                <div class="swiper-slide">
+                                    <br>
+                                    <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
+                                    <p class="text-light text-center mt-1 mb-3">"... I utilize Raging Wolf to see that our special shipments are handled professionally, <br>and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p><br>
+                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
+                                </div>
+                                <div class="swiper-slide">
+                                    <br>
+                                    <h4 class="text-uppercase text-warning text-break">Just ask our loyal pack-members about us!</h4>
+                                    <p class="text-light text-center mt-1 mb-3">"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"</p>
+                                    <br>
+                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
+                                </div>
+                                <div class="swiper-slide">
+                                    <br>
+                                    <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
+                                    <p class="text-light text-center mt-1 mb-3">"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</p>
+                                    <br>
+                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
+                                </div>
+                                <div class="swiper-slide">
+                                    <br>
+                                    <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
+                                    <p class="text-light text-center mt-1 mb-3">"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"</p>
+                                    <br>
+                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
+                                </div>
+                                <div class="swiper-slide">
+                                    <br>
+                                    <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
+                                    <p class="text-light text-center mt-1 mb-3">"cccccccccccccccccccccccccccccccccccccccccccc"</p>
+                                    <br>
+                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
+                                </div>
+                                <div class="swiper-slide">
+                                    <br>
+                                    <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
+                                    <p class="text-light text-center mt-1 mb-3">"dddddddddddddddddddddddddddddddddddddddddddddddd"</p>
+                                    <br>
+                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
             <div class="col-md-12">
                 <div class="row h-100">
 

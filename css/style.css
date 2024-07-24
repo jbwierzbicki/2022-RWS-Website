@@ -496,3 +496,8 @@ a {
 .tooltip-container:hover .tooltip-video {
     display: block;
 }
+
+#swiper1, #swipeHome {
+    max-height: 250px;
+    max-width: 1288px;
+}
