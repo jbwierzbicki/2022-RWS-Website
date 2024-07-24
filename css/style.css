@@ -497,11 +497,34 @@ a {
     display: block;
 }
 
+
+
+/* SWIPER SETTING & STYLING */
 #swiper1, #swipeHome {
-    max-height: 250px;
-    max-width: 1288px;
+    height: 250px;
+    width: 100%;
 }
 
 .swiper-wrapper {
-    width: 100%;
+    width: 1288px;
 }
+
+@media (max-width: 1024px) {
+    #swiper1, #swipeHome {
+        width: 90%; /* Adjust the width for smaller screens */
+        height: 250px; /* Keep the height consistent */
+    }
+    .swiper-wrapper {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #swiper1, #swipeHome {
+        width: 100%; /* For even smaller screens */
+        height: 200px; /* Adjust height as needed */
+    }
+    .swiper-wrapper {
+        width: 100%; 
+    }
+} 

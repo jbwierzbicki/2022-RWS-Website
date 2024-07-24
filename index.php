@@ -322,15 +322,16 @@ document.getElementById('cookNo').addEventListener('click', function() {
     <script>
         var swiper = new Swiper('.swiper-container', {
             // Swiper configuration options
-            spaceBetween: 150,
+            spaceBetween: 30,
             centeredSlides: true, 
             loop: true,
             grabCursor: true,
-            speed: 600,
+            speed: 900,
             autoplay: {
-                delay: 3000, // Set autoplay interval
+                delay: 3500, // Set autoplay interval
                 disableOnInteraction: false,
             },
+             slidesPerView: 'auto', // Set 'auto' to make Swiper automatically calculate the number of slides per view
         });
     </script>
 
