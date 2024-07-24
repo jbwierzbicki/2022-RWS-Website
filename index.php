@@ -331,14 +331,6 @@ document.getElementById('cookNo').addEventListener('click', function() {
                 delay: 3000, // Set autoplay interval
                 disableOnInteraction: false,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination', // Target the pagination element
-                clickable: true // Make the bullets clickable
-            },
         });
     </script>
 
