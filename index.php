@@ -319,6 +319,24 @@ document.getElementById('cookNo').addEventListener('click', function() {
 
     </script>
 
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            // Swiper configuration options
+            spaceBetween: 30,
+            centeredSlides: true, 
+            loop: true,
+            grabCursor: true,
+            speed: 600,
+            autoplay: {
+                delay: 3000, // Set autoplay interval
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </body>
 

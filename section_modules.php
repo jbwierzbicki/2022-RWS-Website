@@ -92,9 +92,8 @@
             <section class="text-center text-break lh-lg">
                 <div class="container text-bg-dark h-25">
                     <div class="row justify-content-center align-items-center bg-dark">
-                        <!-- wappler ignore -->
                         <div class="swiper-container module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-2 align-self-center" id="swipeHome">
-                            <div class="swiper-wrapper" id="swiper1" centered-slides="true" grab-cursor="true" loop="true" speed="600" space-between="150" autoplay="true" pagination="bullets">
+                            <div class="swiper-wrapper" id="swiper1" centered-slides="true" grab-cursor="true" loop="true" speed="600" space-between="150">
                                 <div class="swiper-slide">
                                     <br>
                                     <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
