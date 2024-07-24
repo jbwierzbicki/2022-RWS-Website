@@ -322,7 +322,7 @@ document.getElementById('cookNo').addEventListener('click', function() {
     <script>
         var swiper = new Swiper('.swiper-container', {
             // Swiper configuration options
-            spaceBetween: 30,
+            spaceBetween: 150,
             centeredSlides: true, 
             loop: true,
             grabCursor: true,
@@ -334,6 +334,10 @@ document.getElementById('cookNo').addEventListener('click', function() {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination', // Target the pagination element
+                clickable: true // Make the bullets clickable
             },
         });
     </script>
