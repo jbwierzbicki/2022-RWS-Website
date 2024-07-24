@@ -23,6 +23,8 @@
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="dmxAppConnect/dmxValidator/dmxValidator.css" />
     <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
         function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
@@ -175,6 +177,54 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col text-center pt-3">
+                                            <h4 calss="text-center text-light text-uppercase" class="text-warning">Just ask our loyal pack-members about us!</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row hover mb-2 pb-3" dmx-on:click="browser1.goto('reviews.php')">
+                                        <div class="col text-center pt-3">
+                                            <div class="card">
+                                                <div class="card-body bg-dark-subtle lh-sm">
+                                                    <blockquote class="blockquote mb-0">
+                                                        <p>"... I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p>
+                                                        <footer class="blockquote-footer">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center pt-3">
+                                            <div class="card">
+                                                <div class="card-body bg-dark-subtle lh-sm">
+                                                    <blockquote class="blockquote mb-0">
+                                                        <p>"... I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p>
+                                                        <footer class="blockquote-footer">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center pt-3">
+                                            <div class="card">
+                                                <div class="card-body bg-dark-subtle lh-sm">
+                                                    <blockquote class="blockquote mb-0">
+                                                        <p>"... I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p>
+                                                        <footer class="blockquote-footer">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div calss="border col-6 align-self-start bg-dark rounded rounded-3 border-secondart border-2 mb-3 pt-3 pb-3 ps-3 pe-3">
+                                            <div class="row ps-2 pe-2">
+                                                <div class="col-lg-6 align-self-center">
+                                                    <card></card>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Add more sections as needed. -->
                             </div>
@@ -267,6 +317,25 @@ document.getElementById('cookNo').addEventListener('click', function() {
     }, 1000);
 });
 
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            // Swiper configuration options
+            spaceBetween: 30,
+            centeredSlides: true, 
+            loop: true,
+            grabCursor: true,
+            speed: 600,
+            autoplay: {
+                delay: 3000, // Set autoplay interval
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 
 </body>
