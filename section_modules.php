@@ -92,7 +92,7 @@
             <section class="text-center text-break lh-lg">
                 <div class="container text-bg-dark h-25">
                     <div class="row justify-content-center align-items-center bg-dark">
-                        <div class="swiper-container module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-2 align-self-center" id="swipeHome">
+                        <div class="swiper-container module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-2 align-self-center" id="swipeHome">
                             <div class="swiper-wrapper" id="swiper1">
                                 <div class="swiper-slide">
                                     <br>

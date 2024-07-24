@@ -503,9 +503,6 @@ a {
 }
 
 .swiper-wrapper {
-    width: calc(100% - 30px); /* Adjust 30px to match any margins or padding */
-}
-
-.swiper-slide {
-    max-width: 100%; /* Or whatever width is appropriate for your layout */
+    overflow: hidden;
+    width: 100%;
 }
