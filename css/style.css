@@ -527,4 +527,8 @@ a {
     .swiper-wrapper {
         width: 100%; 
     }
-} 
+}
+
+.swiper-slide {
+    display: none; /* Initially hidden */
+}

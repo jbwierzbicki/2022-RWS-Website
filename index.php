@@ -23,8 +23,8 @@
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="dmxAppConnect/dmxValidator/dmxValidator.css" />
     <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.css" />
 
     <script>
         function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
@@ -323,7 +323,7 @@ document.getElementById('cookNo').addEventListener('click', function() {
         var swiper = new Swiper('.swiper-container', {
             // Swiper configuration options
             spaceBetween: 30,
-            centeredSlides: true, 
+            // centeredSlides: true, 
             loop: true,
             grabCursor: true,
             speed: 900,
@@ -331,7 +331,26 @@ document.getElementById('cookNo').addEventListener('click', function() {
                 delay: 3500, // Set autoplay interval
                 disableOnInteraction: false,
             },
-             slidesPerView: 'auto', // Set 'auto' to make Swiper automatically calculate the number of slides per view
+            slidesPerView: '1', // Set 'auto' to make Swiper automatically calculate the number of slides per view
+
+            // Function to check if a slide is in view
+            function isSlideInView(slide) {
+                const slideRect = slide.getBoundingClientRect();
+                return slideRect.top >= 0 && slideRect.bottom <= window.innerHeight;
+            }
+
+            // Handle slide change event
+            swiper.on('init', function () { // Initialize Swiper first
+                swiper.on('slideChange', function () { 
+                    swiper.slides.forEach(function(slide, index) {
+                        if (isSlideInView(slide)) {
+                            slide.style.display = 'block'; // Make visible
+                        } else {
+                            slide.style.display = 'none'; // Make hidden
+                        }
+                    });
+                });            
+            });            
         });
     </script>
 
