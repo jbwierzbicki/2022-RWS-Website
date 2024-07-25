@@ -319,6 +319,12 @@ document.getElementById('cookNo').addEventListener('click', function() {
     </script>
 
     <script>
+        // Function to check if a slide is in view
+        function isSlideInView(slide) {
+            const slideRect = slide.getBoundingClientRect();
+            return slideRect.left >= 0 && slideRect.right <= window.innerHeight;
+        }
+        
         var swiper = new Swiper('.swiper-container', {
             // Swiper configuration options
             spaceBetween: 30,
@@ -332,16 +338,11 @@ document.getElementById('cookNo').addEventListener('click', function() {
             },
             slidesPerView: '1', // Set 'auto' to make Swiper automatically calculate the number of slides per view
 
-            // Function to check if a slide is in view
-            function isSlideInView(slide) {
-                const slideRect = slide.getBoundingClientRect();
-                return slideRect.top >= 0 && slideRect.bottom <= window.innerHeight;
-            }
-
             // Handle slide change event
             swiper.on('init', function () { // Initialize Swiper first
                 swiper.on('slideChange', function () { 
                     swiper.slides.forEach(function(slide, index) {
+                        const activeSlide = swiper.slides[swiper.activeIndex]; 
                         if (isSlideInView(slide)) {
                             slide.style.display = 'block'; // Make visible
                         } else {
