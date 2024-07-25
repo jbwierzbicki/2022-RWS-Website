@@ -318,44 +318,6 @@ document.getElementById('cookNo').addEventListener('click', function() {
 
     </script>
 
-    <script>
-        // Function to check if a slide is in view
-        function isSlideInView(slide) {
-            const slideRect = slide.getBoundingClientRect();
-            return slideRect.left >= 0 && slideRect.right <= window.innerHeight;
-        }
-        
-        var swiper = new Swiper('.swiper-container', {
-            // Swiper configuration options
-            spaceBetween: 30,
-            // centeredSlides: true, 
-            loop: true,
-            grabCursor: true,
-            speed: 900,
-            autoplay: {
-                delay: 3500, // Set autoplay interval
-                disableOnInteraction: false,
-            },
-            slidesPerView: '1', // Set 'auto' to make Swiper automatically calculate the number of slides per view
-
-            // Handle slide change event
-            swiper.on('init', function () { // Initialize Swiper first
-                swiper.on('slideChange', function () { 
-                    swiper.slides.forEach(function(slide, index) {
-                        const activeSlide = swiper.slides[swiper.activeIndex]; 
-                        if (isSlideInView(slide)) {
-                            slide.style.display = 'block'; // Make visible
-                        } else {
-                            slide.style.display = 'none'; // Make hidden
-                        }
-                    });
-                });            
-            });            
-        });
-    </script>
-
-    <script src="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.css" />
 
 </body>
 

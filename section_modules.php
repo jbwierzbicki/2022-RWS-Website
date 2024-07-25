@@ -92,54 +92,56 @@
             <section class="text-center text-break lh-lg">
                 <div class="container text-bg-dark h-25">
                     <div class="row justify-content-center align-items-center bg-dark">
-                        <div class="swiper-container module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-2 align-self-center" id="swipeHome">
-                            <div class="swiper-wrapper" id="swiper1" autoplay="true" loop="true">
-                                <div class="swiper-slide">
+                        <div id="carouselReviews" class="carousel slide module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-2 align-self-center" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
                                     <br>
                                     <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
                                     <p class="text-light text-center mt-1 mb-3">"... I utilize Raging Wolf to see that our special shipments are handled professionally, <br>and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p><br>
                                     <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="carousel-item">
                                     <br>
                                     <h4 class="text-uppercase text-warning text-break">Just ask our loyal pack-members about us!</h4>
-                                    <p class="text-light text-center mt-1 mb-3">"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"</p>
+                                    <p class="text-light text-center mt-1 mb-3">"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</p>
                                     <br>
                                     <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
                                 </div>
-                                <div class="swiper-slide">
-                                    <br>
-                                    <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
-                                    <p class="text-light text-center mt-1 mb-3">"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</p>
-                                    <br>
-                                    <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
-                                </div>
-                                <div class="swiper-slide">
+                                <div class="carousel-item">
                                     <br>
                                     <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
                                     <p class="text-light text-center mt-1 mb-3">"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"</p>
                                     <br>
                                     <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="carousel-item">
                                     <br>
                                     <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
                                     <p class="text-light text-center mt-1 mb-3">"cccccccccccccccccccccccccccccccccccccccccccc"</p>
                                     <br>
                                     <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="carousel-item">
                                     <br>
                                     <h4 class="text-uppercase text-warning">Just ask our loyal pack-members about us!</h4>
                                     <p class="text-light text-center mt-1 mb-3">"dddddddddddddddddddddddddddddddddddddddddddddddd"</p>
                                     <br>
                                     <h6 class="text-warning fw-bold">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></h6>
                                 </div>
+                                <!-- Add more carousel-item elements as needed -->
                             </div>
                         </div>
+                        <!-- Controls go below carousel-inner -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-
             </section>
 
 
