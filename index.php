@@ -23,8 +23,7 @@
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="dmxAppConnect/dmxValidator/dmxValidator.css" />
     <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
-    <script src="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.css" />
+
 
     <script>
         function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
@@ -353,6 +352,9 @@ document.getElementById('cookNo').addEventListener('click', function() {
             });            
         });
     </script>
+
+    <script src="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.1.7/swiper-bundle.min.css" />
 
 </body>
 
