@@ -182,43 +182,37 @@
                                             <h4 calss="text-center text-light text-uppercase" class="text-warning">Just ask our loyal pack-members about us!</h4>
                                         </div>
                                     </div>
-                                    <div class="row hover mb-2 pb-3" dmx-on:click="browser1.goto('reviews.php')">
+                                    <div class="row mb-3 pb-3 hover" dmx-on:click="browser1.goto('reviews.php')">
                                         <div class="col text-center pt-3">
-                                            <div class="card">
-                                                <div class="card-body bg-dark-subtle lh-sm">
+                                            <div class="card bg-transparent border-end border-top-0 border-bottom-0 border-start-0 rounded-0">
+                                                <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
-                                                        <p>"... I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p>
-                                                        <footer class="blockquote-footer">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></footer>
+                                                        <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, <br>and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
+                                                        <hr>
+                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Ground Expedites</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col text-center pt-3">
-                                            <div class="card">
-                                                <div class="card-body bg-dark-subtle lh-sm">
+                                            <div class="card bg-transparent rounded-0 border-0">
+                                                <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
-                                                        <p>"... I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p>
-                                                        <footer class="blockquote-footer">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></footer>
+                                                        <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, <br>and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
+                                                        <hr>
+                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Source Title</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col text-center pt-3">
-                                            <div class="card">
-                                                <div class="card-body bg-dark-subtle lh-sm">
+                                            <div class="card bg-transparent border-start border-top-0 border-bottom-0 border-end-0 rounded-0">
+                                                <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
-                                                        <p>"... I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</p>
-                                                        <footer class="blockquote-footer">Mariah H.<cite title="Source Title"><br><i>Service: Ground Expedites</i></cite></footer>
+                                                        <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, <br>and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
+                                                        <hr>
+                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Source Title</cite></footer>
                                                     </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        <div calss="border col-6 align-self-start bg-dark rounded rounded-3 border-secondart border-2 mb-3 pt-3 pb-3 ps-3 pe-3">
-                                            <div class="row ps-2 pe-2">
-                                                <div class="col-lg-6 align-self-center">
-                                                    <card></card>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,11 +222,11 @@
                                 <!-- Add more sections as needed. -->
                             </div>
                             <!-- Optional controls -->
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev" style="display: flex; justify-content: flex-start;">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next" style="display: flex; justify-content: flex-end;">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </a>
