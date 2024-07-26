@@ -177,13 +177,13 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col text-center pt-3">
-                                            <h4 calss="text-center text-light text-uppercase" class="text-warning">Just ask our loyal pack-members about us!</h4>
+                                    <div class="row g-0">
+                                        <div class="col text-center">
+                                            <h4 calss="text-center text-light text-uppercase" class="text-warning mt-3">Just ask our loyal pack-members about us!</h4>
                                         </div>
                                     </div>
-                                    <div class="row mb-3 pb-3 hover" dmx-on:click="browser1.goto('reviews.php')">
-                                        <div class="col text-center pt-3">
+                                    <div class="row hover pb-3" dmx-on:click="browser1.goto('reviews.php')">
+                                        <div class="col text-center">
                                             <div class="card bg-transparent border-end border-top-0 border-bottom-0 border-start-0 rounded-0">
                                                 <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
@@ -194,7 +194,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col text-center pt-3">
+                                        <div class="col text-center">
                                             <div class="card bg-transparent rounded-0 border-0">
                                                 <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
@@ -205,7 +205,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col text-center pt-3">
+                                        <div class="col text-center">
                                             <div class="card bg-transparent border-start border-top-0 border-bottom-0 border-end-0 rounded-0">
                                                 <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">

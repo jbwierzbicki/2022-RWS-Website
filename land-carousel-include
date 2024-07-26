@@ -21,25 +21,25 @@
 
     <div class="container-xl">
         <div class="row justify-content-center index-main-container-row text-start align-items-end">
-            <div class="main-card col-md-8 mb-md-5 pt-3 pb-3">
+            <div class="main-card col-md-8 mb-md-5">
                 <div class="row align-items-stretch module-card-row">
                     <div id="carouselExampleIndicators" class="carousel slide style1 col main-card-inner ms-3 me-3 align-self-center watermark1" data-bs-ride="false">
                         <!-- MAKE "TRUE" & CAROUSEL WILL WORK -->
 
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                             </div>
 
                             <!-- You can add more "carousel-item" divs for more sections. Here is an example: -->
 
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col text-center pt-3">
+                                    <div class="col text-center">
                                         <h4 calss="text-center text-light text-uppercase" class="text-warning">Just ask our loyal pack-members about us!</h4>
                                     </div>
                                 </div>
-                                <div class="row mb-3 pb-3 hover" dmx-on:click="browser1.goto('reviews.php')">
-                                    <div class="col text-center pt-3">
+                                <div class="row hover" dmx-on:click="browser1.goto('reviews.php')">
+                                    <div class="col text-center">
                                         <div class="card bg-transparent border-end border-top-0 border-bottom-0 border-start-0 rounded-0">
                                             <div class="card-body text-white">
                                                 <blockquote class="blockquote mb-0">
