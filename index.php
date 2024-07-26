@@ -200,7 +200,7 @@
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
                                                         <hr>
-                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Source Title</cite></footer>
+                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Air Expedites</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
@@ -211,7 +211,7 @@
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
                                                         <hr>
-                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Source Title</cite></footer>
+                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Dedicated Dry Van</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
