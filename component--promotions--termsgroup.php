@@ -1,6 +1,6 @@
 <!-- Wappler include head-page="promotions.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" -->
 <div class="row pt-2 justify-content-center">
-    <div class="col-lg-5 pt-2 pb-2 ps-4 pe-4">
+    <div class="col-lg-4 pt-2 pb-2 ps-4 pe-4">
         <div class="row border rounded rounded-2 border-light border-offwhite h-100">
             <div class="col promo-card pt-2">
                 <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('referral.php')">
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="col-lg-5 pt-2 pb-2 ps-4 pe-4">
+    <div class="col-lg-4 pt-2 pb-2 ps-4 pe-4">
         <div class="row h-100">
             <div class="border rounded rounded-2 border-light border-offwhite promo-card col pt-2">
                 <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('charity.php')">
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="col-lg-4 pt-2 pb-2 ps-4 pe-4 visually-hidden">
+    <div class="col-lg-4 pt-2 pb-2 ps-4 pe-4">
         <div class="row border rounded rounded-2 border-light border-offwhite h-100">
             <div class="col promo-card pt-2">
                 <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('football_pool.php')">
