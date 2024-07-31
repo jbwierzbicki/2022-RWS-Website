@@ -21,7 +21,7 @@
 
     <div class="container-xl">
         <div class="row justify-content-center index-main-container-row text-start align-items-end">
-            <div class="main-card col-md-8 mb-md-5">
+            <div class="main-card col-md-8 mb-md-5 visually-hidden">
                 <div class="row align-items-stretch module-card-row">
                     <div id="carouselExampleIndicators" class="carousel slide style1 col main-card-inner ms-3 me-3 align-self-center watermark1" data-bs-ride="false">
                         <!-- MAKE "TRUE" & CAROUSEL WILL WORK -->
