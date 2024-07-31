@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <title>Terms and Conditions: Football Pool Rewards Program | Raging Wolf Solutions</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../bootstrap/5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/stylesheet.css" />
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer=""></script>
     <script src="../dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js" defer=""></script>
 
@@ -52,9 +52,9 @@
                         <p class="text-white-50 text-start">
                             NO PURCHASE OR PAYMENT NECESSARY TO ENTER OR WIN. A PURCHASE OR PAYMENT WILL NOT INCREASE YOUR CHANCES OF WINNING.
                             <br><br>
-                            Eligibility: The Raging Wolf Solutions Football Pool 2023 (the "Promotion") is open only to individuals who are 21 years of age or older at the time of entry and who meet other eligibility requirements set forth in these Official Rules. The Promotion is void where prohibited or restricted by law.
+                            Eligibility: The Raging Wolf Solutions Football Pool 2024 (the "Promotion") is open only to individuals who are 21 years of age or older at the time of entry and who meet other eligibility requirements set forth in these Official Rules. The Promotion is void where prohibited or restricted by law.
                             <br><br>
-                            Promotion Period: The Promotion begins at 12 AM Eastern Standard Time on July 17, 2023, and ends at 12 AM Eastern Standard Time on February 12, 2024 (the "Promotion Period").
+                            Promotion Period: The Promotion begins at 12 AM Eastern Standard Time on July 17, 2024, and ends at 12 AM Eastern Standard Time on February 10, 2024 (the "Promotion Period").
                             <br><br>
                             How to Enter: Follow the instructions provided in the email you receive. Limit one entry per person, per email address, during the Promotion Period.
                             <br><br>
@@ -87,7 +87,7 @@
 
     <?php include '../footer.php'; ?>
 
-    <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
