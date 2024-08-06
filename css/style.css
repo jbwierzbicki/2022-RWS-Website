@@ -503,6 +503,6 @@ a {
           url('fonts/pentagrams-malefissent.woff2') format('woff2'); 
 }
 
-#welcome {
+#welcome.main-heading {
   font-family: pentagrams-malefissent;
 }
