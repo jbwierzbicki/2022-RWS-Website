@@ -41,19 +41,18 @@ header {
     padding-bottom: 10px;
 }
 
-.index-header-h2 {
-    font-family: 'Sansation', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: calc(1.325rem + .9vw);
-}
-
 h2 {
     font-family: 'Sansation', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
+}
 
+.index-header-h2 {
+    /* Remove font-family declaration here */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: calc(1.325rem + .9vw);
 }
 
 h4 {
@@ -495,4 +494,15 @@ a {
 
 .tooltip-container:hover .tooltip-video {
     display: block;
+}
+
+@font-face {
+    font-family: 'pentagrams-malefissent';
+    src: url('fonts/pentagrams-malefissent.ttf') format('truetype'), /* Include the .ttf format */
+          url('fonts/pentagrams-malefissent.woff') format('woff'),
+          url('fonts/pentagrams-malefissent.woff2') format('woff2'); 
+}
+
+#welcome {
+  font-family: pentagrams-malefissent;
 }
