@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxValidator/dmxValidator.css" />
     <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
-    <script>
+    <!--   <script>
         (function() {
             var _5S = document.createElement("script"),
                 _jF = (function(_sP, _Ii) {
@@ -51,7 +51,7 @@
             var _G3 = document.getElementsByTagName("script")[0];
             _G3.parentNode.insertBefore(_5S, _G3)
         })();
-    </script>
+    </script>-->
     <script src="dmxAppConnect/dmxVideo/dmxVideo.js" defer></script>
 
     <link rel="stylesheet" href="css/charity.css" />
