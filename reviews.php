@@ -59,7 +59,7 @@
         <div class="container">
 
             <div class="row justify-content-center row-cols-12">
-                <h1 class="main-heading text-center text-warning" id="welcome">Echoes of the Pack: Unleash Your Voice</h1>
+                <h1 class="main-heading text-center text-warning display-3" id="welcome" style="">Echoes of the Pack: Unleash Your Voice</h1>
                 <div class="" id="">
                 </div>
 

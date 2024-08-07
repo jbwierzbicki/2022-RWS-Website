@@ -41,14 +41,14 @@ header {
     padding-bottom: 10px;
 }
 
-h2 {
+h2:not(#welcome) {
     font-family: 'Sansation', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.index-header-h2 {
+.index-header-h2:not(#welcome) {
     /* Remove font-family declaration here */
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -498,9 +498,7 @@ a {
 
 @font-face {
     font-family: 'pentagrams-malefissent';
-    src: url('fonts/pentagrams-malefissent.ttf') format('truetype'), /* Include the .ttf format */
-          url('fonts/pentagrams-malefissent.woff') format('woff'),
-          url('fonts/pentagrams-malefissent.woff2') format('woff2'); 
+    src: url('fonts/pentagrams-malefissent.ttf') format('truetype'); /* Include the .ttf format */
 }
 
 #welcome.main-heading {

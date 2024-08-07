@@ -1,5 +1,5 @@
 /* Global */
-h1 {
+h1:not(#welcome) {
   font-family: 'Sansation', sans-serif;
   letter-spacing: 1px;
 }
