@@ -498,7 +498,9 @@ a {
 
 @font-face {
     font-family: 'pentagrams-malefissent';
-    src: url('fonts/pentagrams-malefissent.ttf') format('truetype'); /* Include the .ttf format */
+    src: url('fonts/pentagrams-malefissent.ttf') format('truetype'), /* Include the .ttf format */
+          url('fonts/pentagrams_malefissent-webfont.woff') format('woff'),
+          url('fonts/pentagrams_malefissent-webfont.woff2') format('woff2'); 
 }
 
 #welcome.main-heading {
