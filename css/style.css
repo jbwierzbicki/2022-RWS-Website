@@ -499,19 +499,17 @@ a {
 @font-face {
     font-family: 'pentagrams-malefissent';
     src: url('fonts/pentagrams-malefissent.woff2') format('woff2'),
-        /* Prioritize .woff2 */
+        url(./pentagrams-malefissent.otf) format('otf'),
         url('fonts/pentagrams-malefissent.woff') format('woff'),
         url('fonts/pentagrams-malefissent.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Street-Ruler';
-    src: url('fonts/Street-Ruler.woff2') format('woff2'),
-        /* Prioritize .woff2 */
-        url('fonts/Street-Ruler.woff') format('woff'),
-        url('fonts/Street-Ruler.otf') format('otf'),
-        /* Keep .otf for wider compatibility */
-        url('fonts/Street-Ruler.ttf') format('truetype');
+  font-family: 'Street-Ruler';
+  src: url(./Street-Ruler.woff) format('woff'),
+       url(./Street-Ruler.woff2) format('woff2'),
+       url(./Street-Ruler.otf) format('otf'),
+       url(./Street-Ruler.ttf) format('ttf');
 }
 
 #welcome.main-heading {

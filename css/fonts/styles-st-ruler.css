@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Street-Ruler';
+  src: url(./Street-Ruler.woff) format('woff'),
+       url(./Street-Ruler.woff2) format('woff2'),
+       url(./Street-Ruler.otf) format('otf');
+}

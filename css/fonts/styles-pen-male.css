@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'pentagrams-malefissent';
+  src: url(./pentagrams-malefissent.eot);
+  src: url(./pentagrams-malefissent.eot?#iefix) format('embedded-opentype'),
+       url(./pentagrams-malefissent.svg#pentagrams-malefissent) format('svg'),
+       url(./pentagrams-malefissent.otf) format('otf');
+}
