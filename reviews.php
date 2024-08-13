@@ -4,7 +4,7 @@
 <head>
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>Your Cart</title>
+    <title>Testimonials</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -59,8 +59,28 @@
         <div class="container">
 
             <div class="row justify-content-center row-cols-12">
-                <h1 class="main-heading text-center text-warning display-3" id="welcome" style="">Echoes of the Pack: Unleash Your Voice</h1>
+                <h1 class="main-heading text-center text-warning display-3" id="welcome" style="">Echoes from the Pack: <h1 class="text-center text-warning display-3" id="welcome2">Unleash Your Voice</h1>
+                </h1>
                 <div class="" id="">
+                    <div class="container">
+                        <div class="shadow-element">
+                            <!-- Shadow Element (tilted) -->
+                            <div class="inner-shadow">
+                                <div class="words"></div>
+                                <div class="name"></div>
+                                <div class="service"></div>
+                            </div>
+                        </div>
+
+                        <div class="main-element">
+                            <!-- Main Element (tilted) -->
+                            <div class="inner-main">
+                                <div class="words"></div>
+                                <div class="name"></div>
+                                <div class="service"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
