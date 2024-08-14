@@ -58,32 +58,31 @@
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
         <div class="container">
 
-            <div class="row justify-content-center row-cols-12">
-                <h1 class="main-heading text-center text-warning display-3" id="welcome" style="">Echoes from the Pack: <h1 class="text-center text-warning display-3" id="welcome2">Unleash Your Voice</h1>
-                </h1>
-                <div class="" id="">
-                    <div class="container">
-                        <div class="shadow-element">
-                            <!-- Shadow Element (tilted) -->
-                            <div class="inner-shadow">
-                                <div class="words"></div>
-                                <div class="name"></div>
-                                <div class="service"></div>
-                            </div>
+            <h1 class="main-heading text-center text-warning display-3" id="welcome" style="">Echoes from the Pack: <h1 class="main-heading text-center text-warning display-3" id="welcome2">UNLEASH YOUR VOICE!</h1>
+            </h1>
+            <div class="" id="">
+                <div class="container">
+                    <div class="shadow-element">
+                        <!-- Shadow Element (tilted) -->
+                        <div class="inner-shadow">
+                            <div class="words"></div>
+                            <div class="name"></div>
+                            <div class="service"></div>
                         </div>
+                    </div>
 
-                        <div class="main-element">
-                            <!-- Main Element (tilted) -->
-                            <div class="inner-main">
-                                <div class="words"></div>
-                                <div class="name"></div>
-                                <div class="service"></div>
-                            </div>
+                    <div class="main-element">
+                        <!-- Main Element (tilted) -->
+                        <div class="inner-main">
+                            <div class="words"></div>
+                            <div class="name"></div>
+                            <div class="service"></div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
 
         </div>
     </section>

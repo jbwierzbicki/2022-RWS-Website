@@ -41,14 +41,14 @@ header {
     padding-bottom: 10px;
 }
 
-h2:not(#welcome) {
+h2:not(.main-heading) {
     font-family: 'Sansation', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.index-header-h2:not(#welcome) {
+.index-header-h2:not(.main-heading) {
     /* Remove font-family declaration here */
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -499,17 +499,17 @@ a {
 @font-face {
     font-family: 'pentagrams-malefissent';
     src: url('fonts/pentagrams-malefissent.woff2') format('woff2'),
-        url(./pentagrams-malefissent.otf) format('otf'),
         url('fonts/pentagrams-malefissent.woff') format('woff'),
-        url('fonts/pentagrams-malefissent.ttf') format('truetype');
+        url('fonts/pentagrams-malefissent.ttf') format('truetype'),
+        url('fonts/pentagrams-malefissent.otf') format('opentype'); /* Include the .otf format */
 }
 
 @font-face {
-  font-family: 'Street-Ruler';
-  src: url(./Street-Ruler.woff) format('woff'),
-       url(./Street-Ruler.woff2) format('woff2'),
-       url(./Street-Ruler.otf) format('otf'),
-       url(./Street-Ruler.ttf) format('ttf');
+    font-family: 'Street-Ruler';
+    src: url('fonts/Street-Ruler.woff') format('woff'),
+        url('fonts/Street-Ruler.woff2') format('woff2'),
+        url('fonts/Street-Ruler.otf') format('opentype'), /* Include the .otf format */
+        url('fonts/Street-Ruler.ttf') format('truetype');
 }
 
 #welcome.main-heading {
@@ -517,7 +517,6 @@ a {
     /* Use quotes here too */
 }
 
-#welcome2 {
-    font-family: 'Street-Ruler';
-    /* Use quotes here too */
+#welcome2.main-heading { /* Add a class for higher specificity */
+    font-family: 'Street-Ruler'; 
 }
