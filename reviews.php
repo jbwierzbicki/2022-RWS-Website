@@ -36,6 +36,8 @@
     <script src="dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer></script>
     <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
     <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" defer></script>
+
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
@@ -56,34 +58,95 @@
     <section id="modules" class="border-top rounded-1 rounded-0 min-vh-75 border-secondary pb-3" style="min-height: 75vh;">
 
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container">
 
-            <h1 class="main-heading text-center text-warning display-3" id="welcome" style="">Echoes from the Pack: <h1 class="main-heading text-center text-warning display-3" id="welcome2">UNLEASH YOUR VOICE!</h1>
-            </h1>
+        <div class="review-page container pb-5 border-0 rounded rounded-3" id="reviewPage">
+
+            <h1 class="main-heading text-center text-warning display-3 pt-5" id="welcome" style="">Echoes from the Pack:</h1>
+
+            <hr class="mt-5 mb-5" style="border-top: 3px solid #dc3545;">
+
             <div class="" id="">
-                <div class="container">
-                    <div class="shadow-element">
-                        <!-- Shadow Element (tilted) -->
-                        <div class="inner-shadow">
-                            <div class="words"></div>
-                            <div class="name"></div>
-                            <div class="service"></div>
+                <div class="container text-light mt-5" id="carouselMain">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row mt-4 mb-2">
+                                <div class="col text-center bg-opacity-10 bg-transparent" id="first">
+                                    <div class="hemispherical-top left-tilt">
+                                        <div class="border-container">
+                                            <img src="assets/images/services-domestic-air-freight-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
+                                            <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
+                                            <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Riley S. </p>
+                                            <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-center bg-opacity-10 bg-transparent" id="second">
+                                    <div class="hemispherical-top">
+                                        <div class="border-container">
+                                            <img src="assets/images/services-expedited-ground-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
+                                            <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"I absolutely loved my experience with Raging Wolf team! They are so knowledgable about the industry and left me feeling so confident."</p>
+                                            <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Megan B.</p>
+                                            <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-center bg-opacity-10 bg-transparent" id="third">
+                                    <div class="hemispherical-top right-tilt">
+                                        <div class="border-container">
+                                            <img src="assets/images/services-trucking-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3" height="230" width="230">
+                                            <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
+                                            <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Sara D.</p>
+                                            <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="main-element">
-                        <!-- Main Element (tilted) -->
-                        <div class="inner-main">
-                            <div class="words"></div>
-                            <div class="name"></div>
-                            <div class="service"></div>
+                <hr class="mt-5 mb-2" style="border-top: 3px solid #dc3545;">
+
+                <div class="container" id="submitReview">
+                    <div class="row">
+                        <div class="col mt-5 mb-5">
+                            <h1 class="main-heading text-center text-warning display-3" id="welcome2">UNLEASH YOUR VOICE!</h1>
+                            <p class="text-center text-warning">Let us know how we did by submitting your review below.</p>
+                        </div>
+                    </div>
+                    <div class="submission-form row w-50 mx-auto rounded rounded-3" id="submissionForm">
+                        <div class="col">
+                            <div class="row">
+
+                                <div class="form-group mb-3 col">
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Full Name:</b></label>
+                                    <input id="fullName" name="text1" type="text" class="form-control mb-3" style="background-color: black; border: none; color: white;" required="">
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Company:</b></label>
+                                    <input id="companyName" name="text2" type="text" class="form-control mb-3" style="background-color: black; border: none; color: white;" required="">
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Email:</b></label>
+                                    <input type="email" class="form-control mb-3" style="background-color: black; border: none; color: white;" id="email" name="input1" aria-describedby="input1_help" required="">
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Service Used:</b></label>
+                                    <select id="service" class="form-select mb-3" style="background-color: black; border: none; color: white;" required="" name="Service">
+                                        <option value="">Select</option>
+                                        <option value="1">Expedited Air</option>
+                                        <option value="2">Expedited Ground</option>
+                                        <option value="3">Standard Trucking</option>
+                                        <option value="4">Other</option>
+                                    </select>
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Your Review:</b></label>
+                                    <textarea id="custyReview" class="form-control" style="background-color: black; border: none; color: white;" name="Review" required="" value="Enter Your Review..."></textarea>
+                                    <div id="dmxReCaptcha21" class="g-recaptcha"></div>
+                                    <button id="submit" class="btn w-100 active btn-danger fw-bold lh-lg mt-4 text-warning" type="submit">Submit Your Review<i class="fas fa-caret-right fa-fw"></i></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
         </div>
     </section>
 
