@@ -501,14 +501,16 @@ a {
     src: url('fonts/pentagrams-malefissent.woff2') format('woff2'),
         url('fonts/pentagrams-malefissent.woff') format('woff'),
         url('fonts/pentagrams-malefissent.ttf') format('truetype'),
-        url('fonts/pentagrams-malefissent.otf') format('opentype'); /* Include the .otf format */
+        url('fonts/pentagrams-malefissent.otf') format('opentype');
+    /* Include the .otf format */
 }
 
 @font-face {
     font-family: 'Street-Ruler';
     src: url('fonts/Street-Ruler.woff') format('woff'),
         url('fonts/Street-Ruler.woff2') format('woff2'),
-        url('fonts/Street-Ruler.otf') format('opentype'), /* Include the .otf format */
+        url('fonts/Street-Ruler.otf') format('opentype'),
+        /* Include the .otf format */
         url('fonts/Street-Ruler.ttf') format('truetype');
 }
 
@@ -517,6 +519,70 @@ a {
     /* Use quotes here too */
 }
 
-#welcome2.main-heading { /* Add a class for higher specificity */
-    font-family: 'Street-Ruler'; 
+#welcome2.main-heading {
+    /* Add a class for higher specificity */
+    font-family: 'Street-Ruler';
+}
+
+/* ... reviews styles ... */
+
+.review-page { 
+    background: -webkit-gradient(linear, left bottom, left top, from(#3f1818), to(transparent)); 
+    background: linear-gradient(to top, #3f1818 0%, transparent 100%); /* Use background */
+    -webkit-box-shadow: 15px 0px 30px 22px #381010b9, /* Right */
+                15px 0px 30px 22px #381010b9, /* Left */
+                -15px 0px 30px 22px #381010b9, /* Bottom */
+                -15px 0px 30px 22px #381010b9; /* Top */
+}
+
+.submission-form {
+    background: -webkit-gradient(linear, left top, left bottom, from(#343435), to(#000000));
+    background: linear-gradient(to bottom, #343435 0%, #000000 100%); 
+    -webkit-box-shadow: 15px 0px 30px 22px #000000, /* Right */
+                15px 0px 30px 22px #000000, /* Left */
+                -15px 0px 30px 22px #000000, /* Bottom */
+                -15px 0px 30px 22px #000000; /* Top */
+        /* horizontal-offset|vertical-offset|blur|spread|#color; */
+}
+
+.hemispherical-top {
+    border-radius: 50% 50% 0 0;
+    padding: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #333), to(transparent));
+    background-image: linear-gradient(to bottom, #333 10%, transparent 100%);
+    position: relative;
+    outline: 2px solid #aa9e9e;
+    /* Adjust border color as needed */
+    outline-offset: 0;
+    overflow: hidden; /* Hide content that overflows the tilt */
+}
+/* BARREL ANGLE FOR CAROUSEL */
+
+/* .right-tilt { */
+/*   -webkit-transform-origin: 100% 100%; */
+/*           transform-origin: 100% 100%; */
+/*   -webkit-transform: skewY(-10deg) translateY(-90px); */
+/*           transform: skewY(-10deg) translateY(-90px); /* Adjust -10px as needed */
+/* } */
+
+/* .left-tilt { */
+/*   -webkit-transform-origin: 0 100%; */
+/*           transform-origin: 0 100%; */
+/*   -webkit-transform: skewY(10deg) translateY(-90px); */
+ /*          transform: skewY(10deg) translateY(-90px); /* Adjust -10px as needed */
+/* }*/
+
+/* #second {*/
+/*   -webkit-transform: translateY(-14px);*/
+/*           transform: translateY(-14px); /* Adjust -10px as needed */
+/* }*/
+
+.border-container {
+    position: relative;
+    z-index: 1;
+    /* Make sure the border is behind the content */
+    padding: 20px;
+    /* Add padding to the border element */
+    visibility: visible;
+    /* Ensure the border element is visible */
 }
