@@ -18,18 +18,18 @@ progressBar.style.width = `${progressPercentage}%`;
 progressBar.style.backgroundColor = '#eda107'; // Add this line to set the bar color
 
 // Calculate and display the view count
-const displayedViews = Math.floor(currentViews / 100) * 10;
-viewCount.textContent = `${displayedViews}`;
+//const displayedViews = Math.floor(currentViews / 100) * 10;
+//viewCount.textContent = `${displayedViews}`;
 
-donationAmount.textContent = `$${currentDonation}`;
+//donationAmount.textContent = `$${currentDonation}`;
 
 // Change color of milestone circles and show checkmarks based on progress
-milestones.forEach((milestone, index) => {
-    if (index < milestonesPassed) {
-        milestone.style.backgroundColor = '#eda107'; // Green color
-        checkmarks[index].style.display = 'block'; // Display the checkmark
-    } else {
-        milestone.style.backgroundColor = ''; // Reset to default color
-        checkmarks[index].style.display = 'none'; // Hide the checkmark
-    }
-});
+//milestones.forEach((milestone, index) => {
+    //if (index < milestonesPassed) {
+        //milestone.style.backgroundColor = '#eda107'; // Gold color
+      //  checkmarks[index].style.display = 'block'; // Display the checkmark
+    //} else {
+      //  milestone.style.backgroundColor = ''; // Reset to default color
+    //    checkmarks[index].style.display = 'none'; // Hide the checkmark
+  //  }
+//});
