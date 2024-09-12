@@ -524,6 +524,12 @@ a {
     font-family: 'Street-Ruler';
 }
 
+#promo_Name {
+    /* Add a class for higher specificity */
+    font-family: 'Street-Ruler';
+    font-size: 6.5rem !important; /* Example size, adjust as needed */
+}
+
 /* ... reviews styles ... */
 
 .review-page { 
