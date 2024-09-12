@@ -31,6 +31,8 @@ document.head.appendChild(o)}initApollo();
     <script src="dmxAppConnect/dmxVideo/dmxVideo.js" defer></script>
 
     <link rel="stylesheet" href="css/charity.css" />
+    <link rel="stylesheet" href="q3_2024_progress_bar.css">
+    <script src="q3_2024_progress_bar.js"></script>
 
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -58,15 +60,17 @@ document.head.appendChild(o)}initApollo();
 
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
-                    <h2 class="text-light lh-base fw-bold mb-3"><i class="fas fa-hand-holding-heart fa-lg"></i></h2>
-                    <h2 class="text-light lh-base fw-bold">Kaps 4 Kidz</h2>
+                    <a href="#" class="text-light lh-base fw-bold mb-3">
+                        <img src="assets/images/color_cap.webp" alt="Cap Image" class="fas fa-hand-holding-heart fa-lg bg-transparent" width="30%">
+                    </a>
+                    <h2 class="text-warning lh-base fw-normal" id="promo_Name">Kaps 4 Kidz</h2>
                     <h6 class="text-light fw-normal lh-base mb-4">Our team is giving back to Rainbow Children's Hospital - and we need your help. Support this great cause and promote Raging Wolf Solutions at the same time.</h6>
                     <!-- <h6 class="text-light fw-normal lh-base mb-4">We are also a proud sponsor of this year's Rainbow Radiothon. Learn more about this event and our involvement in this <a href="assets/RADIOTHON%202023%20PRESS%20RELEASE.pdf" class="text-warning" data-lf-fd-inspected-kn9eq4r1yyr7rlvp="true">press release.</a></h6> -->
 
                 </div>
             </div>
             <div class="row justify-content-center mb-5">
-                <div class="module-card border rounded-0 rounded-1 border-secondary col-lg-9 text-white text-center pt-3 pb-3 pe-3">
+                <div class="module-card border rounded-0 rounded-1 border-secondary col-lg-9 text-white pt-3 pb-3 pe-3 text-center">
                     <div class="row justify-content-center">
                         <div class="col-auto">
                             <img src="assets/images/UH_New-Rainbow-Babies-Children_CMYK-removebg-preview-white-text.png" class="mb-3 rounded-0" height="64px">
@@ -74,31 +78,23 @@ document.head.appendChild(o)}initApollo();
                     </div>
                     <div class="row justify-content-center mb-4">
                         <div class="align-self-center pt-1 pb-1 image-container col-lg-7">
-                            <a href="media.php">
-                                <img src="assets/images/rws_music_video_thumb.webp" class="img-fluid rounded shadow">
-                                <div class="overlay">
-                                    <button class="btn watch-btn btn-lg fw-bold text-white bg-opacity-100 pt-3 pb-3 ps-4 pe-4">Watch <i class="fas fa-play-circle"></i></button>
-                                </div>
+                            <a href="promotion_terms/q3_2024_promo_terms.php">
+                                <img src="assets/images/example_q3_image.jpg" class="img-fluid rounded shadow" width="75%">
                             </a>
+                            <p class="small">- #Raging Wolf Solutions #Alpha Leader #Awesome working together!</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col ps-0">
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progressBar"></div>
-                                <!-- Adding milestones for each 100 posts -->
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
-                                <div class="milestone"><span class="checkmark"><i class="fas fa-check"></i></span></div>
+                        <div class="col">
 
+                            <div class="progress-container">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <!--   <span class="wolf-head">
+                                        <img src="assets/images/wolf-head.webp" alt="Wolf Head Icon" class="img-fluid hover" loading="lazy" width="5%" dmx-on:mouseover="progressValue.textContent = progressPercentage.value + '75%'">
+                                        <span class="progress-value" >75%</span> </span> -->
+                                </div>
                             </div>
+
                             <div class="progress-info">
                                 <h5 class="text-uppercase mt-4">
                                     <span id="viewCount" class="fw-bold">100</span> posts reached!
@@ -152,7 +148,7 @@ document.head.appendChild(o)}initApollo();
                     <h1 class="text-white text-uppercase"><i class="far fa-question-circle"></i></h1>
                     <h4 class="text-white text-uppercase">Questions about the rules?</h4>
                     <p class="text-light fw-normal">Learn more about the specific terms and conditions for this promotion.</p>
-                    <a href="promotion_terms/charity_terms.php"><button class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Learn More</button></a>
+                    <a href="promotion_terms/q3_2024_promo_terms.php"><button class="btn module-cta-btn lh-lg text-truncate ps-3 pe-3 btn-outline-warning">Learn More</button></a>
                 </div>
             </div>
 
