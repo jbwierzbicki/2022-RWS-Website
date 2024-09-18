@@ -14,28 +14,28 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js"></script>
-    <script src="dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js"></script>
+    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+    <script src="dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js" defer></script>
 
-    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js"></script>
+    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="dmxAppConnect/dmxValidator/dmxValidator.css" />
-    <script src="dmxAppConnect/dmxValidator/dmxValidator.js"></script>
-    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js"></script>
-    <script src="dmxAppConnect/dmxVideo/dmxVideo.js"></script>
+    <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer></script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+    <script src="dmxAppConnect/dmxVideo/dmxVideo.js" defer></script>
 
     <link rel="stylesheet" href="css/charity.css" />
     <link rel="stylesheet" href="css/review_style.css">
 
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
-    <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js"></script>
+    <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
-    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js"></script>
-    <script src="dmxAppConnect/dmxTyped/dmxTyped.js"></script>
-    <script src="dmxAppConnect/dmxTyped/typed.min.js"></script>
-    <script src="dmxAppConnect/dmxStateManagement/dmxStateManagement.js"></script>
-    <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js"></script>
-    <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js"></script>
+    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
+    <script src="dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer></script>
+    <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
+    <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </head>
