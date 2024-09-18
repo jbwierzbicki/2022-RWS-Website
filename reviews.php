@@ -14,29 +14,29 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer=""></script>
-    <script src="dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js" defer=""></script>
+    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js"></script>
+    <script src="dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js"></script>
 
-    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer=""></script>
+    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js"></script>
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="dmxAppConnect/dmxValidator/dmxValidator.css" />
-    <script src="dmxAppConnect/dmxValidator/dmxValidator.js" defer=""></script>
-    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer=""></script>
-    <script src="dmxAppConnect/dmxVideo/dmxVideo.js" defer=""></script>
+    <script src="dmxAppConnect/dmxValidator/dmxValidator.js"></script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js"></script>
+    <script src="dmxAppConnect/dmxVideo/dmxVideo.js"></script>
 
     <link rel="stylesheet" href="css/charity.css" />
     <link rel="stylesheet" href="css/review_style.css">
 
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
-    <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer=""></script>
+    <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js"></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/default.css" />
-    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer=""></script>
-    <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer=""></script>
-    <script src="dmxAppConnect/dmxTyped/typed.min.js" defer=""></script>
-    <script src="dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer=""></script>
-    <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer=""></script>
-    <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer=""></script>
-    <script src="https://www.google.com/recaptcha/api.js" defer=""></script>
+    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js"></script>
+    <script src="dmxAppConnect/dmxTyped/dmxTyped.js"></script>
+    <script src="dmxAppConnect/dmxTyped/typed.min.js"></script>
+    <script src="dmxAppConnect/dmxStateManagement/dmxStateManagement.js"></script>
+    <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js"></script>
+    <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </head>
 
@@ -65,152 +65,105 @@
 
             <hr class="mt-5 mb-5" style="border-top: 3px solid #dc3545;">
 
-            <div class="container text-light mt-5" id="slideshowMain">
+            <div class="container text-light text-center" id="slideshowMain">
                 <div id="testimonialSlideshow">
-                    <div class="slide-container">
-                        <div class="slide-item active">
-                            <div class="slide">
-                                <div class="row mt-4 mb-2">
-                                    <div class="col text-center bg-opacity-10 bg-transparent" id="first">
-                                        <div class="hemispherical-top left-tilt">
-                                            <div class="border-container">
-                                                <img src="assets/images/services-domestic-air-freight-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
-                                                <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
-                                                <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Riley S. </p>
-                                                <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="slide-container active">
+                        <div class="initial-slides ps-2 pt-2 pe-2 pb-2">
+                            <div class="slide-item hemispherical-top">
+                                <div class="slide" id="first">
+                                    <img src="assets/images/services-domestic-air-freight-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3 img-fluid" loading="lazy">
+                                    <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
+                                    <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Riley S. </p>
+                                    <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slide-item">
-                            <div class="slide">
-                                <div class="row mt-4 mb-2">
-                                    <div class="col text-center bg-opacity-10 bg-transparent" id="second">
-                                        <div class="hemispherical-top">
-                                            <div class="border-container">
-                                                <img src="assets/images/services-expedited-ground-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
-                                                <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"I absolutely loved my experience with Raging Wolf team! They are so knowledgable about the industry and left me feeling so confident."</p>
-                                                <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Megan B.</p>
-                                                <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="slide-item hemispherical-top">
+                                <div class="slide" id="second">
+                                    <img src="assets/images/services-expedited-ground-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3 img-fluid" loading="lazy">
+                                    <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"I absolutely loved my experience with Raging Wolf team! They are so knowledgable about the industry and left me feeling so confident."</p>
+                                    <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Megan B.</p>
+                                    <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slide-item">
-                            <div class="slide">
-                                <div class="row mt-4 mb-2">
-                                    <div class="col text-center bg-opacity-10 bg-transparent" id="third">
-                                        <div class="hemispherical-top right-tilt">
-                                            <div class="border-container">
-                                                <img src="assets/images/services-trucking-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3" height="230" width="230">
-                                                <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
-                                                <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Sara D.</p>
-                                                <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="slide-item hemispherical-top">
+                                <div class="slide" id="third">
+                                    <img src="assets/images/services-trucking-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3 img-fluid" loading="lazy">
+                                    <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
+                                    <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Sara D.</p>
+                                    <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
+                                </div>
+                            </div>
+                            <div class="slide-item hemispherical-top hidden-slide">
+                                <div class="slide" id="fourth">
+                                    <img src="assets/images/services-domestic-air-freight-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
+                                    <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
+                                    <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Scott S. </p>
+                                    <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
+                                </div>
+                            </div>
+                            <div class="slide-item hemispherical-top hidden-slide">
+                                <div class="slide" id="fifth">
+                                    <img src="assets/images/services-expedited-ground-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
+                                    <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"I absolutely loved my experience with Raging Wolf team! They are so knowledgable about the industry and left me feeling so confident."</p>
+                                    <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Jeff B.</p>
+                                    <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
+                                </div>
+                            </div>
+                            <div class="slide-item hemispherical-top hidden-slide">
+                                <div class="slide" id="sixth">
+                                    <img src="assets/images/services-trucking-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3" height="230" width="230">
+                                    <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
+                                    <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Shakira D.</p>
+                                    <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide-container">
-                        <div class="slide-item">
-                            <div class="slide">
-                                <div class="row mt-4 mb-2">
-                                    <div class="col text-center bg-opacity-10 bg-transparent" id="fourth">
-                                        <div class="hemispherical-top left-tilt">
-                                            <div class="border-container">
-                                                <img src="assets/images/services-domestic-air-freight-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
-                                                <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
-                                                <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Scott S. </p>
-                                                <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+
+                <hr class="mt-5 mb-2" style="border-top: 3px solid #dc3545;">
+
+                <div class="container" id="submitReview">
+                    <div class="row">
+                        <div class="col mt-5 mb-5">
+                            <h1 class="main-heading text-center text-warning display-3" id="welcome2">UNLEASH YOUR VOICE!</h1>
+                            <p class="text-center text-warning">Let us know how we did by submitting your review below.</p>
                         </div>
-                        <div class="slide-item">
-                            <div class="slide">
-                                <div class="row mt-4 mb-2">
-                                    <div class="col text-center bg-opacity-10 bg-transparent" id="fifth">
-                                        <div class="hemispherical-top">
-                                            <div class="border-container">
-                                                <img src="assets/images/services-expedited-ground-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3">
-                                                <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"I absolutely loved my experience with Raging Wolf team! They are so knowledgable about the industry and left me feeling so confident."</p>
-                                                <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Jeff B.</p>
-                                                <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-item">
-                            <div class="slide">
-                                <div class="row mt-4 mb-2">
-                                    <div class="col text-center bg-opacity-10 bg-transparent" id="sixth">
-                                        <div class="hemispherical-top right-tilt">
-                                            <div class="border-container">
-                                                <img src="assets/images/services-trucking-icon.webp" class="border rounded-circle rounded-3 border-success-subtle border-5 mt-3 mb-3" height="230" width="230">
-                                                <p style="font-size: 20px;" class="fw-light mt-2 mb-3 ms-2 me-2 ps-2 pe-2">"My experience with Megan was fantastic. My skin has never been so smooth and i've noticed a decrease in wrinkles as well! I can't wait to go back!"</p>
-                                                <p style="font-family: 'pentagrams-malefissent'; font-size: 36px;" class="text-danger">Shakira D.</p>
-                                                <p style="font-size: 18px;"><i>Service: Air Expedites</i></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="submission-form row w-50 mx-auto rounded rounded-3" id="submissionForm">
+                        <div class="col">
+                            <div class="row">
+
+                                <div class="form-group mb-3 col">
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Full Name:</b></label>
+                                    <input id="fullName" name="text1" type="text" class="form-control mb-3" style="background-color: black; border: none; color: white;" required="">
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Company:</b></label>
+                                    <input id="companyName" name="text2" type="text" class="form-control mb-3" style="background-color: black; border: none; color: white;" required="">
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Email:</b></label>
+                                    <input type="email" class="form-control mb-3" style="background-color: black; border: none; color: white;" id="email" name="input1" aria-describedby="input1_help" required="">
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Service Used:</b></label>
+                                    <select id="service" class="form-select mb-3" style="background-color: black; border: none; color: white;" required="" name="Service">
+                                        <option value="">Select</option>
+                                        <option value="1">Expedited Air</option>
+                                        <option value="2">Expedited Ground</option>
+                                        <option value="3">Standard Trucking</option>
+                                        <option value="4">Other</option>
+                                    </select>
+
+                                    <label for="fullName" class="col-12" style="color: #dc3545;"><b>Your Review:</b></label>
+                                    <textarea id="custyReview" class="form-control" style="background-color: black; border: none; color: white;" name="Review" required="" value="Enter Your Review..."></textarea>
+                                    <div id="dmxReCaptcha21" class="g-recaptcha"></div>
+                                    <button id="submit" class="btn w-100 active btn-danger fw-bold lh-lg mt-4 text-warning" type="submit">Submit Your Review<i class="fas fa-caret-right fa-fw"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <hr class="mt-5 mb-2" style="border-top: 3px solid #dc3545;">
-
-            <div class="container" id="submitReview">
-                <div class="row">
-                    <div class="col mt-5 mb-5">
-                        <h1 class="main-heading text-center text-warning display-3" id="welcome2">UNLEASH YOUR VOICE!</h1>
-                        <p class="text-center text-warning">Let us know how we did by submitting your review below.</p>
-                    </div>
-                </div>
-                <div class="submission-form row w-50 mx-auto rounded rounded-3" id="submissionForm">
-                    <div class="col">
-                        <div class="row">
-
-                            <div class="form-group mb-3 col">
-                                <label for="fullName" class="col-12" style="color: #dc3545;"><b>Full Name:</b></label>
-                                <input id="fullName" name="text1" type="text" class="form-control mb-3" style="background-color: black; border: none; color: white;" required="">
-
-                                <label for="fullName" class="col-12" style="color: #dc3545;"><b>Company:</b></label>
-                                <input id="companyName" name="text2" type="text" class="form-control mb-3" style="background-color: black; border: none; color: white;" required="">
-
-                                <label for="fullName" class="col-12" style="color: #dc3545;"><b>Email:</b></label>
-                                <input type="email" class="form-control mb-3" style="background-color: black; border: none; color: white;" id="email" name="input1" aria-describedby="input1_help" required="">
-
-                                <label for="fullName" class="col-12" style="color: #dc3545;"><b>Service Used:</b></label>
-                                <select id="service" class="form-select mb-3" style="background-color: black; border: none; color: white;" required="" name="Service">
-                                    <option value="">Select</option>
-                                    <option value="1">Expedited Air</option>
-                                    <option value="2">Expedited Ground</option>
-                                    <option value="3">Standard Trucking</option>
-                                    <option value="4">Other</option>
-                                </select>
-
-                                <label for="fullName" class="col-12" style="color: #dc3545;"><b>Your Review:</b></label>
-                                <textarea id="custyReview" class="form-control" style="background-color: black; border: none; color: white;" name="Review" required="" value="Enter Your Review..."></textarea>
-                                <div id="dmxReCaptcha21" class="g-recaptcha"></div>
-                                <button id="submit" class="btn w-100 active btn-danger fw-bold lh-lg mt-4 text-warning" type="submit">Submit Your Review<i class="fas fa-caret-right fa-fw"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
     <?php include 'footer.php'; ?>
@@ -219,21 +172,33 @@
         document.addEventListener('DOMContentLoaded', function() {
     const slideshowContainer = document.getElementById('testimonialSlideshow');
     const slideItems = slideshowContainer.querySelectorAll('.slide-item');
-    const slideWidth = slideItems[0].offsetWidth; // Get the width of one slide
+    const slideWidth = slideItems[0].offsetWidth; 
     let scrollPosition = 0;
+    let isScrolling = false; // Flag to prevent multiple scrolling calls
 
-    // Continuous sliding animation
     function animateSlides() {
-        scrollPosition -= slideWidth; // Move the scroll position to the left by one slide width
-        slideshowContainer.scrollLeft = scrollPosition; // Apply the scroll position to the container
-        requestAnimationFrame(animateSlides); // Schedule the next animation frame
+        if (!isScrolling) { // Only scroll if not already scrolling
+            isScrolling = true; // Set flag to true
+
+            scrollPosition -= slideWidth; // Move the scroll position to the left
+            slideshowContainer.scrollLeft = scrollPosition; // Apply the scroll position
+
+            // Check if we've reached the end of the slides
+            if (slideshowContainer.scrollLeft <= 0) {
+                scrollPosition = (slideItems.length - 1) * slideWidth;  // Reset scroll position to the last slide
+            }
+
+            requestAnimationFrame(animateSlides); // Schedule the next frame
+            isScrolling = false; // Reset flag to false
+        }
     }
 
-    animateSlides(); // Start the animation
+    requestAnimationFrame(animateSlides); // Start the animation
 
+    // No need to show hidden slides separately, as they will become visible as the carousel scrolls
+    // ... (remove the showHiddenSlides function and setTimeout call)
 });
     </script>
-
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
