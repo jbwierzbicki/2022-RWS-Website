@@ -54,6 +54,9 @@ document.head.appendChild(o)}initApollo();
     <script>
         !function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_8f6e0e1be3ac9f1e37dea684410f7c092849/sdk.js"),(document.body || document.head).appendChild(n)}();
     </script>
+    <script src="dmxAppConnect/dmxSwiper/dmxSwiper.js" defer></script>
+    <link rel="stylesheet" href="dmxAppConnect/dmxSwiper/swiper.min.css" />
+    <script src="dmxAppConnect/dmxSwiper/swiper.min.js" defer></script>
 </head>
 
 <body is="dmx-app" class="bg-dark">
