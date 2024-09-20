@@ -75,7 +75,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; /* Center items vertically */
+    -webkit-box-shadow: inset 0 0 35px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 35px 20px rgba(0, 0, 0, 0.5); /* Add inner shadow */
 }
+
+
+
 /* BARREL ANGLE FOR CAROUSEL */
 
 /* .right-tilt { */
