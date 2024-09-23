@@ -179,7 +179,7 @@
 
                                 <!-- REMOVE COMMENT WHEN READY TO PUBLISH -->
 
-                                <!-- <div class="carousel-item">
+                                <div class="carousel-item">
                                     <div class="row g-0 visually-hidden">
                                         <div class="col text-center">
                                             <h4 calss="text-center text-light text-uppercase" class="text-warning mt-3">Just ask our loyal pack-members about us!</h4>
@@ -220,7 +220,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 
                                 <!-- Add more sections as needed. -->
                             </div>
