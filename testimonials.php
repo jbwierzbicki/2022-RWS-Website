@@ -62,8 +62,8 @@
 
         <div class="review-page container pb-5 border-0 rounded rounded-3" id="reviewPage">
 
-            <h1 class="main-heading text-center text-warning display-3 pt-5" id="welcome">Echoes from the Pack:</h1>
-            <p class="text-center lh-sm text-warning opacity-50" id="welcome3">Find out how our clients think about us!</p>
+            <h1 class="main-heading text-center text-warning display-3 pt-5" id="welcome">Testimonials for the Pack:</h1>
+            <p class="text-center text-warning">Tell us how we are doing by submitting your review below.</p>
 
             <hr class="mt-5 mb-5" style="border-top: 3px solid #dc3545;">
 
@@ -134,7 +134,6 @@
             <div class="row">
                 <div class="col mt-5 mb-5">
                     <h1 class="main-heading text-center text-warning display-3" id="welcome2">UNLEASH YOUR VOICE!</h1>
-                    <p class="text-center text-warning">Let us know how we did by submitting your review below.</p>
                 </div>
             </div>
             <div class="submission-form row w-50 rounded rounded-3 mb-5 ms-auto me-auto" id="submissionForm">
