@@ -140,7 +140,7 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-                            <button class="btn text-warning module-cta-btn text-start btn-lg mt-1 ps-0 pe-0" id="moreReviews" dmx-on:click="browser1.goto('reviews.php')">View More</button>
+                            <button class="btn text-warning module-cta-btn text-start btn-lg mt-1 ps-0 pe-0" id="moreReviews" dmx-on:click="browser1.goto('testimonials.php')">View More</button>
                         </div>
                     </div>
                 </div>

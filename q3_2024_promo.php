@@ -88,11 +88,18 @@ document.head.appendChild(o)}initApollo();
                         <div class="col">
 
                             <div class="progress-container">
-                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <!--   <span class="wolf-head">
-                                        <img src="assets/images/wolf-head.webp" alt="Wolf Head Icon" class="img-fluid hover" loading="lazy" width="5%" dmx-on:mouseover="progressValue.textContent = progressPercentage.value + '75%'">
-                                        <span class="progress-value" >75%</span> </span> -->
-                                </div>
+                                <div class="progress-bar" id="progressBar"></div>
+                                <!-- Adding milestones for each 100 posts -->
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+                                <div class="milestone"><span class="checkmark"><i class="fas fa-thumbs-up"></i></span></div>
+
                             </div>
 
                             <div class="progress-info">

@@ -6,9 +6,9 @@
   position: relative; /* Allows us to position the wolf head */
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; /* This is the correct way to set display */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+  display: flex; 
+  -webkit-box-align: center; 
+      -ms-flex-align: center; 
           align-items: center; /* Centers the wolf head vertically */
 }
 
@@ -20,12 +20,6 @@
 }
 
 .progress-bar.bg-danger {
-   background-image: repeating-linear-gradient(
-     to right,
-     #000,
-     #000 5px,
-     #f00 5px,
-     #f00 10px
-   );
-   background-size: 10px 100%;
+  background-color: red; /* Set the background color to red */
+  /* Remove the repeating linear gradient */
 }
