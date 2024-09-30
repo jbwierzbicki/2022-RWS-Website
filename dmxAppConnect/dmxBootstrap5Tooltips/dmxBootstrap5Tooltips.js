@@ -12,9 +12,9 @@ dmx.Attribute('bs-tooltip', 'mounted', function(node, attr) {
     });
   }
 
-  this.addEventListener('destroy', () => {
+  return () => {
     if (tooltip) {
       tooltip.dispose();
     }
-  });
+  };
 });
