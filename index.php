@@ -179,13 +179,13 @@
 
                                 <!-- REMOVE COMMENT WHEN READY TO PUBLISH -->
 
-                                <!-- <div class="carousel-item">
-                                    <div class="row g-0 visually-hidden">
+                                <div class="carousel-item">
+                                    <div class="row g-0">
                                         <div class="col text-center">
                                             <h4 calss="text-center text-light text-uppercase" class="text-warning mt-3">Just ask our loyal pack-members about us!</h4>
                                         </div>
                                     </div>
-                                    <div class="row hover pb-3 visually-hidden" dmx-on:click="browser1.goto('testimonials.php')">
+                                    <div class="row hover pb-3" dmx-on:click="browser1.goto('testimonials.php')">
                                         <div class="col text-center">
                                             <div class="card bg-transparent border-end border-top-0 border-bottom-0 border-start-0 rounded-0">
                                                 <div class="card-body text-white">
@@ -220,7 +220,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 
                                 <!-- Add more sections as needed. -->
                             </div>
