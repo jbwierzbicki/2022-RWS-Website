@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/review_style.css" />
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer=""></script>
     <script src="dmxAppConnect/dmxBackgroundVideo/dmxBackgroundVideo.js" defer=""></script>
@@ -72,6 +73,7 @@
 <body is="dmx-app" id="index" class="bg-dark">
 
     <div is="dmx-browser" id="browser1"></div>
+
     <?php include 'navbar_mini'; ?>
 
     <?php include 'navbar_main'; ?>
@@ -85,8 +87,37 @@
                 <div class="main-card col-md-8 mb-md-5 pt-3 pb-3">
                     <div class="row align-items-stretch module-card-row">
                         <div id="carouselExampleIndicators" class="carousel slide style1 col main-card-inner ms-3 me-3 align-self-center watermark1" data-bs-ride="carousel">
+                            <!-- re-add 'carousel' when ready -->
                             <div class="carousel-inner">
+
+                                <!-- TEMP HURRICANE HELENE DRIVE -->
+
                                 <div class="carousel-item active">
+                                    <!-- MAKE 'ACTIVE' -->
+                                    <div class="row">
+                                        <div class="col text-center pt-4">
+                                            <h1 class="text-center text-light mb-2 index-header-h2">We need your help<br><span class="text-warning fw-bold">Hurricane Helene Relief</span></h1><br>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-9 text-center">
+                                            <h5 class="text-light">In time of need, we are here to support byt we can't do it without your help. Every contribution makes a difference! Thank you for considering a donation.</h5><br>
+
+                                            <div class="d-flex align-items-center justify-content-center flex-wrap mb-2">
+                                                <a href="AMAZON WISHLIST" class="text-decoration-none mb-2 ms-2 me-2">
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;">Donate to the effort <i class="fas fa-arrow-circle-right fa-fw"></i></h6>
+                                                </a>
+                                                <a href="football_pool.php" class="text-decoration-none mb-2 ms-2 me-2 visually-hidden">
+                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h6>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <!-- MAKE 'ACTIVE' -->
                                     <div class="row">
                                         <div class="col text-center pt-4">
                                             <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
@@ -179,15 +210,16 @@
 
                                 <!-- REMOVE COMMENT WHEN READY TO PUBLISH -->
 
-                                <div class="carousel-item">
-                                    <div class="row g-0">
+                                <div class="carousel-item" style="margin-bottom: 5px;">
+                                    <!-- remove 'active' to publish -->
+                                    <div class="row g-0 mb-2">
                                         <div class="col text-center">
                                             <h4 calss="text-center text-light text-uppercase" class="text-warning mt-3">Just ask our loyal pack-members about us!</h4>
                                         </div>
                                     </div>
-                                    <div class="row hover pb-3" dmx-on:click="browser1.goto('testimonials.php')">
+                                    <div class="row" dmx-on:click="browser1.goto('testimonials.php')">
                                         <div class="col text-center">
-                                            <div class="card bg-transparent border-end border-top-0 border-bottom-0 border-start-0 rounded-0">
+                                            <div class="index-hemispherical-top card bg-transparent ms-1">
                                                 <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
@@ -198,7 +230,7 @@
                                             </div>
                                         </div>
                                         <div class="col text-center">
-                                            <div class="card bg-transparent rounded-0 border-0">
+                                            <div class="index-hemispherical-top card bg-transparent">
                                                 <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
@@ -209,12 +241,12 @@
                                             </div>
                                         </div>
                                         <div class="col text-center">
-                                            <div class="card bg-transparent border-start border-top-0 border-bottom-0 border-end-0 rounded-0">
+                                            <div class="index-hemispherical-top card bg-transparent me-1">
                                                 <div class="card-body text-white">
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
                                                         <hr>
-                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Dedicated Dry Van</cite></footer>
+                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Dedicated DV</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
