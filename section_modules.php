@@ -88,6 +88,7 @@
                 </div>
             </div>
 
+            <!-- REMOVE 'visually-hidden' WHEN READY TO PUBLICH -->
 
             <section class="text-center text-break lh-lg visually-hidden">
                 <div class="container text-bg-dark h-25">
