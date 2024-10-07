@@ -104,7 +104,7 @@
                                             <h5 class="text-light">In time of need, we are here to support byt we can't do it without your help. Every contribution makes a difference! Thank you for considering a donation.</h5><br>
 
                                             <div class="d-flex align-items-center justify-content-center flex-wrap mb-2">
-                                                <a href="AMAZON WISHLIST" class="text-decoration-none mb-2 ms-2 me-2">
+                                                <a href="https://www.amazon.com/registries/gl/guest-view/3JWS8JD3INGWC?fbclid=IwY2xjawFxDohleHRuA2FlbQIxMAABHYmJlROwjgmrKMU5GQw-aiYeLNfT3B8hdufBnxp78JLNWl82IQRdie-F6A_aem_aACXCdzgt7P0vnkSzSwe0A" class="text-decoration-none mb-2 ms-2 me-2">
                                                     <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;">Donate to the effort <i class="fas fa-arrow-circle-right fa-fw"></i></h6>
                                                 </a>
                                                 <a href="football_pool.php" class="text-decoration-none mb-2 ms-2 me-2 visually-hidden">

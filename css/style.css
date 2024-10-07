@@ -292,7 +292,7 @@ h4 {
     z-index: 1;
 }
 
-/* Styles for the active carousel item */
+/* remove Helen-Relief when done with it focus on wolf-eyes */
 .carousel-item.helene-relief { 
     background-image: url('../assets/images/Helene-Relief.webp');
     background-size: cover;
@@ -304,6 +304,7 @@ h4 {
     background-image: url('../assets/images/wolf-eyes.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: .80;
 }
 
 /* Styles for the Helene-Relief image overlay */
