@@ -92,7 +92,7 @@
 
                                 <!-- TEMP HURRICANE HELENE DRIVE -->
 
-                                <div class="carousel-item active">
+                                <div class="carousel-item active helene-relief">
                                     <!-- MAKE 'ACTIVE' -->
                                     <div class="row">
                                         <div class="col text-center pt-4">
