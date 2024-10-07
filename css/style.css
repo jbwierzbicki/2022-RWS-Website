@@ -300,23 +300,6 @@ h4 {
 }
 
 /* Styles for other carousel items */
-/* *** BEFORE HELENE -REVERT- WHEN DONE ***
-.watermark1::before {
-.carousel-item.active.watermark1::before {
-    content: '';
-    background: url('../assets/images/Helene-Relief.webp') no-repeat center center;
-    background-size: cover;
-    display: block;
-    opacity: .25;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.carousel-item:not(.active).watermark1::before { */
 .carousel-item:not(.helene-relief) {
     background-image: url('../assets/images/wolf-eyes.webp');
     background-size: cover;
