@@ -210,9 +210,9 @@
 
                                 <!-- REMOVE COMMENT WHEN READY TO PUBLISH -->
 
-                                <div class="carousel-item" style="margin-bottom: 5px;">
-                                    <!-- remove 'active' to publish -->
-                                    <div class="row g-0 mb-2">
+                                <!--<div class="carousel-item" style="background-image: url('../assets/images/wolf-eyes.webp'); background-size: cover; background-repeat: no-repeat; margin-bottom: 5px;">-->
+                                <!-- remove 'active' to publish -->
+                                <!--<div class="row g-0 mb-2">
                                         <div class="col text-center">
                                             <h4 calss="text-center text-light text-uppercase" class="text-warning mt-3">Just ask our loyal pack-members about us!</h4>
                                         </div>
@@ -235,7 +235,7 @@
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
                                                         <hr>
-                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Air Expedites</cite></footer>
+                                                        <footer class="blockquote-footer text-warning">Jacobe J.<br><cite title="Source Title">Service: Air Expedites</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
@@ -246,13 +246,13 @@
                                                     <blockquote class="blockquote mb-0">
                                                         <h6>"I utilize Raging Wolf to see that our special shipments are handled professionally, and, from pick-up to delivery, damage-free. The staff are unbeatable, and great to work with."</h6>
                                                         <hr>
-                                                        <footer class="blockquote-footer text-warning">Mariah H.<br><cite title="Source Title">Service: Dedicated DV</cite></footer>
+                                                        <footer class="blockquote-footer text-warning">Sarah MH.<br><cite title="Source Title">Service: Dedicated DV</cite></footer>
                                                     </blockquote>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
 
                                 <!-- Add more sections as needed. -->
                             </div>
