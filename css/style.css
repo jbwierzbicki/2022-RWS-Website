@@ -239,25 +239,13 @@ h4 {
 
 
 .watermark {
-
+    background-image: url("../assets/images/wolf-eyes.webp");
     background-size: cover;
     position: relative;
-    z-index: 1;
-}
-
-.watermark::before {
-    content: '';
-    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
-    background-size: 80%;
-    display: block;
-    opacity: .1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     z-index: -1;
 }
+
+
 
 .univ--footer--container--row--col,
 .univ--footer--container--row--col2,
@@ -297,14 +285,6 @@ h4 {
     background-image: url('../assets/images/Helene-Relief.webp');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/* Styles for other carousel items */
-.carousel-item:not(.helene-relief) {
-    background-image: url('../assets/images/wolf-eyes.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .80;
 }
 
 /* Styles for the Helene-Relief image overlay */

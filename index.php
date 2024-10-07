@@ -92,7 +92,7 @@
 
                                 <!-- TEMP HURRICANE HELENE DRIVE -->
 
-                                <div class="carousel-item active helene-relief">
+                                <div class="carousel-item active helene-relief" style="background-image: url('../assets/images/Helene-Relief.webp'); background-size: cover; background-repeat: no-repeat;">
                                     <!-- MAKE 'ACTIVE' -->
                                     <div class="row">
                                         <div class="col text-center pt-4">
@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
 
-                                <div class="carousel-item">
+                                <div class="carousel-item" style="background-image: url('../assets/images/wolf-eyes.webp'); background-size: cover; background-repeat: no-repeat;">
                                     <!-- MAKE 'ACTIVE' -->
                                     <div class="row">
                                         <div class="col text-center pt-4">
@@ -141,7 +141,7 @@
                                 </div>
 
                                 <!-- You can add more "carousel-item" divs for more sections. Here is an example: -->
-                                <div class="carousel-item">
+                                <div class="carousel-item" style="background-image: url('../assets/images/wolf-eyes.webp'); background-size: cover; background-repeat: no-repeat;">
                                     <div class="row">
                                         <div class="col text-center pt-3">
                                             <h4 class="text-center text-light text-uppercase">Check out the<br><span class="text-warning fw-bold">Latest From Raging Wolf Solutions</span></h4>
@@ -174,7 +174,7 @@
                                     </div>
                                 </div>
 
-                                <div class="carousel-item">
+                                <div class="carousel-item" style="background-image: url('../assets/images/wolf-eyes.webp'); background-size: cover; background-repeat: no-repeat;">
                                     <div class="row">
                                         <div class="col text-center pt-3">
                                             <h4 class="text-center text-light text-uppercase">Check out the<br><span class="text-warning fw-bold">Latest Blog From Raging Wolf Solutions</span></h4>
@@ -210,7 +210,7 @@
 
                                 <!-- REMOVE COMMENT WHEN READY TO PUBLISH -->
 
-                                <div class="carousel-item" style="margin-bottom: 5px;">
+                                <div class="carousel-item" style="background-image: url('../assets/images/wolf-eyes.webp'); background-size: cover; background-repeat: no-repeat; margin-bottom: 5px;">
                                     <!-- remove 'active' to publish -->
                                     <div class="row g-0 mb-2">
                                         <div class="col text-center">
