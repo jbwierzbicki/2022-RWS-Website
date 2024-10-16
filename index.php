@@ -90,34 +90,7 @@
                             <!-- re-add 'carousel' when ready -->
                             <div class="carousel-inner">
 
-                                <!-- TEMP HURRICANE HELENE DRIVE -->
-
-                                <div class="carousel-item active helene-relief" style="background-image: url('../assets/images/Helene-Relief.webp'); background-size: cover; background-repeat: no-repeat;">
-                                    <!-- MAKE 'ACTIVE' -->
-                                    <div class="row">
-                                        <div class="col text-center pt-4">
-                                            <h1 class="text-center text-light mb-2 index-header-h2">We need your help<br><span class="text-warning fw-bold">Hurricane Helene Relief</span></h1><br>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-9 text-center">
-                                            <h5 class="text-light">In time of need, we are here to support byt we can't do it without your help. Every contribution makes a difference! Thank you for considering a donation.</h5><br>
-
-                                            <div class="d-flex align-items-center justify-content-center flex-wrap mb-2">
-                                                <a href="https://www.amazon.com/registries/gl/guest-view/3JWS8JD3INGWC?fbclid=IwY2xjawFxDohleHRuA2FlbQIxMAABHYmJlROwjgmrKMU5GQw-aiYeLNfT3B8hdufBnxp78JLNWl82IQRdie-F6A_aem_aACXCdzgt7P0vnkSzSwe0A" class="text-decoration-none mb-2 ms-2 me-2">
-                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold border border-warning rounded mb-0 pt-2 pb-2 ps-3 pe-3" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;">Donate to the effort <i class="fas fa-arrow-circle-right fa-fw"></i></h6>
-                                                </a>
-                                                <a href="football_pool.php" class="text-decoration-none mb-2 ms-2 me-2 visually-hidden">
-                                                    <h6 class="text-warning rws-nav-item text-nowrap fw-bold mb-0 pt-2 pb-2 ps-3 pe-3 border border-warning rounded" style="font-family: sansation; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-football-ball"></i>&nbsp;Football Pool</h6>
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <!-- MAKE 'ACTIVE' -->
+                                <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col text-center pt-4">
                                             <h1 class="text-center text-light mb-2 index-header-h2">We are the<br><span class="text-warning fw-bold">Alpha Leaders in Logistics</span></h1>
