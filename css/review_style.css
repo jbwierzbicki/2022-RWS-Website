@@ -34,6 +34,10 @@
 
 /* ... reviews styles ... */
 
+#testimonials-page {
+    background: #121212;
+}
+
 .review-page { 
     background: -webkit-gradient(linear, left bottom, left top, from(#3f1818), to(transparent)); 
     background: linear-gradient(to top, #3f1818 0%, transparent 100%); /* Use background */
@@ -86,10 +90,6 @@
     background-image: linear-gradient(to bottom, #333 30%, transparent 100%);
 }
 
-.card-body {
-    padding: 35px 30px 0 30px;
-}
-
 
 
 
@@ -123,4 +123,200 @@
 .carousel-item {
     max-width: 100%;
     padding: 4px;
+}
+
+/* TESTING OF STYLE.CSS REMOVE WHILE ADDING NECESSARY FROM IT */
+header {
+    background-image: url("../assets/images/navbar-stone-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+h2:not(.main-heading) {
+    font-family: 'Sansation', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h4 {
+    font-family: 'Sansation', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bg-dark {
+    background: #121212 !important;
+}
+
+.border-secondary {
+    border-color: #303030 !important;
+    padding-bottom: 11px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.header-navbar {
+    min-height: 75px;
+}
+
+.logo-img {
+    display: inline-block;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.logo-img:hover {
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.nav-item {
+    color: #FAFAFA !important;
+    font-family: 'Sansation', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+
+.rws-nav-item {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.rws-nav-item:hover {
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.nav-item.nav-separator {
+    background: -webkit-gradient(linear, left top, right top, color-stop(32.55%, #3D3D3D), color-stop(33.98%, #000000), color-stop(66.41%, #000000), color-stop(67.45%, #3D3D3D));
+    background: linear-gradient(90deg, #3D3D3D 32.55%, #000000 33.98%, #000000 66.41%, #3D3D3D 67.45%);
+    width: 3px;
+
+}
+
+.nav-item.new_quote {
+    color: black !important;
+    font-weight: 900 !important;
+}
+
+.module-card {
+    background: linear-gradient(120deg, rgba(26, 26, 26, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%);
+}
+
+.module-cta-btn {
+    font-size: 14px;
+    font-family: 'Sansation', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.univ--footer {
+    background-color: #26272b;
+    color: #9e9e9e;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 45px 0 20px;
+}
+
+.univ--footer--container--row--col2>ul>a>li,
+.univ--footer--container--row--col2>ul>a {
+    color: #9e9e9e;
+}
+
+.univ--footer--container--row--col3>ul>a>li,
+.univ--footer--container--row--col3>ul>a {
+    color: #9e9e9e;
+}
+
+.hover-cursor:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.btn-close {
+    opacity: 100%;
+    color: white !important;
+    background-color: #d4d4d46c !important;
+}
+
+.cursor-default:hover {
+    cursor: default;
+}
+
+.watermark {
+    
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.watermark::before {
+    content: '';
+    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
+    background-size: 80%;
+    display: block;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.univ--footer--container--row--col,
+.univ--footer--container--row--col2,
+.univ--footer--container--row--col3 {
+    position: relative;
+}
+
+
+
+.nav-item .active {
+    background: transparent;
+    border-color: #ffc107;
+    color: #ffc107 !important;
+}
+
+.nav-item .nav-link:hover {
+    border-color: #ffc107;
+    color: #ffc107 !important;
+}
+
+.watermark1 {
+
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+}
+
+.download-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
