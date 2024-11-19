@@ -68,7 +68,7 @@ document.head.appendChild(o)}initApollo();
                 </div>
             </div>
         </div>
-    </section><!-- this is a test -->
+    </section>
 
     <?php include 'footer.php'; ?>
 
