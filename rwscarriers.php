@@ -57,7 +57,7 @@ document.head.appendChild(o)}initApollo();
                         <div class="row">
                             <div class="text-left col-12">
                                 <h5 class="text-light">1. Save a copy of our carrier packet.</h5>
-                                <a target="_blank" rel="noopener noreferrer" is="dmx-link" href="assets/Raging%20Wolf%20Carrier%20Packet%2010-23-2024.pdf" data-lf-fd-inspected-kn9eq4r1yyr7rlvp="true">
+                                <a target="_blank" rel="noopener noreferrer" is="dmx-link" href="assets/Raging%20Wolf%20Carrier%20Packet%2011-12-24.pdf" data-lf-fd-inspected-kn9eq4r1yyr7rlvp="true">
                                     <button id="btn1" class="btn btn-secondary pl-3 pr-3 mb-4 pt-3 pb-3 ps-3 pe-3" is="dmx-button" value="" type="button"><i class="fa fa-download"></i>&nbsp;Download Carrier Packet</button>
                                 </a>
                                 <h5 class="text-light pt-2">2. Send the completed carrier packet to us.</h5>
