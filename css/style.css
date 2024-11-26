@@ -289,19 +289,12 @@ h4 {
     z-index: 1;
 }
 
-/* remove Helen-Relief when done with it focus on wolf-eyes */
-.carousel-item.helene-relief { 
-    background-image: url('../assets/images/Helene-Relief.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* Styles for the Helene-Relief image overlay */
-.helene-relief::before {
+.watermark1::before {
     content: '';
-    background: url('../assets/images/Helene-Relief.webp') no-repeat center center !important;
-    background-size: cover !important;
+    background: url('../assets/images/wolf-eyes.webp') no-repeat center center;
+    background-size: cover;
     display: block;
+    opacity: .25;
     position: absolute;
     top: 0;
     right: 0;
@@ -310,26 +303,8 @@ h4 {
     z-index: -1;
 }
 
-.carousel-item:not(.helene-relief)::before {
-  content: '';
-  background-image: url('../assets/images/wolf-eyes.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  opacity: .35;
-} 
-
 .collaborator-flex {
     height: 90px;
-}
-
-.image-container {
-    position: relative;
 }
 
 .download-btn {
