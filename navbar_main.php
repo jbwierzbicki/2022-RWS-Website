@@ -106,6 +106,85 @@
 
             <!-- End Quote Modal -->
 
+            <!-- pitt_Quote Modal 
+            <div class="modal" id="pitt_quote_modal" is="dmx-bs5-modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content border-secondary border-2 pb-0">
+
+                        <dmx-value id="pitt_quote_submitted" dmx-bind:value="0"></dmx-value>
+                        <form method="post" action="https://staff.my.salesforce-sites.com/services/apexrest/pittsburghquote" dmx-on:submit="quote_submitted.setValue(1)" is="dmx-api-form" id="pitt_quote_form" post-data="json" dmx-form-clear="pitt_quote_form">
+                            <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
+                                <h5 class="modal-title">Get started with a free quote.</h5>
+                                <button class="btn-close small me-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark pt-2 pb-2 ps-4 pe-4">
+
+
+                                <div class="row" dmx-hide="(quote_submitted.value==1)">
+                                    <div class="col-12">
+                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="puzip" class="form-label col-form-label-sm mb-0" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Pickup</label>
+                                            <input type="text" class="form-control form-control-sm" id="pitt_puzip" name="PickupLocationc" placeholder="ZIP or City, State" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="delzip" class="form-label col-form-label-sm mb-0" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp;Delivery</label>
+                                            <input type="text" class="form-control form-control-sm" id="pitt_delzip" name="DeliveryLocationc" placeholder="ZIP or City, State" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group md-3 text-white mt-0 mb-2"> <label for="details" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Freight Details</label>
+                                            <input type="text" class="form-control form-control-sm" id="pitt_details" name="CommodityDetailsc" placeholder="Units, weight, dims, etc." required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group md-3 text-white mt-0 mb-4"> <label for="remarks" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Other Notes</label>
+                                            <input type="text" class="form-control form-control-sm" id="pitt_remarks" name="AdditionalNotesc" placeholder="Optional notes here">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-white">
+                                        <div class="form-group md-3 mt-0 mb-4 text-white"> <label for="input1" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Is Direct Delivery Required?</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="pitt_input1" name="DeliverDirectRequiredc" dmx-on:checked="bgvideo1.direct_confirmed.setValue(1)">
+                                                <label class="form-check-label small" for="input1">Yes, direct delivery is required!</label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="module-card form-group md-3 text-center border border-secondary rounded border-2 text-light mt-0 mb-2 pt-3 pb-3 ps-3 pe-3"> <label for="replyemail" class="form-label mb-2 fw-bold"><i class="far fa-envelope"></i> Your Email Address</label>
+                                            <input type="email" class="form-control text-center mb-2" id="pitt_replyemail" name="CustomerNamec" placeholder="Your email address" required="">
+                                            <p class="small text-white-50 text-center mb-1 pt-1 lh-sm" wappler-command="editContent">Contact information submitted through this quote request form will not be shared with any party outside of Raging Wolf Solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pitt_quote_confirmed" is="dmx-if" dmx-bind:condition="(quote_submitted.value==1)">
+                                    <div class="row">
+                                        <div class="col gx-5">
+                                            <h1 class="text-success text-center display-4"><i class="far fa-check-circle"></i></h1>
+                                            <h3 class="text-light text-center">Your quote was submitted.</h3>
+                                            <h6 class="text-light text-center fw-normal">Our team will follow up with you at the email address provided in your submission. Thank you!</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="modal-footer bg-dark border-top-0 pt-0">
+                                <button id="pitt_btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" dmx-on:click="pitt_quote_form.submit()">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+
+                                <button id="pitt_btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="pitt_quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+             End pitt_Quote Modal -->
+
+
             <a class="navbar-brand mt-1 mb-1 align-self-center" href="index.php">
                 <img alt="logo goes to home page" img src="../assets/images/navbar-logo.webp" class="logo-img"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">

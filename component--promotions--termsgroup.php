@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="col-lg-4 pt-2 pb-2 ps-4 pe-4">
+    <div class="col-lg-4 pt-2 pb-2 ps-4 pe-4 visually-hidden">
         <div class="row border rounded rounded-2 border-light border-offwhite h-100">
             <div class="col promo-card pt-2">
                 <div class="d-flex flex-column hover-cursor" dmx-on:click="browser1.goto('football_pool.php')">

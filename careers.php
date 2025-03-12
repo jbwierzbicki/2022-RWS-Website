@@ -66,15 +66,82 @@ document.head.appendChild(o)}initApollo();
                     <div class="row border-bottom border-1 border-secondary mt-4">
                         <div class="col-12 text-start">
                             <button id="btn_viewall" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_all')" dmx-class:btn-outline-light="(visible_career.value=='career_all')" dmx-class:btn-outline-secondary="(visible_career.value!='career_all')">View all</button>
-                            <button id="btn_operations" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_operations')" dmx-class:btn-outline-light="(visible_career.value=='career_operations')" dmx-class:btn-outline-secondary="(visible_career.value!='career_operations')">Operations (1)</button>
-                            <button id="btn_sales" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_sales')" dmx-class:btn-outline-light="(visible_career.value=='career_sales')" dmx-class:btn-outline-secondary="(visible_career.value!='career_sales')">Sales (3)</button>
-                            <button id="btn_sales1" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Accounting</button>
-                            <button id="btn_sales2" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Technology</button>
+                            <button id="btn_operations" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_operations')" dmx-class:btn-outline-light="(visible_career.value=='career_operations')" dmx-class:btn-outline-secondary="(visible_career.value!='career_operations')">Operations (0)</button>
+                            <button id="btn_sales" class="btn btn-lg lh-sm mb-2 me-3" wappler-command="editContent" dmx-on:click="visible_career.setValue('career_sales')" dmx-class:btn-outline-light="(visible_career.value=='career_sales')" dmx-class:btn-outline-secondary="(visible_career.value!='career_sales')">Sales (2)</button>
+                            <button id="btn_sales1" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Accounting (0)</button>
+                            <button id="btn_sales2" class="btn btn-outline-secondary btn-lg lh-sm mb-2 me-3" wappler-command="editContent">Technology (0)</button>
                         </div>
                     </div>
 
                     <div id="conditional_sales" is="dmx-if" dmx-bind:condition="((visible_career.value == 'career_sales')||(visible_career.value == 'career_all'))">
                         <section id="career_sales">
+
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                                <div class="col-lg-10 mb-2">
+
+                                    <h4 class="text-light" wappler-command="editContent">Freight Agent, Remote</h4>
+                                    <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for a freight agent professional to join our team.</h5>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Commission</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
+                                    <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Remote</button>
+                                    <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue(job_description.value == 'freight_agent_remote' ? '' : 'freight_agent_remote')">
+                                        <i class="fas fa-info-circle"></i>&nbsp;
+                                        <span dmx-text="job_description.value == 'freight_agent_remote' ? 'Hide Position Information' : 'Position Information'"></span>
+                                    </button>
+
+
+                                    <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='freight_agent_remote')">
+                                        <h5>▶ Position Information</h5>
+                                        <p class="mb-2">At Raging Wolf Solutions, we're not just a company—we're a family. As a family-owned business, we prioritize building meaningful relationships with our team, clients, and partners. Unlike corporate giants that treat their employees as numbers, we value the individual. If you’re ready to work in a supportive, dynamic environment where your success matters, Raging Wolf Solutions is where you belong. We are currently looking for a Freight Agent to join our growing team. If you're driven, hungry for success, and looking for a place where you can thrive—this is your opportunity!
+                                        </p>
+                                        <p wappler-command="editContent" class="mt-3"><b>Why Raging Wolf Solutions?</b>
+                                        <ul class="custom-list text-white">
+                                            <li><b>Commission Split:</b> Your hard work directly impacts your earning potential! The more you hustle, the more you earn.</li>
+                                            <li><b>Family-Centered Environment:</b> Forget the corporate grind. At Raging Wolf, we treat every team member like family. Your voice is heard, your efforts are appreciated, and you’ll be recognized for your contributions.</li>
+                                            <li><b>Supportive Team:</b> You’ll have a network of experienced professionals who are eager to help you succeed. From training to daily guidance, we ensure you have the resources you need to excel.</li>
+                                            <li><b>Flexibility:</b> We understand life can be busy. Enjoy a flexible work schedule that lets you balance your personal and professional life.</li>
+                                            <li><b>Growth Opportunities:</b> We’re expanding! As we grow, there will be plenty of room for you to grow alongside us. Rise to new challenges and take on more responsibility as you gain experience.</li>
+                                            <li><b>Cutting-Edge Technology:</b> We equip our team with the latest tools and software to ensure you're always ahead of the game. Focus on what matters—building relationships and closing deals.</li>
+                                        </ul>
+                                        <p wappler-command="editContent"><b>Responsibilities:</b>
+                                        <ul class="custom-list text-white">
+                                            <li>Identify, develop, and manage relationships with shippers and carriers to move freight efficiently and cost-effectively.</li>
+                                            <li>Negotiate pricing and contracts with carriers while ensuring the best rates for clients.</li>
+                                            <li>Coordinate shipments and resolve any issues related to freight movement, ensuring timely and smooth operations.</li>
+                                            <li>Track and monitor shipments to ensure delivery deadlines are met.</li>
+                                            <li>Collaborate with internal teams to improve processes and customer satisfaction.</li>
+                                            <li>Stay up-to-date with industry trends and regulations.</li>
+                                        </ul>
+                                        </p>
+                                        <p wappler-command="editContent"><b>What We’re Looking For:</b>
+                                        <ul class="custom-list text-white">
+                                            <li>An existing book of business.</li>
+                                            <li>A self-motivated, ambitious individual who thrives in a commission-based environment.</li>
+                                            <li>Experience in freight brokerage or logistics.</li>
+                                            <li>Excellent communication and negotiation skills.</li>
+                                            <li>Strong attention to detail and problem-solving abilities.</li>
+                                            <li>Ability to work independently and as part of a collaborative team.</li>
+                                            <li>A positive attitude and a desire to succeed!</li>
+                                        </ul>
+                                        </p>
+                                        <p wappler-command="editContent"><b>Perks of Working at Raging Wolf Solutions:</b>
+                                        <ul class="custom-list text-white">
+                                            <li><b>Competitive Compensation:</b> Your hard work directly impacts your earnings! The more you hustle, the more you earn.</li>
+                                            <li><b>Work-Life Balance:</b> Flexible schedule to help you enjoy your personal life.</li>
+                                            <li><b>Team Spirit:</b> Join a close-knit, family-oriented team where you’re more than just an employee—you’re family.</li>
+                                            <li><b>Ongoing Training:</b> Access to resources and support to help you grow and succeed in your role.</li>
+                                            <li><b>Career Growth:</b> As a rapidly growing company, there’s unlimited potential for advancement.</li>
+                                        </ul>
+                                        </p>
+                                        <p><b>Ready to Join the Pack?</b> If you're looking for an opportunity to earn, grow, and work with a team that values your success, Raging Wolf Solutions is the place for you. Apply today and take the first step toward a rewarding career! Raging Wolf Solutions is an equal-opportunity employer. We encourage applicants from all backgrounds to apply!</p>
+
+                                        <button id="apply_now5" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://www.indeed.com/jobs?q=raging+wolf+solutions&l=&from=searchOnDesktopSerp&vjk=8fac4ddafd4e9010')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-end">
+                                    <button id="apply_now6" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://www.indeed.com/jobs?q=raging+wolf+solutions&l=&from=searchOnDesktopSerp&vjk=8fac4ddafd4e9010')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
                                 <div class="col-lg-10 mb-2">
 
@@ -82,7 +149,10 @@ document.head.appendChild(o)}initApollo();
                                     <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; In-person</button>
-                                    <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue('representative_inside_sales')"><i class="fas fa-info-circle"></i>&nbsp; Position Information</button>
+                                    <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue(job_description.value == 'representative_inside_sales' ? '' : 'representative_inside_sales')">
+                                        <i class="fas fa-info-circle"></i>&nbsp;
+                                        <span dmx-text="job_description.value == 'representative_inside_sales' ? 'Hide Position Information' : 'Position Information'"></span>
+                                    </button>
                                     <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='representative_inside_sales')">
                                         <h5>▶ Position Information</h5>
                                         <p class="mb-2">Are you hungry? The PACK at Raging Wolf Solutions is looking for an outgoing, charismatic individual to join our sales team. If accepted, you will be responsible for investigating strong potential leads, setting up meetings, and working with sales to bring our premium freight transportation to new customers. Applications will be reviewed and prioritized based on…
@@ -116,7 +186,7 @@ document.head.appendChild(o)}initApollo();
                                     <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
-                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4 visually-hidden">
                                 <div class="col-lg-10 mb-2">
                                     <h4 class="text-light" wappler-command="editContent">Contractor, Regional Sales</h4>
                                     <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
@@ -127,7 +197,7 @@ document.head.appendChild(o)}initApollo();
                                     <button id="apply_now2" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3007/TLPZ7SME0J1UKEEPGY')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
-                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4 visually-hidden">
                                 <div class="col-lg-10 mb-2">
                                     <h4 class="text-light" wappler-command="editContent">Representative, Regional Sales</h4>
                                     <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
@@ -143,7 +213,7 @@ document.head.appendChild(o)}initApollo();
                     </div>
                     <div id="conditional_operations" is="dmx-if" dmx-bind:condition="((visible_career.value == 'career_operations')||(visible_career.value == 'career_all'))">
                         <section id="career_operations">
-                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
+                            <div class="row border-1 border-secondary border-bottom pt-4 pb-4 visually-hidden">
                                 <div class="col-lg-10 mb-2">
                                     <h4 class="text-light" wappler-command="editContent">Coordinator, Freight Transportation Logistics</h4>
                                     <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation professional to join our team.</h5>

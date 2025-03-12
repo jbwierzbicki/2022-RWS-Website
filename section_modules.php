@@ -147,6 +147,41 @@
                 </div>
             </section>
 
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
+                        <div class="row justify-content-center">
+                            <div class="pl-1 pr-1 col-12 col-md-9 text-light">
+
+                                <h4 class="text-light text-left mt-2 mb-3 text-center">The Pack is Hungry, Are You?</h4>
+                                <p class="lh-base fw-normal mb-3 text-light text-center">If you're driven, hungry for success, and looking for a place where you can thrive—this is your opportunity! The PACK at Raging Wolf Solutions is looking for a driven sales person for the transportation industry to help us capture new markets in your area! Raging Wolf Solutions is expanding into new markets and areas are wide open! You will be the only sales representative in your area and any growth you help us achieve will be rewarded accordingly. Applications will be reviewed and prioritized based on…</p>
+                                <ul>
+                                    <li>Experience in or around the transportation industry including education around sales and marketing.</li>
+                                    <li>A background in sales with an active book of business.</li>
+                                    <li>History of strong service and communication</li>
+                                    <li>Willingness to do outside sales within one hour of residence</li>
+                                    <li>0-3 years experience</li>
+                                </ul>
+                                <p class="lh-base fw-normal mb-3 text-light text-center">
+                                    If you're looking for an opportunity to earn, grow, and work with a team that values your success, Raging Wolf Solutions is the place for you. Apply today and take the first step toward a rewarding career!
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row justify-content-center mt-2 mb-1">
+                            <div class="text-center">
+                                <button id="apply_now6" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://www.indeed.com/jobs?q=raging+wolf+solutions&l=&from=searchOnDesktopSerp&vjk=8fac4ddafd4e9010')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
 
             <div class="col-md-12">
                 <div class="row h-100">

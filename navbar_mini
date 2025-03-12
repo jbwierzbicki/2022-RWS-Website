@@ -16,11 +16,14 @@
 
             </div>
             <div class="col-auto">
-                <div class="d-flex"><a href="tel:855-965-3725" target="_blank" class="text-decoration-none me-4 rws-nav-item">
+                <div class="d-flex">
+                    <div class="text-decoration-none me-4 rws-nav-item">
                         <small class="text-light mt-1 mb-1 text-end fw-bold"><i class="fas fa-phone"></i><span style="font-family: var(--bs-font-sans-serif); font-size: 1rem;">&nbsp; (855) 965 - 3725</span></small>
-                    </a><a href="careers.php" class="text-decoration-none rws-nav-item">
-                        <small class="text-light mt-1 mb-1 text-end fw-bold rws-nav-item"><i class="fas fa-address-card"></i><span style="font-family: var(--bs-font-sans-serif); font-size: 1rem;">&nbsp; Job Openings</span></small>
-                    </a></div>
+                    </div>
+                    <a href="careers.php" class="text-decoration-none rws-nav-item">
+                        <small class="text-light mt-1 mb-1 text-end fw-bold rws-nav-item"><i class="fas fa-address-card"></i><span style="font-family: var(--bs-font-sans-serif); font-size: 1rem;"><span class="text-warning fw-bold">&nbsp; Now Hiring!</span></small>
+                    </a>
+                </div>
 
             </div>
         </div>
