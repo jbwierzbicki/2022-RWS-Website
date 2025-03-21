@@ -192,7 +192,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                 <div class="navbar-nav align-items-stretch text-center">
-                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php">Home</a>
+                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="https://ragingwolfsolutions.com/index.php">Home</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="https://ragingwolfsolutions.com/blog">News</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
 
@@ -201,15 +201,15 @@
 
                     <a class="nav-item nav-link rws-nav-item" href="#" data-bs-toggle="modal" data-bs-target="#services_modal" dmx-on:click="services_modal.show()">Services</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
-                    <a class="nav-item nav-link rws-nav-item" href="tracking.php">Track</a>
+                    <a class="nav-item nav-link rws-nav-item" href="https://ragingwolfsolutions.com/tracking.php">Track</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
-                    <a class="nav-item nav-link rws-nav-item" href="rwscarriers.php">Carriers</a>
+                    <a class="nav-item nav-link rws-nav-item" href="https://ragingwolfsolutions.com/rwscarriers.php">Carriers</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>
                     <!-- REMOVE HIDDEN/disabled WHEN READY TO PUBLISH -->
                     <a class="nav-item nav-link rws-nav-item disabled visually-hidden" href="testimonials.php">Testimonials</a>
                     <a class="nav-item nav-separator ms-2 me-2 visually-hidden"></a>
 
-                    <a class="nav-item nav-link rws-nav-item" href="contact.php">Contact</a>
+                    <a class="nav-item nav-link rws-nav-item" href="https://ragingwolfsolutions.com/contact.php">Contact</a>
 
                     <a class="nav-item nav-separator ms-2"></a><a class="justify-content-center nav-item nav-link bg-warning new_quote fw-bolder ps-4 pe-4 rws-nav-item" href="#" data-bs-toggle="modal" data-bs-target="#quote_modal">Quote Me</a>
                 </div>
