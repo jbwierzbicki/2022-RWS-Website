@@ -276,6 +276,8 @@
                                     </label>
                                     <textarea id="message" class="form-control" rows="4" name="message" required=""></textarea>
                                 </div>
+                                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                                <input type="hidden" name="g-recaptcha-version" value="v3">
                                 <div class="col-md-9"><button id="Send_Your_Message" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-normal" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
                             </div>
                         </form>

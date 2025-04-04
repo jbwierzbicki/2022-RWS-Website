@@ -330,6 +330,23 @@ document.getElementById('cookNo').addEventListener('click', function() {
 
     </script>
 
+    <!-- Google reCaptcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4"></script>
+    <script>
+        var myForm = document.getElementById('form1')
+        myForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        grecaptcha.ready(function() {
+        g   recaptcha.execute('6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4', {action: 'submit'}).then(function(token) {
+                document.getElementById('g-recaptcha-response').value = token;
+                myForm.submit();
+            });
+        });
+    });
+    </script>
+    <!-- End Google reCaptcha v3 -->
+
 
 </body>
 
