@@ -279,7 +279,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 align-self-end pb-1">
-                                        <button id="btn5" class="btn module-cta-btn btn-warning w-100 btn-sm lh-lg text-truncate mt-2 mb-2 ps-1 pe-1" wappler-command="editContent" data-bs-toggle="modal" data-bs-target="#quote_modal" dmx-on:click="quote_modal.quote_form.input5.setValue(input1.value);quote_modal.quote_form.input6.setValue(input2.value);quote_modal.quote_form.input7.setValue(input3.value);quote_modal.quote_form.input8.setValue(input4.value)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                        <button id="btn5" class="btn module-cta-btn btn-warning w-100 btn-sm lh-lg text-truncate mt-2 mb-2 ps-1 pe-1" wappler-command="editContent" data-bs-toggle="modal" data-bs-target="#quote_modal" dmx-on:click="quote_modal.quote_form.puzip.setValue(shipper.value);quote_modal.quote_form.delzip.setValue(destination.value);quote_modal.quote_form.details.setValue(dims.value);quote_modal.quote_form.remarks.setValue(notes.value)">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
                                     </div>
                                 </div>
 
