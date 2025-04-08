@@ -303,7 +303,7 @@
             </div>
             <!-- <button id="cookNo" style="margin: 10px 0px 10px 20px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;">Decline</button> -->
 
-            <button id="cookYes" style="margin: 15px 85px 10px 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;" dmx-on:click="cookieBanVis.setValue(false)">Close</button>
+            <button id="cookYes" style="margin: 15px 90px 10px 10px; background-color: #FFC107; color: #fff; color: #000; font-weight: bold; border-radius: 5px;" dmx-on:click="cookieBanVis.setValue(false)">Close</button>
         </div>
 
 
