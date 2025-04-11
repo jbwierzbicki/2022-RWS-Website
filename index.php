@@ -154,14 +154,14 @@
                                                 <div class="border col-12 align-self-center bg-dark rounded rounded-3 border-secondary border-2 mb-3 pt-3 pb-3 ps-3 pe-3">
                                                     <div class="row ps-2 pe-2">
                                                         <div class="col-lg-6 align-self-center">
-                                                            <h5 class="lh-sm text-white text-truncate">How Brokers Thrive Amid Trucking Woes</h5>
-                                                            <p class="text-light mb-0 small">How the freight recession and the rise of customer expectations have reshaped the trucking industry.
+                                                            <h5 class="lh-sm text-white text-truncate">The Rising Demand for Expedited Shipping in 2025</h5>
+                                                            <p class="text-light mb-0 small">The rise of e-commerce, just-in-time manufacturing, and increasing consumer expectations have made expedited freight a necessity rather than a luxury.
                                                             </p>
                                                             <a href="https://www.ragingwolfsolutions.com/blog/"><button id="Read_Blog" class="btn text-warning module-cta-btn text-start mt-1 pt-2 pb-2 ps-0 pe-0 small btn-sm">Read More&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></a>
                                                         </div>
                                                         <div class="col-lg-6 align-self-center pt-1 pb-1 image-container">
                                                             <a href="https://www.ragingwolfsolutions.com/blog/">
-                                                                <img src="assets/images/Frame_10.webp" class="img-fluid">
+                                                                <img src="assets/images/Blog%20Images%20for%20Index.php/March%202025%20Post%20Image.jpg" class="img-fluid">
                                                                 <div class="overlay">
                                                                     <button class="btn blog-btn btn-lg fw-bold text-white bg-opacity-100 pt-3 pb-3 ps-4 pe-4">Read <i class="fas fa-play-circle"></i></button>
                                                                 </div>
