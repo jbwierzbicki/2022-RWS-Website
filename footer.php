@@ -6,15 +6,20 @@
             <div class="col-12 col-sm-6 col-md-6 univ--footer--container--row--col">
                 <h6 class="text-white mb-2 pb-1 ps-3 pe-3">Raging Wolf Solutions</h6>
 
-                <p class="text-justify mb-4 ps-3 pe-3" id="about">Freight transportation and logistics coordination done right. We deal with air/ground expedites, full truckloads, partials, cargo vans, sprinter vans and straight trucks all across the country. Here, you can view the full list of our services, request a quote, or track a shipment!</p><img src="assets/images/Twinsburg_CC_Logo.webp" dmx-on:click="browser1.goto('https://business.twinsburgchamber.com/list/member/raging-wolf-solutions-1022')" class="ms-3 img-fluid" loading="lazy">
+                <p class="text-justify mb-4 ps-3 pe-3" id="about">Freight transportation and logistics coordination done right. We deal with air/ground expedites, full truckloads, partials, cargo vans, sprinter vans and straight trucks all across the country. Here, you can view the full list of our services, request a quote, or track a shipment!</p><img src="/assets/images/Twinsburg_CC_Logo.webp" dmx-on:click="browser1.goto('https://business.twinsburgchamber.com/list/member/raging-wolf-solutions-1022')" class="ms-3 img-fluid" loading="lazy" alt="Chamber Logo">
 
 
 
 
             </div>
-            <div class="col-12 col-sm-6 col-md-3 univ--footer--container--row--col2">
+            <!-- Second Column (Services - Using Absolute Position for Social) -->
+            <div class="col-12 col-sm-6 col-md-3 univ--footer--container--row--col2 position-relative pb-5">
+                <!-- Added position-relative and pb-5 -->
+
+                <!-- Service links - No changes needed here -->
                 <h6 class="text-white mb-2 pb-1 ps-3 pe-3">Services</h6>
                 <ul class="list-group mb-3 pb-1">
+                    <!-- You might add mb-5 here instead of pb-5 on parent if preferred -->
                     <a is="dmx-link" href="https://ragingwolfsolutions.com/services-air.php">
                         <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Expedited Air</li>
                     </a>
@@ -28,12 +33,28 @@
                         <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Specialized Services</li>
                     </a>
                 </ul>
-            </div>
+                <!-- End Service links -->
+
+                <!-- social media - Modified positioning classes -->
+                <div class="social-media-links position-absolute bottom-0 start-0 end-0 mb-3 ms-4">
+                    <!-- Added position-absolute bottom-0 start-0 end-0. Kept mb-3 for now, adjust if needed -->
+                    <a href="https://www.facebook.com/RagingWolfSolutions" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" class="text-light me-4">
+                        <i class="fab fa-facebook-f fa-fw fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/ragingwolfsolutions/posts/?feedView=all&amp;viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" class="text-light ms-1 me-5">
+                        <i class="fab fa-linkedin-in fa-fw fa-2x"></i>
+                    </a>
+                    <!-- Add other social icons here -->
+                </div>
+            </div> <!-- End Second Column -->
             <div class="col-12 col-sm-6 col-md-3 univ--footer--container--row--col3">
                 <h6 class="text-white mb-2 pb-1 ps-3 pe-3">Quick Links</h6>
                 <ul class="list-group mb-3 pb-1">
                     <a is="dmx-link" href="https://ragingwolfsolutions.com/index.php">
-                        <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Home</li>
+                        <li class="list-group-item univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0 bg-transparent">Home</li>
+                    </a>
+                    <a is="dmx-link" href="https://ragingwolfsolutions.com/about.php">
+                        <li class="list-group-item univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0 bg-transparent">About Us</li>
                     </a>
                     <a is="dmx-link" href="https://ragingwolfsolutions.com/tracking.php">
                         <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Track a Shipment</li>
