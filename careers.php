@@ -40,6 +40,66 @@ document.head.appendChild(o)}initApollo();
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <div class="modal" id="rep_inside_sales" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
+                    <h5 class="modal-title">Apply Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark pt-2 pb-2 ps-4 pe-4">
+                    <iframe class="basinIframe" src="https://usebasin.com/form/8809a9fb4b8b/view/ee968154e243?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden; width: 100%; height: 650px; background-color: #212529;" onload="this.contentWindow.postMessage('getHeight', '*');">
+                    </iframe>
+                </div>
+                <div class="modal-footer bg-dark pt-2 pb-2 ps-4 pe-4 border-top-0"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="con_regional_sales" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
+                    <h5 class="modal-title">Apply Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark pt-2 pb-2 ps-4 pe-4">
+                    <iframe class="basinIframe" src="https://usebasin.com/form/cb313f48c7f7/view/01c6d1371162?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden; width: 100%; height: 650px; background-color: #212529;" onload="this.contentWindow.postMessage('getHeight', '*');">
+                    </iframe>
+                </div>
+                <div class="modal-footer bg-dark pt-2 pb-2 ps-4 pe-4 border-top-0"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="rep_regional_sales" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
+                    <h5 class="modal-title">Apply Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark pt-2 pb-2 ps-4 pe-4">
+                    <iframe class="basinIframe" src="https://usebasin.com/form/8515a91a298f/view/65de78aeab45?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden; width: 100%; height: 650px; background-color: #212529;" onload="this.contentWindow.postMessage('getHeight', '*');">
+                    </iframe>
+                </div>
+                <div class="modal-footer bg-dark pt-2 pb-2 ps-4 pe-4 border-top-0"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="coord_ftl" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
+                    <h5 class="modal-title">Apply Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark pt-2 pb-2 ps-4 pe-4">
+                    <iframe class="basinIframe" src="https://usebasin.com/form/d96566ccdd7a/view/ffedd7286f56?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden; width: 100%; height: 650px; background-color: #212529;" onload="this.contentWindow.postMessage('getHeight', '*');">
+                    </iframe>
+                </div>
+                <div class="modal-footer bg-dark pt-2 pb-2 ps-4 pe-4 border-top-0"></div>
+            </div>
+        </div>
+    </div>
     <dmx-value id="job_description"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
     <dmx-value id="visible_career" dmx-bind:value="'career_all'"></dmx-value>
@@ -179,11 +239,11 @@ document.head.appendChild(o)}initApollo();
                                         <p wappler-command="editContent">---GUIDANCE AND SUPPORT---
                                         </p>
                                         <p wappler-command="editContent">Our operations are based out of Twinsburg OH, and the Raging Wolf team is equipped with the tools and resources you need to succeed. Our digital marketing and promotional team can help you seek out and target leads in markets all across the country. Our Sales team will help you with strategy and your transition into selling with Raging Wolf. We've got your back!</p>
-                                        <button id="apply_now3" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        <button id="apply_now3" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="rep_inside_sales.show()">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="rep_inside_sales.show()" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4 visually-hidden">
@@ -194,7 +254,7 @@ document.head.appendChild(o)}initApollo();
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Potentially remote</button>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now2" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3007/TLPZ7SME0J1UKEEPGY')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now2" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="con_regional_sales.show()">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4 visually-hidden">
@@ -205,7 +265,7 @@ document.head.appendChild(o)}initApollo();
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Potentially remote</button>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now1" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3025/I9CWSALTTG6SFD134I')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now1" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="rep_regional_sales.show()">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
 
@@ -222,7 +282,7 @@ document.head.appendChild(o)}initApollo();
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-user"></i>&nbsp; In-person</button>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now" class="btn btn-link text-decoration-none text-warning btn-lg pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-2985/ECVWLNNEJSLZ433JM4')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now" class="btn btn-link text-decoration-none text-warning btn-lg pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="coord_ftl.show()">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                         </section>
@@ -237,6 +297,41 @@ document.head.appendChild(o)}initApollo();
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- === GLOBAL USEBASIN IFRAME LISTENER (PLACE ONCE BEFORE </body>) === -->
+    <script type="text/javascript">
+        window.addEventListener('message', function(event) {
+        // Always check the origin for security!
+        if (event.origin === 'https://usebasin.com') {
+
+            // --- Handle Redirects ---
+            if (event.data.action === 'redirect' && event.data.url) {
+                console.log('Redirect message received from Basin:', event.data.url);
+                window.location.href = event.data.url;
+                return; // Stop processing after redirect
+            }
+
+            // --- Handle Height Adjustment ---
+            if (event.data.action === 'setHeight' && event.data.height) {
+                // Find the iframe within the *currently visible* modal
+                // Bootstrap adds the 'show' class to the visible modal
+                const visibleModal = document.querySelector('.modal.show');
+                if (visibleModal) {
+                     const iframe = visibleModal.querySelector('.basinIframe');
+                     if (iframe) {
+                        // Parse height and add a small buffer (optional, helps prevent scrollbars)
+                        const newHeight = parseInt(event.data.height) + 15; // Adjust buffer if needed
+                        iframe.style.height = newHeight + 'px';
+                        // console.log('Resized iframe in modal:', visibleModal.id, 'to', newHeight + 'px');
+                     }
+                }
+                 // else { console.warn('Received height message but no modal is visible.'); }
+            }
+        }
+        // else { console.log('Message received from other origin:', event.origin); }
+    });
+    </script>
+    <!-- === END GLOBAL USEBASIN IFRAME LISTENER === -->
 </body>
 
 </html>
