@@ -84,11 +84,7 @@ document.head.appendChild(o)}initApollo();
                                         <p class="text-white-50 mb-2">Your message to the 'PACK'</p>
                                         <textarea id="message" class="form-control" rows="4" name="message" required=""></textarea>
                                     </div>
-                                    <div class="col-md-9"><button id="btn4" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-bold" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
-
-                                        <p class="text-center text-light mt-5">Or, if you are ready to meet, simply click below.</p><button id="btn5" class="btn module-cta-btn w-100 fw-bold mb-3 btn-outline-warning" href="https://outlook.office365.com/owa/calendar/RagingWolfSolutionsGeneralSales@NETORG5121535.onmicrosoft.com/bookings/" target="_blank">Let's make a date!&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
-
-                                    </div>
+                                    <div class="col-md-9"><button id="btn4" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-bold" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
 
 
                                 </div>
