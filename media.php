@@ -63,19 +63,6 @@ document.head.appendChild(o)}initApollo();
 <body is="dmx-app" id="index" class="bg-dark">
     <div is="dmx-browser" id="browser1"></div>
 
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-body bg-dark">
-                    <img id="imageModalSrc" src="" class="img-fluid rounded mx-auto d-block" alt="...">
-                </div>
-                <div class="modal-footer bg-dark border-top-0 justify-content-center">
-                    <button type="button" class="btn module-cta-btn lh-lg text-truncate btn-outline-warning ps-5 pe-5" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <?php include 'navbar_mini'; ?>
 
     <?php include 'navbar_main'; ?>
