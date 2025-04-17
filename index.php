@@ -293,6 +293,8 @@
     <?php include 'section_modules.php'; ?>
     <?php include 'footer.php'; ?>
 
+    <?php include 'floating_bug_button.php'; ?>
+
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <div id="cookBan" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(33, 37, 41, 0.85); padding: 10px; text-align: center; color: #fff;" class="container mw-100" dmx-hide="cookieBanVis.value==false">
