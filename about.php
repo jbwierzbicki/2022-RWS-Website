@@ -106,7 +106,7 @@ document.head.appendChild(o)}initApollo();
                                 <!-- History Text -->
                                 <div class="text-left text-light" id="history" dmx-show="selectedTab.value == 'history'">
 
-                                    <h4 class="text-warning">""History"" Raging Wolf Solutions</h4>
+                                    <h4 class="text-warning">"History" Raging Wolf Solutions</h4>
                                     <p>
                                         *At Raging Wolf Solutions, we are more than just a 3PL company, we are your trusted freight solutions providers. We understand the complexities of managing a distribution chain for growing businesses, and we're here to simplify your logistics. Our freight brokerage services are designed to free up your time and resources, allowing you to focus on your core business operations.
                                     </p>
