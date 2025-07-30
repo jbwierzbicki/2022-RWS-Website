@@ -1,30 +1,6 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{},dmxBrowser:{},dmxBootstrap5Navigation:{},dmxBootstrap5Modal:{}}" -->
 <div is="dmx-browser" id="browser1"></div>
 <header class="border-top rounded-1 border-secondary rounded-0 pb-0" id="navbar_main">
-    <div class="modal" id="services_modal" is="dmx-bs5-modal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen" role="document">
-            <div class="modal-content">
-
-                <div class="modal-header bg-dark border-0">
-
-                </div>
-                <div class="modal-body bg-dark text-center">
-                    <div class="container">
-                        <h2 class="modal-title text-white w-100 text-center mt-3 mb-3">Our Service Categories Include</h2>
-                        <h4 class="fw-normal mb-3 hover-cursor"><a href="services-air.php" class="text-decoration-none text-warning">Expedited Air</a></h4>
-                        <h4 class="text-warning fw-normal mb-3 hover-cursor"><a href="services-ground.php" class="text-decoration-none text-warning">Expedited Ground</a></h4>
-                        <h4 class="text-warning fw-normal mb-3 hover-cursor"><a href="services-specialized.php" class="text-decoration-none text-warning">Specialized Services</a></h4>
-                        <h4 class="text-warning fw-normal hover-cursor"><a href="services-trucking.php" class="text-decoration-none text-warning">Standard Trucking</a></h4>
-                    </div>
-
-
-
-
-                </div>
-                <div class="modal-footer bg-dark justify-content-center border-top border-1 border-secondary"><button type="button" class="btn btn-lg btn-outline-secondary mt-2 mb-2 ps-5 pe-5" data-bs-dismiss="modal"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</button></div>
-            </div>
-        </div>
-    </div>
     <div class="container-xl header-container ps-3 pe-3">
         <nav class="header-navbar navbar navbar-expand-lg navbar-dark bg-transparent align-items-stretch pt-0 pb-0">
 
@@ -123,7 +99,20 @@
 
 
 
-                    <a class="nav-item nav-link rws-nav-item" href="#" data-bs-toggle="modal" data-bs-target="#services_modal" dmx-on:click="services_modal.show()">Services</a>
+                    <!-- Services Dropdown -->
+                    <div class="nav-item dropdown">
+                        <!-- MODIFIED LINE BELOW -->
+                        <a class="nav-link dropdown-toggle rws-nav-item" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services-air.php">Expedited Air</a></li>
+                            <li><a class="dropdown-item" href="services-ground.php">Expedited Ground</a></li>
+                            <li><a class="dropdown-item" href="services-specialized.php">Specialized Services</a></li>
+                            <li><a class="dropdown-item" href="services-trucking.php">Standard Trucking</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Services Dropdown -->
                     <a class="nav-item nav-separator ms-2 me-2"></a>
                     <a class="nav-item nav-link rws-nav-item" href="https://ragingwolfsolutions.com/tracking.php">Track</a>
                     <a class="nav-item nav-separator ms-2 me-2"></a>

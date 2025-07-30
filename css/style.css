@@ -33,6 +33,75 @@
 
 }
 
+/*
+====================================================
+CUSTOM STYLING FOR THE MAIN NAVIGATION DROPDOWN (v2)
+====================================================
+*/
+
+/* NEW RULE: Force the idle 'Services' link to be white, matching other links. */
+/* The !important is used to override Bootstrap's default dropdown-toggle color. */
+#servicesDropdown {
+    color: white !important;
+}
+
+/* 1. Remove the default dropdown arrow (caret) */
+#servicesDropdown::after {
+    display: none;
+}
+
+/* 2. Add a subtle background shade ONLY when the menu is open/hovered */
+.dropdown.show > .dropdown-toggle,
+.dropdown:hover > .dropdown-toggle {
+    background-color: rgba(255, 255, 255, 0.1); /* No !important needed here now */
+    border-radius: 0.25rem;
+}
+
+/* 3. Style the main dropdown container with a "glass" effect */
+/* MODIFIED: Removed margin-top, as data-bs-display="static" handles positioning. */
+/* The menu will now correctly align to the left edge of the "Services" button. */
+#servicesDropdown + .dropdown-menu {
+    /* Positioning and shape */
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Set a minimum width for better appearance */
+    min-width: 100%; 
+
+    /* The "Glassmorphism" Effect */
+    background-color: rgba(10, 10, 10, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* 4. Style the links inside the dropdown */
+#servicesDropdown + .dropdown-menu .dropdown-item {
+    color: #ffc107;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* 5. Style the link's hover/focus state */
+#servicesDropdown + .dropdown-menu .dropdown-item:hover,
+#servicesDropdown + .dropdown-menu .dropdown-item:focus {
+    color: #ffc107;
+    background-color: rgba(255, 193, 7, 0.2);
+}
+
+/* 6. Trigger dropdown on hover for desktop */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+/*
+========================================================
+END CUSTOM STYLING FOR THE MAIN NAVIGATION DROPDOWN (v2)
+========================================================
+*/
 
 header {
     background-image: url("../assets/images/navbar-stone-bg.png");
@@ -236,7 +305,7 @@ h4 {
 
 
 .watermark {
-    
+
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -490,5 +559,6 @@ a {
 }
 
 .growing-text {
-  font-size: 1.5em; /* Adjust this value to control the size difference */
+    font-size: 1.5em;
+    /* Adjust this value to control the size difference */
 }
