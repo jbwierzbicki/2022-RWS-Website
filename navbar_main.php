@@ -1,5 +1,7 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxValidator:{},dmxBrowser:{},dmxBootstrap5Navigation:{},dmxBootstrap5Modal:{}}" -->
 <div is="dmx-browser" id="browser1"></div>
+<!-- Wappler Variable to control the Services dropdown state -->
+<dmx-value id="var_services_menu" dmx-bind:value="0"></dmx-value>
 <header class="border-top rounded-1 border-secondary rounded-0 pb-0" id="navbar_main">
     <div class="container-xl header-container ps-3 pe-3">
         <nav class="header-navbar navbar navbar-expand-lg navbar-dark bg-transparent align-items-stretch pt-0 pb-0">
@@ -99,16 +101,26 @@
 
 
 
-                    <!-- Services Dropdown -->
-                    <div class="nav-item dropdown">
-                        <!-- MODIFIED LINE BELOW -->
-                        <a class="nav-link dropdown-toggle rws-nav-item" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                    <!-- Services Dropdown (v5 - State Management Driven) -->
+                    <div class="nav-item dropdown" dmx-class:show="var_services_menu.value == 1" dmx-on:mouseenter.debounce:250="var_services_menu.setValue(1)" dmx-on:mouseleave.debounce:400="var_services_menu.setValue(0)">
+
+                        <a class="nav-link dropdown-toggle rws-nav-item" href="#" id="servicesDropdownToggle" role="button" dmx-bind:aria-expanded="var_services_menu.value == 1" dmx-on:click.prevent="var_services_menu.setValue(!var_services_menu.value)">
                             Services
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+
+                        <ul class="dropdown-menu" dmx-class:show="var_services_menu.value == 1" aria-labelledby="servicesDropdownToggle">
                             <li><a class="dropdown-item" href="services-air.php">Expedited Air</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="services-ground.php">Expedited Ground</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="services-specialized.php">Specialized Services</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="services-trucking.php">Standard Trucking</a></li>
                         </ul>
                     </div>

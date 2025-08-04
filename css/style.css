@@ -34,69 +34,94 @@
 }
 
 /*
-====================================================
-CUSTOM STYLING FOR THE MAIN NAVIGATION DROPDOWN (v2)
-====================================================
+=================================================
+CUSTOM STYLING FOR THE MAIN NAVIGATION DROPDOWN (v11 - Final Polish)
+=================================================
 */
 
-/* NEW RULE: Force the idle 'Services' link to be white, matching other links. */
-/* The !important is used to override Bootstrap's default dropdown-toggle color. */
-#servicesDropdown {
+/* IDLE COLOR FIX: Force the 'Services' link to be white. */
+#servicesDropdownToggle {
     color: white !important;
 }
 
-/* 1. Remove the default dropdown arrow (caret) */
-#servicesDropdown::after {
+/* NO CARET: Remove the default dropdown arrow. */
+#servicesDropdownToggle::after {
     display: none;
 }
 
-/* 2. Add a subtle background shade ONLY when the menu is open/hovered */
-.dropdown.show > .dropdown-toggle,
-.dropdown:hover > .dropdown-toggle {
-    background-color: rgba(255, 255, 255, 0.1); /* No !important needed here now */
-    border-radius: 0.25rem;
+/* POSITIONING ANCHOR: Makes the .dropdown container the point of reference. */
+.navbar-nav .dropdown {
+    position: relative;
 }
 
-/* 3. Style the main dropdown container with a "glass" effect */
-/* MODIFIED: Removed margin-top, as data-bs-display="static" handles positioning. */
-/* The menu will now correctly align to the left edge of the "Services" button. */
-#servicesDropdown + .dropdown-menu {
-    /* Positioning and shape */
-    border-radius: 0.5rem;
+/* --- REFINED BLOCK for Glossy Menu Background --- */
+#servicesDropdownToggle+.dropdown-menu {
+    top: 100%;
+    left: -8px;
+    border-radius: 0rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Set a minimum width for better appearance */
-    min-width: 100%; 
+    border: none;
+    min-width: 100%;
 
-    /* The "Glassmorphism" Effect */
-    background-color: rgba(10, 10, 10, 0.65);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* Enhanced background with a more focused "glossy sheen" */
+    background:
+        /* Layer 1: The gloss, now positioned at the top-right and brighter */
+        radial-gradient(ellipse at 100% 0%, rgba(255, 255, 255, 0.35) 0%, transparent 50%),
+        /* Layer 2: The darker, semi-transparent base color */
+        rgba(28, 31, 34, 0.90);
 }
 
-/* 4. Style the links inside the dropdown */
-#servicesDropdown + .dropdown-menu .dropdown-item {
-    color: #ffc107;
-    font-weight: 500;
+/* LINK STYLES: Cleaned up for modern browsers. */
+#servicesDropdownToggle+.dropdown-menu .dropdown-item {
+    color: #ffc107 !important;
     padding: 0.5rem 1.5rem;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background-image: linear-gradient(transparent, transparent);  /* prevents hover "jump" */
 }
 
-/* 5. Style the link's hover/focus state */
-#servicesDropdown + .dropdown-menu .dropdown-item:hover,
-#servicesDropdown + .dropdown-menu .dropdown-item:focus {
-    color: #ffc107;
-    background-color: rgba(255, 193, 7, 0.2);
+/* --- REFINED BLOCK for Sharp, Glossy Hover Effect --- */
+#servicesDropdownToggle+.dropdown-menu .dropdown-item:hover,
+#servicesDropdownToggle+.dropdown-menu .dropdown-item:focus {
+    color: #000 !important;
+
+    /* The new 3-stop gradient for a sharp, glossy highlight */
+    background-image: -webkit-gradient(linear,
+            left bottom, right top,
+            from(#B8860B), color-stop(#FFEEA0,
+                /* Start with the dark gold base */
+            ), color-stop(#ffc107,
+                /* A sharp, bright "glossy" band of light yellow */
+            ));
+    background: -webkit-gradient(linear,
+            left bottom, right top,
+            color-stop(5%, #8B4513),
+            color-stop(#B8860B, /* 1. The shadow, now correctly at the bottom-left */),
+            color-stop(#ffc107, /* 2. The mid-tone */),
+            color-stop(#FFFACD, /* 3. The main lit surface */)
+        );
+    background: linear-gradient(to top right,
+            #8B4513 5%,
+            /* 1. The shadow, now correctly at the bottom-left */
+            #B8860B 35%,
+            /* 2. The mid-tone */
+            #ffc107 70%,
+            /* 3. The main lit surface */
+            #FFFACD 95%
+            /* 4. The highlight, now correctly at the top-right */
+        );
 }
 
-/* 6. Trigger dropdown on hover for desktop */
-@media (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
+/* DIVIDER STYLING: Adjusted to look good on the new background. */
+#servicesDropdownToggle+.dropdown-menu .dropdown-divider {
+    height: 0;
+    margin: 0.25rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0;
 }
+
 /*
 ========================================================
 END CUSTOM STYLING FOR THE MAIN NAVIGATION DROPDOWN (v2)
