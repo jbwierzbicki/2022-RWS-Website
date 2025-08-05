@@ -52,9 +52,9 @@
                         <p class="text-white-50 text-start">
                             NO PURCHASE OR PAYMENT NECESSARY TO ENTER OR WIN. A PURCHASE OR PAYMENT WILL NOT INCREASE YOUR CHANCES OF WINNING.
                             <br><br>
-                            Eligibility: The Raging Wolf Solutions Football Pool 2024 (the "Promotion") is open only to individuals who are 21 years of age or older at the time of entry and who meet other eligibility requirements set forth in these Official Rules. The Promotion is void where prohibited or restricted by law.
+                            Eligibility: The Raging Wolf Solutions Football Pool 2025 (the "Promotion") is open only to individuals who are 21 years of age or older at the time of entry and who meet other eligibility requirements set forth in these Official Rules. The Promotion is void where prohibited or restricted by law.
                             <br><br>
-                            Promotion Period: The Promotion begins at 12 AM Eastern Standard Time on July 17, 2024, and ends at 12 AM Eastern Standard Time on February 10, 2024 (the "Promotion Period").
+                            Promotion Period: The Promotion begins at 12 AM Eastern Standard Time on July 31, 2025, and ends at 12 AM Eastern Standard Time on February 10, 2026 (the "Promotion Period").
                             <br><br>
                             How to Enter: Follow the instructions provided in the email you receive. Limit one entry per person, per email address, during the Promotion Period.
                             <br><br>
