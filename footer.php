@@ -27,6 +27,9 @@
                         <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Expedited Ground</li>
                     </a>
                     <a is="dmx-link" href="https://ragingwolfsolutions.com/services-trucking.php">
+                        <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Flatbed</li>
+                    </a>
+                    <a is="dmx-link" href="https://ragingwolfsolutions.com/services-trucking.php">
                         <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Standard Trucking</li>
                     </a>
                     <a is="dmx-link" href="https://ragingwolfsolutions.com/services-specialized.php">
