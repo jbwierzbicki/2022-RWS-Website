@@ -5,9 +5,6 @@
     <meta name="description" content="Join the pack at Raging Wolf Solutions for all your freight coordination and transportation needs across the United States and Canada. Trust our team of highly skilled logistics professionals to deliver unparalleled communication and service from pickup to delivery.">
 
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
-
-    <link rel="stylesheet" href="dmxAppConnect/dmxSwiper/swiper.min.css">
-
     <meta charset="UTF-8">
     <title>Freight Logistics: Expedites, FTL, LTL and more | Raging Wolf Solutions</title>
 
@@ -67,8 +64,6 @@
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990687025454946&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <script src="dmxAppConnect/dmxSwiper/dmxSwiper.js" defer></script>
-    <script src="dmxAppConnect/dmxSwiper/swiper.min.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">

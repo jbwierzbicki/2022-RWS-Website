@@ -191,62 +191,23 @@
                             <div class="row justify-content-center g-0 gx-4">
                                 <div class="col-lg-5">
 
-                                    <!-- NEW SWIPER COMPONENT -->
-                                    <div is="dmx-swiper" id="promoSwiper" class="h-100" space-between="2" autoplay="true" loop="true">
-                                        <div class="swiper-wrapper">
-                                            <!-- Manually define each slide for full control -->
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/coaster.webp" alt="Coaster">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/coozie.webp" alt="Coozie">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/die-cast-1.webp" alt="Die Cast 1">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/diecast-2.webp" alt="Die Cast 2">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/hitch.webp" alt="Hitch">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/mousepad1.webp" alt="Mousepad 1">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/mousepad2.webp" alt="Mousepad 2">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/mug-lft-1.webp" alt="Mug Left 1">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/mug-lft-2.webp" alt="Mug Left 2">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/mug-rt-1.webp" alt="Mug Right 1">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/mug-rt-2.webp" alt="Mug Right 2">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/pamphlet.webp" alt="Pamphlet">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/pen.webp" alt="Pen">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/phone-stand.webp" alt="Phone Stand">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/pocket-knife.webp" alt="Pocket Knife">
-                                            </div>
-
-                                            <!-- THIS IS THE TUMBLERS SLIDE - Notice we control the content directly -->
-                                            <div class="swiper-slide">
-                                                <img src="assets/images/slideshow_live/tumblers.webp" alt="Tumblers">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/coaster.webp" thumb="assets/images/slideshow_live/thumbs/coaster.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/coozie.webp" thumb="assets/images/slideshow_live/thumbs/coozie.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/die-cast-1.webp" thumb="assets/images/slideshow_live/thumbs/die-cast-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/diecast-2.webp" thumb="assets/images/slideshow_live/thumbs/diecast-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/hitch.webp" thumb="assets/images/slideshow_live/thumbs/hitch.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad1.webp" thumb="assets/images/slideshow_live/thumbs/mousepad1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad2.webp" thumb="assets/images/slideshow_live/thumbs/mousepad2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-lft-1.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-lft-2.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-rt-1.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-rt-2.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pamphlet.webp" thumb="assets/images/slideshow_live/thumbs/pamphlet.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pen.webp" thumb="assets/images/slideshow_live/thumbs/pen.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/phone-stand.webp" thumb="assets/images/slideshow_live/thumbs/phone-stand.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pocket-knife.webp"></dmx-slide>
+                                    </dmx-slideshow>
                                 </div>
 
                                 <div class="col-lg-6 align-self-center pt-2 pb-2">

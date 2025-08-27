@@ -543,42 +543,22 @@ a {
     min-height: 58px;
 }
 
-/* --- SWIPER COMPONENT STYLING --- */
-
-/* 1. Set a stable height for the entire Swiper container */
-#promoSwiper {
+#slideshowParentGridView {
+    max-height: 310px;
     min-height: 310px;
-}
-
-/* 2. Style every slide to center its content */
-#promoSwiper .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-/* 3. Style every image to fit properly without distortion */
-#promoSwiper .swiper-slide img {
+#slideshow1 img {
     max-width: 100%;
-    max-height: 100%;
-    width: auto;
     height: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-}
-
-/* 4. (Optional but Recommended) Explicitly hide any navigation/pagination elements
-   in case the framework still renders them in the DOM. */
-#promoSwiper .swiper-button-prev,
-#promoSwiper .swiper-button-next,
-#promoSwiper .swiper-pagination {
-    display: none !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* or contain, depending on desired fit */
+    -o-object-position: center;
+    object-position: center;
 }
 
 
