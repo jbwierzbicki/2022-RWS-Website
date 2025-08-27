@@ -1,4 +1,4 @@
-<!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" -->
+<!-- Wappler include head-page="index.php" appConnect="local" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" -->
 <footer class="univ--footer module-card">
     <div class="container wappler-block univ--footer--container">
         <div class="row univ--footer--container--row watermark">
