@@ -332,22 +332,22 @@ document.getElementById('cookNo').addEventListener('click', function() {
 
     </script>
 
-    <!-- Google reCaptcha v3 -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4"></script>
+    <!-- START: Final Google reCaptcha v3 Script -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
     <script>
-        var myForm = document.getElementById('form1')
-        myForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        grecaptcha.ready(function() {
-        g   recaptcha.execute('6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4', {action: 'submit'}).then(function(token) {
-                document.getElementById('g-recaptcha-response').value = token;
-                myForm.submit();
-            });
+        function getRecaptchaAndSubmit() {
+    grecaptcha.ready(function() {
+        // Replace with your NEW Site Key
+        grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
+            // This line finds the hidden input in your Wappler quote form
+            document.getElementById('recaptchaToken').value = token;
+            // This line submits the Wappler form by its ID
+            quote_form.submit();
         });
     });
+}
     </script>
-    <!-- End Google reCaptcha v3 -->
+    <!-- END: Final Google reCaptcha v3 Script -->
 
 
 </body>
