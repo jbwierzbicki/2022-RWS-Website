@@ -84,7 +84,7 @@
                                     <div class="col-12 text-white">
                                         <div class="form-group md-3 mt-0 mb-4 text-white"> <label for="input1" class="form-label col-form-label-sm mb-0" wappler-command="editContent">Is Direct Delivery Required?</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="true" id="input1" name="DeliverDirectRequiredc">
+                                                <input class="form-check-input" type="checkbox" value="true" id="input1" name="DeliverDirectRequiredc" dmx-on:checked="bgvideo1.direct_confirmed.setValue(1)">
                                                 <label class="form-check-label small" for="input1">Yes, direct delivery is required!</label>
                                             </div>
                                         </div>
@@ -113,8 +113,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Add this line anywhere inside your <form> ... </form> tags -->
+                            <input type="hidden" name="recaptchaToken" id="recaptchaToken">
                             <div class="modal-footer bg-dark border-top-0 pt-0">
-                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" dmx-on:click="quote_form.submit()">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" dmx-on:click="getRecaptchaAndSubmit()">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                 <button id="btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
                             </div>
