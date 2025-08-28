@@ -335,7 +335,7 @@ document.getElementById('cookNo').addEventListener('click', function() {
     <!-- START: Final Google reCaptcha v3 Script -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
     <script>
-        function getRecaptchaAndSubmit() {
+        window.getRecaptchaAndSubmit = function() {
     grecaptcha.ready(function() {
         // Replace with your NEW Site Key
         grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
