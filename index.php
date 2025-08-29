@@ -68,22 +68,23 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
     <script>
         window.getRecaptchaAndSubmit = function() {
-            alert('Entering getRecaptchaAndSubmit function'); 
-    grecaptcha.ready(function() {
-        // Replace with your NEW Site Key
-        grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
-            // This line finds the hidden input in your Wappler quote form
-            document.getElementById('recaptchaToken').value = token;
-            // This line submits the Wappler form by its ID
-            quote_form.submit();
+        // This function will now be called directly by the browser's onclick event
+        grecaptcha.ready(function() {
+            // Replace with your Site Key
+            grecaptcha.execute('YOUR_SITE_KEY_HERE', {action: 'submit'}).then(function(token) {
+                // This line finds the hidden input in your Wappler quote form
+                document.getElementById('recaptchaToken').value = token;
+                
+                // CRITICAL CHANGE: This is the robust way to trigger a Wappler form submission from external JS
+                dmx.app.data.quote_form.submit();
+
             }).catch(function(error) {
-            console.error('reCAPTCHA execution failed:', error);
-            // Re-enable the button and hide the spinner
-            // Use a Wappler notification or a simple alert to inform the user
-            dmx.app.data.browser1.alert('Could not verify your request. Please try again.');
+                console.error('reCAPTCHA execution failed:', error);
+                // This Wappler notification will still work perfectly
+                dmx.app.data.browser1.alert('Could not verify your request. Please try again.');
+            });
         });
-    });
-}
+    }
     </script>
     <!-- END: Final Google reCaptcha v3 Script -->
 
