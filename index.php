@@ -70,7 +70,7 @@
         window.getRecaptchaAndSubmit = function() {
         grecaptcha.ready(function() {
             // Replace with your Site Key
-            grecaptcha.execute('YOUR_SITE_KEY_HERE', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
                 // This line is correct and works.
                 document.getElementById('recaptchaToken').value = token;
                 
