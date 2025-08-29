@@ -64,6 +64,23 @@
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990687025454946&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
+    <!-- START: Final Google reCaptcha v3 Script -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
+    <script>
+        window.getRecaptchaAndSubmit = function() {
+    grecaptcha.ready(function() {
+        // Replace with your NEW Site Key
+        grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
+            // This line finds the hidden input in your Wappler quote form
+            document.getElementById('recaptchaToken').value = token;
+            // This line submits the Wappler form by its ID
+            quote_form.submit();
+        });
+    });
+}
+    </script>
+    <!-- END: Final Google reCaptcha v3 Script -->
+
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
@@ -331,24 +348,6 @@ document.getElementById('cookNo').addEventListener('click', function() {
 });
 
     </script>
-
-    <!-- START: Final Google reCaptcha v3 Script -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
-    <script>
-        window.getRecaptchaAndSubmit = function() {
-    grecaptcha.ready(function() {
-        // Replace with your NEW Site Key
-        grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
-            // This line finds the hidden input in your Wappler quote form
-            document.getElementById('recaptchaToken').value = token;
-            // This line submits the Wappler form by its ID
-            quote_form.submit();
-        });
-    });
-}
-    </script>
-    <!-- END: Final Google reCaptcha v3 Script -->
-
 
 </body>
 
