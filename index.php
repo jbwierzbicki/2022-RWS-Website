@@ -68,6 +68,7 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
     <script>
         window.getRecaptchaAndSubmit = function() {
+            alert('Entering getRecaptchaAndSubmit function'); 
     grecaptcha.ready(function() {
         // Replace with your NEW Site Key
         grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {

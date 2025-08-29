@@ -116,7 +116,7 @@
                             <!-- Add this line anywhere inside your <form> ... </form> tags -->
                             <input type="hidden" name="recaptchaToken" id="recaptchaToken">
                             <div class="modal-footer bg-dark border-top-0 pt-0">
-                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="button" dmx-hide="(quote_submitted.value==1)" dmx-on:click="browser1.alert('Button click is working!')">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="button" dmx-hide="(quote_submitted.value==1)" dmx-on:click="getRecaptchaAndSubmit()">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                 <button id="btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
                             </div>
