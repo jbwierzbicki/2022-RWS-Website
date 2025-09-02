@@ -68,20 +68,20 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP"></script>
     <script>
         window.getRecaptchaAndSubmit = function() {
+        // This function will now be called directly by the browser's onclick event
         grecaptcha.ready(function() {
             // Replace with your Site Key
-            grecaptcha.execute('YOUR_SITE_KEY_HERE', {action: 'submit'}).then(function(token) {
-                // This line is correct and works.
+            grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
+                // This line finds the hidden input in your Wappler quote form
                 document.getElementById('recaptchaToken').value = token;
                 
-                // CORRECTED PATH: Access the form component directly by its ID on the dmx.app object.
-                dmx.app.quote_form.submit();
+                // CRITICAL CHANGE: This is the robust way to trigger a Wappler form submission from external JS
+                dmx.app.data.quote_form.submit();
 
             }).catch(function(error) {
                 console.error('reCAPTCHA execution failed:', error);
-                
-                // CORRECTED METHOD: Use dmx.parse() to execute Wappler dynamic events from JS.
-                dmx.parse('browser1.alert("Could not verify your request. Please try again.")');
+                // This Wappler notification will still work perfectly
+                dmx.app.data.browser1.alert('Could not verify your request. Please try again.');
             });
         });
     }
