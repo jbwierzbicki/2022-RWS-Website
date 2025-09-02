@@ -71,7 +71,7 @@
         // This function will now be called directly by the browser's onclick event
         grecaptcha.ready(function() {
             // Replace with your Site Key
-            grecaptcha.execute('6LeGOrYrAAAAAD-u4SLJPZruJeHqTITK01_f_BfP', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('YOUR_SITE_KEY_HERE', {action: 'submit'}).then(function(token) {
                 // This line finds the hidden input in your Wappler quote form
                 document.getElementById('recaptchaToken').value = token;
                 
