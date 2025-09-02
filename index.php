@@ -75,11 +75,6 @@
             document.getElementById('recaptchaToken').value = token;
             // This line submits the Wappler form by its ID
             quote_form.submit();
-            }).catch(function(error) {
-            console.error('reCAPTCHA execution failed:', error);
-            // Re-enable the button and hide the spinner
-            // Use a Wappler notification or a simple alert to inform the user
-            dmx.app.data.browser1.alert('Could not verify your request. Please try again.');
         });
     });
 }
