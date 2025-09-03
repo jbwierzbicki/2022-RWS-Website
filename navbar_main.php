@@ -13,6 +13,7 @@
 
                         <dmx-value id="quote_submitted" dmx-bind:value="0"></dmx-value>
                         <form method="post" action="https://staff.my.salesforce-sites.com/webform/services/apexrest/newquote" dmx-on:submit="quote_submitted.setValue(1)" is="dmx-api-form" id="quote_form" post-data="json">
+                            <input type="hidden" name="recaptchaToken" id="recaptchaToken">
                             <div class="modal-header bg-dark text-white border-bottom-0 pb-2 ps-4 pe-4">
                                 <h5 class="modal-title">Get started with a free quote!</h5>
                                 <button class="btn-close small me-0" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -114,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer bg-dark border-top-0 pt-0">
-                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="submit" dmx-hide="(quote_submitted.value==1)" dmx-on:click="quote_form.submit()">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
+                                <button id="btn6" class="fw-bold btn module-cta-btn btn-warning w-100 btn-sm lh-lg mt-2 mb-2 text-truncate" wappler-command="editContent" type="button" dmx-hide="(quote_submitted.value==1)" dmx-on:click="getRecaptchaAndSubmit()">Quote Me&nbsp;<i class="fas fa-caret-right"></i></button>
 
                                 <button id="btn7" class="fw-bold btn module-cta-btn w-100 btn-sm lh-lg mt-2 mb-2 text-truncate btn-outline-secondary" wappler-command="editContent" data-bs-target="#quote_modal" dmx-show="(quote_submitted.value==1)" dmx-on:click="quote_modal.hide()"><i class="fas fa-caret-left"></i>&nbsp;Go Back</button>
                             </div>

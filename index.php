@@ -64,6 +64,23 @@
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990687025454946&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
+    <!-- START: Google reCAPTCHA v3 Enterprise Script -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le0Ar0rAAAAAEEgsYu-QDqqgxPnBd4EtDuwEcPH"></script>
+    <script>
+        window.getRecaptchaAndSubmit = function() {
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Le0Ar0rAAAAAEEgsYu-QDqqgxPnBd4EtDuwEcPH', {action: 'submit'}).then(function(token) {
+        // Set the value of the hidden input field in your form
+        document.getElementById('recaptchaToken').value = token;
+        
+        // Use the correct Wappler API path to submit the form component
+        dmx.app.get('quote_form').submit();
+        });
+    });
+    }
+    </script>
+    <!-- END: Google reCAPTCHA v3 Enterprise Script -->
+
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
