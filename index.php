@@ -64,22 +64,74 @@
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990687025454946&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- START: Google reCAPTCHA v3 Enterprise Script -->
+    <!-- START: Final Google reCAPTCHA v3 Enterprise Script -->
     <script src="https://www.google.com/recaptcha/api.js?render=6Le0Ar0rAAAAAEEgsYu-QDqqgxPnBd4EtDuwEcPH"></script>
     <script>
         window.getRecaptchaAndSubmit = function() {
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Le0Ar0rAAAAAEEgsYu-QDqqgxPnBd4EtDuwEcPH', {action: 'submit'}).then(function(token) {
-        // Set the value of the hidden input field in your form
-        document.getElementById('recaptchaToken').value = token;
-        
-        // Use the correct Wappler API path to submit the form component
-        dmx.app.get('quote_form').submit();
-        });
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6Le0Ar0rAAAAAEEgsYu-QDqqgxPnBd4EtDuwEcPH', {action: 'submit'}).then(function(token) {
+      
+      const form = document.getElementById('quote_form');
+      const endpoint = form.action;
+      const formData = new FormData(form); // Use FormData for easy value retrieval
+
+      // --- START: EXPLICIT PAYLOAD MAPPING ---
+      // This creates a clean JSON object that EXACTLY matches the Apex data contract.
+      // This decouples the frontend form's 'name' attributes from the backend Apex signature.
+      const payload = {
+        CustomerEmailc:           formData.get('CustomerEmailc'),
+        CustomerNamec:            formData.get('CustomerNamec'),
+        PickupLocationc:          formData.get('PickupLocationc'),
+        DeliveryLocationc:        formData.get('DeliveryLocationc'),
+        CommodityDetailsc:        formData.get('CommodityDetailsc'),
+        AdditionalNotesc:         formData.get('AdditionalNotesc'),
+        serviceRequested:         formData.get('serviceRequested'),
+        primaryPhone:             formData.get('primaryPhone'),
+        otherPhone:               formData.get('otherPhone'),
+        pickupDate:               formData.get('pickupDate'),
+        deliveryDate:             formData.get('deliveryDate'),
+        recaptchaToken:           token,
+        // Handle the specific mismatches we identified:
+        DeliverDirectRequiredc:   (formData.get('DeliverDirectRequiredc') === 'true'), // String to Boolean
+        PickupTimec:              formData.get('pickupTime'), // Map 'pickupTime' to 'PickupTimec'
+        DeliveryTimec:            formData.get('deliveryTime')  // Map 'deliveryTime' to 'DeliveryTimec'
+      };
+      // --- END: EXPLICIT PAYLOAD MAPPING ---
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload) // Send the perfectly structured payload
+      })
+      .then(response => {
+        if (response.status === 201) {
+          console.log('Form submitted successfully!');
+
+          // *** START: DIRECT UI MANIPULATION ***
+          // Bypassing Wappler to directly control the UI.
+          document.getElementById('quote_form_fields').style.display = 'none';
+          document.getElementById('quote_confirmed').style.display = 'block';
+          document.getElementById('btn6').style.display = 'none';
+          document.getElementById('btn7').style.display = 'block';
+          // *** END: DIRECT UI MANIPULATION ***
+          
+        } else {
+          console.error('Form submission failed. Status:', response.status);
+          response.json().then(err => console.error('Salesforce Error:', err));
+          alert('There was an error submitting your quote. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('A network error occurred:', error);
+        alert('A network error occurred. Please check your connection and try again.');
+      });
     });
-    }
+  });
+}
     </script>
-    <!-- END: Google reCAPTCHA v3 Enterprise Script -->
+    <!-- END: Final Google reCAPTCHA v3 Enterprise Script -->
 
 </head>
 
