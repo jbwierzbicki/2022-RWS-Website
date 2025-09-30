@@ -187,26 +187,26 @@
                 <div class="row h-100">
 
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
-                        <div class="container pt-3 pb-2 ps-0 pe-0">
+                        <div class="container pt-2 pb-2 ps-0 pe-0">
                             <div class="row justify-content-center g-0 gx-4">
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 slideshow-wrapper px-2">
 
-                                    <dmx-slideshow id="slideshow1" start-random="true" class="ms-2 me-2">
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/coaster.webp" thumb="assets/images/slideshow_live/thumbs/coaster.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/coozie.webp" thumb="assets/images/slideshow_live/thumbs/coozie.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/die-cast-1.webp" thumb="assets/images/slideshow_live/thumbs/die-cast-1.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/diecast-2.webp" thumb="assets/images/slideshow_live/thumbs/diecast-2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/hitch.webp" thumb="assets/images/slideshow_live/thumbs/hitch.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad1.webp" thumb="assets/images/slideshow_live/thumbs/mousepad1.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad2.webp" thumb="assets/images/slideshow_live/thumbs/mousepad2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-lft-1.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-1.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-lft-2.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-rt-1.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-1.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug-rt-2.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/pamphlet.webp" thumb="assets/images/slideshow_live/thumbs/pamphlet.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/pen.webp" thumb="assets/images/slideshow_live/thumbs/pen.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/phone-stand.webp" thumb="assets/images/slideshow_live/thumbs/phone-stand.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/pocket-knife.webp"></dmx-slide>
+                                    <dmx-slideshow id="slideshow1">
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/coaster%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/coaster.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/coozie%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/coozie.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/die-cast-1%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/die-cast-1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/diecast-2%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/diecast-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/hitch%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/hitch.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad1%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mousepad1.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad2%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mousepad2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad3%20%281%29.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug1%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug2%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-2.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pamphlet%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/pamphlet.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pen%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/pen.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/phone-stand%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/phone-stand.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/pocket-knife%20%281%29.webp"></dmx-slide>
+                                        <dmx-slide alt="" url="assets/images/slideshow_live/tumblers%20%281%29.webp"></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
 

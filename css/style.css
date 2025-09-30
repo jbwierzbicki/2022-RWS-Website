@@ -561,6 +561,24 @@ a {
     object-position: center;
 }
 
+#slideshow1 .dmx-slideshow-textbox {
+  display: none !important;
+}
+
+.slideshow-wrapper {
+  position: relative;
+  min-height: 350px; 
+}
+
+#slideshow1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 
 
 
