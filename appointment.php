@@ -41,7 +41,6 @@ document.head.appendChild(o)}initApollo();
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990687025454946&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
-  <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js"></script>
 
   <script>
     !function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_8f6e0e1be3ac9f1e37dea684410f7c092849/sdk.js"),(document.body || document.head).appendChild(n)}();
@@ -54,6 +53,7 @@ document.head.appendChild(o)}initApollo();
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "mrz6iftq48");
   </script>
+  <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
