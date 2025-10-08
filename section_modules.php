@@ -188,25 +188,25 @@
 
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-3 pb-3 ps-3 pe-3">
                         <div class="container pt-2 pb-2 ps-0 pe-0">
-                            <div class="row justify-content-center g-0 gx-4">
-                                <div class="col-lg-5 slideshow-wrapper px-2">
+                            <div class="row justify-content-center g-0 gx-4 mt-1 mb-0">
+                                <div class="col-lg-5 slideshow-wrapper mt-1 mb-1 ps-2 pe-2">
 
-                                    <dmx-slideshow id="slideshow1">
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/coaster%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/coaster.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/coozie%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/coozie.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/die-cast-1%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/die-cast-1.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/diecast-2%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/diecast-2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/hitch%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/hitch.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad1%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mousepad1.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad2%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mousepad2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mousepad3%20%281%29.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug1%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mug-lft-2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/mug2%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/mug-rt-2.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/pamphlet%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/pamphlet.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/pen%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/pen.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/phone-stand%20%281%29.webp" thumb="assets/images/slideshow_live/thumbs/phone-stand.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/pocket-knife%20%281%29.webp"></dmx-slide>
-                                        <dmx-slide alt="" url="assets/images/slideshow_live/tumblers%20%281%29.webp"></dmx-slide>
+                                    <dmx-slideshow id="slideshow1" transition:fade.duration:1000="" delay="2500">
+                                        <dmx-slide alt="Branded drink coaster featuring the Raging Wolf Solutions logo." url="assets/images/slideshow_live/coaster.webp"></dmx-slide>
+                                        <dmx-slide alt="Black drink coozie with the Raging Wolf Solutions logo." url="assets/images/slideshow_live/coozie.webp"></dmx-slide>
+                                        <dmx-slide alt="Two die-cast model trucks with Raging Wolf Solutions branding." url="assets/images/slideshow_live/diecasts.webp"></dmx-slide>
+                                        <dmx-slide alt="Promotional trailer hitch cover with the Raging Wolf Solutions logo." url="assets/images/slideshow_live/hitch.webp"></dmx-slide>
+                                        <dmx-slide alt="Branded mousepad with nighttime truck scene and wolf design." url="assets/images/slideshow_live/mpad1.webp"></dmx-slide>
+                                        <dmx-slide alt="Branded mousepad with a wolf head logo design." url="assets/images/slideshow_live/mpad2.webp"></dmx-slide>
+                                        <dmx-slide alt="Promotional mousepad with Raging Wolf solutions logo." url="assets/images/slideshow_live/mpad3.webp"></dmx-slide>
+                                        <dmx-slide alt="Composite image showing both sides of a black promotional coffee mug with a wolf design." url="assets/images/slideshow_live/mug1.webp"></dmx-slide>
+                                        <dmx-slide alt="Composite image showing both sides of a black promotional coffee mug with a dreamcatcher logo." url="assets/images/slideshow_live/mug2.webp"></dmx-slide>
+                                        <dmx-slide alt="Promotional tri-fold pamphlet for Raging Wolf Solutions services." url="assets/images/slideshow_live/pamphlet.webp"></dmx-slide>
+                                        <dmx-slide alt="Black and red branded ink pen with company logo." url="assets/images/slideshow_live/pen.webp"></dmx-slide>
+                                        <dmx-slide alt="Promotional mobile phone stand with the Raging Wolf Solutions logo." url="assets/images/slideshow_live/phonestand.webp"></dmx-slide>
+                                        <dmx-slide alt="Promotional pocket knife with logo engraved on a wood handle." url="assets/images/slideshow_live/pocket-knife%20%281%29.webp"></dmx-slide>
+                                        <dmx-slide alt="Five metal tumblers in various colors, all with the Raging Wolf Solutions logo." url="assets/images/slideshow_live/tumblers.webp"></dmx-slide>
+                                        <dmx-slide alt="Miniature promotional basketball hoop with Raging Wolf Solutions backboard." url="assets/images/slideshow_live/hoop.webp"></dmx-slide>
                                     </dmx-slideshow>
                                 </div>
 
