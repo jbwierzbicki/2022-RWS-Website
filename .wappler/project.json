@@ -26,9 +26,10 @@
       "ftpServer": "ftp.ragingwolfsolutions.com",
       "ftpPort": 21,
       "ftpUser": "kvpe7tyxlnhj",
-      "ftpPassword": "31d9aee6e496dae1718f",
+      "ftpPassword": "v2:8f65e20f0a2df03a8bc617fbfb8b5aa2acc90f2a3a797bb3abf9",
       "ftpRemoteFolder": "public_html/new.ragingwolfsolutions.com",
       "name": "new.ragingwolfsolutions.com"
     }
-  ]
+  ],
+  "extensions": []
 }
