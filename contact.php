@@ -52,9 +52,12 @@ document.head.appendChild(o)}initApollo();
     <script>
         !function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_8f6e0e1be3ac9f1e37dea684410f7c092849/sdk.js"),(document.body || document.head).appendChild(n)}();
     </script>
+    <link rel="stylesheet" href="dmxAppConnect/dmxNotifications/dmxNotifications.css" />
+    <script src="dmxAppConnect/dmxNotifications/dmxNotifications.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-notifications id="notifies1"></dmx-notifications>
 
     <?php include 'navbar_mini'; ?>
 
@@ -68,25 +71,42 @@ document.head.appendChild(o)}initApollo();
                 <div class="col-md-12">
                     <div class="row">
                         <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 ps-3 pe-3">
-                            <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">Get in Touch</h4>
-                            <p class="text-center mb-4 text-light"><b>Thank you for your interest in Raging Wolf Solutions.</b><br>Do you have a general question or request for our team? We are happy to assist! Please just tell us...</p>
-                            <form id="form1" method="post" action="https://usebasin.com/f/dd70a6a52004">
+                            <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">What can we do for you?</h4>
+                            <p class="text-center mb-4 text-light">Do you have a general question or request for our team? We are happy to assist! Please just tell us...</p>
+                            <form id="form1" method="post" action="https://api.clickup.com/api/v2/list/901706112591/task" is="dmx-api-form" post-data="json" dmx-header:authorization="'pk_43758910_9V7UI7AAZBUN268U5SJHN9B3GR5SU2HB'" dmx-on:success="form1.reset();notifies1.success('Your message has been sent successfully!')" dmx-on:error="notifies1.danger('An error occurred. Please try again.')">
                                 <div class="row justify-content-center">
                                     <div class="col-md-9">
-                                        <p class="text-white-50 mb-2">Your name</p>
-                                        <input id="name1" name="name" type="text" class="form-control mb-3" required="">
+                                        <label for="name">
+                                            <p class="text-white-50 mb-2">Your name:</p>
+                                        </label>
+                                        <input id="name" name="name" type="text" class="form-control mb-3" required="">
                                     </div>
                                     <div class="col-md-9">
-                                        <p class="text-white-50 mb-2">Your email address</p>
-                                        <input id="email" name="email" type="email" class="form-control mb-3" required="">
+                                        <label for="email">
+                                            <p class="text-white-50 mb-2">Your email address:</p>
+                                        </label>
+                                        <input id="email" name="custom_fields[1][value]" type="email" class="form-control mb-3" required="">
                                     </div>
                                     <div class="col-md-9">
-                                        <p class="text-white-50 mb-2">Your message to the 'PACK'</p>
-                                        <textarea id="message" class="form-control" rows="4" name="message" required=""></textarea>
+                                        <label for="message">
+                                            <p class="text-white-50 mb-2">Your message to the 'PACK':</p>
+                                        </label>
+                                        <textarea id="message" class="form-control" rows="4" name="description" required=""></textarea>
                                     </div>
-                                    <div class="col-md-9"><button id="btn4" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-bold" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button></div>
 
+                                    <!-- === HIDDEN FIELDS FOR API MAPPING === -->
+                                    <input type="hidden" name="custom_fields[0][id]" value="c2d47ffe-4559-4763-bed1-bb2e0eeb9cd1">
+                                    <input type="hidden" name="custom_fields[0][value]" dmx-bind:value="name.value">
+                                    <input type="hidden" name="custom_fields[1][id]" value="ab5235ef-3801-4a57-8908-c1c3aaf8a37b">
+                                    <input type="hidden" name="custom_fields[2][id]" value="27a41391-9021-475f-b749-7d81dcb37847">
+                                    <input type="hidden" name="custom_fields[2][value]" dmx-bind:value="message.value">
 
+                                    <!-- Your original recaptcha fields (ClickUp will ignore these, which is fine) -->
+                                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                                    <input type="hidden" name="g-recaptcha-version" value="v3">
+                                    <div class="col-md-9">
+                                        <button id="Send_Your_Message" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-normal" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
+                                    </div>
                                 </div>
                             </form>
                         </div>

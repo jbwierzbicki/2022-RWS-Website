@@ -256,29 +256,20 @@
                     <div class="module-card col border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 ps-3 pe-3">
                         <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">What can we do for you?</h4>
                         <p class="text-center mb-4 text-light">Do you have a general question or request for our team? We are happy to assist! Please just tell us...</p>
-                        <!-- FINALIZED API FORM - Submits directly to ClickUp, preserving all styling -->
                         <form id="form1" method="post" action="https://api.clickup.com/api/v2/list/901706112591/task" is="dmx-api-form" post-data="json" dmx-header:authorization="'pk_43758910_9V7UI7AAZBUN268U5SJHN9B3GR5SU2HB'" dmx-on:success="form1.reset();notifies1.success('Your message has been sent successfully!')" dmx-on:error="notifies1.danger('An error occurred. Please try again.')">
                             <div class="row justify-content-center">
-                                <!-- VISIBLE FIELD 1: Your Name -->
-                                <!-- The 'name' attribute is set to "name" to become the ClickUp Task Title. -->
                                 <div class="col-md-9">
                                     <label for="name">
                                         <p class="text-white-50 mb-2">Your name:</p>
                                     </label>
                                     <input id="name" name="name" type="text" class="form-control mb-3" required="">
                                 </div>
-
-                                <!-- VISIBLE FIELD 2: Your Email Address -->
-                                <!-- The 'name' attribute maps this directly to the value of the second custom field (index [1]). -->
                                 <div class="col-md-9">
                                     <label for="email">
                                         <p class="text-white-50 mb-2">Your email address:</p>
                                     </label>
                                     <input id="email" name="custom_fields[1][value]" type="email" class="form-control mb-3" required="">
                                 </div>
-
-                                <!-- VISIBLE FIELD 3: Your Message -->
-                                <!-- The 'name' attribute is set to "description" to become the ClickUp Task Description. -->
                                 <div class="col-md-9">
                                     <label for="message">
                                         <p class="text-white-50 mb-2">Your message to the 'PACK':</p>
@@ -287,25 +278,15 @@
                                 </div>
 
                                 <!-- === HIDDEN FIELDS FOR API MAPPING === -->
-                                <!-- These fields are not visible to the user but are essential for the API call. -->
-
-                                <!-- Custom Field 0: "Your name:" -->
                                 <input type="hidden" name="custom_fields[0][id]" value="c2d47ffe-4559-4763-bed1-bb2e0eeb9cd1">
-                                <input type="hidden" name="custom_fields[0][value]" dmx-bind:value="name.value"> <!-- Dynamically gets value from the visible name input -->
-
-                                <!-- Custom Field 1: "Your email address:" -->
+                                <input type="hidden" name="custom_fields[0][value]" dmx-bind:value="name.value">
                                 <input type="hidden" name="custom_fields[1][id]" value="ab5235ef-3801-4a57-8908-c1c3aaf8a37b">
-                                <!-- The value for this field is already set by the visible email input above -->
-
-                                <!-- Custom Field 2: "Your message to the 'PACK':" -->
                                 <input type="hidden" name="custom_fields[2][id]" value="27a41391-9021-475f-b749-7d81dcb37847">
-                                <input type="hidden" name="custom_fields[2][value]" dmx-bind:value="message.value"> <!-- Dynamically gets value from the visible message textarea -->
+                                <input type="hidden" name="custom_fields[2][value]" dmx-bind:value="message.value">
 
                                 <!-- Your original recaptcha fields (ClickUp will ignore these, which is fine) -->
                                 <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                                 <input type="hidden" name="g-recaptcha-version" value="v3">
-
-                                <!-- SUBMIT BUTTON -->
                                 <div class="col-md-9">
                                     <button id="Send_Your_Message" class="btn module-cta-btn btn-warning w-100 mt-4 mb-3 fw-normal" type="submit">Send Your Message&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
                                 </div>
@@ -313,10 +294,6 @@
                         </form>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>

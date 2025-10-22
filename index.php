@@ -133,9 +133,12 @@
     </script>
     <!-- END: Final Google reCAPTCHA v3 Enterprise Script -->
 
+    <link rel="stylesheet" href="dmxAppConnect/dmxNotifications/dmxNotifications.css" />
+    <script src="dmxAppConnect/dmxNotifications/dmxNotifications.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="bg-dark">
+    <dmx-notifications id="notifies1"></dmx-notifications>
 
     <div is="dmx-browser" id="browser1"></div>
 
