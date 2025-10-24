@@ -79,7 +79,7 @@ document.head.appendChild(o)}initApollo();
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
                                 <div class="col-lg-10 mb-2">
 
-                                    <h4 class="text-light" wappler-command="editContent">Freight Agent, Remote</h4>
+                                    <h4 class="text-light hover-cursor" wappler-command="editContent" dmx-on:click="job_description.setValue(job_description.value == 'freight_agent_remote' ? '' : 'freight_agent_remote')">Freight Agent, Remote</h4>
                                     <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for a freight agent professional to join our team.</h5>
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Commission</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; Remote</button>
@@ -91,9 +91,8 @@ document.head.appendChild(o)}initApollo();
 
                                     <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='freight_agent_remote')">
                                         <h5>▶ Position Information</h5>
-                                        <p class="mb-2">At Raging Wolf Solutions, we're not just a company—we're a family. As a family-owned business, we prioritize building meaningful relationships with our team, clients, and partners. Unlike corporate giants that treat their employees as numbers, we value the individual. If you’re ready to work in a supportive, dynamic environment where your success matters, Raging Wolf Solutions is where you belong. We are currently looking for a Freight Agent to join our growing team. If you're driven, hungry for success, and looking for a place where you can thrive—this is your opportunity!
-                                        </p>
-                                        <p wappler-command="editContent" class="mt-3"><b>Why Raging Wolf Solutions?</b>
+                                        <p class="mb-2">At Raging Wolf Solutions, we're not just a company—we're a family. As a family-owned business, we prioritize building meaningful relationships with our team, clients, and partners. Unlike corporate giants that treat their employees as numbers, we value the individual. If you’re ready to work in a supportive, dynamic environment where your success matters, Raging Wolf Solutions is where you belong. We are currently looking for a Freight Agent to join our growing team. If you're driven, hungry for success, and looking for a place where you can thrive—this is your opportunity!</p>
+                                        <p wappler-command="editContent" class="mt-3"><b>Why Raging Wolf Solutions?</b></p>
                                         <ul class="custom-list text-white">
                                             <li><b>Commission Split:</b> Your hard work directly impacts your earning potential! The more you hustle, the more you earn.</li>
                                             <li><b>Family-Centered Environment:</b> Forget the corporate grind. At Raging Wolf, we treat every team member like family. Your voice is heard, your efforts are appreciated, and you’ll be recognized for your contributions.</li>
@@ -102,7 +101,7 @@ document.head.appendChild(o)}initApollo();
                                             <li><b>Growth Opportunities:</b> We’re expanding! As we grow, there will be plenty of room for you to grow alongside us. Rise to new challenges and take on more responsibility as you gain experience.</li>
                                             <li><b>Cutting-Edge Technology:</b> We equip our team with the latest tools and software to ensure you're always ahead of the game. Focus on what matters—building relationships and closing deals.</li>
                                         </ul>
-                                        <p wappler-command="editContent"><b>Responsibilities:</b>
+                                        <p wappler-command="editContent"><b>Responsibilities:</b></p>
                                         <ul class="custom-list text-white">
                                             <li>Identify, develop, and manage relationships with shippers and carriers to move freight efficiently and cost-effectively.</li>
                                             <li>Negotiate pricing and contracts with carriers while ensuring the best rates for clients.</li>
@@ -111,8 +110,7 @@ document.head.appendChild(o)}initApollo();
                                             <li>Collaborate with internal teams to improve processes and customer satisfaction.</li>
                                             <li>Stay up-to-date with industry trends and regulations.</li>
                                         </ul>
-                                        </p>
-                                        <p wappler-command="editContent"><b>What We’re Looking For:</b>
+                                        <p wappler-command="editContent"><b>What We’re Looking For:</b></p>
                                         <ul class="custom-list text-white">
                                             <li>An existing book of business.</li>
                                             <li>A self-motivated, ambitious individual who thrives in a commission-based environment.</li>
@@ -122,8 +120,7 @@ document.head.appendChild(o)}initApollo();
                                             <li>Ability to work independently and as part of a collaborative team.</li>
                                             <li>A positive attitude and a desire to succeed!</li>
                                         </ul>
-                                        </p>
-                                        <p wappler-command="editContent"><b>Perks of Working at Raging Wolf Solutions:</b>
+                                        <p wappler-command="editContent"><b>Perks of Working at Raging Wolf Solutions:</b></p>
                                         <ul class="custom-list text-white">
                                             <li><b>Competitive Compensation:</b> Your hard work directly impacts your earnings! The more you hustle, the more you earn.</li>
                                             <li><b>Work-Life Balance:</b> Flexible schedule to help you enjoy your personal life.</li>
@@ -131,7 +128,6 @@ document.head.appendChild(o)}initApollo();
                                             <li><b>Ongoing Training:</b> Access to resources and support to help you grow and succeed in your role.</li>
                                             <li><b>Career Growth:</b> As a rapidly growing company, there’s unlimited potential for advancement.</li>
                                         </ul>
-                                        </p>
                                         <p><b>Ready to Join the Pack?</b> If you're looking for an opportunity to earn, grow, and work with a team that values your success, Raging Wolf Solutions is the place for you. Apply today and take the first step toward a rewarding career! Raging Wolf Solutions is an equal-opportunity employer. We encourage applicants from all backgrounds to apply!</p>
 
                                         <button id="apply_now5" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://www.indeed.com/jobs?q=raging+wolf+solutions&l=&from=searchOnDesktopSerp&vjk=8fac4ddafd4e9010')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
@@ -145,45 +141,42 @@ document.head.appendChild(o)}initApollo();
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4">
                                 <div class="col-lg-10 mb-2">
 
-                                    <h4 class="text-light" wappler-command="editContent">Representative, Inside Sales</h4>
+                                    <h4 class="text-light hover-cursor" wappler-command="editContent" dmx-on:click="job_description.setValue(job_description.value == 'representative_outside_sales' ? '' : 'representative_outside_sales')">Representative, Outside Sales</h4>
                                     <h5 class="text-light fw-light mb-3" wappler-command="editContent">We're looking for an experienced freight transportation sales professional to join our team.</h5>
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-dollar-sign"></i>&nbsp; Salary</button><button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="far fa-clock"></i>&nbsp; Full time</button>
                                     <button class="btn btn-outline-light btn-sm mb-2 me-2 cursor-default" wappler-command="editContent"><i class="fas fa-map-marker-alt"></i>&nbsp; In-person</button>
-                                    <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue(job_description.value == 'representative_inside_sales' ? '' : 'representative_inside_sales')">
+                                    <button class="btn btn-sm mb-2 me-2 btn-outline-warning" wappler-command="editContent" dmx-on:click="job_description.setValue(job_description.value == 'representative_outside_sales' ? '' : 'representative_outside_sales')">
                                         <i class="fas fa-info-circle"></i>&nbsp;
-                                        <span dmx-text="job_description.value == 'representative_inside_sales' ? 'Hide Position Information' : 'Position Information'"></span>
+                                        <span dmx-text="job_description.value == 'representative_outside_sales' ? 'Hide Position Information' : 'Position Information'"></span>
                                     </button>
-                                    <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='representative_inside_sales')">
+                                    <div class="d-flex mt-3 flex-column text-light" dmx-show="(job_description.value=='representative_outside_sales')">
                                         <h5>▶ Position Information</h5>
-                                        <p class="mb-2">Are you hungry? The PACK at Raging Wolf Solutions is looking for an outgoing, charismatic individual to join our sales team. If accepted, you will be responsible for investigating strong potential leads, setting up meetings, and working with sales to bring our premium freight transportation to new customers. Applications will be reviewed and prioritized based on…
-                                        </p>
-                                        <ul class="list-group text-white">
-                                            <li class="list-group-item bg-transparent text-white">Sales-related background or experience</li>
-                                            <li class="list-group-item bg-transparent text-white">Ability to make meaningful connections with potential customers</li>
-                                            <li class="list-group-item bg-transparent text-white">Strong communication skills</li>
-                                            <li class="list-group-item bg-transparent text-white mb-3">(Preferred) Knowledge of freight transportation or supply chain</li>
+                                        <p class="mb-2">Are you hungry? The PACK at Raging Wolf Solutions is looking for an outgoing, charismatic individual to join our sales team. If accepted, you will be responsible for investigating strong potential leads, setting up meetings, and working with sales to bring our premium freight transportation to new customers.</p>
+
+                                        <p wappler-command="editContent" class="mt-3"><b>What We’re Looking For:</b></p>
+                                        <ul class="custom-list text-white">
+                                            <li>Sales-related background or experience.</li>
+                                            <li>Ability to make meaningful connections with potential customers.</li>
+                                            <li>Strong communication skills.</li>
+                                            <li>(Preferred) Knowledge of freight transportation or supply chain.</li>
+                                            <li>A self-motivated, ambitious individual who thrives in a commission-based environment.</li>
+                                            <li>A positive attitude and a desire to succeed!</li>
                                         </ul>
 
-                                        <p wappler-command="editContent">This is a sales position, so it comes with strong incentive and commission opportunities. for you to connect with new customers and provide them with our outstanding service and competitive pricing. Any new business you help us to acquire will increase your earning potential.
-                                        </p>
-                                        <p wappler-command="editContent">--- ABOUT US ---
-                                        </p>
-                                        <p wappler-command="editContent">Raging Wolf Solutions is a full service third party logistics provider, offering shipping and freight transportation solutions across the continental United States. We leverage our expansive network of carriers and combined 60 years in the industry to bring our customers unparalleled communication and service.
-                                        </p>
-                                        <p wappler-command="editContent">Our team can move anything from one box to a full truckload. Some of our specialty moves include air/ground expedites, full truckloads, straight trucks, cargo vans, sprinter vans -- and much more! See our website for the full list &gt;
-                                        </p>
-                                        <p wappler-command="editContent">--- WHY RAGING WOLF ---
-                                        </p>
-                                        <p wappler-command="editContent">Why sell with us? Our team believes that its sales representatives should be rewarded for their success. Bringing in new business helps us all grow. So with that in mind, we do not put a "cap" on your earning potential through commissions. You have our full support!
-                                        </p>
-                                        <p wappler-command="editContent">---GUIDANCE AND SUPPORT---
-                                        </p>
-                                        <p wappler-command="editContent">Our operations are based out of Twinsburg OH, and the Raging Wolf team is equipped with the tools and resources you need to succeed. Our digital marketing and promotional team can help you seek out and target leads in markets all across the country. Our Sales team will help you with strategy and your transition into selling with Raging Wolf. We've got your back!</p>
+                                        <p wappler-command="editContent"><b>Why Raging Wolf Solutions?</b></p>
+                                        <ul class="custom-list text-white">
+                                            <li><b>Uncapped Commissions:</b> Your hard work directly impacts your earning potential. We believe sales representatives should be rewarded for their success, so we do not put a "cap" on your earnings.</li>
+                                            <li><b>Guidance and Support:</b> Our operations are based out of Twinsburg, OH, and our team is equipped with the tools and resources you need to succeed.</li>
+                                            <li><b>Marketing Resources:</b> Our digital marketing and promotional team can help you seek out and target leads in markets all across the country.</li>
+                                            <li><b>Team Collaboration:</b> Our sales team will help you with strategy and your transition into selling with Raging Wolf. We've got your back!</li>
+                                            <li><b>Family-Centered Environment:</b> Join a close-knit team where you're more than just an employee. Your voice is heard and your contributions are valued.</li>
+                                        </ul>
+                                        <p><b>Ready to Join the Pack?</b> If you're looking for an opportunity to earn, grow, and work with a team that values your success, apply today and take the first step toward a rewarding career!</p>
                                         <button id="apply_now3" class="btn btn-link text-decoration-none text-warning pt-0 pb-0 ps-0 pe-0 btn-lg text-start" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 text-end">
-                                    <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')" dmx-hide="(job_description.value=='representative_inside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    <button id="apply_now4" class="btn btn-link text-decoration-none btn-lg text-warning pt-0 pb-0 ps-0 pe-0" wappler-command="editContent" dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3485/PTK271OAHJ0BYWG61W')" dmx-hide="(job_description.value=='representative_outside_sales')">Apply Now&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></button>
                                 </div>
                             </div>
                             <div class="row border-1 border-secondary border-bottom pt-4 pb-4 visually-hidden">
@@ -227,8 +220,6 @@ document.head.appendChild(o)}initApollo();
                             </div>
                         </section>
                     </div>
-
-
                 </div>
             </div>
         </div>
