@@ -73,7 +73,7 @@
                         <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Careers</li>
                     </a>
                     <a href="#" dmx-on:click="bugReportModal.show()">
-                        <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0 visually-hidden">Report a Bug</li>
+                        <li class="list-group-item bg-transparent univ--footer--container--row--col--li border-0 pt-0 pb-0 pl-0 pr-0">Report a Bug</li>
                     </a>
                     <a is="dmx-link" href="testimonials.php">
                         <!-- REMOVE HIDDEN WHEN READY TO PUBLISH -->
@@ -117,5 +117,5 @@
 
   gtag('config', 'G-L9SVTQ69KT');
     </script>
-
+    <?php require_once 'floating_bug_button.php'; ?>
 </footer>

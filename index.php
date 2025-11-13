@@ -365,8 +365,6 @@
     <?php include 'section_modules.php'; ?>
     <?php include 'footer.php'; ?>
 
-    <?php include 'floating_bug_button.php'; ?>
-
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <div id="cookBan" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(33, 37, 41, 0.85); padding: 10px; text-align: center; color: #fff;" class="container mw-100" dmx-hide="cookieBanVis.value==false">
@@ -386,21 +384,21 @@
 
     <script>
         document.getElementById('cookYes').addEventListener('click', function() {
-    document.getElementById('cookBan').style.display = 'none';
-});
+            document.getElementById('cookBan').style.display = 'none';
+            });
 
-document.getElementById('cookNo').addEventListener('click', function() {
-    var countdown = 5; // 5 seconds countdown
-    var countdownInterval = setInterval(function() {
-        document.getElementById('cookBan').innerHTML = 'You will be redirected back in ' + countdown + ' seconds.';
-        countdown--;
-        if (countdown < 0) {
-            clearInterval(countdownInterval);
-            // Add code here to redirect the user back one page
-            window.location.replace('https://www.google.com'); 
-        }
-    }, 1000);
-});
+            document.getElementById('cookNo').addEventListener('click', function() {
+                var countdown = 5; // 5 seconds countdown
+                var countdownInterval = setInterval(function() {
+                    document.getElementById('cookBan').innerHTML = 'You will be redirected back in ' + countdown + ' seconds.';
+                    countdown--;
+                    if (countdown < 0) {
+                        clearInterval(countdownInterval);
+                        // Add code here to redirect the user back one page
+                        window.location.replace('https://www.google.com'); 
+                    }
+                }, 1000);
+            });
 
 
 </body>
