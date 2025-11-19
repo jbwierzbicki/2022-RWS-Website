@@ -93,6 +93,14 @@ document.head.appendChild(o)}initApollo();
                                         </label>
                                         <textarea id="message" class="form-control" rows="4" name="description" required=""></textarea>
                                     </div>
+                                    <div class="col-md-9">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="checkbox" value="true" id="robot_check" name="custom_fields[3][value]" required="">
+                                            <label class="form-check-label text-white-50" for="robot_check">
+                                                I am not a robot
+                                            </label>
+                                        </div>
+                                    </div>
 
                                     <!-- === HIDDEN FIELDS FOR API MAPPING === -->
                                     <input type="hidden" name="custom_fields[0][id]" value="c2d47ffe-4559-4763-bed1-bb2e0eeb9cd1">
@@ -100,6 +108,7 @@ document.head.appendChild(o)}initApollo();
                                     <input type="hidden" name="custom_fields[1][id]" value="ab5235ef-3801-4a57-8908-c1c3aaf8a37b">
                                     <input type="hidden" name="custom_fields[2][id]" value="27a41391-9021-475f-b749-7d81dcb37847">
                                     <input type="hidden" name="custom_fields[2][value]" dmx-bind:value="message.value">
+                                    <input type="hidden" name="custom_fields[3][id]" value="a1c7c923-1e1e-420d-aa50-012cab118fb2">
 
                                     <!-- Your original recaptcha fields (ClickUp will ignore these, which is fine) -->
                                     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
