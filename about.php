@@ -67,7 +67,7 @@ document.head.appendChild(o)}initApollo();
                                     <h4 class="mb-0">Overview</h4>
                                 </div>
                                 <!-- History Button -->
-                                <div class="d-flex border border-secondary rounded mb-3 pt-2 pb-2 ps-2 pe-2" style="cursor: pointer;" dmx-on:click="selectedTab.setValue('history')" dmx-class:bg-secondary="selectedTab.value == 'history'" dmx-class:bg-opacity-10="selectedTab.value == 'history'" dmx-class:text-warning="selectedTab.value == 'history'" dmx-class:bg-transparent="selectedTab.value != 'history'" dmx-class:text-secondary="selectedTab.value != 'history'">
+                                <div class="d-flex border border-secondary rounded mb-3 pt-2 pb-2 ps-2 pe-2 visually-hidden" style="cursor: pointer;" dmx-on:click="selectedTab.setValue('history')" dmx-class:bg-secondary="selectedTab.value == 'history'" dmx-class:bg-opacity-10="selectedTab.value == 'history'" dmx-class:text-warning="selectedTab.value == 'history'" dmx-class:bg-transparent="selectedTab.value != 'history'" dmx-class:text-secondary="selectedTab.value != 'history'">
                                     <h4 class="mb-0">History</h4>
                                 </div>
                                 <!-- Media Button -->
